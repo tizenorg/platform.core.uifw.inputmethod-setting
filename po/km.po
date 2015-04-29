@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "ប្ដូរ​ប្រភេទ​ក្ដារចុច"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "លំនាំ​ដើម"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ក្ដារចុច​ហាដវែរ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ក្ដារចុច"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ជ្រើស​ក្ដារចុច"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "កំណត់​ប្រភេទ​ក្ដារ​ចុច"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "ជ្រើស​ប្រភេទ​ក្ដារចុច"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ភាសា & ការបញ្ចូល"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ហាដវែរ"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "ក្ដារចុច និង វិធី​បញ្ចូល"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ក្ដារចុច​ជាក់ស្ដែង"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "ដើម្បី​ប្ដូរ​ប្លង់​បាន សូម​ប៉ះ​លើ​ប៊ូតុង​ត្រួត​ពិនិត្យ និង ប៊ូតុង​ដំណក​ឃ្លា​ព្រម​គ្នា។"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ប្រើ​ក្ដារចុច​នៅ​លើ​អេក្រង់"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ក្ដារចុច​លំនាំដើម"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "ប្រភេទ​ក្តារចុច"
+

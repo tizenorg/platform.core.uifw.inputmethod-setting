@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Alterar tipo de teclado"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Padrão"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware do teclado"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Teclado"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Selecionar teclado"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Configurar tipo de teclado"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Selecionar tipo de teclado"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Idioma e entrada"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Teclados e métodos de entrada"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Teclado físico"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Para alternar os layouts, toque no botão de controle e na barra de espaço ao mesmo tempo."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Use o teclado na tela"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Teclado padrão"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tipo de teclado"
+

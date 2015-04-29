@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Changer le type de clavier"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Par défaut"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Clavier matériel"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Clavier"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Sélectionner un clavier"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Définir le type de clavier"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Sélect. le type de clavier"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Langue & saisie"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Claviers et modes de saisie"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Clavier physique"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Pour changer de configuration, touchez le bouton de commande et la barre d'espace en même temps."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Utiliser le clavier tactile"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Clavier par défaut"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Type de clavier"
+

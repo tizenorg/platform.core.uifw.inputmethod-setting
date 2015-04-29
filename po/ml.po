@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "കീബോര്‍ഡ് തരം മാറ്റുക"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "സ്ഥിരസ്ഥിതി"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ഹാര്‍ഡ്‌വെയര്‍ കീബോര്‍ഡ്"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "കീബോര്‍ഡ്"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "കീബോര്‍ഡ് തിരഞ്ഞെടുക്കുക"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "കീബോര്‍ഡ് തരം ക്രമീകരിക്കുക"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "കീബോർഡ് തരം തിരഞ്ഞെടുക്കുക"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ഭാഷ & ഇൻപുട്ട്"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ഹാര്‍‌ഡ്‌വെയര്‍‌"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "കീബോര്‍ഡുകളും ഇന്‍പുട്ട് രീതികളും"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ഫിസിക്കല്‍ കീബോര്‍ഡ്"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "ലേഔട്ടുകള്‍ സ്വിച്ചുചെയ്യുന്നതിന് കണ്‍‌ട്രോള്‍ ബട്ടണും സ്പെയ്സ്ബാറും ഒരുമിച്ച് ടാപ്പുചെയ്യുക."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ഓണ്‍-സ്ക്രീന്‍ കീബോര്‍ഡ് ഉപയോഗിക്കുക"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ഡിഫോൾട്ട് കീബോർഡ്"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "കീബോര്‍ഡ് തരം"
+

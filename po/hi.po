@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार बदलें"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "डिफॉल्ट"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "हार्डवेयर कीबोर्ड"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "कीबोर्ड"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "कीबोर्ड चुनें"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार सेट करें"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "कीबोर्ड प्रकार चुनें"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "भाषा और इनपुट"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "हार्डवेयर"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "कीबोर्ड्स तथा इनपुट पद्धतियाँ"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "फि़जिकल कीबोर्ड"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "लेआउट स्विच करने के लिए, कंट्रोल बटन और स्पेसबार दोनों को एक साथ टैप करें।"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ऑन-स्‍क्रीन कीबोर्ड का उपयोग करें"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "डिफॉल्ट कीबोर्ड"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार"
+

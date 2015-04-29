@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Tastaturtyp ändern"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Standard"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardwaretastatur"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatur"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Tastatur auswählen"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Tastaturtyp festlegen"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Tastaturtypauswahl"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Sprache/Eingabe"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastaturen und Eingabemethoden"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Physische Tastatur"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Tippen Sie zum Wechseln des Layouts die Steuerungstaste und die Leertaste gleichzeitig."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Bildschirmtastatur verwenden"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standardtastatur"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tastaturtyp"
+

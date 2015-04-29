@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "تغییر دادن نوع صفحه کلید"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "پيش فرض"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "صفحه کلید سخت افزار"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "صفحه کلید"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "انتخاب صفحه کلید"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "تنظیم نوع صفحه کلید"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "انتخاب نوع صفحه کلید"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "زبان و ورودی"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "H/W"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "صفحه کلیدها و روش های ورودی"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "صفحه کلید فیزیکی"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "برای تغییر صفحه آرایی، به دکمه کنترل و نوار فاصله با هم ضربه بزنید."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "استفاده از صفحه كليد روی صفحه"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "صفحه‌کلید پیش‌فرض"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "نوع صفحه کلید"
+

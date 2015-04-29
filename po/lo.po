@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "ປ່ຽນປະເພດຄີບອດ"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "ຄ່າເລີ່ມຕົ້ນ"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ຄີບອດຮາດແວ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ຄີບອດ"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ເລືອກຄີບອດ"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "ຕັ້ງຄ່າປະເພດຄີບອດ"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "ເລືອກປະເພດຄີບອດ"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ພາສາ ແລະປ້ອນຂໍ້ມູນ"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ຮາດແວ"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "ແປ້ນພິມ ແລະວິທີປ້ອນຂໍ້ມູນ"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ແປ້ນພິມກົດ"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "ເພື່ອປ່ຽນແຜນຜັງການເບິ່ງ, ແຕະປຸ່ມຄວບຄຸມ ແລະຄານແຕະພ້ອມກັນ."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ໃຊ້ແຜ່ນປຸ່ມກົດຢູ່ເທິງໜ້າຈໍ"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ຄີບອດມາດຕະຖານ"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "ປະເພດຄີບອດ"
+

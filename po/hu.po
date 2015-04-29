@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Billentyűzettípus módosítása"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Alapértelmezett"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardveres billentyűzet"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Billentyűzet"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Billentyűzet kiválasztása"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Billentyűzettípus beállítása"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Bill.típus kiválasztása"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Nyelv és bevitel"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardver"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Billenetyűzetek és beviteli módok"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fizikai billentyűzet"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Elrendezésváltáshoz érintse meg egyszerre a vezérlő- és a szóköz gombot."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Képernyő-billentyűzet használata"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Alapértelmezett billentyűzet"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Billentyűzet típusa"
+

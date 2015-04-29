@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Пернетақта түрін өзгерту"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Өздігінен"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Аппараттық құрал пернетақтасы"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Пернетақта"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Пернетақта таңдау"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Пернетақта түрін орнату"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Пернетақта түрін таңдаңыз"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Тіл және енгізу"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Аспап"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Пернетақталар мен енгізу әдістері"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Физикалық пернетақта"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Құрылымдарын ауыстырып қосу үшін басқару түймесі мен бос орын түймесін бірге басыңыз."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Экрандық пернетақтаны пайдалану"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Әдепкі пернетақта"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Пернетақта түрі"
+

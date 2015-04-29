@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Смяна на типа клавиатура"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "По подразбиране"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Хардуерна клавиатура"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Клавиатура"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Изберете клавиатура"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Задаване на тип клавиатура"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Избор на тип клавиатура"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Език и въвеждане"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Хардуер"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Клавиатури и методи за въвеждане"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Физическа клавиатура"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "За да превключите оформленията, чукнете бутона control и интервала едновременно."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Използване на екранната клавиатура"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Клавиатура по подразбиране"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Тип клавиатура"
+

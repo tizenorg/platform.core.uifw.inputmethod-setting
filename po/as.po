@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "কীব'ৰ্ড প্ৰকাৰ পৰিৱৰ্তন কৰক"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "ডিফ'ল্ট"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "হাৰ্ডৱেৰ কীব'ৰ্ড"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "কীব'ৰ্ড"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "কীবোর্ড নির্বাচন করুন"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "কীব'র্ড টাইপক ছেট কৰক"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "কীব'ৰ্ডৰ প্ৰকাৰ চয়ন কৰক"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ভাষা ইনপুট"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "হাৰ্ডৱেৰ"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "কীব'ৰ্ড আৰু ইনপুট পদ্ধতি"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ফিজিকেল কীব'ৰ্ড"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "লেআউটসমূহ সলনি্‌ কৰিবলৈ নিয়ন্ত্ৰণ বুটাম আৰু স্পেচদণ্ডিকা একেলগে টিপক৷"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "অন-স্ক্ৰীণ কীব'ৰ্ড ব্যৱহাৰ কৰক"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ডিফ'ল্ট কীব'ৰ্ড"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "কীব'ৰ্ডৰ প্ৰকাৰ"
+

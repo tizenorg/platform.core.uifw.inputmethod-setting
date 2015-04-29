@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Αλλαγή τύπου πληκτρολογίου"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Προεπιλογή"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Πληκτρολόγιο υλικού"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Πληκτρολόγιο"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Επιλογή πληκτρολογίου"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Ορισμός τύπου πληκτρολογίου"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Επιλ. τύπου πληκτρολογίου"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Γλώσσα/εισαγωγή"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Υλικό"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Πληκτρολόγια και μέθοδοι εισαγωγής"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Φυσικό πληκτρολόγιο"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Για να αλλάξετε διάταξη, πατήστε ταυτόχρονα το κουμπί ελέγχου και το spacebar."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Χρήση πληκτρολογίου οθόνης"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Προεπιλεγμένο πληκτρολόγιο"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Τύπος πληκτρολογίου"
+

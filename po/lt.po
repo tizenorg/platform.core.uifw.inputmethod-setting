@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Keisti klaviatūros tipą"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Numatytoji"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Aparatinė klaviatūra"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klaviatūra"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Pasirinkite klaviatūrą"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Nustatyti klaviatūros tipą"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Parinkti klaviatūros tipą"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Kalba ir įvestis"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Techninė įranga"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Klaviatūros ir įvesties metodai"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fizinė klaviatūra"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Norėdami perjungti išdėstymus, vienu metu spustelėkite garsumo valdymo ir tarpo klavišus."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Naudoti ekrano klaviatūrą"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Numatytoji klaviatūra"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Klaviatūros tipas"
+

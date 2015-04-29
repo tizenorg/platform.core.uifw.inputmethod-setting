@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Endre tastaturtype"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Standard"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Maskinvaretastatur"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatur"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Velg tastatur"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Angi tastaturtype"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Velg tastaturtype"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Språk og inndata"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Maskinvare"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastaturer og inndatametoder"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fysisk tastatur"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "For å bytte oppsett trykker du på kontrollknappen og mellomromstasten samtidig."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Bruk tastatur på skjermen"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standardtastatur"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tastaturtype"
+

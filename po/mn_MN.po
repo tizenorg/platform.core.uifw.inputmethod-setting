@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Гар товчлуурын төрөл өөрчлөх"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Өгөгдмөл"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware keyboard"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Гар товчлуур"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Товчлуурт гар сонго"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Гар товчлуурын төрөл тохируулах"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Гарын төрөл сонгох"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Хэл ба бичиг"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Техник хангамж"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Гар товчлуур ба оруулах аргууд"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Биет гар товчлуур"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Байрлал шилжүүлэхийн тулд, удирдах товч болон зай авдаг хөндөл дээр зэрэг товш"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Дэлгэц дээрх гар товчлуур ашиглах"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Өгөгдмөл гар товчлуур"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Товчлуурт самбарын төрөл"
+

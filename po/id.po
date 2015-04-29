@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Ubah tipe keyboard"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Default"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Keyboard perangkat keras"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Papan tombol"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Pilih keyboard"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Atur tipe keyboard"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Pilih tipe keyboard"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Bahasa & input"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Perangkat keras"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Papan tombol dan metode masukan"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Papan tombol fisik"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Untuk menukar tata letak, ketuk tombol kontrol dan spasi bersamaan."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Gunakan keyboard layar"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Keyboard default"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tipe papan tombol"
+

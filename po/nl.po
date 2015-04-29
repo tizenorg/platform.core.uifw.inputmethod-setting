@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Toetsenbordtype wijzigen"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Standaard"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardwaretoetsenbord"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Toetsenbord"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Toetsenbord selecteren"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Toetsenbordtype instellen"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Toetsenbordtype selecteren"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Taal en invoer"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Toetsenborden en invoermethoden"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fysiek toetsenbord"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Als u de lay-out wilt verwisselen, tikt u tegelijkertijd op de regelknop en de spatiebalk."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Schermtoetsenbord gebruiken"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standaard toetsenbord"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Toetsenbordtype"
+

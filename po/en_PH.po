@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Change keyboard type"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Default"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware keyboard"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Keyboard"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Select keyboard"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Set keyboard type"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Select keyboard type"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Language & input"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Keyboards and input methods"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Physical keyboard"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "To switch layouts, tap the control button and the spacebar together."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Use on-screen keyboard"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Default keyboard"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Keyboard type"
+

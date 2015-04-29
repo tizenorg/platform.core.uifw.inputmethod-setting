@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "更改键盘类型"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "默认"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "硬件键盘"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "键盘"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "选择键盘"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "设置键盘类型"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "选择键盘类型"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "语言和输入"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "硬件"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "键盘和输入方法"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "内置键盘"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "若要切换布局，一起轻敲控制按钮和空格条。"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "使用屏幕键盘"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "默认键盘"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "键盘类型"
+

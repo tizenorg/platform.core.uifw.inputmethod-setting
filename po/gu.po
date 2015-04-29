@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "કીબોર્ડ પ્રકાર બદલો"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "મૂળભૂત"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "હાર્ડવેર કીબોર્ડ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "કીબોર્ડ"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "કીબોર્ડ પસંદ કરો"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "કીબોર્ડ પ્રકાર ગોઠવો"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "કીબોર્ડ પ્રકાર પસંદ કરો"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ભાષા અને ઇનપુટ"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "હાર્ડવેર"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "કીબોર્ડ્સ અને ઇનપુટ પદ્ધતિ"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ભૌતિક કીબોર્ડ"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "લેઆઉટ્સ પર સ્વિચ કરવા માટે, નિયંત્રણ બટન અને સ્પેસબારને એકસાથે ટેપ કરો"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "સ્ક્રીન-પરનાં કીબોર્ડનો ઉપયોગ કરો"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "મૂળભૂત કીબોર્ડ"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "કીબોર્ડ પ્રકાર"
+

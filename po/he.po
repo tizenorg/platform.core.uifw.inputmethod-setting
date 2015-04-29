@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "שנה סוג מקלדת"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "ברירת מחדל"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "מקלדת חומרה"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "מקלדת"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "בחר מקלדת"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "הגדר סוג מקלדת"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "בחירת סוג מקלדת"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "שפה וקלט"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "מקלדות ושיטות קלט"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "מקלדת פיזית"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "כדי להחליף פריסה, הקש על לחצן הבקרה ועל מקש הרווח יחד."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "השתמש במקלדת על-גבי המסך"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "מקלדת ברירת מחדל"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "סוג מקלדת"
+

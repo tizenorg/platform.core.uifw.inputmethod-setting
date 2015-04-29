@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Ndrysho llojin e tastierës"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "E parazgjedhur"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Tastiera harduer"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Butona"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Përzgjidh tastierën"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Cilëso llojin e tastierës"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Zgjidh llojin e tastierës"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Gjuha & futja"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastierat dhe metodat e shkrimit"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Tastierë fizike"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Për të ndërruar strukturat, trokit njëkohësisht mbi butonin e kontrollit dhe tastin e hapësirës."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Përdor tastierën në ekran"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Tastiera e parazgjedhur"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Lloji i tastierës"
+

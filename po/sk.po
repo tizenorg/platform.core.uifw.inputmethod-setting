@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Zmeniť typ klávesnice"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Predvolený"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardvérová klávesnica"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klávesnica"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Vyberte klávesnicu"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Nastaviť typ klávesnice"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Vyberte typ klávesnice"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Jazyk a vstup"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardvér"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Klávesnice a metódy zadávania textu"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fyzická klávesnica"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Ak chcete prepnúť rozloženia, ťuknite naraz na ovládacie tlačidlo a medzerník."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Použiť klávesnicu na obrazovke"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Predvolená klávesnica"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Typ klávesnice"
+

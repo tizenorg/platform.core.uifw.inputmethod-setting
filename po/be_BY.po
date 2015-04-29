@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Змяніць тып клавіятуры"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Стандартны"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware keyboard"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Клавіятура"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Выбраць клавіятуру"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Задаць тып клавіятуры"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Выберыце тып клавіятуры"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Мова, спос.уводу"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Апаратныя сродкі"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Клавіятуры і спосабы ўводу"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Фізічная клавіятура"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Каб пераключыць раскладку, націсніце адначасова кнопку кіравання і прабел."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Выкарыстоўваць экранную клавіятуру"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Стандартная клавіятура"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Тып клавіятуры"
+

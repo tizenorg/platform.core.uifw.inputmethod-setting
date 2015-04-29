@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Mainīt tastatūras tipu"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Noklusējums"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Aparatūras tastatūra"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatūra"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Izvēlieties tastatūru"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Iestatīt tastatūras tipu"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Izvēlēties tastatūras tipu"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Valoda un ievade"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Aparatūra"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastatūras un ievades metodes"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fiziskā tastatūra"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Lai pārslēgtu izkārtojumus, vienlaikus pieskarieties vadības pogai un atstarpes taustiņam."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Lietot ekrāna tastatūru"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Noklusējuma tastatūra"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tastatūras veids"
+

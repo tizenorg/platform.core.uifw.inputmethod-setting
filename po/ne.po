@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार परिवर्तन गर्नुहोस्"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "पूर्वनिर्धारित"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "हार्डवेयर कीबोर्ड"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "कीबोर्ड"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "कीबोर्ड चयन गर्नुहोस्"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार तय गर्नुहोस्"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "कीबोर्ड प्रकार चयन गर्नुहोस्"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "भाषा र इन्पुट"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "हार्डवेयर"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "कीबोर्डहरु अनि इन्पुट पद्धतिहरू"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "भौतिक कीबोर्ड"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "बनावटहरूलाई स्विच गर्न, नियन्त्रण बटन र स्पेसबारलाईसँगै थिच्नुहोस्।"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "अन-स्क्रीन कीबोर्ड प्रयोग गर्नुहोस्"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "पूर्वनिर्धारित कीबोर्ड"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "कीबोर्ड प्रकार"
+

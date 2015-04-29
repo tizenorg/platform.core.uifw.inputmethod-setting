@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Klaviatuuritüübi muutmine"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Vaikimisi"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Riistvara klaviatuur"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klahvistik"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Vali klaviatuur"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Määra klaviatuuritüüp"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Vali klaviatuuritüüp"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Keel ja sisestus"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Riistvara"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Klaviatuurid ja sisestusmeetodid"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Füüsiline klaviatuur"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Paigutuse vahetamiseks toksake korraga juhtnuppu ja tuhikut."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Kasuta ekraanil kuvatavat klaviatuuri"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Vaikeklaviatuur"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Klaviatuuri tüüp"
+

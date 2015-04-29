@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "ကီးဘုတ္ အမ်ဳိးအစားေျပာင္းပါ"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "မူလသတ္မွတ္ထားေသာ"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ဟတ္ဝဲ ကီးဘုတ္"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ကီးဘုတ္"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ကီးဘုတ္ ေရြးပါ"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "ကီးဘုတ္ အမ်ဳိးအစားကို သတ္မွတ္ပါ"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "ကီးဘုတ္ အမ်ိဳးအစားကို ေရြးပါ"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ဘာသာစကားႏွင့္ ထည့္သြင္းမႈ"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ဟတ္၀ဲ"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "ကီးဘုတ္မ်ား ႏွင့္ ျဖည့္သြင္းနည္းမ်ား"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ရုပ္ဝတၳဳ ကီးဘုတ္"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "ျပင္ဆင္ပံုကို ေျပာင္းရန္၊ ထိန္းခ်ဳပ္ခလုပ္ ႏွင့္ ကြက္လပ္ဘားကို အတူတကြ ပုတ္ပါ။"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ဖန္သားျပင္ေပၚ ကီးဘုတ္ သံုးပါ"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "မူရင္းပါပုံစံ ကီးဘုတ္"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "ကီးဘုတ္ အမ်ဳိးအစား"
+

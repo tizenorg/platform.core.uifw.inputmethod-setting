@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Zmień typ klawiatury"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Domyślnie"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Klawiatura sprzętowa"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klawiatura"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Wybierz klawiaturę"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Ustaw typ klawiatury"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Wybierz typ klawiatury"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Język i wprow."
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Sprzęt"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Klawiatury i metody wprowadzania"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Klawiatura fizyczna"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Aby przełączać układy, dotknij jednocześnie przycisku control i spacji."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Użyj klawiatury ekranowej"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Klawiatura domyślna"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Typ klawiatury"
+

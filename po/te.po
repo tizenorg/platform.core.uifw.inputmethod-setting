@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "కీబోర్డ్ రకాన్ని మార్చండి"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "డీఫాల్ట్"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "హార్డువేర్ కీబోర్డ్"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "కీబోర్డు"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "కీబోర్డ్ ని ఎంచుకోండి"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "కీబోర్డ్ రకాన్ని సెట్ చేయి"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "కీబోర్డ్ రకాన్ని ఎంచుకోండి"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "భాష & ఇన్‌పుట్"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "హార్డ్వేర్"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "కీబోర్డు మరియు ఇన్‌పుట్ పద్ధతులు"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "భౌతిక కీబోర్డు"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "లేఅవుట్‌లను మార్చడానికి, నియంత్రణ బటన్ మరియు స్పేస్‌బార్ రెండింటినీ కలిపి నొక్కాలి."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ఆన్-స్క్రీన్ కీబోర్డ్‌ను ఉపయోగించండి"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "డిఫాల్ట్ కీబోర్డు"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "కీబోర్డు రకం"
+

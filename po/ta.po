@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "விசைப்பலகை வகையை மாற்றவும்"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "டீஃபால்ட்"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "வன்பொருள் விசைப்பலகை"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "விசைப்பலகை"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "விசைப்பலகையைத் தேர்ந்தெடு"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "விசைப்பலகை வகை அமைக்கவும்"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "விசைப்பலகை வகையை தேர்வு செய்யவும்"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "மொழி & உள்ளீடு"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "வன்பொருள்"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "விசைப்பலகைகள் மற்றும் உள்ளீடு முறைகள்"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "பிசிக்கல் விசைப்பலகை"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "தளவமைப்பை மாற்ற கட்டுபாட்டு பொத்தானையும் இடைவெளி பட்டையையும் ஒன்றாக டேப் செய்யவும்."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "திரை விசைப்பலகை பயன்படுத்தவும்"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "டீஃபால்ட் விசைப்பலகை"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "விசைப்பலகை வகை"
+

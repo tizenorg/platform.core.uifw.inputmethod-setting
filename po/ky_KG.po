@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Ариптакта түрүн өзгөртүү"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Баштапкы"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware keyboard"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Ариптакта"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Клавиатураны тандаңыз"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Ариптакта түрүн коюу"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Клавиатура түрүн тандоо"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Тил & киргизүү"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Темир жабдуу"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Клавиатура жана жазуу ыкмалары"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Физикалык ариптакта"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Калыптоолорду алмаштыруу үчүн, башкаруу баскычын жана ара баскычын чогу таптаңыз."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Экран ариптактасын колдонуу"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Баштапкы клавиатура"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Ариптакта түрү"
+

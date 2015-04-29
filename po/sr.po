@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Promeni tip tastature"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Podrazumevano"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardverska tastatura"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatura"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Izaberi tastaturu"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Podesi tip tastature"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Izaberi tip tastature"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Jezik i unos"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardver"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastature i načini unosa"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fizička tastatura"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Za prelazak sa jednog rasporeda na drugi, kucni na središnje dugme i taster za razmak."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Koristi tastaturu na ekranu"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Podrazumevana tastatura"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tip tastature"
+

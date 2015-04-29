@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਬਦਲੋ"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "ਡਿਫਾੱਲਟ"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ਹਾਰਡਵੇਅਰ ਕੀਬੋਰਡ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ਕੀਬੋਰਡ"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ਕੀਬੋਰਡ ਚੁਣੋ"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਸੈੱਟ ਕਰੋ"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਚੁਣੋ"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "ਭਾਸ਼ਾ ਅਤੇ ਇਨਪੁਟ"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ਹਾਰਡਵੇਅਰ"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "ਕੀਬੋਰਡਸ ਅਤੇ ਇਨਪੁਟ ਵਿਧੀਆਂ"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "ਭੌਤਿਕ ਕੀਬੋਰਡ"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "ਲੇਆਉਟਸ ਨੂੰ ਸਵਿੱਚ ਕਰਨ ਲਈ, ਨਿਯੰਤ੍ਰਣ ਬਟਨ ਅਤੇ ਸਪੇਸਬਾਰ ਨੂੰ ਇਕੱਠੇ ਟੈਪ ਕਰੋ।"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "ਔਨ-ਸਕ੍ਰੀਨ ਕੀਬੋਰਡ ਦਾ ਉਪਯੋਗ ਕਰੋ"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ"
+

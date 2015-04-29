@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Vaihda näppäimistön tyyppi"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Oletus"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Laitteistonäppäimistö"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Näppäimistö"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Valitse näppäimistö"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Määritä näppäimistön tyyppi"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Valitse näppäim. tyyppi"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Kieli ja syöttö"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Laitteisto"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Näppäimistöt ja syöttötavat"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Fyysinen näppäimistö"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Voit vaihtaa asettelua napauttamalla hallintapainiketta ja välilyöntinäppäintä samaan aikaan."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Käytä näyttönäppäimistöä"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Oletusnäppäimistö"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Näppäimistön tyyppi"
+

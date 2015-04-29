@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "යතුරුපුවරු වර්ගය වෙනස් කරන්න"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "පෙරනිමිය"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "දෘඩාංග යතුරුපුවරුව"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "යතුරු පුවරුව"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "යතුරුපුවරුව තෝරන්න"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "යතුරුපුවරු වර්ගය සකසන්න"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "යතුරු පුවරු ආකාරය තේරීම"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "භාෂාව සහ ආදානය"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "දෘඩාංග"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "යතුරු පුවරු හා ඇතුල් කිරීමේ ක්‍රම"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "භෞතික යතුරු පුවරුව"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "සැකැස්ම අතර මාරු වීමට පාලන බොත්තම සහ හිස්ඉඩ තීරුව එකවිට ඔබන්න."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "තිරය මත යතුරු පුවරුව භාවිතා කරන්න"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "පෙරනිමි යතුරු පුවරුව"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "යතුරුපුවරු වර්ගය"
+

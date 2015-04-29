@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Breyta tegund lyklaborðs"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Sjálfgefið"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Vélbúnaðarlyklaborð"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Lyklaborð"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Velja lyklaborð"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Velja lyklaborðsgerð"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Velja tegund lyklaborðs"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Tungumál/innsl."
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Vélbúnaður"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Lyklaborð og innsláttaraðferðir"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Raunlyklaborð"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Til að skipta um útlit skaltu pikka á stjórnhnappinn og bilslána á sama tíma."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Nota skjályklaborð"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Sjálfgefið lyklaborð"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Lyklaborðsgerð"
+

@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "کی بورڈ قسم تبدیل کریں"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "ڈیفالٹ"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "ہارڈ ویئر کی بورڈ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "کی بورڈ"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "کی بورڈ منتخب کریں"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "کی بورڈ قسم سیٹ کریں"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "کی بورڈ قسم منتخب کریں"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "زبان اور ان پٹ"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "ہارڈ ویئر"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "کی بورڈز اور ان پٹ کے طریقے"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "‌فزیکل کیی بورڈ"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "لے آؤٹس سوئچ کرنے کے لئے، کنٹرول بٹن اور اسپیس بار باہم تھپتھپائیں"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "آن-اسکرین کی بورڈ استعمال کریں"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ڈیفالٹ کی بورڈ"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "کیی بورڈ قسم"
+

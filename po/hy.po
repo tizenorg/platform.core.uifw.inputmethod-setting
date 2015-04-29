@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Փոխել ստեղնաշարի տեսակը"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Լռելյայն"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Սարքակազմի ստեղնաշար"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Ստեղնաշար"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Ընտրել ստեղնաշար"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Նախադրել ստեղնաշարի տեսակը"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Ընտրել ստեղնաշարի տեսակը"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Լեզու և ներածում"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Ապարատային ապահովում"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Ստեղնաշարեր և ներածման եղանակներ"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Ֆիզիկական ստեղնաշար"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Դասավորվածքները փոխարկելու համար միասին թակեք կառավարման կոճակն ու բացատի ստեղնը:"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Օգտագործեք էկրանի ստեղնաշարը"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Կանխադրված ստեղնաշար"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Ստեղնաշարի տեսակը"
+

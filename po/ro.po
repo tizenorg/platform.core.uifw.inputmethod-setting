@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Schimbare tip tastatură"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Implicit"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Tastatură hardware"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatură"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Selectare tastatură"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Setare tip de tastatură"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Selectare tip de tastatură"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Limbă şi tastat."
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardware"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Tastaturi şi metode de introducere"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Tastatură fizică"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Pentru a comuta aspectele, atingeţi butonul de control simultan cu bara de spaţiu."
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Utilizare tastatură pe ecran"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Tastatură implicită"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Tip de tastatură"
+

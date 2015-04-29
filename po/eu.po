@@ -1,0 +1,45 @@
+msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
+msgstr "Aldatu teklatu mota"
+
+msgid "IDS_COM_BODY_DEFAULT"
+msgstr "Lehenetsia"
+
+msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
+msgstr "Hardware teklatua"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Teklatua"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Hautatu teklatua"
+
+msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
+msgstr "Ezarri teklatu mota"
+
+msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
+msgstr "Hautatu teklatu mota"
+
+msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
+msgstr "Hizkuntza eta sarrera"
+
+msgid "IDS_ST_BODY_HARDWARE"
+msgstr "Hardwarea"
+
+msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
+msgstr "Teklatuak eta sarrera metodoak"
+
+msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
+msgstr "Teklatu fisikoa"
+
+msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
+msgstr "Itxurak aldatzeko, ukitu kontrol botoia eta espazio barra aldi berean"
+
+msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
+msgstr "Erabili teklatua pantailan"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Lehenetsitako teklatua"
+
+msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
+msgstr "Teklatu mota"
+
