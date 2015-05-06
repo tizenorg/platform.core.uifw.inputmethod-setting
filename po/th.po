@@ -43,3 +43,21 @@ msgstr "แป้นพิมพ์เริ่มต้น"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ชนิด​แป้น​พิมพ์"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "วิธี​เขียน​นี้​อาจ​ใช้​รวบ​รวม​ข้อ​ความ​ทั้ง​หมด​ที่​คุณ​พิมพ์ รวม​ทั้ง​ข้อมูล​ส่วน​บุคคล​อย่าง​รหัส​ผ่าน​และ​หมาย​เลข​บัตร​เครดิต มา​จาก​แอ​พ​​พลิ​เค​ชั่น %1$s ​​​เปิด​ใช้​วิธี​เขียน​นี้?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "แป้นพิมพ์เสมือน"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "โปรดทราบ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ยกเลิก"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ตกลง"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ใช้"
+

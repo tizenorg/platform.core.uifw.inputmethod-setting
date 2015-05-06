@@ -43,3 +43,21 @@ msgstr "පෙරනිමි යතුරු පුවරුව"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "යතුරුපුවරු වර්ගය"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "මෙම ආදාන ක්‍රමය මඟින් මුරපද, ණය පත් අංක වැනි ඔබ ටයිප් කරන සියලුම පෙළ එකතු කර ගැනීමට පුළුවන. එය %1$s වැඩසටහන මගින් ලැබෙයි. මෙම ආදාන ක්‍රමය බලාත්මක කරන්නද?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "අතථ්‍ය යතුරු පුවරුව"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "අවධානය යොමු කරන්න"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "අ.ක."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "හරි"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "භාවිතා ක."
+

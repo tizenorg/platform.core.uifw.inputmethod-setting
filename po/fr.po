@@ -43,3 +43,21 @@ msgstr "Clavier par défaut"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Type de clavier"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Le mode de saisie peut collecter tout le texte saisi, notamment les données personnelles telles que les mots de passe et les numéros de carte de crédit. Cela vient de l'application %1$s. Activer ce mode de saisie ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Clavier virtuel"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Attention"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Annul."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Utiliser"
+

@@ -43,3 +43,21 @@ msgstr "Varsayılan klavye"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klavye türü"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Bu giriş yöntemi, şifreler, kredi kartı numaraları gibi kişisel veriler dahil bütün girdiğiniz metin türlerini toplayabilir. Bu %1$s uygulamasından gelir. Bu giriş yöntemi etkinleştirilsin mi?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Sanal klavye"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Dikkat"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "İptal"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Tamam"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Kullan"
+

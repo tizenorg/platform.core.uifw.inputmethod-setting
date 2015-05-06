@@ -43,3 +43,21 @@ msgstr "Podrazumevana tastatura"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tip tastature"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ovaj način unosa može da se koristi za prikupljanje svog unetog teksta, uključujući i lične podatke poput šifri i brojeva kreditnih kartica. On potiče od aplikacije %1$s. Omogući ovaj način unosa?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelna tastatura"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pažnja"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Otkaži"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Korišć."
+

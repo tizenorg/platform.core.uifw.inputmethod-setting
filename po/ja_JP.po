@@ -43,3 +43,21 @@ msgstr "標準キーボード"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "キーボード設定"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "この入力方法は、パスワードやクレジットカード番号のように、個人データを含む入力済みの全てのテキストからの収集を可能にします。それはアプリケーション%1$sから派生します。この入力方法を有効にしますか？"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "仮想キーボード"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ｷｬﾝｾﾙ"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "使用"
+

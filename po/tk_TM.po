@@ -43,3 +43,21 @@ msgstr "Standart klawiatura"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klawiatura görnüşi"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Bu giriziş usuly, parollar we kredit kartasy belgileri ýaly şahsy maglumatlaryňyzy hem goşmak bilen siziň ýazýan ähli tekstiňizi ýygnap biler. %1$s goýmasyndan gelýär. Bu giriziş usulyny işletmelimi?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Wirtual klawiatura"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Üns beriň"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Goýbolsun et"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Ulan"
+

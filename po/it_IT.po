@@ -43,3 +43,21 @@ msgstr "Tastiera predefinita"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipo tastiera"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Questo metodo di inserimento può raccogliere tutto il testo digitato, inclusi dati personali come password e numeri di carte di credito. Deriva dall'applicazione %1$s. Attivare questo metodo di inserimento?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Tastiera virtuale"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Attenzione"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Ann."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Usa"
+

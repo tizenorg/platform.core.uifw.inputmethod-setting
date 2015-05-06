@@ -43,3 +43,21 @@ msgstr "ডিফ'ল্ট কীব'ৰ্ড"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "কীব'ৰ্ডৰ প্ৰকাৰ"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "এই ইনপুট পদ্ধতিয়ে আপুনি টাইপ কৰা পাঠ সংগ্রহ কৰিব পাৰিব, ইয়াত ব্যক্তগত ডাটা যেনে পাছৱর্ড আৰু ক্রেডিট কার্ডৰ নম্বৰ অন্তর্ভুক্ত৷ ই এপ্লিকেচন %1$s ৰ পৰা আহে৷ এই ইনপুট পদ্ধতিক সক্ষম কৰিবনে?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ভাৰ্ছুৱেল কীব'ৰ্ড"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "মনোযোগ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "বাতিল"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ঠিক"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ব্যৱহাৰ"
+

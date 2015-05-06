@@ -43,3 +43,21 @@ msgstr "Bàn phím mặc định"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Loại bàn phím"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Cách nhập này có thể thu thập mọi văn bản bạn nhập vào, bao gồm dữ liệu cá nhân như mật mã và số thẻ tín dụng. Đến từ ứng dụng %1$s. Cho phép cách nhập này?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Bàn phím ảo"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Chú ý"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Thoát"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Sử dụng"
+

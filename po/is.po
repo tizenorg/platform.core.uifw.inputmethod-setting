@@ -43,3 +43,21 @@ msgstr "Sjálfgefið lyklaborð"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Lyklaborðsgerð"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ef þessi innsláttaraðferð er notuð er hægt að skrá allan texta sem þú slærð inn, svo sem lykilorð og kreditkortanúmer. Hana er að finna í %1$s. Viltu nota þessa innsláttaraðferð?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Sýndarlyklaborð"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Athuga"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Hætta við"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Í lagi"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Nota"
+

@@ -43,3 +43,21 @@ msgstr "Vaikeklaviatuur"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klaviatuuri tüüp"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "See sisestusmeetod võib koguda teie sisestatud teksti, sealhulgas isiklikke andmeid, nagu paroolid ja krediitkaardi numbrid. See tuleb rakendusest %1$s. Kas aktiveerida see sisestusmeetod?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuaalne klaviatuur"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Tähelepanu!"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Tühis."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Kasuta"
+

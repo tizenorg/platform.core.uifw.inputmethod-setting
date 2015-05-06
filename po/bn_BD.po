@@ -43,3 +43,21 @@ msgstr "ডিফল্ট কিবোর্ড"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "কিবোর্ডের বিন্যাস"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the application %1$s. Enable this input method?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ভার্চুয়াল কিবোর্ড"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "মনোযোগ দিন"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "বাতিল"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ওকে"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ব্যবহার করুন"
+

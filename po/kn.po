@@ -43,3 +43,21 @@ msgstr "ಡೀಫಾಲ್ಟ್ ಕೀಬೋರ್ಡ್"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ಕೀಬೋರ್ಡ್ ವಿಧ"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "ವೈಯಕ್ತಿಕ ಡೇಟಾಗಳಂತಹ ಪಾಸ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ವರ್ಡ್‌‌‌‌‌‌‌ಗಳು ಮತ್ತು ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಂಖ್ಯೆಗಳನ್ನೊಳಗೊಂಡ ನೀವು ಟೈಪ್ ಮಾಡಿದ ಎಲ್ಲಾ ಪಠ್ಯವನ್ನು ಸಂಗ್ರಹಿಸಲು ಈ ಇನ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ಪುಟ್ ಪದ್ಧತಿ ಸಮರ್ಥವಾಗಿರಬಹುದು. ಅಪ್ಲಿಕೇಶನ್ %1$s ನಿಂದ ಇದು ಬಂದಿದೆ. ಈ ಇನ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ಪುಟ್ ಪದ್ಧತಿ ಸಕ್ರಿಯಗೊಳಿಸುವುದೆ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ವರ್ಚುವಲ್ ಕೀಬೋರ್ಡ್"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ಗಮನಿಸಿ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ರದ್ದು"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ಓಕೆ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ಬಳಸಿ"
+

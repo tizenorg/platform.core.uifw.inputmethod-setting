@@ -43,3 +43,21 @@ msgstr "Әдепкі пернетақта"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Пернетақта түрі"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Бұл енгізу әдісі терілетін барлық мәтінді, оның ішінде, құпиясөздерді және несиелік карта нөмірлерін жинай алады. Ол %1$s қосымшасынан алынады. Бұл енгізу әдісін қосу керек пе?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуалды пернетақта"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Назар аударыңыз"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Тоқт"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Пайдалану"
+

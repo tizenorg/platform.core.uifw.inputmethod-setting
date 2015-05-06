@@ -43,3 +43,21 @@ msgstr "Predvolená klávesnica"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Typ klávesnice"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Táto metóda vstupu môže zachytávať všetok text, ktorý zadáte, vrátane osobných údajov, ako sú heslá a čísla kreditných kariet. Pochádza z aplikácie %1$s. Povoliť túto metódu vstupu?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuálna klávesnica"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozor"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Zruš."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Použiť"
+

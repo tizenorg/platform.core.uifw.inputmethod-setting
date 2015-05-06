@@ -43,3 +43,21 @@ msgstr "Tastatura dōmyślnŏ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Typ ôd tastatury"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ta metoda wejściowa może mieć możliwość gromadzenia całego wpisywanego tekstu, łącznie z takimi danymi osobistymi, jak hasła i numery kart kredytowych. Pochodzi ona z aplikacji %1$s. Włączyć tę metodę wejściową?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Wirtualna klawiatura"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozōr"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Anul."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK."
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Użyj"
+

@@ -43,3 +43,21 @@ msgstr "Výchozí klávesnice"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Typ klávesnice"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Tato metoda zadávání může ukládat veškerý zadávaný text včetně osobních dat, např. hesel a čísel kreditních karet. Pochází z aplikace %1$s. Chcete povolit tuto metodu zadávání?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuální klávesnice"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozor"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Zruš."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Použít"
+

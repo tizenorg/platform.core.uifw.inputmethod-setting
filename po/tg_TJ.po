@@ -43,3 +43,21 @@ msgstr "Клавиатураи стандартӣ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Навъи клавиатура"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ин усули вуруд метавонад, ки ҳамаи матни чидаи шумо, аз ҷумла маълумоти шахсӣ, аз қабили паролҳо ва рақамҳои кортҳои қарзиро ҷамъ орад. Он аз барномаи %1$s меояд. Ин усули пардохтро фаъол мекунед?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Клавиатураи виртуалӣ"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Таваҷҷӯҳ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Бекор к."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Истифода бурдан"
+

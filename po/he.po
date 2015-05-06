@@ -43,3 +43,21 @@ msgstr "מקלדת ברירת מחדל"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "סוג מקלדת"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "ייתכן ששיטת הזנה זו תאסוף את כל הטקסט שהקלדת, כולל נתונים אישיים כגון סיסמאות ומספרי כרטיסי אשראי.  הבקשה מגיעה מהיישום %1$s‏. לאפשר שיטת הזנה זו?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "מקלדת וירטואלית"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "שים לב"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ביטול"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "אישור"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "השתמש"
+

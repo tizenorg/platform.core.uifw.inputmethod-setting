@@ -43,3 +43,21 @@ msgstr "Կանխադրված ստեղնաշար"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Ստեղնաշարի տեսակը"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ներմուծման այս եղանակով կարող հնարավոր լինել հավաքել ձեր մուտքագրվող ամբողջ գրվածքը, անձնական տվյալները ներառյալ, ինչպիսիք են գաղտնաբառերը և վարկային քարտերի համարները։ Դա գալիս է %1$s գործադրից։ Միացնե՞լ ներմուծման այս եղանակը"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Վիրտուալ ստեղնաշար"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Ուշադրություն"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Չեղկլ"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Ընդունել"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Օգտգործել"
+

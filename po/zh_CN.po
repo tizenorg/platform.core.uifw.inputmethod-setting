@@ -43,3 +43,21 @@ msgstr "默认键盘"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "键盘类型"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "这种输入法可能会收集键入的所有文本，包括密码和信用卡号码等个人数据。 它来自于应用程序 %1$s。确实要启用该输入法吗？"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "虚拟键盘"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "确定"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "使用"
+

@@ -43,3 +43,21 @@ msgstr "Teclat predeterminat"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipus de teclat"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Aquest mètode d'entrada pot recopilar tot el text que introdueixi, incloent-hi les dades personals com ara les contrasenyes i els números de la targeta de crèdit. Ve de l'aplicació %1$s. Vol activar aquest mètode d'entrada?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teclat virtual"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atenció"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Accept"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Utilitzar"
+

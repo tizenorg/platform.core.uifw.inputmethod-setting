@@ -43,3 +43,21 @@ msgstr "Keyboard default"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipe papan tombol"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Dengan metode input ini Anda dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti kata sandi dan nomor kartu kredit. Berasal dari aplikasi %1$s. Aktifkan metode input ini?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Keyboard virtual"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Perhatian"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Batal"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Gunakan"
+

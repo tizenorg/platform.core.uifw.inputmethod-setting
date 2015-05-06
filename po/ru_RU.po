@@ -43,3 +43,21 @@ msgstr "Клавиатура по умолчанию"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Тип клавиатуры"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "При использовании этого метода может собираться весь вводимый текст, включая личную информацию, такую как пароли и номера кредитных карт. Он поддерживается приложением %1$s. Включить этот метод ввода?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуальная клавиатура"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Внимание"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Отмена"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ОК"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Использ."
+
