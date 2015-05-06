@@ -43,3 +43,21 @@ msgstr "Προεπιλεγμένο πληκτρολόγιο"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Τύπος πληκτρολογίου"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Αυτή η μέθοδος εισαγωγής μπορεί να συλλέγει όλα όσα πληκτρολογείτε, συμπεριλαμβανομένων προσωπικών δεδομένων, όπως κωδικοί πρόσβασης και αριθμοί πιστωτικών καρτών. Προέρχεται από την εφαρμογή του %1$s. Να ενεργοποιηθεί αυτή η μέθοδος εισαγωγής;"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Εικονικό πληκτρολόγιο"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Προσοχή"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Άκυρο"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Χρήση"
+

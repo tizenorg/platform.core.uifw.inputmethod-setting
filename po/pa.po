@@ -43,3 +43,21 @@ msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "ਇਹ ਇਨਪੁਟ ਤਰੀਕਾ ਤੁਹਾਡਾ ਟਾਈਪ ਕੀਤਾ ਸਾਰਾ ਟੈਕਸਟ ਇਕੱਤਰ ਕਰਨ ਤੇ ਯੋਗ ਹੋ ਸਕਦਾ ਹੈ, ਤੁਹਾਡਾ ਵਿਅਕਤੀਗਤ ਡੈਟਾ ਜਿਵੇਂ ਪਾਸਵਰਡ ਅਤੇ ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਨੰਬਰ ਸਮੇਤ। ਇਹ %1$s ਅਨੁਪ੍ਰਯੋਗ ਤੋਂ ਆਉਂਦਾ ਹੈ। ਇਹ ਇਨਪੁਟ ਤਰੀਕੇ ਨੂੰ ਸਮਰੱਥ ਬਣਾਈਏ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ਧਿਆਨ ਦਿਉ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ਰੱਦ"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ਓਕੇ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ਵਰਤੋ"
+

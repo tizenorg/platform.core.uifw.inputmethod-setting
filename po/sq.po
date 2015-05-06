@@ -43,3 +43,21 @@ msgstr "Tastiera e parazgjedhur"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Lloji i tastierës"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Kjo mënyrë shkrimi është në gjendje të mbajë mend tekstin që ti fut, duke përfshirë të dhëna personale, si fjalëkalime dhe numra të kartave të kreditit. Vjen nga programi %1$s. Ta aktivizoj këtë mënyrë shkrimi?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Tastiera virtuale"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Kujdes"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Anullo"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Përdor"
+

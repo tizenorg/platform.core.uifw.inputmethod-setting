@@ -43,3 +43,21 @@ msgstr "Teclado predeterminado"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipo de teclado"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Este método de introdución pode utilizarse para recompilar todo o texto que escribe, incluídos os datos persoais como os contrasinais e os números das tarxetas de crédito. Procede da aplicación %1$s. Activar este método de introdución?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teclado virtual"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atención"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Acep."
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Usar"
+

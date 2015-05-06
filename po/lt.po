@@ -43,3 +43,21 @@ msgstr "Numatytoji klaviatūra"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klaviatūros tipas"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Gali būti, kad šiuo įvesties būdu galima surinkti informaciją apie visą jūsų įvestą tekstą, taip pat asmeninius duomenis, pvz., slaptažodžius ir kredito kortelių numerius. Taip yra dėl %1$s programos. Įjungti šį įvesties būdą?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtualioji klaviatūra"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Dėmesio"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Atš."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Gerai"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Naudoti"
+

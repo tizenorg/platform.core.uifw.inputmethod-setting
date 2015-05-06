@@ -43,3 +43,21 @@ msgstr "Privzeta tipkovnica"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Vrsta tipkovnice"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ta način vnosa zbere celotno natipkano besedilo, tudi osebne podatke, kot so gesla in številke kreditnih kartic. Prihaja od aplikacije %1$s. Omogočim ta način vnosa?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Navidezna tipkovnica"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozor"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Prekliči"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "V redu"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Uporabi"
+

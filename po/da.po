@@ -43,3 +43,21 @@ msgstr "Standardtastatur"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tastaturtype"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Denne indtastningsmetode kan være tilgængelig til indsamling af al den tekst du skraver, inklusive personlige data såsom adgangskoder og kreditkortnumre. Det kommer fra programmet %1$s. Aktivér denne indtastningsmetode?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelt tastatur"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Bemærk!"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Afbr."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Brug"
+

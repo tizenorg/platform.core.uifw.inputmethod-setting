@@ -43,3 +43,21 @@ msgstr "기본 키보드"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "키보드 형식"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "%1$s애플리케이션에서 제공되는 이 입력 방식은 비밀번호 또는 신용카드 번호와 같은 개인정보를 포함하여 모든 입력 내용을 수집할 수 있습니다. 실행할까요?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "가상 키보드"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "주의"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "취소"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "확인"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "사용"
+

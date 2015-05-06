@@ -43,3 +43,21 @@ msgstr "Defolt klaviatura"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klaviatura növü"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Bu daxiletmə üsulu parollar və kredit kartı nömrələri kimi şəxsi məlumatlar da daxil olmaqla sizin yazdığının bütün mətni əldə edə bilər. %1$s proqramdan gəlir. Bu daxiletmə metodu yandırılsın?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtual klaviatura"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Diqqət"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Ləğv et"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "İstifadə"
+

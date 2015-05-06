@@ -43,3 +43,21 @@ msgstr "Основна тастатура"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Вид тастатура"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Овој начин на внесување може да регистрира се` што внесувате, вклучувајќи и лични податоци како лозинки и броеви на кредитни картички. Потекнува од апликацијата %1$s. Да се овозможи овој начин на внесување?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуелна тастатура"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Внимание"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Откажи"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Користи"
+

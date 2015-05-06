@@ -43,3 +43,21 @@ msgstr "ក្ដារចុច​លំនាំដើម"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ប្រភេទ​ក្តារចុច"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "វិធី​បញ្ចូល​នេះ​ប្រហែល​ជា​អាច​ប្រមូល​អត្ថបទ​ដែល​អ្នក​វាយ​ទាំងអស់ រួម​បញ្ចូល​ទាំង​ទិន្នន័យ​ផ្ទាល់​ខ្លួន​ដូចជា​ពាក្យ​សម្ងាត់ និង លេខ​បណ្ណ​ឥណទាន។ វា​មក​ពី %1$s នៃ​កម្មវិធី។ បើក​វិធី​បញ្ចូល​នេះ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ក្ដារចុច​និម្មិត"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ប្រុងប្រយ័ត្ន"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ចោល"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ព្រម"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ប្រើ"
+

@@ -43,3 +43,21 @@ msgstr "Alapértelmezett billentyűzet"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Billentyűzet típusa"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ez a beviteli mód képes lehet minden beírt szöveg összegyűjtésére, ideértve a személyes adatokat, például a jelszavakat vagy hitelkártyaszámokat is. A(z) %1$s alkalmazás biztosítja. Engedélyezi ezt a beviteli módot?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuális billentyűzet"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Figyelem"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Mégse"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Használat"
+

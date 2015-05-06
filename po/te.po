@@ -43,3 +43,21 @@ msgstr "డిఫాల్ట్ కీబోర్డు"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "కీబోర్డు రకం"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "మీరు టైప్ చెసిన పాఠ్ఠాన్ని కలేక్ట్ చేయ్యడానికి ఈ ఇన్పుట్ మోథడు ఎబల్,పర్సనల్ డాటాతో పాస్వర్డ్ మరియు క్రేడిట్ కార్డుల నెంబర్లులాగా. %1$s ఇది అప్లికేషన్ నుండి వస్తూంది. ఈ మూలాంశమును మెథడ్ ని ఎనేబుల్ చేయ్యచ్చా?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "వర్చువల్ కీబోర్డ్"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "అటెన్షన్"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "రద్దు"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "సరే"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ఉపయోగించండి"
+

@@ -43,3 +43,21 @@ msgstr "لوحة المفاتيح الافتراضية"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "نوع لوحة المفاتيح"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "قد تتمكن طريقة الإدخال هذه من جمع كافة النصوص التي قمت بكتابتها، بما في ذلك البيانات الشخصية مثل كلمات المرور وأرقام بطاقات الائتمان. يأتي ذلك من التطبيق %1$s. هل ترغب في تمكين طريقة الإدخال هذه؟"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "لوحة المفاتيح الظاهرية"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "انتباه"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "موافق"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "استخدام"
+

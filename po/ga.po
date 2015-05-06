@@ -43,3 +43,21 @@ msgstr "Eochairchlár réamhshocraithe"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Cineál eochairchláir"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Is féidir leis an modh ionchuir seo gach téacs a scríobhann tú a bhailiú, lena n-áirítear sonraí pearsanta amhail pasfhocail agus uimhreacha cártaí creidmheasa. Is as an feidhmchlár %1$s é. Cumasaigh an modh ionchuir seo?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Eochairchlár fíorúil"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Aire"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Cealú"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Úsáid"
+

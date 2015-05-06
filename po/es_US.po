@@ -43,3 +43,21 @@ msgstr "Teclado predeterminado"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipo de teclado"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Puede que este método de entrada recopile todo el texto que escriba, incluidos los datos personales como contraseñas y números de tarjetas de crédito. Viene con la aplicación %1$s. ¿Permitir este método de entrada?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teclado virtual"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atención"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "Aceptar"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Uso"
+

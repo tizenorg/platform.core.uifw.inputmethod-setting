@@ -21,27 +21,38 @@
 #include <vector>
 #include "isf_control.h"
 
-#define IM_SETTING_LIST_TITLE          dgettext(PACKAGE, "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB")
-#define IM_SETTING_LIST_KEYBOARD       dgettext(PACKAGE, "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS")
+#define IM_SETTING_LIST_TITLE                   dgettext(PACKAGE, "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB")
+#define IM_SETTING_LIST_KEYBOARD                dgettext(PACKAGE, "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS")
+#define IM_SETTING_LIST_POPUP_TITLE             dgettext(PACKAGE, "IDS_ST_BODY_ATTENTION")
+#define IM_SETTING_LIST_POPUP_TEXT              dgettext(PACKAGE, "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS")
+#define IM_SETTING_LIST_POPUP_CANCEL            dgettext(PACKAGE, "IDS_COM_SK_CANCEL_ABB")
+#define IM_SETTING_LIST_POPUP_OK                dgettext(PACKAGE, "IDS_HELP_SK2_OK_ABB")
+
+#define IM_SETTING_PACKAGE             PACKAGE
+#define IM_SETTING_LOCALE_DIR           ("/usr/apps/"PACKAGE_NAME"/res/locale")
 
 #undef LOG_TAG
 #define LOG_TAG "IM_Setting"
 #include <dlog.h>
 using namespace std;
 
-static std::vector<string>     g_ise_id_list;
-static std::vector<string>     g_ise_label_list;
+static std::vector<ime_info_s>  g_ime_info_list;
 static Elm_Genlist_Item_Class  *itc_im_list = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_group = NULL;
-static Elm_Genlist_Item_Class  *itc_im_selector = NULL;
-static Evas_Object *g_genlist = NULL;
 
-struct view_data {
-    Evas_Object     *parent;
-    Evas_Object     *naviframe;
-    Evas_Object     *opt_eo;
-};
-static struct view_data *_st_view_data;
+typedef struct popup_cb_data_s
+{
+    Evas_Object *popup;
+    Evas_Object *parent;
+    void *event_info;
+    void *data;
+}popup_cb_data;
+
+static void im_setting_list_text_domain_set(void)
+{
+   bindtextdomain(IM_SETTING_PACKAGE, IM_SETTING_LOCALE_DIR);
+   textdomain(IM_SETTING_PACKAGE);
+}
 
 static Evas_Object *
 im_setting_list_main_window_create(char *name)
@@ -84,8 +95,7 @@ static void im_setting_list_load_ise_info(void)
     {
         for(int i=0; i<cnt; ++i)
         {
-            g_ise_id_list.push_back(string(info[i].appid));
-            g_ise_label_list.push_back(string(info[i].label));
+            g_ime_info_list.push_back(info[i]);
         }
         free(info);
     }
@@ -98,9 +108,12 @@ static void im_setting_list_load_ise_info(void)
 static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /*save the checked ise*/
+    int index = (int)data;
+    Eina_Bool state = elm_check_state_get (obj);
+    isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
 }
 
-static void im_setting_list_update_check_button_state(Elm_Object_Item *item, Evas_Object *obj)
+static void im_setting_list_update_check_button_state(Elm_Object_Item *item, Evas_Object *obj, int index)
 {
     Eina_Bool state = EINA_FALSE;
     if (item && obj) {
@@ -113,6 +126,7 @@ static void im_setting_list_update_check_button_state(Elm_Object_Item *item, Eva
         evas_object_data_set (ck, "parent_genlist", obj);
         state = !elm_check_state_get (ck);
         elm_check_state_set (ck, state);
+        isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
     }
 }
 
@@ -122,7 +136,52 @@ static void im_setting_list_ise_sel_cb(void *data, Evas_Object *obj, void *event
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item)
         return;
-    im_setting_list_update_check_button_state(item, obj);
+    im_setting_list_update_check_button_state(item, obj, index);
+}
+
+static void
+im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    popup_cb_data *cb_data = (popup_cb_data *)data;
+    im_setting_list_ise_sel_cb(cb_data->data, cb_data->parent, cb_data->event_info);
+    evas_object_del(cb_data->popup);
+    delete cb_data;
+}
+
+static void
+im_setting_list_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    popup_cb_data *cb_data = (popup_cb_data *)data;
+    evas_object_del(cb_data->popup);
+    delete cb_data;
+}
+
+static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+    elm_genlist_item_selected_set (item, EINA_FALSE);
+
+    Evas_Object *popup = elm_popup_add(obj);
+    elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
+    elm_object_text_set(popup, IM_SETTING_LIST_POPUP_TEXT);
+
+    popup_cb_data *cb_data = new popup_cb_data;
+    cb_data->popup = popup;
+    cb_data->parent = obj;
+    cb_data->event_info = event_info;
+    cb_data->data = data;
+
+    Evas_Object *btn_cancel = elm_button_add(popup);
+    elm_object_text_set(btn_cancel, IM_SETTING_LIST_POPUP_CANCEL);
+    elm_object_part_content_set(popup, "button1", btn_cancel);
+    evas_object_smart_callback_add(btn_cancel, "clicked", im_setting_list_popup_cancel_cb, cb_data);
+
+    Evas_Object *btn_ok = elm_button_add(popup);
+    elm_object_text_set(btn_ok, IM_SETTING_LIST_POPUP_OK);
+    elm_object_part_content_set(popup, "button2", btn_ok);
+    evas_object_smart_callback_add(btn_ok, "clicked", im_setting_list_popup_ok_cb, cb_data);
+
+    evas_object_show(popup);
 }
 
 static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
@@ -183,13 +242,13 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
         !strcmp(part, "elm.text.main") ||
         !strcmp(part, "elm.text") ||
         !strcmp(part, "elm.text.1")) {
-        return strdup(g_ise_id_list[index].c_str());
+        return strdup(g_ime_info_list[index].appid);
     }
 
     if (!strcmp(part, "elm.text.sub.left.bottom") ||
         !strcmp(part, "elm.text.multiline") ||
         !strcmp(part, "elm.text.2")) {
-        return strdup(g_ise_label_list[index].c_str());
+        return strdup(g_ime_info_list[index].label);
     }
     return NULL;
 }
@@ -200,7 +259,7 @@ static Evas_Object *im_setting_list_genlist_item_icon_get(void *data, Evas_Objec
     if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set (ck, "on&off");
-        elm_radio_state_value_set(ck, false);
+        elm_check_state_set(ck, g_ime_info_list[index].is_enabled);
         evas_object_propagate_events_set (ck, EINA_FALSE);
         evas_object_show(ck);
         evas_object_smart_callback_add(ck, "changed", im_setting_list_check_button_change_cb, (void *) (index));
@@ -245,23 +304,17 @@ static void im_setting_list_add_ise(void *data) {
             NULL);
 
     /* keyboard list */
-    for (i = 0; i < g_ise_id_list.size(); i++) {
-//        if (String(active_ise_uuid) == _sw_uuid_list[i]) {
-//            _sw_ise_index = i;
-//        }
-        elm_genlist_item_append(ad->genlist,
+    for (i = 0; i < g_ime_info_list.size(); i++) {
+        Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
             itc_im_list,
             (void *)(i),
             NULL,
             ELM_GENLIST_ITEM_NONE,
-            im_setting_list_ise_sel_cb,
+            im_setting_list_item_sel_cb,
             (void *)(i));
-    }
 
-//    if (active_ise_uuid) {
-//        free(active_ise_uuid);
-//        active_ise_uuid = NULL;
-//    }
+        elm_object_item_disabled_set(item, g_ime_info_list[i].is_preinstalled);
+    }
 }
 
 static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *it)
@@ -304,6 +357,7 @@ void
 im_setting_list_app_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    im_setting_list_text_domain_set();
     ad->win = im_setting_list_main_window_create(PACKAGE);
     im_setting_list_bg_create(ad->win);
     im_setting_list_load_ise_info();

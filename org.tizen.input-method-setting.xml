@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns="http://tizen.org/ns/packages" package="org.tizen.input-method-setting" version="0.1" install-location="internal-only">
         <label>Keyboard setting</label>
-        <author email="shoum.chen@samsung.com" href="www.samsung.com">Shuo Liu</author>
+        <author email="shoum.chen@samsung.com" href="www.samsung.com">Shuoming Chen</author>
         <description>Keyboard setting Application</description>
-        <ui-application appid="org.tizen.input-method-setting" exec="/usr/apps/org.tizen.input-method-setting/bin/input-method-setting" nodisplay="false" multiple="false" type="capp" taskmanage="false">
-            <icon>/usr/share/icons/default/small/org.tizen.input-method-setting.png</icon>
-                <label>Keyboard setting Appcontrol</label>
-                <label xml:lang="en-us">Keyboard setting</label>
-                <application-service>
-                    <operation name="http://tizen.org/appcontrol/operation/setting/ime"/>
-                </application-service>
+        <ui-application appid="org.tizen.input-method-setting-list" exec="/usr/apps/org.tizen.input-method-setting/bin/input-method-setting-list" nodisplay="true" multiple="false" type="capp" taskmanage="false" process-pool="true">
+            <icon>/usr/share/icons/default/small/org.tizen.input-method-setting-list.png</icon>
+            <label>IME List</label>
+            <label xml:lang="en-us">IME List</label>
        </ui-application>
+
+       <ui-application appid="org.tizen.input-method-setting-selector" exec="/usr/apps/org.tizen.input-method-setting/bin/input-method-setting-selector" nodisplay="true" multiple="false" type="capp" taskmanage="false" process-pool="true">
+            <icon>/usr/share/icons/default/small/org.tizen.input-method-setting-selector.png</icon>
+            <label>IME Selector</label>
+            <label xml:lang="en-us">IME Selector</label>
+        </ui-application>
+
+        <privileges>
+            <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        </privileges>
 </manifest>

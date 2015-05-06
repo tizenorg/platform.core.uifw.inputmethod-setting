@@ -43,3 +43,21 @@ msgstr "पूर्वनिर्धारित कीबोर्ड"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "कीबोर्ड प्रकार"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "यो इन्पुट विधि तपाईले लेखेको सबै पाठहरू, निजी डाटा जस्तै पासवर्ड र क्रेडिट कार्ड नम्बर एकत्र गर्नमा सक्षम हुनसक्छ । यो अनुप्रयोग %1$s बाट आउँछ । यो इन्पुट विधि सक्रिय गर्ने?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "भर्चुअल कीबोर्ड"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ध्‍यान दिनुहोस्"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ठीक छ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "प्रयोग"
+

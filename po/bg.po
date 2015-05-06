@@ -43,3 +43,21 @@ msgstr "Клавиатура по подразбиране"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Тип клавиатура"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Този метод за въвеждане вероятно може да събере всичкия написан от вас текст, вкл. лични данни като пароли и номера на кредитни карти. Това идва от приложението %1$s. Активиране на този метод на въвеждане?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуална клавиатура"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Внимание"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Отказ"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Използвай"
+

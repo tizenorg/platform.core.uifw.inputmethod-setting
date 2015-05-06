@@ -43,3 +43,21 @@ msgstr "預設鍵盤"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "鍵盤類型"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "這種輸入法可能會收集輸入的所有文字，包括密碼及信用卡號碼等個人資料。這種輸入法是由應用程式 %1$s 提供。要啟用這種輸入法嗎？"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "虛擬鍵盤"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "確定"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "使用"
+

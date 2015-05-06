@@ -43,3 +43,21 @@ msgstr "Standardtastatur"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tastaturtyp"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Die Eingabemethode kann den von Ihnen eingegebenen Text, einschließlich persönliche Daten, wie Passwörter und Kreditkartennummern, sammeln. Sie stammt von der Anwendung %1$s. Diese Eingabemethode aktivieren?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelle Tastatur"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Achtung"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Abbr."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Verwenden"
+

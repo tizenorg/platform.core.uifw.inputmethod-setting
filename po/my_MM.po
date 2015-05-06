@@ -43,3 +43,21 @@ msgstr "မူရင်းပါပုံစံ ကီးဘုတ်"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ကီးဘုတ် အမျိုးအစား"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the application %1$s. Enable this input method?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtual keyboard"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "သတိ"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ပယ်ဖျက်"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "အိုကေ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "သုံးပါ"
+

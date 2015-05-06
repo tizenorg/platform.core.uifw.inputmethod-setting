@@ -43,3 +43,21 @@ msgstr "ଡିଫଲ୍ଟ କୀବୋର୍ଡ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "କୀବୋର୍ଡ୍ ପ୍ରକାର"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "ଏହି ଇନ୍‌ପୁଟ୍ ପଦ୍ଧତି ହୁଏତ ସମସ୍ତ ଟେକ୍ସଟ୍ ପ୍ରକାର ସଂଗ୍ରହ କରିବାକୁ ସାମର୍ଥ୍ୟ ହେବ, ବ୍ୟକ୍ତିଗତ ଡାଟା ଯେପରି କି ପା‌ସ୍‌ୱାର୍ଡ୍ ଏବଂ କ୍ରେଡିଟ୍ କାର୍ଡ୍ ସଂଖ୍ୟାଗୁଡିକ । ଏହା ଆପ୍ଳିକେସନ %1$s ଠାରୁ ଆସିଛି ଏହି ଇନ୍‌ପୁଟ୍ ପଦ୍ଧତି ସାମର୍ଥ୍ୟ କରିବେ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ଭର୍ଚୁଆଲ୍ କୀବୋର୍ଡ୍"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ସତର୍କତା"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ବାତିଲ୍"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ଓକେ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ବ୍ୟବହାର"
+

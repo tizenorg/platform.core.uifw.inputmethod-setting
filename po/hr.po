@@ -43,3 +43,21 @@ msgstr "Zadana tipkovnica"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Vrsta tipkovnice"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Ovaj način unosa može spremati sav uneseni tekst, uključujući osobne podatke kao npr. šifre i brojeve kreditnih kartica. Pripada aplikaciji %1$s. Uključiti ovaj način unosa?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtualna tipkovnica"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozor"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Prekid"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Koristi"
+

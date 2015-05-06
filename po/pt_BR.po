@@ -43,3 +43,21 @@ msgstr "Teclado padrão"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipo de teclado"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Este método de entrada pode conseguir recolher qualquer texto inserido, incluindo dados pessoais, tais como senhas e números de cartão de crédito. É proveniente da aplicação %1$s. Ativar este método de entrada?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teclado virtual"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atenção"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Usar"
+

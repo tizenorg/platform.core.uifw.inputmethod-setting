@@ -43,3 +43,21 @@ msgstr "ഡിഫോൾട്ട് കീബോർഡ്"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "കീബോര്‍ഡ് തരം"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "പാസ്സവേര്‍ഡുകള്‍, ക്രെഡിറ്റ് കാര്‍ഡ് നമ്പറുകള്‍ എന്നിവ പോലുള്ള സ്വകാര്യ  വിവരം ഉള്‍പ്പെടെ നിങ്ങള്‍ ടൈപ്പ് ചെയ്യുന്ന എല്ലാ ടെക്സ്റ്റും ശേഖരിക്കുന്നതിന് ഈ ഇന്‍പുട്ട് രീതിക്ക് കഴിഞ്ഞേക്കും. ഇത് ആപ്ലിക്കേഷന്‍ %$s ല്‍ നിന്നും വരുന്നു. ഈ ഇന്‍പുട്ട് രീതി പ്രാപ്തമാക്കണമോ?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "വെര്‍ച്വല്‍ കീ‌ബോര്‍ഡ്"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ശ്രദ്ധിക്കുക"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "റദ്ദാ."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ഓകെ"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "ഉപയോഗിക്കുക"
+

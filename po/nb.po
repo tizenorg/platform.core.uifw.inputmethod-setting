@@ -43,3 +43,21 @@ msgstr "Standardtastatur"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tastaturtype"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Denne inndatametoden kan klare å innhente all teksten du skriver inn, inkludert personlige data som passord og kredittkortnumre. Den kommer fra appen %1$s. Aktivere denne inndatametoden?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelt tastatur"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "OBS!"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Bruk"
+

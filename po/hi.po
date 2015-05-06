@@ -43,3 +43,21 @@ msgstr "डिफॉल्ट कीबोर्ड"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "कीबोर्ड प्रकार"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "यह इनपुट पद्धति शायद आपका लिखा सभी टेक्स्ट संग्रहित कर सकेगी, पासवर्ड तथा क्रेडिट कार्ड संख्या जैसे निजी डाटा के साथ। %1$s एप्लीकेशन से यह प्राप्त होता है। यह इनपुट पद्धति सक्षम करें?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "वर्चुअल कीबोर्ड"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ध्यान दें"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ओके"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "उपयोग करें"
+

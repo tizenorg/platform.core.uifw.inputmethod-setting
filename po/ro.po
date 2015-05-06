@@ -43,3 +43,21 @@ msgstr "Tastatură implicită"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tip de tastatură"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Este posibil ca această metodă de introducere să poată colecta tot textul pe care îl introduceţi, inclusiv datele personale precum parolele şi numerele cărţilor de credit. Provine din aplicaţia %1$s. Activaţi această metodă de introducere?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Tastatură virtuală"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atenţie"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Anul."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "OK"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Utilizare"
+

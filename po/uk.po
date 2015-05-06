@@ -43,3 +43,21 @@ msgstr "Стандартна клавіатура"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Тип клавіатури"
 
+msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
+msgstr "Цей метод введення дає змогу збирати весь текст, що вводиться, включно з особистими даними, наприклад, паролями та номерами кредитних карток. Він походить із програми %1$s. Увімкнути цей метод введення?"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Віртуальна клавіатура"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Увага"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Скасув."
+
+msgid "IDS_HELP_SK2_OK_ABB"
+msgstr "ОК"
+
+msgid "IDS_EL_BUTTON_USE"
+msgstr "Використ."
+
