@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PACKAGE=input-method-setting
+PACKAGE=inputmethod-setting
 SRCROOT=../src
 POTFILES=POTFILES.in
 

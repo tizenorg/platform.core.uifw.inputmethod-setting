@@ -106,7 +106,7 @@ static void im_setting_selector_show_ise_list(void)
 {
      int ret;
      app_control_h app_control;
-     const char *app_id = "org.tizen.input-method-setting-list"; // This is temporary. AppId can be got using pkgmgr-info later.
+     const char *app_id = "org.tizen.inputmethod-setting-list"; // This is temporary. AppId can be got using pkgmgr-info later.
      ret = app_control_create (&app_control);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_create returned %d", ret);

@@ -1,7 +1,7 @@
 %bcond_with x
 %bcond_with wayland
 
-Name:       org.tizen.input-method-setting
+Name:       org.tizen.inputmethod-setting
 Summary:    Setting Application for ISF
 Version:    0.0.1
 Release:    1
@@ -53,8 +53,8 @@ make %{?jobs:-j%jobs}
 %post
 /sbin/ldconfig
 
-mkdir -p /usr/apps/org.tizen.input-method-setting/bin
-mkdir -p /usr/apps/org.tizen.input-method-setting/res
+mkdir -p /usr/apps/org.tizen.inputmethod-setting/bin
+mkdir -p /usr/apps/org.tizen.inputmethod-setting/res
 
 %postun -p /sbin/ldconfig
 
@@ -65,10 +65,10 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/license
 
 %files
-%manifest org.tizen.input-method-setting.manifest
+%manifest org.tizen.inputmethod-setting.manifest
 %defattr(-,root,root,-)
-/usr/apps/org.tizen.input-method-setting/bin/*
-/usr/apps/org.tizen.input-method-setting/res/locale/*
+/usr/apps/org.tizen.inputmethod-setting/bin/*
+/usr/apps/org.tizen.inputmethod-setting/res/locale/*
 /usr/share/license/*
-/usr/share/packages/org.tizen.input-method-setting.xml
+/usr/share/packages/org.tizen.inputmethod-setting.xml
 /usr/share/icons/default/small/*
