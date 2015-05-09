@@ -9,7 +9,7 @@ Group:      System Environment/Libraries
 License:    Apache License, Version 2.0
 Source0:    %{name}-%{version}.tar.gz
 
-%if "%{?tizen_profile_name}" == "wearable"
+%if "%{?tizen_profile_name}" == "tv"
 ExcludeArch: %{arm} %ix86 x86_64
 %endif
 
@@ -39,6 +39,16 @@ export FFLAGS="$FFLAGS -DTIZEN_ENGINEER_MODE"
 export CFLAGS="$CFLAGS -DTIZEN_DEBUG_ENABLE"
 export CXXFLAGS="$CXXFLAGS -DTIZEN_DEBUG_ENABLE"
 export FFLAGS="$FFLAGS -DTIZEN_DEBUG_ENABLE"
+
+%if "%{?tizen_profile_name}" == "mobile"
+CFLAGS+=" -D_MOBILE";
+CXXFLAGS+=" -D_MOBILE";
+%endif
+
+%if "%{?tizen_profile_name}" == "wearable"
+CFLAGS+=" -D_WEARABLE";
+CXXFLAGS+=" -D_WEARABLE";
+%endif
 
 rm -rf CMakeFiles
 rm -rf CMakeCache.txt
