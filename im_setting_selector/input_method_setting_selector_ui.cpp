@@ -29,9 +29,6 @@
 #define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE")
 #define IM_SETTING_SELECT_KEYBOARD         dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
 
-#undef LOG_TAG
-#define LOG_TAG "IM_Setting"
-#include <dlog.h>
 using namespace std;
 
 static std::vector<ime_info_s>      g_ime_info_list;

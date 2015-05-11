@@ -31,9 +31,6 @@
 #define IM_SETTING_PACKAGE             PACKAGE
 #define IM_SETTING_LOCALE_DIR           ("/usr/apps/"PACKAGE_NAME"/res/locale")
 
-#undef LOG_TAG
-#define LOG_TAG "IM_Setting"
-#include <dlog.h>
 using namespace std;
 
 static std::vector<ime_info_s>  g_ime_info_list;

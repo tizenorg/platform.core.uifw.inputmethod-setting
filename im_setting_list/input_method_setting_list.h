@@ -23,7 +23,7 @@
 #ifdef  LOG_TAG
 #undef  LOG_TAG
 #endif
-#define LOG_TAG "INPUT_METHOD_SETTING"
+#define LOG_TAG "INPUTMETHOD_SETTING_LIST"
 
 enum
 {

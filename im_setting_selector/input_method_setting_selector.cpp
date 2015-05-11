@@ -21,10 +21,6 @@
 #include "input_method_setting_selector.h"
 #include "input_method_setting_selector_ui.h"
 
-#undef LOG_TAG
-#define LOG_TAG "IM_Setting"
-#include <dlog.h>
-
 static bool
 app_create(void *data)
 {
