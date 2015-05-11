@@ -43,9 +43,6 @@ msgstr "ডিফ'ল্ট কীব'ৰ্ড"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "কীব'ৰ্ডৰ প্ৰকাৰ"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "এই ইনপুট পদ্ধতিয়ে আপুনি টাইপ কৰা পাঠ সংগ্রহ কৰিব পাৰিব, ইয়াত ব্যক্তগত ডাটা যেনে পাছৱর্ড আৰু ক্রেডিট কার্ডৰ নম্বৰ অন্তর্ভুক্ত৷ ই এপ্লিকেচন %1$s ৰ পৰা আহে৷ এই ইনপুট পদ্ধতিক সক্ষম কৰিবনে?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ভাৰ্ছুৱেল কীব'ৰ্ড"
 
@@ -60,4 +57,16 @@ msgstr "ঠিক"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ব্যৱহাৰ"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "কীব'ৰ্ড"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "পাছৱৰ্ডৰ নিচিনা ব্যক্তিগত ডাটা আৰু ক্ৰেডিট কাৰ্ড নম্বৰ অন্তৰ্ভুক্ত কৰি আপুনি টাইপ কৰা সকলো পাঠ সংগ্ৰহ কৰিবলৈ এই ইনপুট পদ্ধতি সক্ষম হ'ব পাৰে৷ এইটো %s এপ্লিকেশ্বনৰ পৰা আহে৷ এই ইনপুট পদ্ধতি সক্ষম কৰিবলৈ সক্ষম কৰক টিপক৷"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "সক্ষম"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "কীব'ৰ্ড ছেটিংছ"
 

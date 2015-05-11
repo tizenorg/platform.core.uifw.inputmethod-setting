@@ -43,9 +43,6 @@ msgstr "Standaard toetsenbord"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Toetsenbordtype"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Met deze invoermethode wordt mogelijk alle ingegeven tekst verzameld, met inbegrip van persoonlijke gegevens als wachtwoorden en creditcardnummers. Dit is afkomstig van de applicatie %1$s. Deze invoermethode inschakelen?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtueel toetsenbord"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Gebruiken"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Toetsenborden"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Met deze invoermethode wordt mogelijk alle ingevoerde tekst verzameld, met inbegrip van persoonlijke gegevens als wachtwoorden en creditcardnummers. Dit is afkomstig van de applicatie %s. Tik op Inschakelen om deze invoermethode in te schakelen."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Aanzetten"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Toetsenbordinstellingen"
 

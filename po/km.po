@@ -43,9 +43,6 @@ msgstr "ក្ដារចុច​លំនាំដើម"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ប្រភេទ​ក្តារចុច"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "វិធី​បញ្ចូល​នេះ​ប្រហែល​ជា​អាច​ប្រមូល​អត្ថបទ​ដែល​អ្នក​វាយ​ទាំងអស់ រួម​បញ្ចូល​ទាំង​ទិន្នន័យ​ផ្ទាល់​ខ្លួន​ដូចជា​ពាក្យ​សម្ងាត់ និង លេខ​បណ្ណ​ឥណទាន។ វា​មក​ពី %1$s នៃ​កម្មវិធី។ បើក​វិធី​បញ្ចូល​នេះ?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ក្ដារចុច​និម្មិត"
 
@@ -60,4 +57,16 @@ msgstr "ព្រម"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ប្រើ"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "ក្ដារចុច"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "វិធី​បញ្ចូល​នេះ​អាច​ប្រមូល​អត្ថបទ​ទាំងអស់​ដែល​អ្នក​វាយ រួម​ទាំង​ទិន្នន័យ​ផ្ទាល់ខ្លួន ដូចជា​ពាក្យសម្ងាត់ និង លេខ​បណ្ណ​ឥណទាន។ វា​បាន​មក​ពី​កម្មវិធី %s។ ប៉ះ បើកប្រើ ដើម្បី​បើកប្រើ​វិធី​បញ្ចូល​នេះ។"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "បើក"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ការកំណត់​ក្ដារចុច"
 

@@ -43,9 +43,6 @@ msgstr "မူရင္းပါပုံစံ ကီးဘုတ္"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ကီးဘုတ္ အမ်ဳိးအစား"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the application %1$s. Enable this input method?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ပုံရိပ္ေယာင္ ကီးဘုတ္"
 
@@ -60,4 +57,16 @@ msgstr "အိုေက"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "သံုးပါ"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "ကီးဘုတ္မ်ား"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ဤျဖည့္စရာ နည္းလမ္းသည္ စကားဝွက္မ်ားႏွင့္ အေႂကြးဝယ္ကဒ္ နံပါတ္မ်ားကဲ့သို႔ ကိုယ္ေရးသီးသန္႔ ေဒတာမ်ားအပါအဝင္ သင္႐ိုက္ထည့္သည့္ စာသားအားလုံးကို ေကာက္ယူသြားႏိုင္သည္။ ၄င္းသည္ %s အပလီေကးရွင္းမွ ေပၚလာသည္။ ဤျဖည့္စရာ နည္းလမ္းကိုဖြင့္ရန္ ဖြင့္ပါကို ႏွိပ္ပါ။"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "စတင္လုပ္ေဆာင္ပါ"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ကီးဘုတ္ သတ္မွတ္ခ်က္မ်ား"
 

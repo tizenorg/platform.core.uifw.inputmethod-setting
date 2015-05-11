@@ -43,9 +43,6 @@ msgstr "מקלדת ברירת מחדל"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "סוג מקלדת"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "ייתכן ששיטת הזנה זו תאסוף את כל הטקסט שהקלדת, כולל נתונים אישיים כגון סיסמאות ומספרי כרטיסי אשראי.  הבקשה מגיעה מהיישום %1$s‏. לאפשר שיטת הזנה זו?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "מקלדת וירטואלית"
 
@@ -60,4 +57,16 @@ msgstr "אישור"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "השתמש"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "מקלדות"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ייתכן ששיטת הזנה זו תוכל לאסוף את כל הטקסט שאתה מקליד, כולל נתונים אישיים כמו סיסמאות ומספרי כרטיסי אשראי. מגיע מהיישום %s. הקש על 'הפעל' כדי להפעיל שיטת הזנה זו."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "הפעל"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "הגדרות מקלדת"
 

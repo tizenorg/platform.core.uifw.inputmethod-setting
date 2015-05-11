@@ -43,9 +43,6 @@ msgstr "ნაგულისხმევი კლავიატურა"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "კლავიატურის ტიპი"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "ტექსტის შედგენის ამ მეთოდით შეგიძლიათ შეაგროვოთ თქვენს მიერ აკრეფილი ყველა ტექსტი, პერსონალური მონაცემების ჩათვლით, როგორიცაა პაროლები და საკრედიტო ბარათების ნომრები. ამის წყაროა პროგრამის %1$s. გააქტიურდეს ტექსტის შედგენის ეს მეთოდი?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ვირტუალური კლავიატურა"
 
@@ -60,4 +57,16 @@ msgstr "კი"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "გამოყენ."
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "კლავიატურები"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ტექსტის შედგენის ამ მეთოდით შეგიძლიათ, შეაგროვოთ თქვენ მიერ აკრეფილი ყველა ტექსტი, პერსონალური მონაცემების ჩათვლით, როგორიცაა პაროლები და საკრედიტო ბარათების ნომრები. ეს მოდის %s აპლიკაციიდან. ინფორმაციის შეყვანის მეთოდის ჩასართავად, შეეხეთ ჩართვის ნიშანს."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ჩართვა"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "კლავიატურის პარამეტრები"
 

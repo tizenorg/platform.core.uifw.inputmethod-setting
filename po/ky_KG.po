@@ -43,9 +43,6 @@ msgstr "Баштапкы клавиатура"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Ариптакта түрү"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the application %1$s. Enable this input method?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Виртуалдык клавиатура"
 
@@ -60,4 +57,16 @@ msgstr "ОК"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Колдонуу"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Клавиатуралар"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Бул жазуу ыкмасы сиз жазган бардык текстти чогулта алат, сызсөздөр жана насыя карта номерлери сыяктуу жеке маалыматтарды дагы. Бул %s колдонмодон келет. Бул жазуу ыкмасын Иштетүүгө, иштетүүнү басыңыз."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Иштетүү"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Клавиатура орнотуулары"
 

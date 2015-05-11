@@ -24,12 +24,11 @@
 static bool
 app_create(void *data)
 {
+    LOGD("");
     /* Hook to take necessary actions before main event loop starts
        Initialize UI resources and application's data
        If this function returns true, the main loop of application starts
        If this function returns false, the application is terminated */
-
-    im_setting_selector_app_create(data);
 
     return true;
 }
@@ -38,32 +37,61 @@ static void
 app_control(app_control_h app_control, void *data)
 {
     /* Handle the launch request. */
+    appdata *ad = (appdata *)data;
+    char* type = NULL;
+
+    LOGD("");
+
+    int res = app_control_get_extra_data(app_control, "caller", &type);
+    if(APP_CONTROL_ERROR_NONE == res && NULL != type && strcmp(type,"settings") == 0)
+    {
+        ad->app_type = APP_TYPE_SETTING;
+    }
+    else
+    {
+        ad->app_type = APP_TYPE_NORMAL;
+    }
+    ad->app_state = APP_STATE_SERVICE;
+    im_setting_selector_app_create(ad);
+    if(NULL != type)
+    {
+        free(type);
+    }
 }
 
 static void
 app_pause(void *data)
 {
+    LOGD("");
     /* Take necessary actions when application becomes invisible. */
-    im_setting_selector_app_pause(data);
+    appdata *ad = (appdata *)data;
+    ad->app_state = APP_STATE_PAUSE;
+    im_setting_selector_app_pause(ad);
 }
 
 static void
 app_resume(void *data)
 {
+    LOGD("");
     /* Take necessary actions when application becomes visible. */
-//    action_on_resume(data);
+    appdata *ad = (appdata *)data;
+    ad->app_state = APP_STATE_RESUME;
 }
 
 static void
 app_terminate(void *data)
 {
+    LOGD("");
     /* Release all resources. */
-//    action_on_destroy(data);
+    appdata *ad = (appdata *)data;
+    ad->app_state = APP_STATE_TERMINATE;
+    im_setting_selector_app_terminate(ad);
 }
 
 static void
 ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 {
+    LOGD("");
     /*APP_EVENT_LANGUAGE_CHANGED*/
 /*    char *locale = vconf_get_str(VCONFKEY_LANGSET);
     if (locale) {
@@ -76,6 +104,7 @@ ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 static void
 ui_app_orient_changed(app_event_info_h event_info, void *user_data)
 {
+    LOGD("");
     /*APP_EVENT_DEVICE_ORIENTATION_CHANGED*/
     return;
 }
@@ -83,22 +112,24 @@ ui_app_orient_changed(app_event_info_h event_info, void *user_data)
 static void
 ui_app_region_changed(app_event_info_h event_info, void *user_data)
 {
+    LOGD("");
     /*APP_EVENT_REGION_FORMAT_CHANGED*/
 }
 
 static void
 ui_app_low_battery(app_event_info_h event_info, void *user_data)
 {
+    LOGD("");
     /*APP_EVENT_LOW_BATTERY*/
 }
 
 static void
 ui_app_low_memory(app_event_info_h event_info, void *user_data)
 {
+    LOGD("");
     /*APP_EVENT_LOW_MEMORY*/
 }
 
-#if 1
 int
 main(int argc, char *argv[])
 {
@@ -119,13 +150,12 @@ main(int argc, char *argv[])
     ui_app_add_event_handler(&handlers[APP_EVENT_DEVICE_ORIENTATION_CHANGED], APP_EVENT_DEVICE_ORIENTATION_CHANGED, ui_app_orient_changed, &ad);
     ui_app_add_event_handler(&handlers[APP_EVENT_LANGUAGE_CHANGED], APP_EVENT_LANGUAGE_CHANGED, ui_app_lang_changed, &ad);
     ui_app_add_event_handler(&handlers[APP_EVENT_REGION_FORMAT_CHANGED], APP_EVENT_REGION_FORMAT_CHANGED, ui_app_region_changed, &ad);
-    ui_app_remove_event_handler(handlers[APP_EVENT_LOW_MEMORY]);
 
     ret = ui_app_main(argc, argv, &event_callback, &ad);
     if (ret != APP_ERROR_NONE) {
-       LOGD("ui_app_main failed, Err=%d\n", ret);
+       LOGW("ui_app_main failed, Err=%d\n", ret);
     }
 
     return ret;
 }
-#endif
+

@@ -43,9 +43,6 @@ msgstr "แป้นพิมพ์เริ่มต้น"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ชนิด​แป้น​พิมพ์"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "วิธี​เขียน​นี้​อาจ​ใช้​รวบ​รวม​ข้อ​ความ​ทั้ง​หมด​ที่​คุณ​พิมพ์ รวม​ทั้ง​ข้อมูล​ส่วน​บุคคล​อย่าง​รหัส​ผ่าน​และ​หมาย​เลข​บัตร​เครดิต มา​จาก​แอ​พ​​พลิ​เค​ชั่น %1$s ​​​เปิด​ใช้​วิธี​เขียน​นี้?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "แป้นพิมพ์เสมือน"
 
@@ -60,4 +57,16 @@ msgstr "ตกลง"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ใช้"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "แป้นพิมพ์"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "วิธีเขียนนี้อาจสามารถรวบรวมข้อความทั้งหมดที่คุณพิมพ์ รวมทั้งข้อมูลส่วนตัว เช่น รหัสผ่าน และหมายเลขบัตรเครดิตได้ มาจากแอพพลิเคชั่น %s สัมผัส เปิดใช้งาน เพื่อเปิดใช้งานวิธีเขียนนี้"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "เปิดใช้งาน"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "การตั้งค่าแป้นพิมพ์"
 

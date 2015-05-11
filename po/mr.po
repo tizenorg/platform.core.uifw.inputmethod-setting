@@ -43,9 +43,6 @@ msgstr "डिफॉल्‍ट कीबोर्ड"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "कीबोर्ड प्रकार"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "ही निविष्ट पद्धत कदाचित पासवर्ड आणि क्रेडिट कार्ड क्रमांकांसारख्या वैयक्तिक डेटासह आपण टाईप केलेला सर्व मजकूर गोळा करू शकेल. ते %1$s पासून प्राप्त होते. ही निविष्ट पद्धत सक्षम करू?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "आभासी कीबोर्ड"
 
@@ -60,4 +57,16 @@ msgstr "ठीक"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "वापरा"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "कीबोर्ड्स"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ही निविष्‍ट पद्धत कदाचित, पासवर्ड्स आणि क्रेडिट कार्ड क्रमांकांसारखा व्‍यक्तिगत डेटा मिळून आपण टाइप केलेला सर्व मजकूर गोळा करण्‍यात सक्षम असेल. हे %s अनुप्रयोगावरून मिळते. ही निविष्‍ट पद्धत सक्षम करण्‍यासाठी सक्षम करा टॅप करा."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "सक्रिय"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "कीबोर्ड सेटिंग्स"
 

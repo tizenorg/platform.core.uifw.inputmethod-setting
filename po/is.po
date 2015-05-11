@@ -43,9 +43,6 @@ msgstr "Sjálfgefið lyklaborð"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Lyklaborðsgerð"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Ef þessi innsláttaraðferð er notuð er hægt að skrá allan texta sem þú slærð inn, svo sem lykilorð og kreditkortanúmer. Hana er að finna í %1$s. Viltu nota þessa innsláttaraðferð?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Sýndarlyklaborð"
 
@@ -60,4 +57,16 @@ msgstr "Í lagi"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Nota"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Lyklaborð"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Þessi innsláttaraðferð getur hugsanlega safnað öllum texta sem þú slærð inn, þar á meðal persónulegum gögnum á borð við lykilorð og kreditkortanúmer. Hún fylgir forritinu „%s“. Pikkaðu á „Kveikja“ til að kveikja á þessari innsláttaraðferð."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Gera virkt"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Stillingar lyklaborðs"
 

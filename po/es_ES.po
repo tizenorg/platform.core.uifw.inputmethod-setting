@@ -43,9 +43,6 @@ msgstr "Teclado predeterminado"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tipo de teclado"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Puede que este método de entrada recopile todo el texto que escriba, incluidos los datos personales como contraseñas y números de tarjetas de crédito. Viene con la aplicación %1$s. ¿Permitir este método de entrada?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Teclado virtual"
 
@@ -60,4 +57,16 @@ msgstr "Aceptar"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Usar"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Teclados"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Este método de entrada puede recopilar todos los textos que escriba, incluidos datos personales como contraseñas o números de tarjeta de crédito. Viene con la aplicación %s. Pulse Activar para activar este método de entrada."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Habilitar"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Ajustes del teclado"
 

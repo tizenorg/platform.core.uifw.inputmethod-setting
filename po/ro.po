@@ -43,9 +43,6 @@ msgstr "Tastatură implicită"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tip de tastatură"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Este posibil ca această metodă de introducere să poată colecta tot textul pe care îl introduceţi, inclusiv datele personale precum parolele şi numerele cărţilor de credit. Provine din aplicaţia %1$s. Activaţi această metodă de introducere?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Tastatură virtuală"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Utilizare"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Tastaturi"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Această metodă de introducere poate colecta toate textele pe care le tastaţi, inclusiv date personale, cum ar fi parolele şi numerele cărţilor de credit. Provine de la aplicaţia %s. Atingeţi Activare pentru a activa metoda de introducere."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Activare"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Setări tastatură"
 

@@ -43,9 +43,6 @@ msgstr "صفحه‌کلید پیش‌فرض"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "نوع صفحه کلید"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "این روش ورودی ممکن است تمام متن های نوشته شده شما را جمع آوری کند، از جمله اطلاعات شخصی مانند رمز عبور و شماره کارت های اعتباری. این امر حاصل از برنامه %1$s است. این روش ورودی فعال شود؟"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "صفحه کلید مجازی"
 
@@ -60,4 +57,16 @@ msgstr "تأیید"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "استفاده"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "صفحه کلیدها"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "این روش ورودی می‌تواند کل متنی که تایپ می‌کنید، شامل داده‌های شخصی مانند رمزهای ورود و شماره‌های کارت اعتباری را جمع‌آوری نماید. این اطلاعات از برنامه ‎%s می‌آیند. برای فعال کردن این روش ورودی، روی فعال کردن ضربه بزنید."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "فعال"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "تنظیمات صفحه کلید"
 

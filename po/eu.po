@@ -43,9 +43,6 @@ msgstr "Lehenetsitako teklatua"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Teklatu mota"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Litekeena da sarrera metodo honek idazten duzun testu guztia jasotzea, baita datu pertsonalak ere, esaterako, pasahitzak eta kreditu txartelen zenbakiak. %1$s aplikazioarena da. Gaitu sarrera metodo hau?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Teklatu birtuala"
 
@@ -60,4 +57,16 @@ msgstr "Ados"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Erabili"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Teklatuak"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Baliteke sarrera metodo honek idazten duzun testua biltzeko gai izatea, pasahitzak eta kreditu txartelen zenbakiak bezalako datu pertsonalak barne. %s aplikaziotik dator. Ukitu Gaitu sarrera metodo hau gaitzea."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Gaitu"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Teklatuaren ezarpenak"
 

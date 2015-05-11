@@ -43,9 +43,6 @@ msgstr "Әдепкі пернетақта"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Пернетақта түрі"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Бұл енгізу әдісі терілетін барлық мәтінді, оның ішінде, құпиясөздерді және несиелік карта нөмірлерін жинай алады. Ол %1$s қосымшасынан алынады. Бұл енгізу әдісін қосу керек пе?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Виртуалды пернетақта"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Пайдалану"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Пернетақталар"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Бұл енгізу әдісі арқылы құпия сөздер мен несие карта нөмірлері сияқты жеке деректерді қамтитын енгізілген барлық мәтінді жинауға болады. Ол %s қолданбасынан алынады. Осы енгізу әдісін қосу үшін, “Қосу” түймесін түртіңіз."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Қосу"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Пернетақта параметрлері"
 

@@ -43,9 +43,6 @@ msgstr "Կանխադրված ստեղնաշար"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Ստեղնաշարի տեսակը"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Ներմուծման այս եղանակով կարող հնարավոր լինել հավաքել ձեր մուտքագրվող ամբողջ գրվածքը, անձնական տվյալները ներառյալ, ինչպիսիք են գաղտնաբառերը և վարկային քարտերի համարները։ Դա գալիս է %1$s գործադրից։ Միացնե՞լ ներմուծման այս եղանակը"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Վիրտուալ ստեղնաշար"
 
@@ -60,4 +57,16 @@ msgstr "Ընդունել"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Օգտգործել"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Ստեղնաշարեր"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Այս ներածման եղանակը կկարողանա հավաքել Ձեր մուտքագրած ամբողջ տեքստը, ներառյալ անձնական տվյալները, ինչպիսիք են գաղտնաբառերը և վարկային քարտի համարները: Դա արդյունք է %s ծրագրի: Թակեք «Ընձեռել»՝ այս ներածման եղանակն ընձեռելու համար:"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Ակտիվացնլ"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Ստեղնաշարի դրվածքներ"
 

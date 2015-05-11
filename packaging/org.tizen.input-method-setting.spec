@@ -78,7 +78,7 @@ mkdir -p %{buildroot}/usr/share/license
 %manifest org.tizen.inputmethod-setting.manifest
 %defattr(-,root,root,-)
 /usr/apps/org.tizen.inputmethod-setting/bin/*
-/usr/apps/org.tizen.inputmethod-setting/res/locale/*
+/usr/apps/org.tizen.inputmethod-setting/res/*
 /usr/share/license/*
 /usr/share/packages/org.tizen.inputmethod-setting.xml
 /usr/share/icons/default/small/*

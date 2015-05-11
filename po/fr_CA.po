@@ -43,9 +43,6 @@ msgstr "Clavier par défaut"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Type de clavier"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "La méthode de saisie peut collecter tout le texte saisi, notamment les données personnelles telles que les mots de passe et les numéros de carte bancaire. Cela vient de l'application %1$s. Activer cette méthode de saisie ?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Clavier tactile"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Utiliser"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Claviers"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Ce mode de saisie peut collecter tout le texte saisi, notamment les données personnelles telles que les mots de passe et les numéros de carte de crédit. Cela vient de l'application %s. Appuyez sur Activer pour activer ce mode de saisie."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Activer"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Paramètres du clavier"
 

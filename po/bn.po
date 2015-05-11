@@ -43,9 +43,6 @@ msgstr "ডিফল্ট কীবোর্ড"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "কীবোর্ডের প্রকার"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "এই ইনপুট পদ্ধতিটি পাসওয়ার্ড ও ক্রেডিট কার্ড নম্বরের মত ব্যক্তিগত ডেটা সহ আপনার টাইপ করা সমস্ত টেক্সট্ সংগ্রহ করতে সক্ষম হতে পারে। এটি %1$s অ্যাপ্লিকেশনে পাওয়া যাবে। এই ইনপুট পদ্ধতিটি সক্রিয় করবেন?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ভার্চুয়াল কীবোর্ড"
 
@@ -60,4 +57,16 @@ msgstr "ওকে"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ব্যবহার"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "কীবোর্ডগুলি"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "এই ইনপুট পদ্ধতিটি ব্যক্তিগত তথ্য যেমন পাসওয়ার্ডগুলি ও ক্রেডিট কার্ড নম্বরগুলি সহ আপনার লেখা সমস্ত পাঠ্য সংগ্রহ করতে সমর্থ হতে পারে। এটি %s অ্যাপ্লিকেশন থেকে আসে। এই ইনপুট পদ্ধতি সক্ষম করতে সক্ষম করুন ট্যাপ করুন।"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "সক্ষম"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "কীবোর্ড সেটিংস"
 

@@ -43,9 +43,6 @@ msgstr "Noklusējuma tastatūra"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tastatūras veids"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Šī ievades metode var savākt visu jūsu ievadīto tekstu, tostarp personīgo informāciju, piemēram, paroles un kredītkaršu numurus. Tā pieder programmai %1$s. Vai iespējot šo ievades metodi?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtuālā tastatūra"
 
@@ -60,4 +57,16 @@ msgstr "Labi"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Lietot"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Tastatūras"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Šī ievades metode var apkopot visu jūsu ievadīto tekstu, tostarp personiskos datus, piemēram, paroles un kredītkaršu numurus. Šis pakalpojums ir iekļauts programmā %s. Pieskarieties pie Aktivizēt, lai aktivizētu šo ievades metodi."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Aktivizēt"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Tastatūras iestatījumi"
 

@@ -43,9 +43,6 @@ msgstr "டீஃபால்ட் விசைப்பலகை"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "விசைப்பலகை வகை"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "இந்த உள்ளீடு முறை நீங்கள் டைப் செய்த அனைத்து உரையான தனிப்பட்ட தரவான கடவுச்சொற்கள் மற்றும் கிரிடிட் கார்ட் எண்கள் போன்றவற்றை சேகரிக்கலாம். இது பயன்பாடு %1$s இலிருந்து வருகிறது. இந்த உள்ளீடு முறையை செயல்படுத்தவா?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "மெய்நிகர் விசைப்பலகை"
 
@@ -60,4 +57,16 @@ msgstr "சரி"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "பயன்."
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "விசைப்பலகைகள்"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "இந்த உள்ளீட்டு முறையால், கடவுச்சொற்கள் மற்றும் கடனட்டை எண்கள் போன்ற தனிப்பட்ட தரவு உட்பட நீங்கள் தட்டச்சு செய்த அனைத்து உரையும் சேகரிக்க இயலும். %s பயன்பாட்டிலிருந்து இது வருகிறது. இந்த உள்ளீட்டு முறையை செயல்படுத்த செயல்படுத்தவும் என்பதை டேப் செய்க."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "செயல்படுத்துக"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "விசைப்பலகை அமைவுகள்"
 

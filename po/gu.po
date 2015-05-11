@@ -43,9 +43,6 @@ msgstr "મૂળભૂત કીબોર્ડ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "કીબોર્ડ પ્રકાર"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "આ ઇનપુટ તમે ટાઈપ કરેલા બધા જ ટેક્સ્ટને એકત્ર કરી શકે છે, વ્યક્તિગત ડેટા જેમ કે પાસવર્ડ અને ક્રેડિટ કાર્ડ નંબરને સામેલ કરીને. એ %1$s એપ્લિકેશન માંથી આવે છે. આ ઇનપુટ પદ્ઘતિ ને સક્રિય કરીએ?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "આભાસી કીબોર્ડ"
 
@@ -60,4 +57,16 @@ msgstr "ઓકે"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ઉપયોગ કરો"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "કીબોર્ડ્સ"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "આ ઇનપુટ પદ્ધતિ પાસવર્ડ્સ અને ક્રેડિટ કાર્ડ નંબર્સ જેવી વ્યક્તિગત માહિતી સહિત તમે ટાઇપ કરો તે બધા ટેક્સ્ટને એકત્ર કરવા માટે સમર્થ હોઈ શકે છે. તે %s એપ્લિકેશનમાંથી આવે છે. આ ઇનપુટ પદ્ધતિને સક્ષમ કરવા માટે સક્ષમ કરો ટેપ કરો."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "સક્ષમ કરો"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "કિબોર્ડ સેટિંગ્સ"
 

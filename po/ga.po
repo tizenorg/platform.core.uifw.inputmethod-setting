@@ -43,9 +43,6 @@ msgstr "Eochairchlár réamhshocraithe"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Cineál eochairchláir"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Is féidir leis an modh ionchuir seo gach téacs a scríobhann tú a bhailiú, lena n-áirítear sonraí pearsanta amhail pasfhocail agus uimhreacha cártaí creidmheasa. Is as an feidhmchlár %1$s é. Cumasaigh an modh ionchuir seo?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Eochairchlár fíorúil"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Úsáid"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Eochairchláir"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Is féidir go mbeidh an modh ionchuir seo in ann an téacs uile a chlóscríobhfaidh tú a bhailiú, lena n-áirítear sonraí pearsanta amhail pasfhocail agus uimhreacha cárta creidmheasa. Tagann sé ón bhfeidhmchlár %s. Tapáil Cumasaigh leis an modh ionchuir seo a chumasú."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Cumasaigh"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Socruithe eochairchláir"
 

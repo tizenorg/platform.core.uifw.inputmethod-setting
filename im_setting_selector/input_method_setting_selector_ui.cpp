@@ -124,6 +124,7 @@ static void im_setting_selector_show_ise_list(void)
          return;
      }
 
+     app_control_add_extra_data(app_control, "caller", "verify");
      ret = app_control_send_launch_request(app_control, NULL, NULL);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
@@ -309,13 +310,14 @@ Evas_Object *im_setting_selector_popup_create(void *data)
                          NULL);
     elm_naviframe_item_pop_cb_set(nf_main_item, im_setting_list_navi_item_pop_cb, ad);
 
-    Evas_Object *btn = elm_button_add(ad->popup);
-    elm_object_text_set(btn, IM_SETTING_SELECT_KEYBOARD);
-    // Setting this action button
-    elm_object_part_content_set(ad->popup, "button1", btn);
-    evas_object_smart_callback_add(btn, "clicked", im_setting_selector_select_keyboard_cb, ad);
-    elm_object_content_set(ad->popup, ad->genlist);
+    if(APP_TYPE_SETTING != ad->app_type){
+        Evas_Object *btn = elm_button_add(ad->popup);
+        elm_object_text_set(btn, IM_SETTING_SELECT_KEYBOARD);
+        elm_object_part_content_set(ad->popup, "button1", btn);
+        evas_object_smart_callback_add(btn, "clicked", im_setting_selector_select_keyboard_cb, ad);
+    }
 
+    elm_object_content_set(ad->popup, ad->genlist);
     evas_object_show(ad->popup);
 }
 
@@ -336,4 +338,14 @@ void
 im_setting_selector_app_pause(void *data)
 {
     elm_exit();
+}
+
+void im_setting_selector_app_terminate(void *data)
+{
+    g_ime_info_list.clear();
+    if(NULL != itc_im_selector)
+    {
+        elm_genlist_item_class_free(itc_im_selector);
+        itc_im_selector = NULL;
+    }
 }

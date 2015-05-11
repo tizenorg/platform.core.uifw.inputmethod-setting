@@ -43,9 +43,6 @@ msgstr "Privzeta tipkovnica"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Vrsta tipkovnice"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Ta način vnosa zbere celotno natipkano besedilo, tudi osebne podatke, kot so gesla in številke kreditnih kartic. Prihaja od aplikacije %1$s. Omogočim ta način vnosa?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Navidezna tipkovnica"
 
@@ -60,4 +57,16 @@ msgstr "V redu"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Uporabi"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Tipkovnice"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Ta način vnosa lahko zbere celotno vneseno besedilo, vključno z osebnimi podatki, kot so gesla in številke kreditnih kartic. Ta način vnosa uporablja aplikacija %s. Pritisnite Omogoči, da omogočite ta način vnosa."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Omogoči"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Nastavitve tipkovnice"
 

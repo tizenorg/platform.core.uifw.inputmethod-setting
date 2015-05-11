@@ -43,9 +43,6 @@ msgstr "ڈیفالٹ کی بورڈ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "کیی بورڈ قسم"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "یہ ان پٹ کا طریقہ ممکن ہے وہ تمام متن جمع کرنے کا اہل ہو جو آپ ٹائپ کریں، بشمول شخصی کوائف جیسے کہ پاس ورڈ اور کریڈٹ کارڈ نمبر۔ یہ ایپلیکیشن %1$s سے آتا ہے۔ اس ان پٹ کے طریقے کو اہل کریں؟"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "مجازی کی بورڈ"
 
@@ -60,4 +57,16 @@ msgstr "ٹھیک"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "استعمال کریں"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "کی بورڈز"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "اس ان پٹ طریقہ سے ہو سکتا ہے آپ کے ذریعے ٹائپ کیا ہوا تمام متن جمع کیا جا سکتا ہے، بشمول ذاتی ڈیٹا جیسا کہ پاس ورڈز اور کریڈٹ کارڈوں کے نمبر۔ یہ %s ایپلیکیشن سے آیا ہے۔ اس ان پٹ طریقہ کو اہل کرنے کے لیے اہل کریں پر تھپکی دیں۔"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "فعال"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "کی بورڈ کی ترتیبات"
 

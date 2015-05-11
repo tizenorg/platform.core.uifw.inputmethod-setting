@@ -43,9 +43,6 @@ msgstr "డిఫాల్ట్ కీబోర్డు"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "కీబోర్డు రకం"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "మీరు టైప్ చెసిన పాఠ్ఠాన్ని కలేక్ట్ చేయ్యడానికి ఈ ఇన్పుట్ మోథడు ఎబల్,పర్సనల్ డాటాతో పాస్వర్డ్ మరియు క్రేడిట్ కార్డుల నెంబర్లులాగా. %1$s ఇది అప్లికేషన్ నుండి వస్తూంది. ఈ మూలాంశమును మెథడ్ ని ఎనేబుల్ చేయ్యచ్చా?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "వర్చువల్ కీబోర్డ్"
 
@@ -60,4 +57,16 @@ msgstr "సరే"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ఉపయోగించండి"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "కీబోర్డ్‌లు"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ఈ ఇన్‌పుట్ పాస్‌వర్డ్‌లు మరియు క్రెడిట్ కార్డ్ నంబర్‌ల వంటి వ్యక్తిగత డేటాతో సహా, మీరు టైప్ చేసే ప్రతిదాన్ని సేకరించవచ్చు. ఇది %s అప్లికేషన్ నుండి వస్తుంది. ఈ ఇన్‌పుట్ పద్దతిని ప్రారంభించడానికి ప్రారంభించు ట్యాప్ చేయండి."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ఎనేబుల్ చేయి"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "కీబోర్డ్ సెట్టింగ్‌లు"
 

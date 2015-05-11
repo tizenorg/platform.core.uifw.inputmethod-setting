@@ -43,9 +43,6 @@ msgstr "Papan kekunci lalai"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Jenis papan kekunci"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Kaedah input ini mungkin boleh mengumpulkan semua teks yang anda taipkan, termasuk data peribadi seperti kata laluan dan nombor kad kredit. Ia datang dari %1$s aplikasi. Aktifkan kaedah input ini?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Papan kekunci maya"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Guna"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Papan kekunci"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Kaedah input ini boleh mengumpul semua teks yang anda taip, termasuklah data peribadi seperti kata laluan dan nombor kad kredit. Ia datang daripada aplikasi %s. Ketik Aktifkan untuk mengaktfikan kaedah input ini."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Aktif"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Aturan papan kekunci"
 

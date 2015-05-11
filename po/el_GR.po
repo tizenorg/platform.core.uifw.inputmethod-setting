@@ -43,9 +43,6 @@ msgstr "Προεπιλεγμένο πληκτρολόγιο"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Τύπος πληκτρολογίου"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Αυτή η μέθοδος εισαγωγής μπορεί να συλλέγει όλα όσα πληκτρολογείτε, συμπεριλαμβανομένων προσωπικών δεδομένων, όπως κωδικοί πρόσβασης και αριθμοί πιστωτικών καρτών. Προέρχεται από την εφαρμογή του %1$s. Να ενεργοποιηθεί αυτή η μέθοδος εισαγωγής;"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Εικονικό πληκτρολόγιο"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Χρήση"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Πληκτρολόγια"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Η μέθοδος εισαγωγής μπορεί να συλλέγει όλα όσα πληκτρολογείτε, συμπεριλαμβανομένων προσωπικών δεδομένων, όπως κωδικοί πρόσβασης και αριθμοί πιστωτικών καρτών. Προέρχεται από την εφαρμογή του %s. Πατήστε «Ενεργοποίηση» για να ενεργοποιηθεί αυτή η μέθοδος εισαγωγής."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Ενεργό"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Ρυθμίσεις πληκτρολογίου"
 

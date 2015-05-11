@@ -21,12 +21,17 @@
 #include <vector>
 #include "isf_control.h"
 
-#define IM_SETTING_LIST_TITLE                   dgettext(PACKAGE, "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB")
-#define IM_SETTING_LIST_KEYBOARD                dgettext(PACKAGE, "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS")
+#define IM_SETTING_LIST_TITLE                   dgettext(PACKAGE, "IDS_IME_BODY_KEYBOARD")
+#define IM_SETTING_LIST_KEYBOARD_HEADER         dgettext(PACKAGE, "IDS_ST_HEADER_KEYBOARDS")
 #define IM_SETTING_LIST_POPUP_TITLE             dgettext(PACKAGE, "IDS_ST_BODY_ATTENTION")
-#define IM_SETTING_LIST_POPUP_TEXT              dgettext(PACKAGE, "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS")
 #define IM_SETTING_LIST_POPUP_CANCEL            dgettext(PACKAGE, "IDS_COM_SK_CANCEL_ABB")
 #define IM_SETTING_LIST_POPUP_OK                dgettext(PACKAGE, "IDS_HELP_SK2_OK_ABB")
+#define IM_SETTING_LIST_POPUP_CANCEL            dgettext(PACKAGE, "IDS_COM_SK_CANCEL_ABB")
+#define IM_SETTING_LIST_POPUP_OK                dgettext(PACKAGE, "IDS_HELP_SK2_OK_ABB")
+#define IM_SETTING_LIST_VIRTUAL_KEYBOARD        dgettext(PACKAGE, "IDS_ST_HEADER_VIRTUAL_KEYBOARD")
+#define IM_SETTING_LIST_DEFAULT_KEYBOARD        dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
+#define IM_SETTING_LIST_KEYBOARD_SETTING        dgettext(PACKAGE, "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB")
+#define IM_SETTING_LIST_POPUP_TEXT              dgettext(PACKAGE, "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT                                                                  _YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_                                                                   NUMBERS_MSG")
 
 #define IM_SETTING_PACKAGE             PACKAGE
 #define IM_SETTING_LOCALE_DIR           ("/usr/apps/"PACKAGE_NAME"/res/locale")
@@ -34,8 +39,17 @@
 using namespace std;
 
 static std::vector<ime_info_s>  g_ime_info_list;
-static Elm_Genlist_Item_Class  *itc_im_list = NULL;
+static Elm_Genlist_Item_Class  *itc_im_list_keyboard_list = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_group = NULL;
+static Elm_Genlist_Item_Class  *itc_im_list_item = NULL;
+static Elm_Genlist_Item_Class  *itc_im_list_item_one_line = NULL;
+
+typedef struct list_item_text_s
+{
+    char main_text[255];
+    char sub_text[255];
+}list_item_text;
+list_item_text item_text[2];
 
 typedef struct popup_cb_data_s
 {
@@ -87,6 +101,7 @@ static Evas_Object* im_setting_list_bg_create(Evas_Object *parent)
 static void im_setting_list_load_ise_info(void)
 {
     ime_info_s *info = NULL;
+    g_ime_info_list.clear();
     int cnt = isf_control_get_all_ime_info(&info);
     if(info)
     {
@@ -100,6 +115,41 @@ static void im_setting_list_load_ise_info(void)
     {
         LOGD("isf_control_get_all_ime_info failed\n");
     }
+}
+
+static void im_setting_list_show_ise_selector(void)
+{
+    int ret;
+    app_control_h app_control;
+    const char *app_id = "org.tizen.inputmethod-setting-selector"; // This is temporary. AppId can be got using pkgmgr-info later.
+    ret = app_control_create (&app_control);
+    if (ret != APP_CONTROL_ERROR_NONE) {
+          LOGD("app_control_create returned %d", ret);
+          return;
+    }
+
+    ret = app_control_set_operation (app_control, APP_CONTROL_OPERATION_DEFAULT);
+    if (ret != APP_CONTROL_ERROR_NONE) {
+          LOGD("app_control_set_operation returned %d", ret);
+          app_control_destroy(app_control);
+          return;
+      }
+
+      ret = app_control_set_app_id (app_control, app_id);
+      if (ret != APP_CONTROL_ERROR_NONE) {
+          LOGD("app_control_set_app_id returned %d", ret);
+          app_control_destroy(app_control);
+          return;
+      }
+
+      app_control_add_extra_data(app_control, "caller", "settings");
+      ret = app_control_send_launch_request(app_control, NULL, NULL);
+      if (ret != APP_CONTROL_ERROR_NONE) {
+         LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
+         app_control_destroy(app_control);
+         return;
+      }
+      app_control_destroy(app_control);
 }
 
 static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj, void *event_info)
@@ -181,6 +231,20 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     evas_object_show(popup);
 }
 
+static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+    elm_genlist_item_selected_set (item, EINA_FALSE);
+    im_setting_list_show_ise_selector();
+}
+
+static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+    elm_genlist_item_selected_set (item, EINA_FALSE);
+    isf_control_show_ise_option_window();
+}
+
 static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
 {
     Evas_Object *conform = elm_conformant_add(parentWin);
@@ -231,7 +295,7 @@ static Evas_Object *im_setting_list_genlist_group_icon_get(void *data, Evas_Obje
     return item;
 }
 
-static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
+static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)(data);
     if (!strcmp(part, "elm.text.main.left.top") ||
@@ -241,16 +305,10 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
         !strcmp(part, "elm.text.1")) {
         return strdup(g_ime_info_list[index].appid);
     }
-
-    if (!strcmp(part, "elm.text.sub.left.bottom") ||
-        !strcmp(part, "elm.text.multiline") ||
-        !strcmp(part, "elm.text.2")) {
-        return strdup(g_ime_info_list[index].label);
-    }
     return NULL;
 }
 
-static Evas_Object *im_setting_list_genlist_item_icon_get(void *data, Evas_Object *obj, const char *part)
+static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)(data);
     if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
@@ -265,24 +323,93 @@ static Evas_Object *im_setting_list_genlist_item_icon_get(void *data, Evas_Objec
     return NULL;
 }
 
-static void im_setting_list_genlist_item_class_create(void)
+static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
-    itc_im_list_group = elm_genlist_item_class_new();
-    if(itc_im_list_group){
-        itc_im_list_group->item_style = "groupindex";
-        itc_im_list_group->func.text_get = im_setting_list_genlist_group_label_get;
-        itc_im_list_group->func.content_get = NULL;
-        itc_im_list_group->func.state_get = NULL;
-        itc_im_list_group->func.del = NULL;
+    list_item_text *item_text = (list_item_text *)data;
+    if (!strcmp(part, "elm.text.main.left.top") ||
+        !strcmp(part, "elm.text.main.left") ||
+        !strcmp(part, "elm.text.main") ||
+        !strcmp(part, "elm.text") ||
+        !strcmp(part, "elm.text.1")) {
+        return strdup(item_text->main_text);
     }
 
-    itc_im_list = elm_genlist_item_class_new();
-    if (itc_im_list){
-        itc_im_list->item_style = "2line.top";
-        itc_im_list->func.text_get = im_setting_list_genlist_item_label_get;
-        itc_im_list->func.content_get = im_setting_list_genlist_item_icon_get;
-        itc_im_list->func.state_get = NULL;
-        itc_im_list->func.del = NULL;
+    if (!strcmp(part, "elm.text.sub.left.bottom") ||
+        !strcmp(part, "elm.text.multiline") ||
+        !strcmp(part, "elm.text.2")) {
+        return strdup(item_text->sub_text);
+    }
+    return NULL;
+}
+
+static char *im_setting_list_genlist_item_one_line_label_get(void *data, Evas_Object *obj, const char *part)
+{
+    list_item_text *item_text = (list_item_text *)data;
+    if (!strcmp(part, "elm.text.main.left.top") ||
+        !strcmp(part, "elm.text.main.left") ||
+        !strcmp(part, "elm.text.main") ||
+        !strcmp(part, "elm.text") ||
+        !strcmp(part, "elm.text.1")) {
+        return strdup(item_text->main_text);
+    }
+    return NULL;
+}
+
+static void im_setting_list_genlist_item_class_create(int app_type)
+{
+    if(NULL == itc_im_list_group)
+    {
+        itc_im_list_group = elm_genlist_item_class_new();
+        if(itc_im_list_group)
+        {
+            itc_im_list_group->item_style = "groupindex";
+            itc_im_list_group->func.text_get = im_setting_list_genlist_group_label_get;
+            itc_im_list_group->func.content_get = NULL;
+            itc_im_list_group->func.state_get = NULL;
+            itc_im_list_group->func.del = NULL;
+        }
+    }
+
+    if(NULL == itc_im_list_keyboard_list)
+    {
+        itc_im_list_keyboard_list = elm_genlist_item_class_new();
+        if (itc_im_list_keyboard_list)
+        {
+            itc_im_list_keyboard_list->item_style = "1line";
+            itc_im_list_keyboard_list->func.text_get = im_setting_list_genlist_keyboard_list_item_label_get;
+            itc_im_list_keyboard_list->func.content_get = im_setting_list_genlist_keyboard_list_item_icon_get;
+            itc_im_list_keyboard_list->func.state_get = NULL;
+            itc_im_list_keyboard_list->func.del = NULL;
+        }
+    }
+
+    if(app_type == APP_TYPE_SETTING)
+    {
+        if(NULL == itc_im_list_item)
+        {
+            itc_im_list_item = elm_genlist_item_class_new();
+            if (itc_im_list_item)
+            {
+                itc_im_list_item->item_style = "2line.top";
+                itc_im_list_item->func.text_get = im_setting_list_genlist_item_label_get;
+                itc_im_list_item->func.content_get = NULL;
+                itc_im_list_item->func.state_get = NULL;
+                itc_im_list_item->func.del = NULL;
+            }
+        }
+
+        if(NULL == itc_im_list_item_one_line)
+        {
+            itc_im_list_item_one_line = elm_genlist_item_class_new();
+            if (itc_im_list_item_one_line)
+            {
+                itc_im_list_item_one_line->item_style = "1line";
+                itc_im_list_item_one_line->func.text_get = im_setting_list_genlist_item_one_line_label_get;
+                itc_im_list_item_one_line->func.content_get = NULL;
+                itc_im_list_item_one_line->func.state_get = NULL;
+                itc_im_list_item_one_line->func.del = NULL;
+            }
+        }
     }
 }
 
@@ -290,11 +417,61 @@ static void im_setting_list_add_ise(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
     char *active_ise_uuid = NULL;
-    im_setting_list_genlist_item_class_create();
+    im_setting_list_genlist_item_class_create(ad->app_type);
+
+    if(NULL != ad->genlist)
+    {
+        elm_genlist_clear(ad->genlist);
+    }
+//    list_item_text item_text;
+    memset(&item_text, 0, sizeof(item_text));
+    if(ad->app_type == APP_TYPE_SETTING)
+    {
+        elm_genlist_item_append(ad->genlist,
+            itc_im_list_group,
+            IM_SETTING_LIST_VIRTUAL_KEYBOARD,
+            NULL,
+            ELM_GENLIST_ITEM_NONE,
+            NULL,
+            NULL);
+
+        char *active_ime_appid = NULL;
+        isf_control_get_active_ime(&active_ime_appid);
+        std::vector<ime_info_s>::iterator iter = g_ime_info_list.begin();
+        std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
+        for (; iter != end; ++iter)
+        {
+            if(!strcmp(active_ime_appid, iter->appid))
+            {
+                break;
+            }
+        }
+        sprintf(item_text[0].main_text, "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
+        sprintf(item_text[0].sub_text, "%s", iter->appid);
+        elm_genlist_item_append(ad->genlist,
+            itc_im_list_item,
+            (void *)&item_text[0],
+            NULL,
+            ELM_GENLIST_ITEM_NONE,
+            im_setting_list_set_default_keyboard_item_sel_cb,
+            NULL);
+
+        sprintf(item_text[1].main_text, "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
+        Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
+            itc_im_list_item_one_line,
+            (void *)&item_text[1],
+            NULL,
+            ELM_GENLIST_ITEM_NONE,
+            im_setting_list_keyboard_setting_item_sel_cb,
+            NULL);
+
+        elm_object_item_disabled_set(item, !(iter->has_option));
+        free(active_ime_appid);
+    }
 
     elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
-            IM_SETTING_LIST_KEYBOARD,
+            IM_SETTING_LIST_KEYBOARD_HEADER,
             NULL,
             ELM_GENLIST_ITEM_NONE,
             NULL,
@@ -303,7 +480,7 @@ static void im_setting_list_add_ise(void *data) {
     /* keyboard list */
     for (i = 0; i < g_ime_info_list.size(); i++) {
         Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
-            itc_im_list,
+            itc_im_list_keyboard_list,
             (void *)(i),
             NULL,
             ELM_GENLIST_ITEM_NONE,
@@ -348,6 +525,35 @@ Evas_Object *im_setting_list_list_create(void *data)
     elm_object_content_set(ad->conform, ad->naviframe);
 
     return ad->genlist;
+}
+
+void im_setting_list_app_terminate(void *data)
+{
+    g_ime_info_list.clear();
+    if(NULL != itc_im_list_keyboard_list)
+    {
+        elm_genlist_item_class_free(itc_im_list_keyboard_list);
+        itc_im_list_keyboard_list = NULL;
+    }
+
+    if(NULL != itc_im_list_group)
+    {
+        elm_genlist_item_class_free(itc_im_list_group);
+        itc_im_list_group = NULL;
+    }
+
+    if(NULL != itc_im_list_item)
+    {
+        elm_genlist_item_class_free(itc_im_list_item);
+        itc_im_list_item = NULL;
+    }
+}
+
+void im_setting_list_update_window(void *data)
+{
+    appdata *ad = (appdata *)data;
+    im_setting_list_load_ise_info();
+    im_setting_list_add_ise(ad);
 }
 
 void

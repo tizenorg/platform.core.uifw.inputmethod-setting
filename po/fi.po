@@ -43,9 +43,6 @@ msgstr "Oletusnäppäimistö"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Näppäimistön tyyppi"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Tämä syöttötapa pystyy mahdollisesti keräämään kaikki kirjoittamasi tiedot, myös henkilökohtaiset tiedot, kuten salasanat ja luottokorttinumerot. Se kuuluu sovellukseen %1$s. Otetaanko tämä syöttötapa käyttöön?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtuaalinen näppäimistö"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Käytä"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Näppäimistöt"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Tämä syöttötapa pystyy mahdollisesti keräämään kaikki kirjoittamasi tiedot, myös henkilökohtaiset tiedot, kuten salasanat ja luottokorttinumerot. Se kuuluu sovellukseen %s. Ota tämä syöttötapa käyttöön napauttamalla Ota käyttöön."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Päälle"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Näppäimistön asetukset"
 

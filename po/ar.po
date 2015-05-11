@@ -43,9 +43,6 @@ msgstr "لوحة المفاتيح الافتراضية"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "نوع لوحة المفاتيح"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "قد تتمكن طريقة الإدخال هذه من جمع كافة النصوص التي قمت بكتابتها، بما في ذلك البيانات الشخصية مثل كلمات المرور وأرقام بطاقات الائتمان. يأتي ذلك من التطبيق %1$s. هل ترغب في تمكين طريقة الإدخال هذه؟"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "لوحة المفاتيح الظاهرية"
 
@@ -60,4 +57,16 @@ msgstr "موافق"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "استخدام"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "لوحات المفاتيح"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "يمكن لطريقة الإدخال هذه جمع كل النصوص التي تطبعها، بما في ذلك البيانات الشخصية مثل كلمات المرور وأرقام بطاقات الائتمان. مصدرها تطبيق %s. انقر فوق تفعيل لتفعيل طريقة الإدخال هذه."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "تفعيل"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ضبط لوحة المفاتيح"
 

@@ -43,9 +43,6 @@ msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "ਇਹ ਇਨਪੁਟ ਤਰੀਕਾ ਤੁਹਾਡਾ ਟਾਈਪ ਕੀਤਾ ਸਾਰਾ ਟੈਕਸਟ ਇਕੱਤਰ ਕਰਨ ਤੇ ਯੋਗ ਹੋ ਸਕਦਾ ਹੈ, ਤੁਹਾਡਾ ਵਿਅਕਤੀਗਤ ਡੈਟਾ ਜਿਵੇਂ ਪਾਸਵਰਡ ਅਤੇ ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਨੰਬਰ ਸਮੇਤ। ਇਹ %1$s ਅਨੁਪ੍ਰਯੋਗ ਤੋਂ ਆਉਂਦਾ ਹੈ। ਇਹ ਇਨਪੁਟ ਤਰੀਕੇ ਨੂੰ ਸਮਰੱਥ ਬਣਾਈਏ?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ"
 
@@ -60,4 +57,16 @@ msgstr "ਓਕੇ"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ਵਰਤੋ"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "ਕੀਬੋਰਡਸ"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ਇਹ ਇਨਪੁਟ ਵਿਧੀ ਤੁਹਾਡੇ ਵਿਅਕਤੀਗਤ ਡੈਟਾ ਜਿਵੇਂ ਪਾਸਵਰਡਸ ਅਤੇ ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਨੰਬਰਸ ਸਮੇਤ ਤੁਹਾਡੇ ਦੁਆਰਾ ਟਾਈਪ ਕੀਤਾ ਜਾਣ ਵਾਲਾ ਸਾਰਾ ਟੈਕਸਟ ਇਕੱਠਾ ਕਰ ਸਕਦੀ ਹੈ। ਇਹ %s ਅਨੁਪ੍ਰਯੋਗ ਨਾਲ ਹੁੰਦਾ ਹੈ। ਇਸ ਇਨਪੁਟ ਵਿਧੀ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ ਸਮਰੱਥ ਕਰੋ ਤੇ ਟੈਪ ਕਰੋ।"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ਸਮੱਰਥ"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ਕੀਬੋਰਡ ਸੈੱਟਿੰਗਸ"
 

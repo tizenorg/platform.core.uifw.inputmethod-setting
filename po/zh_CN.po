@@ -43,9 +43,6 @@ msgstr "默认键盘"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "键盘类型"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "这种输入法可能会收集键入的所有文本，包括密码和信用卡号码等个人数据。 它来自于应用程序 %1$s。确实要启用该输入法吗？"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "虚拟键盘"
 
@@ -60,4 +57,16 @@ msgstr "确定"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "使用"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "键盘"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "该输入法可能能够收集您键入的所有文本，包括密码和信用卡号等个人数据。它来自于 %s 应用程序。点击启用以启用该输入法。"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "启动"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "键盘设置"
 

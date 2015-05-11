@@ -14,8 +14,8 @@
  * limitations under the License.
  *
  */
-#ifndef __main_H__
-#define __main_H__
+#ifndef __INPUTMETHOD_SETTING_LIST_H__
+#define __INPUTMETHOD_SETTING_LIST_H__
 
 #include <Elementary.h>
 #include <dlog.h>
@@ -25,10 +25,16 @@
 #endif
 #define LOG_TAG "INPUTMETHOD_SETTING_LIST"
 
-enum
-{
-    TYPE_KEY_END = 0,
-    // Add more here
+enum {
+     APP_STATE_PAUSE = 1,
+     APP_STATE_SERVICE,
+     APP_STATE_RESUME,
+     APP_STATE_TERMINATE,
+};
+
+enum {
+    APP_TYPE_SETTING = 1,
+    APP_TYPE_NORMAL,
 };
 
 typedef struct _appdata {
@@ -37,6 +43,9 @@ typedef struct _appdata {
     Evas_Object *naviframe;
     Evas_Object *genlist;
 
+    int app_state;
+    int app_type;
+
     Elm_Object_Item *sw_ise_item_tizen;     // SW
     Elm_Object_Item *hw_ise_item_tizen;     // HW
     Elm_Object_Item *sw_ise_opt_item_tizen; // SW option
@@ -44,4 +53,4 @@ typedef struct _appdata {
     Eina_Bool (*key_end_cb)(void *, Elm_Object_Item *);
 }appdata;
 
-#endif /* __basic_H__ */
+#endif /* __INPUTMETHOD_SETTING_LIST_H__ */

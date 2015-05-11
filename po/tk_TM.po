@@ -43,9 +43,6 @@ msgstr "Standart klawiatura"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klawiatura görnüşi"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Bu giriziş usuly, parollar we kredit kartasy belgileri ýaly şahsy maglumatlaryňyzy hem goşmak bilen siziň ýazýan ähli tekstiňizi ýygnap biler. %1$s goýmasyndan gelýär. Bu giriziş usulyny işletmelimi?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Wirtual klawiatura"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Ulan"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Klawiaturalar"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Bu giriziş usuly ähli ýazýan tekstiňizi, şol sanda parollar we kredit kart belgileri ýaly şahsy maglumatlary ýygnap biler. Ol %s goýmasyndan gelýär. Bu giriziş usulyny işletmek üçin, Işlet-e basyň."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Işlet"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Klawiatura sazlamalary"
 

@@ -43,9 +43,6 @@ msgstr "Default na keyboard"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Uri ng keyboard"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Maaaring makuha ng paraan ng pag-input na ito ang lahat ng text na ita-type mo, kasama na ang personal na data gaya ng mga password at credit card number. Mula ito sa application na %1$s. Paganahin ang paraan ng pag-input na ito?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtual na keyboard"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Gamitin"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Mga Keyboard"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Magagawa ng paraan ng pag-input na ito na tipunin ang lahat ng teksto na nai-type mo, kasama na ang mga personal na data gaya ng mga password at mga numero ng credit card. Nagmula ito sa %s application. I-tap ang Enable para paganahin ang paraan ng pag-input na ito."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Paganahin"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Mga setting ng keyboard"
 

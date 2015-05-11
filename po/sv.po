@@ -43,9 +43,6 @@ msgstr "Standardtangentbord"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Tangentbordstyp"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Den här inmatningsmetoden kan kanske samla in all text du skriver, inklusive personliga data som lösenord och kreditkortsnummer. Den kommer från programmet %1$s. Aktivera den här inmatningsmetoden?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtuellt tangentbord"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Använd"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Tangentbord"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Den här inmatningsmetoden kan samla in alla texter du skriver, inklusive privata uppgifter som lösenord och kreditkortsnummer. Den kommer från programmet %s. Tryck på Aktivera om du vill aktivera inmatningsmetoden."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Aktivera"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Tangentbordsinställningar"
 

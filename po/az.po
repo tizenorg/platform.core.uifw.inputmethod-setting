@@ -43,9 +43,6 @@ msgstr "Defolt klaviatura"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klaviatura növü"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Bu daxiletmə üsulu parollar və kredit kartı nömrələri kimi şəxsi məlumatlar da daxil olmaqla sizin yazdığının bütün mətni əldə edə bilər. %1$s proqramdan gəlir. Bu daxiletmə metodu yandırılsın?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Virtual klaviatura"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "İstifadə"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Klaviaturalar"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Bu daxiletmə üsulu parollar və kredit kartı nömrələri kimi şəxsi məlumatlar da daxil olmaqla sizin yazdığının bütün mətni əldə edə bilər. Bu, %s proqramından gəlir. Bu daxiletmə rejimini aktiv etmək üçün Aktivləşdir vurun."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Qoş"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Klaviatura parametrləri"
 

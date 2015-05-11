@@ -43,9 +43,6 @@ msgstr "Varsayılan klavye"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "Klavye türü"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "Bu giriş yöntemi, şifreler, kredi kartı numaraları gibi kişisel veriler dahil bütün girdiğiniz metin türlerini toplayabilir. Bu %1$s uygulamasından gelir. Bu giriş yöntemi etkinleştirilsin mi?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "Sanal klavye"
 
@@ -60,4 +57,16 @@ msgstr "Tamam"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "Kullan"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "Klavyeler"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "Bu giriş yöntemi, şifreler ve kredi kartı numaraları gibi kişisel veriler dahil olmak üzere yazdığınız tüm metinleri toplayabilir. %s uygulamasından geliyor. Bu giriş yöntemini etkinleştirmek için Etkinleştir öğesine dokunun."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "Etkinleştir"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Klavye ayarları"
 

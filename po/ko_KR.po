@@ -43,9 +43,6 @@ msgstr "기본 키보드"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "키보드 형식"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "%1$s애플리케이션에서 제공되는 이 입력 방식은 비밀번호 또는 신용카드 번호와 같은 개인정보를 포함하여 모든 입력 내용을 수집할 수 있습니다. 실행할까요?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "가상 키보드"
 
@@ -60,4 +57,16 @@ msgstr "확인"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "사용"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "키보드"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "%s 앱의 입력 방식은 비밀번호 또는 신용카드 번호와 같은 개인정보를 포함하여 입력한 내용을 모두 수집할 수 있습니다. 이 입력 방식을 실행하려면 [실행]을 누르세요."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "실행"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "키보드 설정"
 

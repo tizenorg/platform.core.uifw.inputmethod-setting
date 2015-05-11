@@ -43,9 +43,6 @@ msgstr "ಡೀಫಾಲ್ಟ್ ಕೀಬೋರ್ಡ್"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "ಕೀಬೋರ್ಡ್ ವಿಧ"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "ವೈಯಕ್ತಿಕ ಡೇಟಾಗಳಂತಹ ಪಾಸ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ವರ್ಡ್‌‌‌‌‌‌‌ಗಳು ಮತ್ತು ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಂಖ್ಯೆಗಳನ್ನೊಳಗೊಂಡ ನೀವು ಟೈಪ್ ಮಾಡಿದ ಎಲ್ಲಾ ಪಠ್ಯವನ್ನು ಸಂಗ್ರಹಿಸಲು ಈ ಇನ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ಪುಟ್ ಪದ್ಧತಿ ಸಮರ್ಥವಾಗಿರಬಹುದು. ಅಪ್ಲಿಕೇಶನ್ %1$s ನಿಂದ ಇದು ಬಂದಿದೆ. ಈ ಇನ್‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ಪುಟ್ ಪದ್ಧತಿ ಸಕ್ರಿಯಗೊಳಿಸುವುದೆ?"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "ವರ್ಚುವಲ್ ಕೀಬೋರ್ಡ್"
 
@@ -60,4 +57,16 @@ msgstr "ಓಕೆ"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "ಬಳಸಿ"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "ಕೀಬೋರ್ಡ್‌‌ಗಳು"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಮತ್ತು ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಂಖ್ಯೆಗಳ ರೀತಿಯ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಸೇರಿದಂತೆ, ನೀವು ಟೈಪ್ ಮಾಡುವ ಎಲ್ಲಾ ಪಠ್ಯವನ್ನು ಸಂಗ್ರಹಿಸಿಕೊಳ್ಳಲು ಈ ಇನ್‌ಪುಟ್ ವಿಧಾನಕ್ಕೆ ಸಾಧ್ಯವಾಗಬಹುದು. ಇದು %s ಅನ್ವಯಿಸುವಿಕೆಯಿಂದ ಬರುತ್ತದೆ. ಈ ಇನ್‌ಪುಟ್ ವಿಧಾನವನ್ನು ಶಕ್ತಗೊಳಿಸಲು ಶಕ್ತಗೊಳಿಸಿ ಅನ್ನು ತಟ್ಟಿ."
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "ಶಕ್ತಗೊಳಿಸು"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ಕೀಬೋರ್ಡ್ ಸಂಯೋಜನೆಗಳು"
 

@@ -43,9 +43,6 @@ msgstr "標準キーボード"
 msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
 msgstr "キーボード設定"
 
-msgid "IDS_ST_BODY_WARNING_MESSAGES_ABOUT_SECURITY_IMPLICATIONS"
-msgstr "この入力方法は、パスワードやクレジットカード番号のように、個人データを含む入力済みの全てのテキストからの収集を可能にします。それはアプリケーション%1$sから派生します。この入力方法を有効にしますか？"
-
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
 msgstr "仮想キーボード"
 
@@ -60,4 +57,16 @@ msgstr "OK"
 
 msgid "IDS_EL_BUTTON_USE"
 msgstr "使用"
+
+msgid "IDS_ST_HEADER_KEYBOARDS"
+msgstr "キーボード"
+
+msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
+msgstr "この入力方法では、パスワードやクレジットカード番号などの個人データを含め、入力された全てのテキストが収集される場合があります。これは%sアプリケーションが原因です。この入力方法を有効にするには、[有効]をタップします。"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "有効"
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "キーボード設定"
 

@@ -15,20 +15,14 @@
  *
  */
 
-#ifndef __INPUT_METHOD_SETTING_EFL_H
-#define __INPUT_METHOD_SETTING_EFL_H
+#ifndef __INPUTMETHOD_SETTING_LIST_UI_H
+#define __INPUTMETHOD_SETTING_LIST_UI_H
 
 #define INPUT_METHOD_SETTING_DEBUG(msg, args...)   LOGD(msg, ##args)
 #define INPUT_METHOD_SETTING_ERROR(msg, args...)   LOGE(msg, ##args)
 
 void im_setting_list_app_create(void *data);
-void create_base_gui(void *data);
-void action_on_pause (void *priv);
-void action_on_resume (void *priv);
-void action_on_destroy (void *priv);
+void im_setting_list_app_terminate(void *data);
+void im_setting_list_update_window(void *data);
 
-#endif /* __INPUT_METHOD_SETTING_EFL_H */
-
-/*
-vi:ts=4:ai:nowrap:expandtab
- */
+#endif /* __INPUTMETHOD_SETTING_LIST_UI_H */
