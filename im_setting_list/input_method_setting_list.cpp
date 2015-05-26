@@ -39,15 +39,15 @@ app_control(app_control_h app_control, void *data)
     appdata *ad = (appdata *)data;
     LOGD("");
 
-     if(ad->app_state == APP_STATE_PAUSE || ad->app_state == APP_STATE_RESUME)
-     {
-         if (ad->win)
-         {
-             elm_win_activate(ad->win);
-             im_setting_list_update_window(ad);
-         }
-         ad->app_state = APP_STATE_SERVICE;
-         return;
+    if(ad->app_state == APP_STATE_PAUSE || ad->app_state == APP_STATE_RESUME)
+    {
+        if (ad->win)
+        {
+            elm_win_activate(ad->win);
+            im_setting_list_update_window(ad);
+        }
+        ad->app_state = APP_STATE_SERVICE;
+        return;
     }
 
     char* type = NULL;

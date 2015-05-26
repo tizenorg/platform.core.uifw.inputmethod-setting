@@ -499,7 +499,7 @@ static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *i
     in_exit = true;
     if (data == NULL)
         return EINA_TRUE;
-    elm_exit();
+    ui_app_exit();
     return EINA_TRUE;
 }
 

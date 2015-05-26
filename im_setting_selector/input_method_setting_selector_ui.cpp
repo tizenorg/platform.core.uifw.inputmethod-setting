@@ -169,7 +169,7 @@ static void im_setting_selector_ise_sel_cb(void *data, Evas_Object *obj, void *e
     if (!item)
         return;
     im_setting_selector_update_radio_state(item, obj, index);
-    elm_exit();
+    ui_app_exit();
 }
 
 static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
@@ -282,7 +282,7 @@ static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *i
      in_exit = true;
      if (data == NULL)
          return EINA_TRUE;
-     elm_exit();
+     ui_app_exit();
      return EINA_TRUE;
 }
 
@@ -337,7 +337,7 @@ im_setting_selector_app_create(void *data)
 void
 im_setting_selector_app_pause(void *data)
 {
-    elm_exit();
+    ui_app_exit();
 }
 
 void im_setting_selector_app_terminate(void *data)
