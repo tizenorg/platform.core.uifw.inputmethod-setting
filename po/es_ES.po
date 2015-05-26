@@ -62,7 +62,7 @@ msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Teclados"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
-msgstr "Este método de entrada puede recopilar todos los textos que escriba, incluidos datos personales como contraseñas o números de tarjeta de crédito. Viene con la aplicación %s. Pulse Activar para activar este método de entrada."
+msgstr "Este método de entrada puede recopilar todo el texto que escriba, incluidos datos personales como contraseñas o números de tarjeta de crédito. Viene con la aplicación %s. Pulse Activar para activar este método de entrada."
 
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Habilitar"

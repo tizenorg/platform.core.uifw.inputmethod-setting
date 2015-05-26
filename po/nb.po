@@ -62,7 +62,7 @@ msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Tastaturer"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
-msgstr "Denne inndatametoden kan klare å innhente all teksten du skriver inn, inkludert personlige data som passord og kredittkortnumre. Den kommer fra %s-appen. Trykk på Aktiver for å aktivere denne inndatametoden."
+msgstr "Det kan hende at denne inndatametoden kan klare å innhente all teksten du skriver inn, inkludert personlige data som passord og kredittkortnumre. Den kommer fra %s-appen. Trykk på Aktiver for å aktivere denne inndatametoden."
 
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktiver"

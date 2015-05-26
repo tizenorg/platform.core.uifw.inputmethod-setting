@@ -29,7 +29,7 @@ msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
 msgstr "କୀବୋର୍ଡ ଏବଂ ଇନପୁଟ୍ ପଦ୍ଧତି"
 
 msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ଶାରୀରିକ କୀବୋର୍ଡ୍"
+msgstr "ଫିଜିକାଲ୍ କୀବୋର୍ଡ୍"
 
 msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
 msgstr "ଲେଆଉଟ୍ ସ୍ଵିଚ୍ କରିବାକୁ, ନିୟନ୍ତ୍ରଣ ବଟନ୍ ଏବଂ ସ୍ପେସ‌ବାର୍ ଏକତ୍ର ଟ୍ୟାପ୍ କରନ୍ତୁ।"

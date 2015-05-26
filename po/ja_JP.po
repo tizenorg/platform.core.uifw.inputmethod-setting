@@ -62,7 +62,7 @@ msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "キーボード"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
-msgstr "この入力方法では、パスワードやクレジットカード番号などの個人データを含め、入力された全てのテキストが収集される場合があります。これは%sアプリケーションが原因です。この入力方法を有効にするには、[有効]をタップします。"
+msgstr "この入力方法は、パスワードやクレジットカード番号などの個人データを含め、入力された全てのテキストが収集される場合があります。これは%sアプリケーションが原因です。この入力方法を有効にするには、[有効]をタップします。"
 
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "有効"
