@@ -281,7 +281,11 @@ static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *obj, const char *part)
 {
     char *text = (char *)data;
+#ifdef _MOBILE
     if (!strcmp(part, "elm.text.main")) {
+#else
+    if (!strcmp(part, "elm.text")) {
+#endif
         return strdup(text);
     }
     return NULL;
@@ -303,7 +307,7 @@ static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Ev
         !strcmp(part, "elm.text.main") ||
         !strcmp(part, "elm.text") ||
         !strcmp(part, "elm.text.1")) {
-        return strdup(g_ime_info_list[index].appid);
+        return strdup(g_ime_info_list[index].label);
     }
     return NULL;
 }
@@ -375,7 +379,11 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         itc_im_list_keyboard_list = elm_genlist_item_class_new();
         if (itc_im_list_keyboard_list)
         {
+#ifdef _MOBILE
             itc_im_list_keyboard_list->item_style = "1line";
+#else
+            itc_im_list_keyboard_list->item_style = "1text.1icon.1";
+#endif
             itc_im_list_keyboard_list->func.text_get = im_setting_list_genlist_keyboard_list_item_label_get;
             itc_im_list_keyboard_list->func.content_get = im_setting_list_genlist_keyboard_list_item_icon_get;
             itc_im_list_keyboard_list->func.state_get = NULL;
@@ -390,7 +398,11 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             itc_im_list_item = elm_genlist_item_class_new();
             if (itc_im_list_item)
             {
+#ifdef _MOBILE
                 itc_im_list_item->item_style = "2line.top";
+#else
+                itc_im_list_item->item_style = "2text";
+#endif
                 itc_im_list_item->func.text_get = im_setting_list_genlist_item_label_get;
                 itc_im_list_item->func.content_get = NULL;
                 itc_im_list_item->func.state_get = NULL;
@@ -403,7 +415,11 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             itc_im_list_item_one_line = elm_genlist_item_class_new();
             if (itc_im_list_item_one_line)
             {
+#ifdef _MOBILE
                 itc_im_list_item_one_line->item_style = "1line";
+#else
+                itc_im_list_item_one_line->item_style = "1text";
+#endif
                 itc_im_list_item_one_line->func.text_get = im_setting_list_genlist_item_one_line_label_get;
                 itc_im_list_item_one_line->func.content_get = NULL;
                 itc_im_list_item_one_line->func.state_get = NULL;
@@ -447,7 +463,7 @@ static void im_setting_list_add_ise(void *data) {
             }
         }
         sprintf(item_text[0].main_text, "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
-        sprintf(item_text[0].sub_text, "%s", iter->appid);
+        sprintf(item_text[0].sub_text, "%s", iter->label);
         elm_genlist_item_append(ad->genlist,
             itc_im_list_item,
             (void *)&item_text[0],

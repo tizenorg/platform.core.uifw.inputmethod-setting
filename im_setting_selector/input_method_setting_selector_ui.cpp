@@ -187,12 +187,7 @@ static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
 static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)(data);
-
     if (!strcmp(part, "elm.text"))
-    {
-        return strdup(g_ime_info_list[index].appid);
-    }
-    else if (!strcmp(part, "elm.text.sub"))
     {
         return strdup(g_ime_info_list[index].label);
     }
