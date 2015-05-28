@@ -43,6 +43,7 @@ static Elm_Genlist_Item_Class  *itc_im_list_keyboard_list = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_group = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_item = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_item_one_line = NULL;
+static int g_active_ime_index = -1;
 
 typedef struct list_item_text_s
 {
@@ -115,6 +116,23 @@ static void im_setting_list_load_ise_info(void)
     {
         LOGD("isf_control_get_all_ime_info failed\n");
     }
+}
+
+static int im_setting_list_get_active_ime_index(void)
+{
+    char *active_ime_appid = NULL;
+    isf_control_get_active_ime(&active_ime_appid);
+    std::vector<ime_info_s>::iterator iter = g_ime_info_list.begin();
+    std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
+    for (; iter != end; ++iter)
+    {
+        if(!strcmp(active_ime_appid, iter->appid))
+        {
+            break;
+        }
+    }
+    free(active_ime_appid);
+    return (iter-g_ime_info_list.begin());
 }
 
 static void im_setting_list_show_ise_selector(void)
@@ -207,6 +225,12 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
+
+    int index = (int)(data);
+    if(g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index))
+    {
+        return;
+    }
 
     Evas_Object *popup = elm_popup_add(obj);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
@@ -318,10 +342,16 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
     if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set (ck, "on&off");
-        elm_check_state_set(ck, g_ime_info_list[index].is_enabled);
+        elm_object_disabled_set(ck, g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index));
+        if(g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index)){
+            elm_check_state_set(ck, EINA_FALSE);
+        }
+        else{
+            elm_check_state_set(ck, g_ime_info_list[index].is_enabled);
+        }
         evas_object_propagate_events_set (ck, EINA_FALSE);
-        evas_object_show(ck);
         evas_object_smart_callback_add(ck, "changed", im_setting_list_check_button_change_cb, (void *) (index));
+        evas_object_show(ck);
         return ck;
     }
     return NULL;
@@ -439,6 +469,8 @@ static void im_setting_list_add_ise(void *data) {
     {
         elm_genlist_clear(ad->genlist);
     }
+
+    g_active_ime_index = im_setting_list_get_active_ime_index();
 //    list_item_text item_text;
     memset(&item_text, 0, sizeof(item_text));
     if(ad->app_type == APP_TYPE_SETTING)
@@ -451,19 +483,8 @@ static void im_setting_list_add_ise(void *data) {
             NULL,
             NULL);
 
-        char *active_ime_appid = NULL;
-        isf_control_get_active_ime(&active_ime_appid);
-        std::vector<ime_info_s>::iterator iter = g_ime_info_list.begin();
-        std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
-        for (; iter != end; ++iter)
-        {
-            if(!strcmp(active_ime_appid, iter->appid))
-            {
-                break;
-            }
-        }
         sprintf(item_text[0].main_text, "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
-        sprintf(item_text[0].sub_text, "%s", iter->label);
+        sprintf(item_text[0].sub_text, "%s", g_ime_info_list[g_active_ime_index].label);
         elm_genlist_item_append(ad->genlist,
             itc_im_list_item,
             (void *)&item_text[0],
@@ -481,8 +502,7 @@ static void im_setting_list_add_ise(void *data) {
             im_setting_list_keyboard_setting_item_sel_cb,
             NULL);
 
-        elm_object_item_disabled_set(item, !(iter->has_option));
-        free(active_ime_appid);
+        elm_object_item_disabled_set(item, !(g_ime_info_list[g_active_ime_index].has_option));
     }
 
     elm_genlist_item_append(ad->genlist,
@@ -503,7 +523,7 @@ static void im_setting_list_add_ise(void *data) {
             im_setting_list_item_sel_cb,
             (void *)(i));
 
-        elm_object_item_disabled_set(item, g_ime_info_list[i].is_preinstalled);
+//        elm_object_item_disabled_set(item, g_ime_info_list[i].is_preinstalled);
     }
 }
 
@@ -519,6 +539,12 @@ static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *i
     return EINA_TRUE;
 }
 
+static void im_setting_list_navi_back_btn_call_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    evas_object_smart_callback_del(obj, "clicked", im_setting_list_navi_back_btn_call_cb);
+    ui_app_exit();
+}
+
 Evas_Object *im_setting_list_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
@@ -530,6 +556,7 @@ Evas_Object *im_setting_list_list_create(void *data)
     /* Add genlist to naviframe */
     Evas_Object *back_btn = elm_button_add (ad->naviframe);
     elm_object_style_set (back_btn, "naviframe/back_btn/default");
+    evas_object_smart_callback_add(back_btn, "clicked", im_setting_list_navi_back_btn_call_cb, NULL);
     Elm_Object_Item *nf_main_item = elm_naviframe_item_push(ad->naviframe,
                 IM_SETTING_LIST_TITLE,
                 back_btn,
