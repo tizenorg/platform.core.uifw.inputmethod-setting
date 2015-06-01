@@ -48,10 +48,11 @@ im_setting_selector_main_window_create(char *name)
     Evas_Object *eo = NULL;
     int w = -1, h = -1;
     eo = elm_win_add(NULL, name, ELM_WIN_BASIC);
+
     if (eo) {
         elm_win_title_set(eo, name);
         elm_win_borderless_set(eo, EINA_TRUE);
-        elm_win_alpha_set(eo, EINA_FALSE);
+        elm_win_alpha_set(eo, EINA_TRUE);
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
         elm_win_screen_size_get(eo, NULL, NULL, &w, &h);
@@ -86,6 +87,7 @@ static void im_setting_selector_load_ise_info(void)
     {
         for(int i=0; i<cnt; ++i)
         {
+            SECURE_LOGD("%s %s %d %d %d", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
             if(info[i].is_enabled)
             {
                 g_ime_info_list.push_back(info[i]);
@@ -322,7 +324,6 @@ im_setting_selector_app_create(void *data)
     appdata *ad = (appdata *)data;
     im_setting_selector_text_domain_set();
     ad->win = im_setting_selector_main_window_create(PACKAGE);
-    im_setting_selector_bg_create(ad->win);
     im_setting_selector_load_ise_info();
     im_setting_selector_popup_create(ad);
 
