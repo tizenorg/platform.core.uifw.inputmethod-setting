@@ -235,7 +235,6 @@ static void im_setting_selector_genlist_item_class_create(void)
 static void im_setting_selector_add_ise(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
-    char *active_ise_uuid = NULL;
     im_setting_selector_genlist_item_class_create();
 
     /* keyboard list */

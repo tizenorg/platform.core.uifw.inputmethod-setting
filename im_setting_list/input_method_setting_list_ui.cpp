@@ -342,7 +342,7 @@ static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    isf_control_show_ise_option_window();
+    isf_control_open_ime_option_window();
 }
 
 static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
@@ -538,7 +538,6 @@ static void im_setting_list_genlist_item_class_create(int app_type)
 static void im_setting_list_add_ise(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
-    char *active_ise_uuid = NULL;
     im_setting_list_genlist_item_class_create(ad->app_type);
 
     if(NULL != ad->genlist)

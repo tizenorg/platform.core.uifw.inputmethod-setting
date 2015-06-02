@@ -45,12 +45,6 @@ typedef struct _appdata {
 
     int app_state;
     int app_type;
-
-    Elm_Object_Item *sw_ise_item_tizen;     // SW
-    Elm_Object_Item *hw_ise_item_tizen;     // HW
-    Elm_Object_Item *sw_ise_opt_item_tizen; // SW option
-    Elm_Object_Item *hw_ise_opt_item_tizen; // HW option
-    Eina_Bool (*key_end_cb)(void *, Elm_Object_Item *);
 }appdata;
 
 #endif /* __INPUTMETHOD_SETTING_LIST_H__ */
