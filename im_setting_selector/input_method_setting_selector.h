@@ -19,6 +19,7 @@
 
 #include <Elementary.h>
 #include <dlog.h>
+#include <app.h>
 
 #ifdef  LOG_TAG
 #undef  LOG_TAG
@@ -46,6 +47,8 @@ typedef struct _appdata {
 
     int app_state;
     int app_type;
+
+    app_control_h caller;
 }appdata;
 
 #endif /*__INPUTMETHOD_SETTING_SELECTOR_H__*/

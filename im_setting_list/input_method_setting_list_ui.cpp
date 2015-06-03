@@ -62,6 +62,8 @@ typedef struct popup_cb_data_s
     void *data;
 }popup_cb_data;
 
+void im_setting_list_update_window(void *data);
+
 static void im_setting_list_text_domain_set(void)
 {
    bindtextdomain(IM_SETTING_PACKAGE, IM_SETTING_LOCALE_DIR);
@@ -138,7 +140,26 @@ static int im_setting_list_get_active_ime_index(void)
     return (iter-g_ime_info_list.begin());
 }
 
-static void im_setting_list_show_ise_selector(void)
+static void
+im_setting_list_app_control_reply_cb(app_control_h request, app_control_h reply, app_control_result_e result, void *user_data)
+{
+    if (!request || !reply) {
+        LOGD("app_control handle is null");
+        return;
+    }
+    if (result == APP_CONTROL_RESULT_SUCCEEDED) {
+        char *value = NULL;
+        int res = app_control_get_extra_data(reply, "result", &value);
+        if (APP_CONTROL_ERROR_NONE == res && NULL != value) {
+            im_setting_list_update_window(user_data);
+        }
+        if (value){
+            free(value);
+        }
+    }
+}
+
+static void im_setting_list_show_ise_selector(void *data)
 {
     int ret;
     app_control_h app_control;
@@ -164,7 +185,7 @@ static void im_setting_list_show_ise_selector(void)
       }
 
       app_control_add_extra_data(app_control, "caller", "settings");
-      ret = app_control_send_launch_request(app_control, NULL, NULL);
+      ret = app_control_send_launch_request(app_control, im_setting_list_app_control_reply_cb, data);
       if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
          app_control_destroy(app_control);
@@ -335,7 +356,7 @@ static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Ob
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    im_setting_list_show_ise_selector();
+    im_setting_list_show_ise_selector(data);
 }
 
 static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
@@ -566,7 +587,7 @@ static void im_setting_list_add_ise(void *data) {
             NULL,
             ELM_GENLIST_ITEM_NONE,
             im_setting_list_set_default_keyboard_item_sel_cb,
-            NULL);
+            data);
 
         sprintf(item_text[1].main_text, "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
         Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,

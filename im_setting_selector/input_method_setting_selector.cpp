@@ -46,6 +46,7 @@ app_control(app_control_h app_control, void *data)
     if(APP_CONTROL_ERROR_NONE == res && NULL != type && strcmp(type,"settings") == 0)
     {
         ad->app_type = APP_TYPE_SETTING;
+        app_control_clone(&(ad->caller), app_control);
     }
     else
     {
@@ -86,6 +87,7 @@ app_terminate(void *data)
     appdata *ad = (appdata *)data;
     ad->app_state = APP_STATE_TERMINATE;
     im_setting_selector_app_terminate(ad);
+    app_control_destroy(ad->caller);
 }
 
 static void

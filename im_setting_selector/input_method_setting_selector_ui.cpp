@@ -36,6 +36,11 @@ static Elm_Genlist_Item_Class       *itc_im_selector = NULL;
 static Evas_Object                  *group_radio = NULL;
 static int                          g_active_ime_id = -1;
 
+typedef struct {
+    void *data;
+    int index;
+}sel_cb_data;
+
 static void im_setting_selector_text_domain_set(void)
 {
     bindtextdomain(IM_SETTING_PACKAGE, IM_SETTING_LOCALE_DIR);
@@ -166,11 +171,23 @@ static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_O
 
 static void im_setting_selector_ise_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    int index = (int)data;
+    sel_cb_data * cb_data = (sel_cb_data *)data;
+    int index = cb_data->index;
+    appdata *ad = (appdata *)(cb_data->data);
+
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item)
         return;
     im_setting_selector_update_radio_state(item, obj, index);
+
+    if(ad->caller){
+        app_control_h reply;
+        app_control_create(&reply);
+        app_control_add_extra_data(reply, "result", g_ime_info_list[g_active_ime_id].appid);
+        app_control_reply_to_launch_request(reply, ad->caller, APP_CONTROL_RESULT_SUCCEEDED);
+        app_control_destroy(reply);
+    }
+    delete cb_data;
     ui_app_exit();
 }
 
@@ -239,13 +256,16 @@ static void im_setting_selector_add_ise(void *data) {
 
     /* keyboard list */
     for (i = 0; i < g_ime_info_list.size(); i++) {
+        sel_cb_data *cb_data = new sel_cb_data;
+        cb_data->data = data;
+        cb_data->index = i;
         elm_genlist_item_append(ad->genlist,
             itc_im_selector,
             (void *)(i),
             NULL,
             ELM_GENLIST_ITEM_NONE,
             im_setting_selector_ise_sel_cb,
-            (void *)(i));
+            (void *)(cb_data));
     }
     elm_radio_value_set(group_radio, g_active_ime_id);
 }
