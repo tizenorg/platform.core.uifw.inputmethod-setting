@@ -26,7 +26,7 @@
 #define IM_SETTING_PACKAGE                 PACKAGE
 #define IM_SETTING_LOCALE_DIR              ("/usr/apps/"PACKAGE_NAME"/res/locale")
 
-#define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE")
+#define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_SELECT_KEYBOARD         dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
 
 using namespace std;
