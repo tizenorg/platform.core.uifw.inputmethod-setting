@@ -21,13 +21,13 @@
 #include <vector>
 #include "isf_control.h"
 
+#define IM_SETTING_LIST_PACKAGE                      PACKAGE
+#define IM_SETTING_LIST_LOCALE_DIR                   ("/usr/apps/"PACKAGE_NAME"/res/locale")
 #define IM_SETTING_LIST_TITLE                   dgettext(PACKAGE, "IDS_IME_BODY_KEYBOARD")
 #define IM_SETTING_LIST_KEYBOARD_HEADER         dgettext(PACKAGE, "IDS_ST_HEADER_KEYBOARDS")
 #define IM_SETTING_LIST_POPUP_TITLE             dgettext(PACKAGE, "IDS_ST_BODY_ATTENTION")
 #define IM_SETTING_LIST_POPUP_CANCEL            dgettext(PACKAGE, "IDS_COM_SK_CANCEL_ABB")
-#define IM_SETTING_LIST_POPUP_OK                dgettext(PACKAGE, "IDS_HELP_SK2_OK_ABB")
-#define IM_SETTING_LIST_POPUP_CANCEL            dgettext(PACKAGE, "IDS_COM_SK_CANCEL_ABB")
-#define IM_SETTING_LIST_POPUP_OK                dgettext(PACKAGE, "IDS_HELP_SK2_OK_ABB")
+#define IM_SETTING_LIST_POPUP_ENABLE            dgettext(PACKAGE, "IDS_ST_BUTTON_ENABLE")
 #define IM_SETTING_LIST_VIRTUAL_KEYBOARD        dgettext(PACKAGE, "IDS_ST_HEADER_VIRTUAL_KEYBOARD")
 #define IM_SETTING_LIST_DEFAULT_KEYBOARD        dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_LIST_KEYBOARD_SETTING        dgettext(PACKAGE, "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB")
@@ -35,10 +35,27 @@
                                                                   "_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND"\
                                                                   "_CREDIT_CARD_NUMBERS_MSG")
 
-#define IM_SETTING_PACKAGE             PACKAGE
-#define IM_SETTING_LOCALE_DIR           ("/usr/apps/"PACKAGE_NAME"/res/locale")
 
-using namespace std;
+typedef struct list_item_text_s
+{
+    char main_text[255];
+    char sub_text[255];
+}list_item_text;
+
+typedef struct popup_cb_data_s
+{
+    Evas_Object *popup;
+    void *data;
+}popup_cb_data;
+
+typedef struct gen_item_data_s
+{
+    Elm_Object_Item *gen_item;
+    int chk_status;
+}gen_item_data;
+
+typedef void (*popup_ok_cb)(void *data, Evas_Object *obj, void *event_info);
+typedef void (*popup_cancel_cb)(void *data, Evas_Object *obj, void *event_info);
 
 static std::vector<ime_info_s>  g_ime_info_list;
 static Elm_Genlist_Item_Class  *itc_im_list_keyboard_list = NULL;
@@ -46,28 +63,15 @@ static Elm_Genlist_Item_Class  *itc_im_list_group = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_item = NULL;
 static Elm_Genlist_Item_Class  *itc_im_list_item_one_line = NULL;
 static int g_active_ime_index = -1;
-
-typedef struct list_item_text_s
-{
-    char main_text[255];
-    char sub_text[255];
-}list_item_text;
-list_item_text item_text[2];
-
-typedef struct popup_cb_data_s
-{
-    Evas_Object *popup;
-    Evas_Object *parent;
-    void *event_info;
-    void *data;
-}popup_cb_data;
+static list_item_text item_text[2];
+static std::vector<gen_item_data> g_gen_item_data;
 
 void im_setting_list_update_window(void *data);
 
 static void im_setting_list_text_domain_set(void)
 {
-   bindtextdomain(IM_SETTING_PACKAGE, IM_SETTING_LOCALE_DIR);
-   textdomain(IM_SETTING_PACKAGE);
+   bindtextdomain(IM_SETTING_LIST_PACKAGE, IM_SETTING_LIST_LOCALE_DIR);
+   textdomain(IM_SETTING_LIST_PACKAGE);
 }
 
 static Evas_Object *
@@ -103,7 +107,7 @@ static Evas_Object* im_setting_list_bg_create(Evas_Object *parent)
     return bg;
 }
 
-static void im_setting_list_load_ise_info(void)
+static void im_setting_list_load_ime_info(void)
 {
     ime_info_s *info = NULL;
     g_ime_info_list.clear();
@@ -159,7 +163,7 @@ im_setting_list_app_control_reply_cb(app_control_h request, app_control_h reply,
     }
 }
 
-static void im_setting_list_show_ise_selector(void *data)
+static void im_setting_list_show_ime_selector(void *data)
 {
     int ret;
     app_control_h app_control;
@@ -198,11 +202,9 @@ static void
 im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
-
     int index = (int)(cb_data->data);
     Eina_Bool state = EINA_FALSE;
-    state = !elm_check_state_get (cb_data->parent);
-    elm_check_state_set(cb_data->parent, state);
+    state = g_gen_item_data[index].chk_status;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
     evas_object_del(cb_data->popup);
     delete cb_data;
@@ -212,82 +214,68 @@ static void
 im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    int index = (int)(cb_data->data);
+    Eina_Bool state = g_gen_item_data[index].chk_status;
+    isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
+    g_gen_item_data[index].chk_status = !state;
+    elm_genlist_item_update(g_gen_item_data[index].gen_item);
     evas_object_del(cb_data->popup);
     delete cb_data;
 }
 
+static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
+{
+    int index = (int)data;
+    Evas_Object *widget_parent = elm_object_parent_widget_get(obj);
+    Evas_Object *popup = elm_popup_add(widget_parent);
+    elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
+    char chPopupMsg[255] = {'\0'};
+    sprintf(chPopupMsg, IM_SETTING_LIST_POPUP_TEXT, g_ime_info_list[index].label);
+    elm_object_text_set(popup, chPopupMsg);
+
+    popup_cb_data *cb_data = new popup_cb_data;
+    cb_data->popup = popup;
+    cb_data->data = data;
+
+    Evas_Object *btn_cancel = elm_button_add(popup);
+    elm_object_text_set(btn_cancel, IM_SETTING_LIST_POPUP_CANCEL);
+    elm_object_part_content_set(popup, "button1", btn_cancel);
+    evas_object_smart_callback_add(btn_cancel, "clicked", ime_setting_list_cancel_callback, cb_data);
+
+    Evas_Object *btn_ok = elm_button_add(popup);
+    elm_object_text_set(btn_ok, IM_SETTING_LIST_POPUP_ENABLE);
+    elm_object_part_content_set(popup, "button2", btn_ok);
+    evas_object_smart_callback_add(btn_ok, "clicked", ime_setting_list_ok_callback, cb_data);
+
+    evas_object_show(popup);
+
+}
+
 static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    /*save the checked ise*/
+    /*save the checked ime*/
     int index = (int)data;
-    Eina_Bool state = !elm_check_state_get (obj);
-    elm_check_state_set (obj, state);
-    state = elm_check_state_get (obj);
-    if(state)
+    Eina_Bool state = g_gen_item_data[index].chk_status;
+
+    if(!state)
     {
-        elm_check_state_set(obj, !state);
-        isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
+        isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
     }
     else
     {
-        Evas_Object *widget_parent = elm_object_parent_widget_get(obj);
-        Evas_Object *popup = elm_popup_add(widget_parent);
-        elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
-        char chPopupMsg[255] = {'\0'};
-        sprintf(chPopupMsg, IM_SETTING_LIST_POPUP_TEXT, g_ime_info_list[index].label);
-        elm_object_text_set(popup, chPopupMsg);
-
-        popup_cb_data *cb_data = new popup_cb_data;
-        cb_data->popup = popup;
-        cb_data->parent = obj;
-        cb_data->event_info = event_info;
-        cb_data->data = data;
-
-        Evas_Object *btn_cancel = elm_button_add(popup);
-        elm_object_text_set(btn_cancel, IM_SETTING_LIST_POPUP_CANCEL);
-        elm_object_part_content_set(popup, "button1", btn_cancel);
-        evas_object_smart_callback_add(btn_cancel, "clicked", im_setting_list_check_popup_cancel_cb, cb_data);
-
-        Evas_Object *btn_ok = elm_button_add(popup);
-        elm_object_text_set(btn_ok, IM_SETTING_LIST_POPUP_OK);
-        elm_object_part_content_set(popup, "button2", btn_ok);
-        evas_object_smart_callback_add(btn_ok, "clicked", im_setting_list_check_popup_ok_cb, cb_data);
-
-        evas_object_show(popup);
+        im_setting_list_show_popup(data, obj, im_setting_list_check_popup_ok_cb, im_setting_list_check_popup_cancel_cb);
     }
-}
-
-static void im_setting_list_update_check_button_state(Elm_Object_Item *item, Evas_Object *obj, int index)
-{
-    Eina_Bool state = EINA_FALSE;
-    if (item && obj) {
-        elm_genlist_item_selected_set (item, EINA_FALSE);
-        /* Update check button */
-        Evas_Object *ck = elm_object_item_part_content_get (item, "elm.icon.right");
-        if (ck == NULL){
-            ck = elm_object_item_part_content_get (item, "elm.icon");
-        }
-        evas_object_data_set (ck, "parent_genlist", obj);
-        state = !elm_check_state_get (ck);
-        elm_check_state_set (ck, state);
-        isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
-    }
-}
-
-static void im_setting_list_ise_sel_cb(void *data, Evas_Object *obj, void *event_info)
-{
-    int index = (int)data;
-    Elm_Object_Item *item = (Elm_Object_Item *)event_info;
-    if (!item)
-        return;
-    im_setting_list_update_check_button_state(item, obj, index);
 }
 
 static void
 im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
-    im_setting_list_ise_sel_cb(cb_data->data, cb_data->parent, cb_data->event_info);
+    int index = (int)(cb_data->data);
+    Eina_Bool state = g_gen_item_data[index].chk_status;
+    g_gen_item_data[index].chk_status = !state;
+    isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
+    elm_genlist_item_update(g_gen_item_data[index].gen_item);
     evas_object_del(cb_data->popup);
     delete cb_data;
 }
@@ -315,40 +303,17 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     if (ck == NULL){
         ck = elm_object_item_part_content_get (item, "elm.icon");
     }
-    Eina_Bool state = elm_check_state_get (ck);
+    Eina_Bool state = g_gen_item_data[index].chk_status;
 
     if(state)
     {
-        elm_check_state_set (ck, !state);
-        evas_object_show(ck);
+        g_gen_item_data[index].chk_status = !state;
         isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
+        elm_genlist_item_update(item);
     }
     else
     {
-        Evas_Object *widget_parent = elm_object_parent_widget_get(obj);
-        Evas_Object *popup = elm_popup_add(widget_parent);
-        elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
-        char chPopupMsg[255] = {'\0'};
-        sprintf(chPopupMsg, IM_SETTING_LIST_POPUP_TEXT, g_ime_info_list[index].label);
-        elm_object_text_set(popup, chPopupMsg);
-
-        popup_cb_data *cb_data = new popup_cb_data;
-        cb_data->popup = popup;
-        cb_data->parent = obj;
-        cb_data->event_info = event_info;
-        cb_data->data = data;
-
-        Evas_Object *btn_cancel = elm_button_add(popup);
-        elm_object_text_set(btn_cancel, IM_SETTING_LIST_POPUP_CANCEL);
-        elm_object_part_content_set(popup, "button1", btn_cancel);
-        evas_object_smart_callback_add(btn_cancel, "clicked", im_setting_list_popup_cancel_cb, cb_data);
-
-        Evas_Object *btn_ok = elm_button_add(popup);
-        elm_object_text_set(btn_ok, IM_SETTING_LIST_POPUP_OK);
-        elm_object_part_content_set(popup, "button2", btn_ok);
-        evas_object_smart_callback_add(btn_ok, "clicked", im_setting_list_popup_ok_cb, cb_data);
-
-        evas_object_show(popup);
+        im_setting_list_show_popup(data, obj, im_setting_list_popup_ok_cb, im_setting_list_popup_cancel_cb);
     }
 }
 
@@ -356,7 +321,7 @@ static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Ob
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    im_setting_list_show_ise_selector(data);
+    im_setting_list_show_ime_selector(data);
 }
 
 static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
@@ -440,14 +405,13 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set (ck, "on&off");
         elm_object_disabled_set(ck, g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index));
-        if(g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index)){
-            elm_check_state_set(ck, EINA_FALSE);
-        }
-        else{
-            elm_check_state_set(ck, g_ime_info_list[index].is_enabled);
-        }
+        elm_check_state_set(ck, g_gen_item_data[index].chk_status);
         evas_object_propagate_events_set (ck, EINA_FALSE);
-        evas_object_smart_callback_add(ck, "changed", im_setting_list_check_button_change_cb, (void *) (index));
+        evas_object_size_hint_align_set(ck, EVAS_HINT_FILL, EVAS_HINT_FILL);
+        evas_object_size_hint_weight_set(ck, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+        elm_check_state_pointer_set(ck, (Eina_Bool *)(&(g_gen_item_data[index].chk_status)));
+        evas_object_pass_events_set(ck, 1);
+        evas_object_smart_callback_add(ck, "changed", im_setting_list_check_button_change_cb, (void *)(index));
         evas_object_show(ck);
         return ck;
     }
@@ -556,7 +520,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
     }
 }
 
-static void im_setting_list_add_ise(void *data) {
+static void im_setting_list_add_ime(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
     im_setting_list_genlist_item_class_create(ad->app_type);
@@ -611,6 +575,16 @@ static void im_setting_list_add_ise(void *data) {
 
     /* keyboard list */
     for (i = 0; i < g_ime_info_list.size(); i++) {
+        gen_item_data item_data;
+
+        if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
+            item_data.chk_status = EINA_TRUE;
+        }else
+        {
+            item_data.chk_status = g_ime_info_list[i].is_enabled;
+        }
+        g_gen_item_data.push_back(item_data);
+
         Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
             itc_im_list_keyboard_list,
             (void *)(i),
@@ -619,7 +593,7 @@ static void im_setting_list_add_ise(void *data) {
             im_setting_list_item_sel_cb,
             (void *)(i));
 
-//        elm_object_item_disabled_set(item, g_ime_info_list[i].is_preinstalled);
+        g_gen_item_data[i].gen_item = item;
     }
 }
 
@@ -647,7 +621,7 @@ Evas_Object *im_setting_list_list_create(void *data)
     ad->conform = im_setting_list_conform_create(ad->win);
     ad->naviframe = im_setting_list_naviframe_create(ad->conform);
     ad->genlist = im_setting_list_genlist_create(ad->naviframe);
-    im_setting_list_add_ise(ad);
+    im_setting_list_add_ime(ad);
 
     /* Add genlist to naviframe */
     Evas_Object *back_btn = elm_button_add (ad->naviframe);
@@ -669,6 +643,7 @@ Evas_Object *im_setting_list_list_create(void *data)
 void im_setting_list_app_terminate(void *data)
 {
     g_ime_info_list.clear();
+    g_gen_item_data.clear();
     if(NULL != itc_im_list_keyboard_list)
     {
         elm_genlist_item_class_free(itc_im_list_keyboard_list);
@@ -691,8 +666,8 @@ void im_setting_list_app_terminate(void *data)
 void im_setting_list_update_window(void *data)
 {
     appdata *ad = (appdata *)data;
-    im_setting_list_load_ise_info();
-    im_setting_list_add_ise(ad);
+    im_setting_list_load_ime_info();
+    im_setting_list_add_ime(ad);
 }
 
 void
@@ -702,7 +677,7 @@ im_setting_list_app_create(void *data)
     im_setting_list_text_domain_set();
     ad->win = im_setting_list_main_window_create(PACKAGE);
     im_setting_list_bg_create(ad->win);
-    im_setting_list_load_ise_info();
+    im_setting_list_load_ime_info();
     im_setting_list_list_create(ad);
     evas_object_show(ad->win);
 }

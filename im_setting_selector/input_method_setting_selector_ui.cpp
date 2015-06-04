@@ -23,9 +23,8 @@
 #include <app_control.h>
 
 
-#define IM_SETTING_PACKAGE                 PACKAGE
-#define IM_SETTING_LOCALE_DIR              ("/usr/apps/"PACKAGE_NAME"/res/locale")
-
+#define IM_SETTING_SELECTOR_PACKAGE        PACKAGE
+#define IM_SETTING_SELECTOR_LOCALE_DIR     ("/usr/apps/"PACKAGE_NAME"/res/locale")
 #define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_SELECT_KEYBOARD         dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
 
@@ -43,8 +42,8 @@ typedef struct {
 
 static void im_setting_selector_text_domain_set(void)
 {
-    bindtextdomain(IM_SETTING_PACKAGE, IM_SETTING_LOCALE_DIR);
-    textdomain(IM_SETTING_PACKAGE);
+    bindtextdomain(IM_SETTING_SELECTOR_PACKAGE, IM_SETTING_SELECTOR_LOCALE_DIR);
+    textdomain(IM_SETTING_SELECTOR_PACKAGE);
 }
 
 static Evas_Object *
@@ -81,7 +80,7 @@ static Evas_Object* im_setting_selector_bg_create(Evas_Object *parent)
     return bg;
 }
 
-static void im_setting_selector_load_ise_info(void)
+static void im_setting_selector_load_ime_info(void)
 {
     g_ime_info_list.clear();
     char *active_ime_appid = NULL;
@@ -106,7 +105,7 @@ static void im_setting_selector_load_ise_info(void)
     }
 }
 
-static void im_setting_selector_show_ise_list(void)
+static void im_setting_selector_show_ime_list(void)
 {
      int ret;
      app_control_h app_control;
@@ -144,12 +143,12 @@ static void im_setting_selector_show_ise_list(void)
 static void im_setting_selector_select_keyboard_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /* call input method list application*/
-    im_setting_selector_show_ise_list();
+    im_setting_selector_show_ime_list();
 }
 
 static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    /*save the checked ise*/
+    /*save the checked ime*/
     int index = (int)data;
     isf_control_set_active_ime(g_ime_info_list[index].appid);
 }
@@ -169,7 +168,7 @@ static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_O
     }
 }
 
-static void im_setting_selector_ise_sel_cb(void *data, Evas_Object *obj, void *event_info)
+static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     sel_cb_data * cb_data = (sel_cb_data *)data;
     int index = cb_data->index;
@@ -249,7 +248,7 @@ static void im_setting_selector_genlist_item_class_create(void)
     }
 }
 
-static void im_setting_selector_add_ise(void *data) {
+static void im_setting_selector_add_ime(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
     im_setting_selector_genlist_item_class_create();
@@ -264,7 +263,7 @@ static void im_setting_selector_add_ise(void *data) {
             (void *)(i),
             NULL,
             ELM_GENLIST_ITEM_NONE,
-            im_setting_selector_ise_sel_cb,
+            im_setting_selector_ime_sel_cb,
             (void *)(cb_data));
     }
     elm_radio_value_set(group_radio, g_active_ime_id);
@@ -274,7 +273,7 @@ Evas_Object *im_setting_selector_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
     ad->genlist = im_setting_selector_genlist_create(ad->popup);
-    im_setting_selector_add_ise(ad);
+    im_setting_selector_add_ime(ad);
     return ad->genlist;
 }
 
@@ -343,7 +342,7 @@ im_setting_selector_app_create(void *data)
     appdata *ad = (appdata *)data;
     im_setting_selector_text_domain_set();
     ad->win = im_setting_selector_main_window_create(PACKAGE);
-    im_setting_selector_load_ise_info();
+    im_setting_selector_load_ime_info();
     im_setting_selector_popup_create(ad);
 
     evas_object_show(ad->win);
