@@ -226,8 +226,9 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
 static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
 {
     int index = (int)data;
-    Evas_Object *widget_parent = elm_object_parent_widget_get(obj);
-    Evas_Object *popup = elm_popup_add(widget_parent);
+    Evas_Object *top_widget = elm_object_top_widget_get(obj);
+    Evas_Object *popup = elm_popup_add(top_widget);
+    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
     char chPopupMsg[255] = {'\0'};
     sprintf(chPopupMsg, IM_SETTING_LIST_POPUP_TEXT, g_ime_info_list[index].label);
