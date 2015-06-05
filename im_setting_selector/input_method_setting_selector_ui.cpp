@@ -87,6 +87,7 @@ static void im_setting_selector_load_ime_info(void)
     isf_control_get_active_ime(&active_ime_appid);
     ime_info_s *info = NULL;
     int cnt = isf_control_get_all_ime_info(&info);
+    int nIndex = -1;
     if(info)
     {
         for(int i=0; i<cnt; ++i)
@@ -95,9 +96,10 @@ static void im_setting_selector_load_ime_info(void)
             if(info[i].is_enabled)
             {
                 g_ime_info_list.push_back(info[i]);
+                nIndex ++;
                 if(!strcmp(active_ime_appid, info[i].appid))
                 {
-                    g_active_ime_id = i;
+                    g_active_ime_id = nIndex;
                 }
             }
         }
