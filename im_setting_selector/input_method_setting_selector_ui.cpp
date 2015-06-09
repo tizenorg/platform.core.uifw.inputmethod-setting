@@ -97,13 +97,17 @@ static void im_setting_selector_load_ime_info(void)
             {
                 g_ime_info_list.push_back(info[i]);
                 nIndex ++;
-                if(!strcmp(active_ime_appid, info[i].appid))
+                if(active_ime_appid && (!strcmp(active_ime_appid, info[i].appid)))
                 {
                     g_active_ime_id = nIndex;
                 }
             }
         }
         free(info);
+    }
+    if(active_ime_appid)
+    {
+        free(active_ime_appid);
     }
 }
 
@@ -336,6 +340,7 @@ Evas_Object *im_setting_selector_popup_create(void *data)
 
     elm_object_content_set(ad->popup, ad->genlist);
     evas_object_show(ad->popup);
+    return ad->popup;
 }
 
 void
