@@ -47,7 +47,7 @@ static void im_setting_selector_text_domain_set(void)
 }
 
 static Evas_Object *
-im_setting_selector_main_window_create(char *name)
+im_setting_selector_main_window_create(const char *name)
 {
     Evas_Object *eo = NULL;
     int w = -1, h = -1;
@@ -67,17 +67,6 @@ im_setting_selector_main_window_create(char *name)
         evas_object_resize(eo, w, h);
     }
     return eo;
-}
-
-static Evas_Object* im_setting_selector_bg_create(Evas_Object *parent)
-{
-    Evas_Object *bg;
-    if (parent == NULL) return NULL;
-    bg = elm_bg_add(parent);
-    evas_object_size_hint_weight_set(bg, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    elm_win_resize_object_add(parent, bg);
-    evas_object_show(bg);
-    return bg;
 }
 
 static void im_setting_selector_load_ime_info(void)

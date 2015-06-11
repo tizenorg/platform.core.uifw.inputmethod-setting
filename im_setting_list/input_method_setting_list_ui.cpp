@@ -75,7 +75,7 @@ static void im_setting_list_text_domain_set(void)
 }
 
 static Evas_Object *
-im_setting_list_main_window_create(char *name)
+im_setting_list_main_window_create(const char *name)
 {
     Evas_Object *eo = NULL;
     int w = -1, h = -1;
@@ -135,12 +135,15 @@ static int im_setting_list_get_active_ime_index(void)
     std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
     for (; iter != end; ++iter)
     {
-        if(!strcmp(active_ime_appid, iter->appid))
+        if(active_ime_appid && (!strcmp(active_ime_appid, iter->appid)))
         {
             break;
         }
     }
-    free(active_ime_appid);
+    if(active_ime_appid)
+    {
+        free(active_ime_appid);
+    }
     return (iter-g_ime_info_list.begin());
 }
 
@@ -230,8 +233,10 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     Evas_Object *popup = elm_popup_add(top_widget);
     eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
+    char chFormatMsg[255] = {'\0'};
     char chPopupMsg[255] = {'\0'};
-    sprintf(chPopupMsg, IM_SETTING_LIST_POPUP_TEXT, g_ime_info_list[index].label);
+    snprintf(chFormatMsg, sizeof(chFormatMsg), "%s", IM_SETTING_LIST_POPUP_TEXT);
+    snprintf(chPopupMsg, sizeof(chPopupMsg), chFormatMsg, g_ime_info_list[index].label);
     elm_object_text_set(popup, chPopupMsg);
 
     popup_cb_data *cb_data = new popup_cb_data;
@@ -378,14 +383,6 @@ static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *ob
     return NULL;
 }
 
-static Evas_Object *im_setting_list_genlist_group_icon_get(void *data, Evas_Object *obj, const char *part)
-{
-    Evas_Object *item = NULL;
-    if (!strcmp(part, "elm.icon.right")) {
-    }
-    return item;
-}
-
 static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)(data);
@@ -523,7 +520,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
 
 static void im_setting_list_add_ime(void *data) {
     appdata *ad = (appdata *)data;
-    unsigned int i = 0;
+    int i = 0;
     im_setting_list_genlist_item_class_create(ad->app_type);
 
     if(NULL != ad->genlist)
@@ -575,7 +572,8 @@ static void im_setting_list_add_ime(void *data) {
             NULL);
 
     /* keyboard list */
-    for (i = 0; i < g_ime_info_list.size(); i++) {
+    int info_list_size = g_ime_info_list.size();
+    for (i = 0; i < info_list_size; i++) {
         gen_item_data item_data;
 
         if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
