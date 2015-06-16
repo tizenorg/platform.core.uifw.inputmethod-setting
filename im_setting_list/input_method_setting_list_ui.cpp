@@ -92,6 +92,8 @@ im_setting_list_main_window_create(const char *name)
            return NULL;
         }
         evas_object_resize(eo, w, h);
+        int rots[4] = {0, 90, 180, 270};
+        elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
     }
     return eo;
 }
