@@ -14,12 +14,20 @@
  * limitations under the License.
  *
  */
+#define Uses_SCIM_PANEL_AGENT
+#define Uses_SCIM_CONFIG_PATH
+#define Uses_SCIM_HELPER_MODULE
+#define Uses_SCIM_IMENGINE_MODULE
+#define Uses_SCIM_COMPOSE_KEY
+
 #include "input_method_setting_list.h"
 #include <string>
 #include <app.h>
 #include <efl_extension.h>
 #include <vector>
 #include "isf_control.h"
+#include <scim.h>
+#include <scim_setup_module_efl.h>
 
 #define IM_SETTING_LIST_PACKAGE                      PACKAGE
 #define IM_SETTING_LIST_LOCALE_DIR                   ("/usr/apps/"PACKAGE_NAME"/res/locale")
@@ -54,19 +62,68 @@ typedef struct gen_item_data_s
     int chk_status;
 }gen_item_data;
 
+typedef enum {
+    ISE_OPTION_MODULE_EXIST_SO = 0,
+    ISE_OPTION_MODULE_NO_EXIST
+} ISE_OPTION_MODULE_STATE;
+
 typedef void (*popup_ok_cb)(void *data, Evas_Object *obj, void *event_info);
 typedef void (*popup_cancel_cb)(void *data, Evas_Object *obj, void *event_info);
 
-static std::vector<ime_info_s>  g_ime_info_list;
-static Elm_Genlist_Item_Class  *itc_im_list_keyboard_list = NULL;
-static Elm_Genlist_Item_Class  *itc_im_list_group = NULL;
-static Elm_Genlist_Item_Class  *itc_im_list_item = NULL;
-static Elm_Genlist_Item_Class  *itc_im_list_item_one_line = NULL;
-static int g_active_ime_index = -1;
-static list_item_text item_text[2];
-static std::vector<gen_item_data> g_gen_item_data;
+static std::vector<ime_info_s>      g_ime_info_list;
+static Elm_Genlist_Item_Class       *itc_im_list_keyboard_list = NULL;
+static Elm_Genlist_Item_Class       *itc_im_list_group = NULL;
+static Elm_Genlist_Item_Class       *itc_im_list_item = NULL;
+static Elm_Genlist_Item_Class       *itc_im_list_item_one_line = NULL;
+static int                          g_active_ime_index = -1;
+static list_item_text               item_text[2];
+static std::vector<gen_item_data>   g_gen_item_data;
+
+static std::vector<String>          _setup_modules;
+static String                       _mdl_name;
+static SetupModule                  *_mdl = NULL;
+static ConfigPointer                _config;
+static Connection                   _reload_signal_connection;
+static ISE_OPTION_MODULE_STATE      _ise_option_module_stat = ISE_OPTION_MODULE_NO_EXIST;
+
+static Ecore_Fd_Handler            *_read_handler             = 0;
+static HelperAgent                  _helper_agent;
+static HelperInfo                   _helper_info ("fd491a70-22f5-11e2-89f3-eb5999be869e", "ISF Setting", "", "", SCIM_HELPER_STAND_ALONE);
 
 void im_setting_list_update_window(void *data);
+
+static void helper_ise_reload_config (void)
+{
+    if (_helper_agent.is_connected ())
+        _helper_agent.reload_config ();
+}
+
+static Eina_Bool ise_option_view_set_cb (void *data, Elm_Object_Item *it)
+{
+    if (!data || !_mdl)
+        return EINA_TRUE;
+
+    _mdl->save_config (_config);
+    helper_ise_reload_config ();
+
+    return EINA_TRUE;
+}
+
+static ISE_OPTION_MODULE_STATE find_ise_option_module (char *active_ime_appid)
+{
+    LOGD ("%s", active_ime_appid);
+
+    _ise_option_module_stat = ISE_OPTION_MODULE_NO_EXIST;
+
+    _mdl_name = active_ime_appid + String ("-setup");
+    for (unsigned int i = 0; i < _setup_modules.size (); i++) {
+        if (_mdl_name == _setup_modules[i]) {
+            _ise_option_module_stat = ISE_OPTION_MODULE_EXIST_SO;
+        }
+    }
+
+    return _ise_option_module_stat;
+}
 
 static void im_setting_list_text_domain_set(void)
 {
@@ -336,7 +393,37 @@ static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    isf_control_open_ime_option_window();
+    Evas_Object *option_content;
+    appdata *ad = (appdata *)data;
+    char *active_ime_appid = NULL;
+    isf_control_get_active_ime(&active_ime_appid);
+
+    if (ad && active_ime_appid && ISE_OPTION_MODULE_EXIST_SO == find_ise_option_module (active_ime_appid)) {
+        if (_mdl) {
+            delete _mdl;
+            _mdl = NULL;
+        }
+
+        if (_mdl_name.length () > 0)
+            _mdl = new SetupModule (String (_mdl_name));
+
+        if (_mdl == NULL || !_mdl->valid ()) {
+            free(active_ime_appid);
+            return;
+        } else {
+            LOGD("keyboard option window is showing");
+            _mdl->load_config (_config);
+            option_content = _mdl->create_ui (ad->conform, ad->naviframe);
+
+            Elm_Object_Item *it = elm_naviframe_item_push (ad->naviframe, IM_SETTING_LIST_KEYBOARD_SETTING, NULL, NULL, option_content, NULL);
+            elm_naviframe_item_pop_cb_set (it, ise_option_view_set_cb, ad);
+        }
+    }
+    else {
+        isf_control_open_ime_option_window();
+    }
+    if (active_ime_appid)
+        free(active_ime_appid);
 }
 
 static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
@@ -558,7 +645,7 @@ static void im_setting_list_add_ime(void *data) {
             NULL,
             ELM_GENLIST_ITEM_NONE,
             im_setting_list_keyboard_setting_item_sel_cb,
-            NULL);
+            data);
 
         elm_object_item_disabled_set(item, !(g_ime_info_list[g_active_ime_index].has_option));
     }
@@ -669,6 +756,53 @@ void im_setting_list_update_window(void *data)
     im_setting_list_add_ime(ad);
 }
 
+static void load_config_module (void)
+{
+    _config = ConfigBase::get (true, "socket");
+    if (_config.null ()) {
+        std::cerr << "Create dummy config!!!\n";
+        _config = new DummyConfig ();
+    }
+
+    if (_config.null ()) {
+        std::cerr << "Can not create Config Object!\n";
+    }
+}
+
+/**
+ * @brief Reload config slot function for HelperAgent.
+ *
+ * @param ic The context of application.
+ * @param ise_uuid The ISE uuid.
+ *
+ * @return void
+ */
+static void slot_reload_config (const HelperAgent *, int ic, const String &ise_uuid)
+{
+
+}
+
+/**
+ * @brief Handler function for HelperAgent input.
+ *
+ * @param user_data Data to pass when it is called.
+ * @param fd_handler The Ecore Fd handler.
+ *
+ * @return ECORE_CALLBACK_RENEW
+ */
+static Eina_Bool helper_agent_input_handler (void *user_data, Ecore_Fd_Handler *fd_handler)
+{
+    if (fd_handler == _read_handler && _helper_agent.has_pending_event ()) {
+        if (!_helper_agent.filter_event ()) {
+            LOGD ("helper_agent.filter_event () failed!!!\n");
+        }
+    } else {
+        LOGD ("helper_agent.has_pending_event () failed!!!\n");
+    }
+
+    return ECORE_CALLBACK_RENEW;
+}
+
 void
 im_setting_list_app_create(void *data)
 {
@@ -677,6 +811,27 @@ im_setting_list_app_create(void *data)
     ad->win = im_setting_list_main_window_create(PACKAGE);
     im_setting_list_bg_create(ad->win);
     im_setting_list_load_ime_info();
+
+    load_config_module ();
+    scim_get_setup_module_list (_setup_modules);
+
+    /* Connect PanelAgent by HelperAgent */
+    String display_name = String (":13");
+    const char *p = getenv ("DISPLAY");
+    if (p != NULL)
+        display_name = String (p);
+
+    _reload_signal_connection = _helper_agent.signal_connect_reload_config (slot (slot_reload_config));
+    int id = _helper_agent.open_connection (_helper_info, display_name);
+    if (id == -1) {
+        LOGD("open_connection failed!!!!!!\n");
+    } else {
+        int fd = _helper_agent.get_connection_number ();
+        if (fd >= 0)
+            _read_handler = ecore_main_fd_handler_add (fd, ECORE_FD_READ, helper_agent_input_handler, NULL, NULL, NULL);
+    }
+
     im_setting_list_list_create(ad);
     evas_object_show(ad->win);
 }
+
