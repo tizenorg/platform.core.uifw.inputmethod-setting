@@ -207,7 +207,7 @@ static void
 im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
-    int index = (int)(cb_data->data);
+    int index = (int)reinterpret_cast<long>(cb_data->data);
     Eina_Bool state = EINA_FALSE;
     state = g_gen_item_data[index].chk_status;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
@@ -219,7 +219,7 @@ static void
 im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
-    int index = (int)(cb_data->data);
+    int index = (int)reinterpret_cast<long>(cb_data->data);
     Eina_Bool state = g_gen_item_data[index].chk_status;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
     g_gen_item_data[index].chk_status = !state;
@@ -230,7 +230,7 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
 
 static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
 {
-    int index = (int)data;
+    int index = (int)reinterpret_cast<long>(data);
     Evas_Object *top_widget = elm_object_top_widget_get(obj);
     Evas_Object *popup = elm_popup_add(top_widget);
     eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
@@ -262,7 +262,7 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
 static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /*save the checked ime*/
-    int index = (int)data;
+    int index = (int)reinterpret_cast<long>(data);
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
     if(!state)
@@ -279,7 +279,7 @@ static void
 im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
-    int index = (int)(cb_data->data);
+    int index = (int)reinterpret_cast<long>(cb_data->data);
     Eina_Bool state = g_gen_item_data[index].chk_status;
     g_gen_item_data[index].chk_status = !state;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
@@ -301,7 +301,7 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
 
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if(g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index))
     {
         return;
@@ -387,7 +387,7 @@ static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *ob
 
 static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.text.main.left.top") ||
         !strcmp(part, "elm.text.main.left") ||
         !strcmp(part, "elm.text.main") ||
@@ -400,7 +400,7 @@ static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Ev
 
 static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set (ck, "on&off");

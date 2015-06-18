@@ -146,7 +146,7 @@ static void im_setting_selector_select_keyboard_cb(void *data, Evas_Object *obj,
 static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /*save the checked ime*/
-    int index = (int)data;
+    int index = (int)reinterpret_cast<long>(data);
     isf_control_set_active_ime(g_ime_info_list[index].appid);
 }
 
@@ -201,7 +201,7 @@ static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
 
 static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.text"))
     {
         return strdup(g_ime_info_list[index].label);
@@ -211,7 +211,7 @@ static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object 
 
 static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.swallow.icon")){
         Evas_Object *bx = elm_box_add(obj);
         Evas_Object *radio = elm_radio_add(obj);
