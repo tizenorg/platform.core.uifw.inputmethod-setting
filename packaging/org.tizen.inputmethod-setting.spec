@@ -1,6 +1,3 @@
-%bcond_with x
-%bcond_with wayland
-
 Name:       org.tizen.inputmethod-setting
 Summary:    Input Method Setting Application
 Version:    0.4.0
@@ -52,12 +49,7 @@ CXXFLAGS+=" -D_WEARABLE";
 
 rm -rf CMakeFiles
 rm -rf CMakeCache.txt
-
-%if %{with wayland}
-cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} -Dwith_wayland=TRUE
-%else
 cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
-%endif
 make %{?jobs:-j%jobs}
 
 %post

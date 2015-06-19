@@ -30,10 +30,6 @@ capi-appfw-application appcore-efl isf elementary vconf
 vconf-internal-keys efl-extension pkgmgr-info dlog
 )
 
-IF (with_wayland)
-        ADD_DEFINITIONS("-DWAYLAND")
-ENDIF(with_wayland)
-
 FOREACH(flag ${pkgs_CFLAGS})
     SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
     SET(EXTRA_CXXFLAGS "${EXTRA_CXXFLAGS} ${flag}")
