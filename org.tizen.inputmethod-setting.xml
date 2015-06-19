@@ -3,14 +3,14 @@
         <label>Keyboard setting</label>
         <author email="shoum.chen@samsung.com" href="www.samsung.com">Shuoming Chen</author>
         <description>Keyboard setting Application</description>
-        <ui-application appid="org.tizen.inputmethod-setting-list" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-list" nodisplay="true" multiple="false" type="capp" taskmanage="false" process-pool="true">
+        <ui-application appid="org.tizen.inputmethod-setting-list" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-list" nodisplay="true" multiple="false" type="capp" taskmanage="false">
             <category name="http://tizen.org/category/ime-list"/>
             <icon>/usr/share/icons/default/small/org.tizen.inputmethod-setting-list.png</icon>
             <label>IME List</label>
             <label xml:lang="en-us">IME List</label>
        </ui-application>
 
-       <ui-application appid="org.tizen.inputmethod-setting-selector" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-selector" nodisplay="true" multiple="false" type="capp" taskmanage="false" process-pool="true">
+       <ui-application appid="org.tizen.inputmethod-setting-selector" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-selector" nodisplay="true" multiple="false" type="capp" taskmanage="false">
             <category name="http://tizen.org/category/ime-selector"/>
             <icon>/usr/share/icons/default/small/org.tizen.inputmethod-setting-selector.png</icon>
             <label>IME Selector</label>
