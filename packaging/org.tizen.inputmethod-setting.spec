@@ -5,6 +5,7 @@ Release:    1
 Group:      Graphics & UI Framework/Input
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
+Source1001: %{name}.manifest
 
 %if "%{?profile}" == "tv"
 ExcludeArch: %{arm} %ix86 x86_64
@@ -28,6 +29,7 @@ Setting Application for ISF.
 
 %prep
 %setup -q -n %{name}-%{version}
+cp %{SOURCE1001} .
 
 %build
 export CFLAGS="$CFLAGS -DTIZEN_ENGINEER_MODE"
@@ -67,7 +69,7 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/license
 
 %files
-%manifest org.tizen.inputmethod-setting.manifest
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 /usr/apps/org.tizen.inputmethod-setting/bin/*
 /usr/apps/org.tizen.inputmethod-setting/res/*
