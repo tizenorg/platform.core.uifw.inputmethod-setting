@@ -630,8 +630,8 @@ static void im_setting_list_add_ime(void *data) {
             NULL,
             NULL);
 
-        sprintf(item_text[0].main_text, "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
-        sprintf(item_text[0].sub_text, "%s", g_ime_info_list[g_active_ime_index].label);
+        snprintf(item_text[0].main_text, sizeof(item_text[0].main_text), "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
+        snprintf(item_text[0].sub_text, sizeof(item_text[0].sub_text), "%s", g_ime_info_list[g_active_ime_index].label);
         elm_genlist_item_append(ad->genlist,
             itc_im_list_item,
             (void *)&item_text[0],
@@ -640,7 +640,7 @@ static void im_setting_list_add_ime(void *data) {
             im_setting_list_set_default_keyboard_item_sel_cb,
             data);
 
-        sprintf(item_text[1].main_text, "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
+        snprintf(item_text[1].main_text, sizeof(item_text[1].main_text), "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
         Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
             itc_im_list_item_one_line,
             (void *)&item_text[1],
