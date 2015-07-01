@@ -366,8 +366,6 @@ static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
 static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
-    elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
-    elm_genlist_homogeneous_set (genlist, EINA_TRUE);
     evas_object_show(genlist);
     return genlist;
 }
