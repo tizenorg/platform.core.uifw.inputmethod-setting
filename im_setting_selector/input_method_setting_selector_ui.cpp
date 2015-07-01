@@ -297,6 +297,13 @@ static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *i
      return EINA_TRUE;
 }
 
+static void
+im_setting_selector_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *obj, void *event_info EINA_UNUSED)
+{
+    evas_object_del(obj);
+    ui_app_exit();
+}
+
 Evas_Object *im_setting_selector_popup_create(void *data)
 {
     appdata *ad = (appdata *)data;
@@ -306,6 +313,8 @@ Evas_Object *im_setting_selector_popup_create(void *data)
         elm_radio_state_value_set(group_radio, -1);
     }
     ad->popup = elm_popup_add(ad->win);
+    elm_popup_align_set (ad->popup, ELM_NOTIFY_ALIGN_FILL, 0.5);
+    evas_object_smart_callback_add(ad->popup, "block,clicked", im_setting_selector_popup_block_clicked_cb, NULL);
     elm_object_part_text_set(ad->popup, "title,text", IM_SETTING_SELECTOR_TITLE);
 
     ad->naviframe = im_setting_selector_naviframe_create(ad->win);
