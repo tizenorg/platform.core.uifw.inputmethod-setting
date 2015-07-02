@@ -21,14 +21,12 @@
 #include <vector>
 #include <isf_control.h>
 #include <app_control.h>
-
+#include <algorithm>
 
 #define IM_SETTING_SELECTOR_PACKAGE        PACKAGE
 #define IM_SETTING_SELECTOR_LOCALE_DIR     ("/usr/apps/"PACKAGE_NAME"/res/locale")
 #define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_SELECT_KEYBOARD         dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
-
-using namespace std;
 
 static std::vector<ime_info_s>      g_ime_info_list;
 static Elm_Genlist_Item_Class       *itc_im_selector = NULL;
@@ -39,6 +37,15 @@ typedef struct {
     void *data;
     int index;
 }sel_cb_data;
+
+class ime_info_compare
+{
+    public:
+    bool operator()(const ime_info_s &first, const ime_info_s &sec)
+    {
+        return (strcasecmp(first.label, sec.label) < 0);
+    }
+};
 
 static void im_setting_selector_text_domain_set(void)
 {
@@ -71,31 +78,55 @@ im_setting_selector_main_window_create(const char *name)
     return eo;
 }
 
+static void im_setting_selector_sort_ime_info(std::vector<ime_info_s> &preinstall, std::vector<ime_info_s> &user)
+{
+    std::sort(preinstall.begin(), preinstall.end(), ime_info_compare());
+    std::sort(user.begin(), user.end(), ime_info_compare());
+    for(unsigned int i=0; i<preinstall.size(); ++i)
+    {
+        g_ime_info_list.push_back(preinstall[i]);
+    }
+    for(unsigned int i=0; i<user.size(); ++i)
+    {
+        g_ime_info_list.push_back(user[i]);
+    }
+}
+
 static void im_setting_selector_load_ime_info(void)
 {
+    std::vector<ime_info_s>      ime_info_list_preinstall;
+    std::vector<ime_info_s>      ime_info_list_user;
     g_ime_info_list.clear();
     char *active_ime_appid = NULL;
     isf_control_get_active_ime(&active_ime_appid);
     ime_info_s *info = NULL;
     int cnt = isf_control_get_all_ime_info(&info);
-    int nIndex = -1;
     if(info)
     {
         for(int i=0; i<cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
-            if(info[i].is_enabled)
+            if(info[i].is_enabled && info[i].is_preinstalled)
             {
-                g_ime_info_list.push_back(info[i]);
-                nIndex ++;
-                if(active_ime_appid && (!strcmp(active_ime_appid, info[i].appid)))
-                {
-                    g_active_ime_id = nIndex;
-                }
+                ime_info_list_preinstall.push_back(info[i]);
+            }
+            else if(info[i].is_enabled)
+            {
+                ime_info_list_user.push_back(info[i]);
             }
         }
         free(info);
     }
+
+    im_setting_selector_sort_ime_info(ime_info_list_preinstall, ime_info_list_user);
+    for(unsigned int i=0; i<g_ime_info_list.size(); ++i)
+    {
+        if(active_ime_appid && (!strcmp(active_ime_appid, g_ime_info_list[i].appid)))
+        {
+            g_active_ime_id = i;
+        }
+    }
+
     if(active_ime_appid)
     {
         free(active_ime_appid);

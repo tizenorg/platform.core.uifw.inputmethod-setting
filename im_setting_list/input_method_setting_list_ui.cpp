@@ -67,6 +67,15 @@ typedef enum {
     ISE_OPTION_MODULE_NO_EXIST
 } ISE_OPTION_MODULE_STATE;
 
+class ime_info_compare
+{
+    public:
+    bool operator()(const ime_info_s &first, const ime_info_s &sec)
+    {
+        return (strcasecmp(first.label, sec.label) < 0);
+    }
+};
+
 typedef void (*popup_ok_cb)(void *data, Evas_Object *obj, void *event_info);
 typedef void (*popup_cancel_cb)(void *data, Evas_Object *obj, void *event_info);
 
@@ -166,8 +175,24 @@ static Evas_Object* im_setting_list_bg_create(Evas_Object *parent)
     return bg;
 }
 
+static void im_setting_list_sort_ime_info(std::vector<ime_info_s> &preinstall, std::vector<ime_info_s> &user)
+{
+    std::sort(preinstall.begin(), preinstall.end(), ime_info_compare());
+    std::sort(user.begin(), user.end(), ime_info_compare());
+    for(unsigned int i=0; i<preinstall.size(); ++i)
+    {
+        g_ime_info_list.push_back(preinstall[i]);
+    }
+    for(unsigned int i=0; i<user.size(); ++i)
+    {
+        g_ime_info_list.push_back(user[i]);
+    }
+}
+
 static void im_setting_list_load_ime_info(void)
 {
+    std::vector<ime_info_s>      ime_info_list_preinstall;
+    std::vector<ime_info_s>      ime_info_list_user;
     ime_info_s *info = NULL;
     g_ime_info_list.clear();
     int cnt = isf_control_get_all_ime_info(&info);
@@ -176,7 +201,14 @@ static void im_setting_list_load_ime_info(void)
         for(int i=0; i<cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
-            g_ime_info_list.push_back(info[i]);
+            if(info[i].is_preinstalled)
+            {
+                ime_info_list_preinstall.push_back(info[i]);
+            }
+            else
+            {
+                ime_info_list_user.push_back(info[i]);
+            }
         }
         free(info);
     }
@@ -184,6 +216,7 @@ static void im_setting_list_load_ime_info(void)
     {
         LOGD("isf_control_get_all_ime_info failed\n");
     }
+    im_setting_list_sort_ime_info(ime_info_list_preinstall, ime_info_list_user);
 }
 
 static int im_setting_list_get_active_ime_index(void)
