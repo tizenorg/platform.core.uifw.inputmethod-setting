@@ -307,7 +307,6 @@ Evas_Object *im_setting_selector_list_create(void *data)
 static Evas_Object *im_setting_selector_naviframe_create(Evas_Object* parent)
 {
     Evas_Object *naviframe = elm_naviframe_add(parent);
-    elm_naviframe_prev_btn_auto_pushed_set(naviframe, EINA_FALSE);
     eext_object_event_callback_add(naviframe, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
     evas_object_size_hint_weight_set(naviframe, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(naviframe, EVAS_HINT_FILL, EVAS_HINT_FILL);
