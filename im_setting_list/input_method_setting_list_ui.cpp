@@ -141,7 +141,7 @@ static void im_setting_list_text_domain_set(void)
 }
 
 static Evas_Object *
-im_setting_list_main_window_create(const char *name)
+im_setting_list_main_window_create(const char *name, int app_type)
 {
     Evas_Object *eo = NULL;
     int w = -1, h = -1;
@@ -158,8 +158,10 @@ im_setting_list_main_window_create(const char *name)
            return NULL;
         }
         evas_object_resize(eo, w, h);
-        int rots[4] = {0, 90, 180, 270};
-        elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
+        if (app_type != APP_TYPE_SETTING_NO_ROTATION) {
+            int rots[4] = {0, 90, 180, 270};
+            elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
+        }
     }
     return eo;
 }
@@ -247,50 +249,52 @@ im_setting_list_app_control_reply_cb(app_control_h request, app_control_h reply,
         return;
     }
     if (result == APP_CONTROL_RESULT_SUCCEEDED) {
-        char *value = NULL;
-        int res = app_control_get_extra_data(reply, "result", &value);
-        if (APP_CONTROL_ERROR_NONE == res && NULL != value) {
-            im_setting_list_update_window(user_data);
-        }
-        if (value){
-            free(value);
-        }
+        im_setting_list_update_window(user_data);
     }
 }
 
 static void im_setting_list_show_ime_selector(void *data)
 {
     int ret;
+    appdata *ad = (appdata *)data;
     app_control_h app_control;
-    const char *app_id = "org.tizen.inputmethod-setting-selector"; // This is temporary. AppId can be got using pkgmgr-info later.
+    const char *app_id = "org.tizen.inputmethod-setting-selector";
+
+    if (!ad)
+        return;
+
     ret = app_control_create (&app_control);
     if (ret != APP_CONTROL_ERROR_NONE) {
-          LOGD("app_control_create returned %d", ret);
-          return;
+        LOGD("app_control_create returned %d", ret);
+        return;
     }
 
     ret = app_control_set_operation (app_control, APP_CONTROL_OPERATION_DEFAULT);
     if (ret != APP_CONTROL_ERROR_NONE) {
-          LOGD("app_control_set_operation returned %d", ret);
-          app_control_destroy(app_control);
-          return;
-      }
+        LOGD("app_control_set_operation returned %d", ret);
+        app_control_destroy(app_control);
+        return;
+    }
 
-      ret = app_control_set_app_id (app_control, app_id);
-      if (ret != APP_CONTROL_ERROR_NONE) {
-          LOGD("app_control_set_app_id returned %d", ret);
-          app_control_destroy(app_control);
-          return;
-      }
+    ret = app_control_set_app_id (app_control, app_id);
+    if (ret != APP_CONTROL_ERROR_NONE) {
+        LOGD("app_control_set_app_id returned %d", ret);
+        app_control_destroy(app_control);
+        return;
+    }
 
-      app_control_add_extra_data(app_control, "caller", "settings");
-      ret = app_control_send_launch_request(app_control, im_setting_list_app_control_reply_cb, data);
-      if (ret != APP_CONTROL_ERROR_NONE) {
-         LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
-         app_control_destroy(app_control);
-         return;
-      }
-      app_control_destroy(app_control);
+    if (ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
+        app_control_add_extra_data(app_control, "caller", "settings_no_rotation");
+    else
+        app_control_add_extra_data(app_control, "caller", "settings");
+
+    ret = app_control_send_launch_request(app_control, im_setting_list_app_control_reply_cb, data);
+    if (ret != APP_CONTROL_ERROR_NONE) {
+        LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
+        app_control_destroy(app_control);
+        return;
+    }
+    app_control_destroy(app_control);
 }
 
 static void
@@ -841,8 +845,10 @@ void
 im_setting_list_app_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
     im_setting_list_text_domain_set();
-    ad->win = im_setting_list_main_window_create(PACKAGE);
+    ad->win = im_setting_list_main_window_create(PACKAGE, ad->app_type);
     im_setting_list_bg_create(ad->win);
     im_setting_list_load_ime_info();
 

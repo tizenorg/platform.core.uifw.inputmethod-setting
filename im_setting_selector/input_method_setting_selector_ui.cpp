@@ -54,7 +54,7 @@ static void im_setting_selector_text_domain_set(void)
 }
 
 static Evas_Object *
-im_setting_selector_main_window_create(const char *name)
+im_setting_selector_main_window_create(const char *name, int app_type)
 {
     Evas_Object *eo = NULL;
     int w = -1, h = -1;
@@ -72,8 +72,10 @@ im_setting_selector_main_window_create(const char *name)
            return NULL;
         }
         evas_object_resize(eo, w, h);
-        int rots[4] = {0, 90, 180, 270};
-        elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
+        if (app_type != APP_TYPE_SETTING_NO_ROTATION) {
+            int rots[4] = {0, 90, 180, 270};
+            elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
+        }
     }
     return eo;
 }
@@ -137,7 +139,7 @@ static void im_setting_selector_show_ime_list(void)
 {
      int ret;
      app_control_h app_control;
-     const char *app_id = "org.tizen.inputmethod-setting-list"; // This is temporary. AppId can be got using pkgmgr-info later.
+     const char *app_id = "org.tizen.inputmethod-setting-list";
      ret = app_control_create (&app_control);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_create returned %d", ret);
@@ -158,7 +160,6 @@ static void im_setting_selector_show_ime_list(void)
          return;
      }
 
-     app_control_add_extra_data(app_control, "caller", "verify");
      ret = app_control_send_launch_request(app_control, NULL, NULL);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
@@ -210,7 +211,6 @@ static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *e
     if(ad->caller){
         app_control_h reply;
         app_control_create(&reply);
-        app_control_add_extra_data(reply, "result", g_ime_info_list[g_active_ime_id].appid);
         app_control_reply_to_launch_request(reply, ad->caller, APP_CONTROL_RESULT_SUCCEEDED);
         app_control_destroy(reply);
     }
@@ -376,8 +376,10 @@ void
 im_setting_selector_app_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
     im_setting_selector_text_domain_set();
-    ad->win = im_setting_selector_main_window_create(PACKAGE);
+    ad->win = im_setting_selector_main_window_create(PACKAGE, ad->app_type);
     im_setting_selector_load_ime_info();
     im_setting_selector_popup_create(ad);
 

@@ -38,23 +38,33 @@ app_control(app_control_h app_control, void *data)
 {
     /* Handle the launch request. */
     appdata *ad = (appdata *)data;
+    int res;
     char* type = NULL;
 
     LOGD("");
 
-    int res = app_control_get_extra_data(app_control, "caller", &type);
-    if(APP_CONTROL_ERROR_NONE == res && NULL != type && strcmp(type,"settings") == 0)
-    {
-        ad->app_type = APP_TYPE_SETTING;
-        app_control_clone(&(ad->caller), app_control);
+    if (!ad)
+        return;
+
+    ad->app_type = APP_TYPE_NORMAL;
+
+    res = app_control_get_extra_data(app_control, "caller", &type);
+    if (APP_CONTROL_ERROR_NONE == res && NULL != type) {
+        if (strcmp(type,"settings") == 0)
+        {
+            ad->app_type = APP_TYPE_SETTING;
+            app_control_clone(&(ad->caller), app_control);
+        }
+        else if (strcmp(type, "settings_no_rotation") == 0)
+        {
+            ad->app_type = APP_TYPE_SETTING_NO_ROTATION;
+            app_control_clone(&(ad->caller), app_control);
+        }
     }
-    else
-    {
-        ad->app_type = APP_TYPE_NORMAL;
-    }
+
     ad->app_state = APP_STATE_SERVICE;
     im_setting_selector_app_create(ad);
-    if(NULL != type)
+    if (NULL != type)
     {
         free(type);
     }
@@ -63,9 +73,12 @@ app_control(app_control_h app_control, void *data)
 static void
 app_pause(void *data)
 {
+    appdata *ad = (appdata *)data;
     LOGD("");
     /* Take necessary actions when application becomes invisible. */
-    appdata *ad = (appdata *)data;
+
+    if (!ad)
+        return;
     ad->app_state = APP_STATE_PAUSE;
     im_setting_selector_app_pause(ad);
 }
@@ -73,21 +86,28 @@ app_pause(void *data)
 static void
 app_resume(void *data)
 {
+    appdata *ad = (appdata *)data;
     LOGD("");
     /* Take necessary actions when application becomes visible. */
-    appdata *ad = (appdata *)data;
+
+    if (!ad)
+        return;
     ad->app_state = APP_STATE_RESUME;
 }
 
 static void
 app_terminate(void *data)
 {
+    appdata *ad = (appdata *)data;
     LOGD("");
     /* Release all resources. */
-    appdata *ad = (appdata *)data;
+
+    if (!ad)
+        return;
     ad->app_state = APP_STATE_TERMINATE;
     im_setting_selector_app_terminate(ad);
-    app_control_destroy(ad->caller);
+    if (ad->caller)
+        app_control_destroy(ad->caller);
 }
 
 static void
@@ -95,12 +115,6 @@ ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 {
     LOGD("");
     /*APP_EVENT_LANGUAGE_CHANGED*/
-/*    char *locale = vconf_get_str(VCONFKEY_LANGSET);
-    if (locale) {
-        elm_language_set(locale);
-        elm_config_all_flush();
-    }
-*/
 }
 
 static void
@@ -108,7 +122,6 @@ ui_app_orient_changed(app_event_info_h event_info, void *user_data)
 {
     LOGD("");
     /*APP_EVENT_DEVICE_ORIENTATION_CHANGED*/
-    return;
 }
 
 static void
