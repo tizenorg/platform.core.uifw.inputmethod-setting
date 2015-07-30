@@ -785,6 +785,7 @@ void im_setting_list_app_terminate(void *data)
         elm_genlist_item_class_free(itc_im_list_item);
         itc_im_list_item = NULL;
     }
+    ConfigBase::set(0);
 }
 
 void im_setting_list_update_window(void *data)
