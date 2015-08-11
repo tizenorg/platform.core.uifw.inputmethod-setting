@@ -656,15 +656,17 @@ static void im_setting_list_add_ime(void *data) {
     g_active_ime_index = im_setting_list_get_active_ime_index();
 //    list_item_text item_text;
     memset(&item_text, 0, sizeof(item_text));
+    Elm_Object_Item * group_header_item = NULL;
     if(ad->app_type == APP_TYPE_SETTING)
     {
-        elm_genlist_item_append(ad->genlist,
+        group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
             IM_SETTING_LIST_VIRTUAL_KEYBOARD,
             NULL,
             ELM_GENLIST_ITEM_NONE,
             NULL,
             NULL);
+        elm_genlist_item_select_mode_set(group_header_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
         snprintf(item_text[0].main_text, sizeof(item_text[0].main_text), "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
         snprintf(item_text[0].sub_text, sizeof(item_text[0].sub_text), "%s", g_ime_info_list[g_active_ime_index].label);
@@ -688,13 +690,14 @@ static void im_setting_list_add_ime(void *data) {
         elm_object_item_disabled_set(item, !(g_ime_info_list[g_active_ime_index].has_option));
     }
 
-    elm_genlist_item_append(ad->genlist,
+    group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
             IM_SETTING_LIST_KEYBOARD_HEADER,
             NULL,
             ELM_GENLIST_ITEM_NONE,
             NULL,
             NULL);
+    elm_genlist_item_select_mode_set(group_header_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
     /* keyboard list */
     int info_list_size = g_ime_info_list.size();
@@ -703,8 +706,7 @@ static void im_setting_list_add_ime(void *data) {
 
         if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
             item_data.chk_status = EINA_TRUE;
-        }else
-        {
+        }else{
             item_data.chk_status = g_ime_info_list[i].is_enabled;
         }
         g_gen_item_data.push_back(item_data);
@@ -716,6 +718,10 @@ static void im_setting_list_add_ime(void *data) {
             ELM_GENLIST_ITEM_NONE,
             im_setting_list_item_sel_cb,
             (void *)(i));
+
+        if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
+            elm_object_item_disabled_set(item, EINA_TRUE);
+        }
 
         g_gen_item_data[i].gen_item = item;
     }
