@@ -153,8 +153,8 @@ im_setting_list_main_window_create(const char *name, int app_type)
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
         elm_win_screen_size_get(eo, NULL, NULL, &w, &h);
-        if(w == -1 || h == -1){
-           LOGD("elm_win_screen_size_get() is failed\n");
+        if (w == -1 || h == -1) {
+           LOGW("elm_win_screen_size_get() is failed\n");
            return NULL;
         }
         evas_object_resize(eo, w, h);
@@ -198,12 +198,12 @@ static void im_setting_list_load_ime_info(void)
     ime_info_s *info = NULL;
     g_ime_info_list.clear();
     int cnt = isf_control_get_all_ime_info(&info);
-    if(info)
+    if (info)
     {
         for(int i=0; i<cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
-            if(info[i].is_preinstalled)
+            if (info[i].is_preinstalled)
             {
                 ime_info_list_preinstall.push_back(info[i]);
             }
@@ -229,12 +229,12 @@ static int im_setting_list_get_active_ime_index(void)
     std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
     for (; iter != end; ++iter)
     {
-        if(active_ime_appid && (!strcmp(active_ime_appid, iter->appid)))
+        if (active_ime_appid && (!strcmp(active_ime_appid, iter->appid)))
         {
             break;
         }
     }
-    if(active_ime_appid)
+    if (active_ime_appid)
     {
         free(active_ime_appid);
     }
@@ -361,7 +361,7 @@ static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj,
     int index = (int)reinterpret_cast<long>(data);
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
-    if(!state)
+    if (!state)
     {
         isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
     }
@@ -398,18 +398,18 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     elm_genlist_item_selected_set (item, EINA_FALSE);
 
     int index = (int)reinterpret_cast<long>(data);
-    if(g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index))
+    if (g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index))
     {
         return;
     }
 
     Evas_Object *ck = elm_object_item_part_content_get (item, "elm.icon.right");
-    if (ck == NULL){
+    if (ck == NULL) {
         ck = elm_object_item_part_content_get (item, "elm.icon");
     }
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
-    if(state)
+    if (state)
     {
         g_gen_item_data[index].chk_status = !state;
         isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
@@ -575,10 +575,10 @@ static char *im_setting_list_genlist_item_one_line_label_get(void *data, Evas_Ob
 
 static void im_setting_list_genlist_item_class_create(int app_type)
 {
-    if(NULL == itc_im_list_group)
+    if (NULL == itc_im_list_group)
     {
         itc_im_list_group = elm_genlist_item_class_new();
-        if(itc_im_list_group)
+        if (itc_im_list_group)
         {
             itc_im_list_group->item_style = "groupindex";
             itc_im_list_group->func.text_get = im_setting_list_genlist_group_label_get;
@@ -588,7 +588,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         }
     }
 
-    if(NULL == itc_im_list_keyboard_list)
+    if (NULL == itc_im_list_keyboard_list)
     {
         itc_im_list_keyboard_list = elm_genlist_item_class_new();
         if (itc_im_list_keyboard_list)
@@ -605,9 +605,9 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         }
     }
 
-    if(app_type == APP_TYPE_SETTING)
+    if (app_type == APP_TYPE_SETTING || app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
-        if(NULL == itc_im_list_item)
+        if (NULL == itc_im_list_item)
         {
             itc_im_list_item = elm_genlist_item_class_new();
             if (itc_im_list_item)
@@ -624,7 +624,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             }
         }
 
-        if(NULL == itc_im_list_item_one_line)
+        if (NULL == itc_im_list_item_one_line)
         {
             itc_im_list_item_one_line = elm_genlist_item_class_new();
             if (itc_im_list_item_one_line)
@@ -648,16 +648,15 @@ static void im_setting_list_add_ime(void *data) {
     int i = 0;
     im_setting_list_genlist_item_class_create(ad->app_type);
 
-    if(NULL != ad->genlist)
+    if (NULL != ad->genlist)
     {
         elm_genlist_clear(ad->genlist);
     }
 
     g_active_ime_index = im_setting_list_get_active_ime_index();
-//    list_item_text item_text;
     memset(&item_text, 0, sizeof(item_text));
     Elm_Object_Item * group_header_item = NULL;
-    if(ad->app_type == APP_TYPE_SETTING)
+    if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
         group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
@@ -704,7 +703,7 @@ static void im_setting_list_add_ime(void *data) {
     for (i = 0; i < info_list_size; i++) {
         gen_item_data item_data;
 
-        if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
+        if (g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)) {
             item_data.chk_status = EINA_TRUE;
         }else{
             item_data.chk_status = g_ime_info_list[i].is_enabled;
@@ -719,7 +718,7 @@ static void im_setting_list_add_ime(void *data) {
             im_setting_list_item_sel_cb,
             (void *)(i));
 
-        if(g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)){
+        if (g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)) {
             elm_object_item_disabled_set(item, EINA_TRUE);
         }
 
@@ -774,19 +773,19 @@ void im_setting_list_app_terminate(void *data)
 {
     g_ime_info_list.clear();
     g_gen_item_data.clear();
-    if(NULL != itc_im_list_keyboard_list)
+    if (NULL != itc_im_list_keyboard_list)
     {
         elm_genlist_item_class_free(itc_im_list_keyboard_list);
         itc_im_list_keyboard_list = NULL;
     }
 
-    if(NULL != itc_im_list_group)
+    if (NULL != itc_im_list_group)
     {
         elm_genlist_item_class_free(itc_im_list_group);
         itc_im_list_group = NULL;
     }
 
-    if(NULL != itc_im_list_item)
+    if (NULL != itc_im_list_item)
     {
         elm_genlist_item_class_free(itc_im_list_item);
         itc_im_list_item = NULL;
