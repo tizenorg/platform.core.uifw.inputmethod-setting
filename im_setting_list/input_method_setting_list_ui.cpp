@@ -658,15 +658,6 @@ static void im_setting_list_add_ime(void *data) {
     Elm_Object_Item * group_header_item = NULL;
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
-        group_header_item = elm_genlist_item_append(ad->genlist,
-            itc_im_list_group,
-            IM_SETTING_LIST_VIRTUAL_KEYBOARD,
-            NULL,
-            ELM_GENLIST_ITEM_NONE,
-            NULL,
-            NULL);
-        elm_genlist_item_select_mode_set(group_header_item, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-
         snprintf(item_text[0].main_text, sizeof(item_text[0].main_text), "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
         snprintf(item_text[0].sub_text, sizeof(item_text[0].sub_text), "%s", g_ime_info_list[g_active_ime_index].label);
         elm_genlist_item_append(ad->genlist,
