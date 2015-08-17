@@ -327,7 +327,7 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     int index = (int)reinterpret_cast<long>(data);
     Evas_Object *top_widget = elm_object_top_widget_get(obj);
     Evas_Object *popup = elm_popup_add(top_widget);
-    elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 0.5);
+    elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
 

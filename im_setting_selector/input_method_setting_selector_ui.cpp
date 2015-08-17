@@ -343,7 +343,7 @@ Evas_Object *im_setting_selector_popup_create(void *data)
         elm_radio_state_value_set(group_radio, -1);
     }
     ad->popup = elm_popup_add(ad->win);
-    elm_popup_align_set (ad->popup, ELM_NOTIFY_ALIGN_FILL, 0.5);
+    elm_popup_align_set (ad->popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     evas_object_smart_callback_add(ad->popup, "block,clicked", im_setting_selector_popup_block_clicked_cb, NULL);
     elm_object_part_text_set(ad->popup, "title,text", IM_SETTING_SELECTOR_TITLE);
 
