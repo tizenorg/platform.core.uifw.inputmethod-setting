@@ -302,6 +302,10 @@ im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
     int index = (int)reinterpret_cast<long>(cb_data->data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
     Eina_Bool state = EINA_FALSE;
     state = g_gen_item_data[index].chk_status;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
@@ -314,6 +318,11 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
     int index = (int)reinterpret_cast<long>(cb_data->data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     Eina_Bool state = g_gen_item_data[index].chk_status;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
     g_gen_item_data[index].chk_status = !state;
@@ -325,6 +334,11 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
 static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
 {
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     Evas_Object *top_widget = elm_object_top_widget_get(obj);
     Evas_Object *popup = elm_popup_add(top_widget);
     elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
@@ -352,13 +366,17 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     evas_object_smart_callback_add(btn_ok, "clicked", ime_setting_list_ok_callback, cb_data);
 
     evas_object_show(popup);
-
 }
 
 static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /*save the checked ime*/
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
     if (!state)
@@ -376,6 +394,11 @@ im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
     int index = (int)reinterpret_cast<long>(cb_data->data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     Eina_Bool state = g_gen_item_data[index].chk_status;
     g_gen_item_data[index].chk_status = !state;
     isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
@@ -398,6 +421,11 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     elm_genlist_item_selected_set (item, EINA_FALSE);
 
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     if (g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index))
     {
         return;
@@ -511,6 +539,11 @@ static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *ob
 static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return NULL;
+    }
+
     if (!strcmp(part, "elm.text.main.left.top") ||
         !strcmp(part, "elm.text.main.left") ||
         !strcmp(part, "elm.text.main") ||
@@ -524,6 +557,11 @@ static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Ev
 static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        return NULL;
+    }
+
     if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set (ck, "on&off");
@@ -654,6 +692,11 @@ static void im_setting_list_add_ime(void *data) {
     }
 
     g_active_ime_index = im_setting_list_get_active_ime_index();
+    if (g_active_ime_index < 0 || g_active_ime_index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. g_active_ime_index : %d, g_ime_info_list.size() : %d\n", g_active_ime_index, g_ime_info_list.size());
+        return;
+    }
+
     memset(&item_text, 0, sizeof(item_text));
     Elm_Object_Item * group_header_item = NULL;
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)

@@ -179,11 +179,20 @@ static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, vo
 {
     /*save the checked ime*/
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        return;
+    }
     isf_control_set_active_ime(g_ime_info_list[index].appid);
 }
 
 static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_Object *obj, int index)
 {
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        return;
+    }
+
     if (item && obj) {
         elm_genlist_item_selected_set (item, EINA_FALSE);
         /* Update check button */
@@ -232,6 +241,11 @@ static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
 static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        return NULL;
+    }
+
     if (!strcmp(part, "elm.text"))
     {
         return strdup(g_ime_info_list[index].label);
