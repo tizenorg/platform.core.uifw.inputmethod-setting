@@ -256,7 +256,7 @@ static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object 
 static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
-    if (!strcmp(part, "elm.swallow.icon")) {
+    if (!strcmp(part, "elm.swallow.end")) {
         Evas_Object *bx = elm_box_add(obj);
         Evas_Object *radio = elm_radio_add(obj);
         elm_object_style_set (radio, "list");
