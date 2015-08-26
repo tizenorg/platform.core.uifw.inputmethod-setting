@@ -183,7 +183,6 @@ static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, vo
         LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
         return;
     }
-    isf_control_set_active_ime(g_ime_info_list[index].appid);
 }
 
 static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_Object *obj, int index)
