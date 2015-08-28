@@ -360,6 +360,7 @@ Evas_Object *im_setting_selector_popup_create(void *data)
     elm_popup_align_set (ad->popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     evas_object_smart_callback_add(ad->popup, "block,clicked", im_setting_selector_popup_block_clicked_cb, NULL);
     elm_object_part_text_set(ad->popup, "title,text", IM_SETTING_SELECTOR_TITLE);
+    elm_object_style_set(ad->popup, "theme_bg");
 
     ad->naviframe = im_setting_selector_naviframe_create(ad->win);
     ad->genlist = im_setting_selector_list_create(data);
