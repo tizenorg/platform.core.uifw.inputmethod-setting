@@ -10,6 +10,10 @@ Source0:    %{name}-%{version}.tar.gz
 ExcludeArch: %{arm} %ix86 x86_64
 %endif
 
+%if "%{?tizen_profile_name}" == "wearable"
+ExcludeArch: %{arm} %ix86 x86_64
+%endif
+
 BuildRequires:  gettext-tools
 BuildRequires:  pkgconfig(capi-appfw-application)
 BuildRequires:  pkgconfig(appcore-efl)
