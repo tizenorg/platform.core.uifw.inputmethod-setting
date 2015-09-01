@@ -92,10 +92,9 @@ static std::vector<String>          _setup_modules;
 static String                       _mdl_name;
 static SetupModule                  *_mdl = NULL;
 static ConfigPointer                _config;
-static Connection                   _reload_signal_connection;
 static ISE_OPTION_MODULE_STATE      _ise_option_module_stat = ISE_OPTION_MODULE_NO_EXIST;
 
-static Ecore_Fd_Handler            *_read_handler             = 0;
+static Ecore_Fd_Handler            *_read_handler             = NULL;
 static HelperAgent                  _helper_agent;
 static HelperInfo                   _helper_info ("fd491a70-22f5-11e2-89f3-eb5999be869e", "ISF Setting", "", "", SCIM_HELPER_STAND_ALONE);
 
@@ -825,6 +824,13 @@ void im_setting_list_app_terminate(void *data)
         elm_genlist_item_class_free(itc_im_list_item);
         itc_im_list_item = NULL;
     }
+
+    if (_read_handler) {
+        _helper_agent.close_connection ();
+        ecore_main_fd_handler_del (_read_handler);
+        _read_handler = NULL;
+    }
+
     ConfigBase::set(0);
 }
 
@@ -841,24 +847,10 @@ static void load_config_module (void)
     if (_config.null ()) {
         std::cerr << "Create dummy config!!!\n";
         _config = new DummyConfig ();
+        if (_config.null ()) {
+            std::cerr << "Can not create Config Object!\n";
+        }
     }
-
-    if (_config.null ()) {
-        std::cerr << "Can not create Config Object!\n";
-    }
-}
-
-/**
- * @brief Reload config slot function for HelperAgent.
- *
- * @param ic The context of application.
- * @param ise_uuid The ISE uuid.
- *
- * @return void
- */
-static void slot_reload_config (const HelperAgent *, int ic, const String &ise_uuid)
-{
-
 }
 
 /**
@@ -902,7 +894,6 @@ im_setting_list_app_create(void *data)
     if (p != NULL)
         display_name = String (p);
 
-    _reload_signal_connection = _helper_agent.signal_connect_reload_config (slot (slot_reload_config));
     int id = _helper_agent.open_connection (_helper_info, display_name);
     if (id == -1) {
         LOGD("open_connection failed!!!!!!\n");
