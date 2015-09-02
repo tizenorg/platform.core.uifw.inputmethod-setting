@@ -245,17 +245,20 @@ static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object 
         return NULL;
     }
 
-    if (!strcmp(part, "elm.text"))
-    {
+    if (!strcmp(part, "elm.text") ||
+        !strcmp(part, "elm.text.main") ||
+        !strcmp(part, "elm.text.main.left")) {
         return strdup(g_ime_info_list[index].label);
     }
+
     return NULL;
 }
 
 static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
-    if (!strcmp(part, "elm.swallow.end")) {
+    if (!strcmp(part, "elm.swallow.end") ||
+        !strcmp(part, "elm.icon.2")) {
         Evas_Object *bx = elm_box_add(obj);
         Evas_Object *radio = elm_radio_add(obj);
         elm_object_style_set (radio, "list");
@@ -280,7 +283,7 @@ static void im_setting_selector_genlist_item_class_create(void)
 {
     itc_im_selector = elm_genlist_item_class_new();
     if (itc_im_selector) {
-        itc_im_selector->item_style = "double_label";
+        itc_im_selector->item_style = "1line";
         itc_im_selector->func.text_get = im_setting_selector_genlist_item_label_get;
         itc_im_selector->func.content_get = im_setting_selector_genlist_item_icon_get;
         itc_im_selector->func.state_get = NULL;
