@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Иваз кардани навъи клавиатура"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Стандартӣ"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Клавиатураи сахтафзор"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Клавиатура"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Интихоби клавиатура"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Таъин кардани навъи клавиатура"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Интихоби навъи клавиатура"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Забон ва вуруд"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Сахтафзор"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Клавиатураҳо ва тарзҳои вуруд"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Клавиатураи ҷисмӣ"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Барои иваз кардани тарҳбандӣ, тугмаи Control ва тугмаи фосиларо якҷоя зарба занед."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Истифода бурдани клавиатураи рӯи экран"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Клавиатураи стандартӣ"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Навъи клавиатура"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Клавиатураи виртуалӣ"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Таваҷҷӯҳ"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Бекор к."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Истифода бурдан"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Клавиатураҳо"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Ин усули вуруд метавонад ҳамаи матни чидаи шуморо ҷамъ оварад, аз ҷумла маълумоти шахсиро, аз қабили паролҳо ва рақами кортҳои қарзӣ. Он аз барномаи %s меояд. Барои фаъол кардани ин усули вуруд, Фаъол карданро зарба занед."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Танзимоти клавиатура"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Фаъол к-н"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Танзимоти клавиатура"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Бекор к."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Таваҷҷӯҳ"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Клавиатураи виртуалӣ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Клавиатура"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Клавиатураи стандартӣ"
 

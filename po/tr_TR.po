@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Klavye tipini değiştir"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Varsayılan"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Donanım klavyesi"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Klavye"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Klavye seçin"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Klavye tipini ayarla"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Klavye türünü seç"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Dil ve giriş"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Donanım"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Klavyeler ve giriş yöntemleri"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fiziksel klavye"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Düzeni değiştirmek için kontrol düğmesi ve ara çubuğuna birlikte basın."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Ekran klavyesi kullan"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Varsayılan klavye"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Klavye türü"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Sanal klavye"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Dikkat"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "İptal"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "Tamam"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Kullan"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Klavyeler"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Bu giriş yöntemi, şifreler ve kredi kartı numaraları gibi kişisel veriler dahil olmak üzere yazdığınız tüm metinleri toplayabilir. %s uygulamasından geliyor. Bu giriş yöntemini etkinleştirmek için Etkinleştir öğesine dokunun."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Klavye ayarları"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Etkinleştir"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Klavye ayarları"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "İptal"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Dikkat"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Sanal klavye"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klavye"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Varsayılan klavye"
 

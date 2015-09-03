@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Ändra tangentbordstyp"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Standard"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Maskinvarutangentbord"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Tangentbord"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Välj tangentbord"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Ange tangentbordstyp"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Välj tangentbordstyp"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Språk och inmatn"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Maskinvara"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Tangentbord och inmatningsmetoder"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fysiskt tangentbord"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Om du vill växla layout trycker du på styrknappen och mellanslagstangenten samtidigt."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Använd skärmtangentbord"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Standardtangentbord"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tangentbordstyp"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtuellt tangentbord"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Obs!"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Avbryt"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Använd"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Tangentbord"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Den här inmatningsmetoden kan samla in alla texter du skriver, inklusive privata uppgifter som lösenord och kreditkortsnummer. Den kommer från programmet %s. Tryck på Aktivera om du vill aktivera inmatningsmetoden."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Tangentbordsinställningar"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktivera"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Tangentbordsinställningar"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Obs!"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuellt tangentbord"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tangentbord"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standardtangentbord"
 

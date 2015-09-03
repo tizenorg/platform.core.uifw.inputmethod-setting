@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Modifica tipo di tastiera"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Predefinito"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Tastiera hardware"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Tastiera"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Seleziona tastiera"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Imposta tipo tastiera"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Seleziona tipo di tastiera"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Lingua e inserimento"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardware"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Tastiere e metodi di inserimento"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Tastiera fisica"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Per cambiare layout, toccare contemporaneamente il pulsante di controllo e la barra spaziatrice."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Usa tastiera sullo schermo"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Tastiera predefinita"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tipo tastiera"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Tastiera virtuale"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Attenzione"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Ann."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Usa"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Tastiere"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Questo metodo di inserimento può raccogliere tutto il testo digitato, inclusi dati personali come password e numeri di carte di credito. Deriva dall'applicazione %s. Toccate Attiva per attivare questo metodo di inserimento."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Impostazioni tastiera"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Attiva"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Impostazioni tastiera"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Ann."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Attenzione"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Tastiera virtuale"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastiera"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Tastiera predefinita"
 

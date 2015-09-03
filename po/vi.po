@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Đổi loại bàn phím"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Mặc định"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Bàn phím phần cứng"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Bàn phím"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Chọn bàn phím"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Cài đặt loại bàn phím"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Chọn kiểu bàn phím"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Ngôn ngữ và bàn phím"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Phần cứng"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Bàn phím và cách nhập"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Bàn phím vật lý"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Để chuyển đổi bố cục, hãy chạm vào đồng thời cả phím điều khiển và phím cách."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Sử dụng bàn phím trên màn hình"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Bàn phím mặc định"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Loại bàn phím"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Bàn phím ảo"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Chú ý"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Thoát"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Sử dụng"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Bàn phím"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Cách nhập này có thể thu thập tất cả văn bản bạn nhập vào, bao gồm dữ liệu cá nhân như mật mã và số thẻ tín dụng. Nó đến từ ứng dụng %s. Chạm Bật để bật cách nhập này."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Cài đặt bàn phím"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Bật"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Cài đặt bàn phím"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Thoát"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Chú ý"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Bàn phím ảo"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Bàn phím"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Bàn phím mặc định"
 

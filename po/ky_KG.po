@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Ариптакта түрүн өзгөртүү"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Баштапкы"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardware keyboard"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Ариптакта"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Клавиатураны тандаңыз"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Ариптакта түрүн коюу"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Клавиатура түрүн тандоо"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Тил & киргизүү"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Темир жабдуу"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Клавиатура жана жазуу ыкмалары"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Физикалык ариптакта"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Калыптоолорду алмаштыруу үчүн, башкаруу баскычын жана ара баскычын чогу таптаңыз."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Экран ариптактасын колдонуу"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Баштапкы клавиатура"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Ариптакта түрү"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Виртуалдык клавиатура"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Көңүл буруңуз"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Артка"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ОК"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Колдонуу"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Клавиатуралар"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Бул жазуу ыкмасы сиз жазган бардык текстти чогулта алат, сызсөздөр жана насыя карта номерлери сыяктуу жеке маалыматтарды дагы. Бул %s колдонмодон келет. Бул жазуу ыкмасын Иштетүүгө, иштетүүнү басыңыз."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Клавиатура орнотуулары"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Иштетүү"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Клавиатура орнотуулары"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Артка"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Көңүл буруңуз"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуалдык клавиатура"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Ариптакта"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Баштапкы клавиатура"
 

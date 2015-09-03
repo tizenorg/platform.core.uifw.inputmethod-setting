@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Skift tastaturtype"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Standard"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardwaretastatur"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Tastatur"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Vælg tastatur"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Angiv tastaturtype"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Vælg tastaturtype"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Sprog og input"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardware"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Tastaturer og indtastningsmetoder"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fysisk tastatur"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "For at skifte layouts skal du tappe på kontrolknappen og mellemrumstasten samtidig."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Brug tastatur på skærmen"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Standardtastatur"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tastaturtype"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtuelt tastatur"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Bemærk!"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Afbr."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Brug"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Tastaturer"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Denne indtastningsmetode kan være i stand til at indsamle al tekst, du skriver, inklusive personlige data såsom adgangskoder og kreditkortnumre. Den kommer fra applikationen %s. Tryk på Aktiver for at aktivere denne indtastningsmetode."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Tastaturindstillinger"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktivér"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Tastaturindstillinger"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Afbr."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Bemærk!"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelt tastatur"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatur"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standardtastatur"
 

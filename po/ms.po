@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Ubah jenis papan kekunci"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Lalai"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Papan kekunci perkakasan"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Papan kekunci"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Pilih papan kekunci"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Tetapkan jenis papan kekunci"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Pilih jenis papan kekunci"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Bahasa & input"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Perkakasan"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Kaedah papan kekunci dan input"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Papan kunci fizikal"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Untuk menukar reka letak, ketik butang kawalan dan bar ruang bersama-sama."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Gunakan papan kekunci pada skrin"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Papan kekunci lalai"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Jenis papan kekunci"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Papan kekunci maya"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Perhatian"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Batal"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Guna"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Papan kekunci"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Kaedah input ini boleh mengumpul semua teks yang anda taip, termasuklah data peribadi seperti kata laluan dan nombor kad kredit. Ia datang daripada aplikasi %s. Ketik Aktifkan untuk mengaktfikan kaedah input ini."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Aturan papan kekunci"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktif"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Aturan papan kekunci"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Batal"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Perhatian"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Papan kekunci maya"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Papan kekunci"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Papan kekunci lalai"
 

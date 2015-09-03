@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Гар товчлуурын төрөл өөрчлөх"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Өгөгдмөл"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardware keyboard"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Гар товчлуур"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Товчлуурт гар сонго"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Гар товчлуурын төрөл тохируулах"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Гарын төрөл сонгох"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Хэл ба бичиг"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Техник хангамж"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Гар товчлуур ба оруулах аргууд"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Биет гар товчлуур"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Байрлал шилжүүлэхийн тулд, удирдах товч болон зай авдаг хөндөл дээр зэрэг товш"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Дэлгэц дээрх гар товчлуур ашиглах"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Өгөгдмөл гар товчлуур"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Товчлуурт самбарын төрөл"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Хийсвэр товчлуурт гар"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Хэнд"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Цуцлах"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Ашиглалт"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Гар"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Энэ бичих арга нь таны бичсэн бүх бичвэр, эдгээрийн дотор нууц үг, картны дугаар зэрэг хувийн өгөгдлийг цуглуулж чадна. Энэ нь %s хэрэглүүрээс гарна. Идэвхжүүл дээр товшиж энэ бичих аргыг идэвхжүүл."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Гар товчлуурын тохиргоо"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Идэвхжүүл"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Гар товчлуурын тохиргоо"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Цуцлах"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Хэнд"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Хийсвэр товчлуурт гар"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Гар товчлуур"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Өгөгдмөл гар товчлуур"
 

@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "キーボードタイプを変更"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "標準"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "ハードウェアキーボード"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "キーボード"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "キーボードを選択"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "キーボードタイプを設定"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "キーボードタイプを選択"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "言語と入力"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ハードウェア"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "キーボードと入力方法"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ハードウェアキーボード"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "レイアウトを切り替えるには、コントロールボタンとスペースバーを一緒にタップしてください。"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "オンスクリーンキーボードを使用"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "標準キーボード"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "キーボード設定"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "仮想キーボード"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "注意"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ｷｬﾝｾﾙ"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "使用"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "キーボード"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "この入力方法は、パスワードやクレジットカード番号などの個人データを含め、入力された全てのテキストが収集される場合があります。これは%sアプリケーションが原因です。この入力方法を有効にするには、[有効]をタップします。"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "キーボード設定"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "有効"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "キーボード設定"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ｷｬﾝｾﾙ"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "仮想キーボード"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "キーボード"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "標準キーボード"
 

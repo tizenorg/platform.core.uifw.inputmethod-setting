@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Змінення типу клавіатури"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Стандартний"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Апаратна клавіатура"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Клавіатура"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Вибрати клавіатуру"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Встановити тип клавіатури"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Вибір типу клавіатури"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Мова і введення"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Апаратне забезпечення"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Клавіатури та способи введення"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Фізична клавіатура"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Щоб переключити макети, натисніть одночасно кнопку контрол та пробіл."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Використання екранної клавіатури"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Стандартна клавіатура"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Тип клавіатури"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Віртуальна клавіатура"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Увага"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Скасувати"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ОК"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Використ."
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Клавіатури"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "При використанні цього методу вводу весь текст, що вводиться, може збиратися для програми %s, зокрема особиста інформація, така як паролі й номери кредитних карт. Торкніться кнопки «Ввімкнути», щоб застосувати цей метод вводу."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Установки клавіатури"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Увімкнути"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Установки клавіатури"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Скасувати"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Увага"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Віртуальна клавіатура"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Клавіатура"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Стандартна клавіатура"
 

@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "କୀବୋର୍ଡ୍ ପ୍ରକାର ପରିବର୍ତ୍ତନ"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "ଡିଫଲ୍ଟ"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "ହାର୍ଡ୍‌ୱେର୍ କୀବୋର୍ଡ୍"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "କୀବୋର୍ଡ୍"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "କୀବୋର୍ଡ୍ ଚୟନ କରନ୍ତୁ"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "କୀବୋର୍ଡ୍ ପ୍ରକାର ସେଟ୍ କରନ୍ତୁ।"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "କୀବୋର୍ଡ୍ ପ୍ରକାର ଚୟନ କରନ୍ତୁ"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "ଭାଷା ଏବଂ ଇନ୍‌ପୁଟ୍"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ହାର୍ଡୱେୟାର୍"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "କୀବୋର୍ଡ ଏବଂ ଇନପୁଟ୍ ପଦ୍ଧତି"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ଫିଜିକାଲ୍ କୀବୋର୍ଡ୍"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "ଲେଆଉଟ୍ ସ୍ଵିଚ୍ କରିବାକୁ, ନିୟନ୍ତ୍ରଣ ବଟନ୍ ଏବଂ ସ୍ପେସ‌ବାର୍ ଏକତ୍ର ଟ୍ୟାପ୍ କରନ୍ତୁ।"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "ଅନ-ସ୍କ୍ରିନ୍‌ କୀବୋର୍ଡ୍ ବ୍ୟବହାର କରନ୍ତୁ।"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "ଡିଫଲ୍ଟ କୀବୋର୍ଡ"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "କୀବୋର୍ଡ୍ ପ୍ରକାର"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "ଭର୍ଚୁଆଲ୍ କୀବୋର୍ଡ୍"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "ସତର୍କତା"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ବାତିଲ୍"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ଓକେ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "ବ୍ୟବହାର"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "କୀବୋର୍ଡଗୁଡିକ"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "ଏହି ଇନପୁଟ୍ ପଦ୍ଧତି ଆପଣ ଟାଇପ୍ କରିବା ସମସ୍ତ ଟେକ୍ସଟ୍, ଯାହା ବ୍ୟକ୍ତିଗତ ଡାଟା ଯେପରିକି ପାସୱା‌ର୍ଡ୍‍ ଏବଂ କ୍ରେଡିଟ୍ କାର୍ଡ୍ ନମ୍ବରଗୁଡିକ ଅନ୍ତର୍ଭୁକ୍ତ କରି ସମସ୍ତ ସଂଗ୍ରହ କରିବାରେ ସମର୍ଥ ହୋଇଥାଏ। ଏହା %s ଆପ୍ଲିକେସନରୁ ଆସିଥାଏ। ଏହି ଇନପୁଟ୍ ପଦ୍ଧତି ସକ୍ଷମ କରିବାକୁ ସକ୍ଷମ ଟ୍ୟାପ୍ କରନ୍ତୁ।"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "କୀବୋର୍ଡ ସେଟିଂସ୍"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "ସକ୍ଷମ"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "କୀବୋର୍ଡ ସେଟିଂସ୍"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ବାତିଲ୍"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ସତର୍କତା"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ଭର୍ଚୁଆଲ୍ କୀବୋର୍ଡ୍"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "କୀବୋର୍ଡ୍"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ଡିଫଲ୍ଟ କୀବୋର୍ଡ"
 

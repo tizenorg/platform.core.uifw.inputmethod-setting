@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Breyta tegund lyklaborðs"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Sjálfgefið"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Vélbúnaðarlyklaborð"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Lyklaborð"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Velja lyklaborð"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Velja lyklaborðsgerð"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Velja tegund lyklaborðs"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Tungumál/innsl."
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Vélbúnaður"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Lyklaborð og innsláttaraðferðir"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Raunlyklaborð"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Til að skipta um útlit skaltu pikka á stjórnhnappinn og bilslána á sama tíma."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Nota skjályklaborð"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Sjálfgefið lyklaborð"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Lyklaborðsgerð"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Sýndarlyklaborð"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Athuga"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Hætta við"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "Í lagi"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Nota"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Lyklaborð"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Þessi innsláttaraðferð getur hugsanlega safnað öllum texta sem þú slærð inn, þar á meðal persónulegum gögnum á borð við lykilorð og kreditkortanúmer. Hún fylgir forritinu „%s“. Pikkaðu á „Kveikja“ til að kveikja á þessari innsláttaraðferð."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Stillingar lyklaborðs"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Gera virkt"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Stillingar lyklaborðs"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Hætta við"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Athuga"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Sýndarlyklaborð"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Lyklaborð"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Sjálfgefið lyklaborð"
 

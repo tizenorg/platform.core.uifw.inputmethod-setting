@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਬਦਲੋ"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "ਡਿਫਾੱਲਟ"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "ਹਾਰਡਵੇਅਰ ਕੀਬੋਰਡ"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "ਕੀਬੋਰਡ"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "ਕੀਬੋਰਡ ਚੁਣੋ"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਸੈੱਟ ਕਰੋ"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ ਚੁਣੋ"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "ਭਾਸ਼ਾ ਅਤੇ ਇਨਪੁਟ"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ਹਾਰਡਵੇਅਰ"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "ਕੀਬੋਰਡਸ ਅਤੇ ਇਨਪੁਟ ਵਿਧੀਆਂ"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ਭੌਤਿਕ ਕੀਬੋਰਡ"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "ਲੇਆਉਟਸ ਨੂੰ ਸਵਿੱਚ ਕਰਨ ਲਈ, ਨਿਯੰਤ੍ਰਣ ਬਟਨ ਅਤੇ ਸਪੇਸਬਾਰ ਨੂੰ ਇਕੱਠੇ ਟੈਪ ਕਰੋ।"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "ਔਨ-ਸਕ੍ਰੀਨ ਕੀਬੋਰਡ ਦਾ ਉਪਯੋਗ ਕਰੋ"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "ਕੀਬੋਰਡ ਪ੍ਰਕਾਰ"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "ਧਿਆਨ ਦਿਉ"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ਰੱਦ"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ਓਕੇ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "ਵਰਤੋ"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "ਕੀਬੋਰਡਸ"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "ਇਹ ਇਨਪੁਟ ਵਿਧੀ ਤੁਹਾਡੇ ਵਿਅਕਤੀਗਤ ਡੈਟਾ ਜਿਵੇਂ ਪਾਸਵਰਡਸ ਅਤੇ ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਨੰਬਰਸ ਸਮੇਤ ਤੁਹਾਡੇ ਦੁਆਰਾ ਟਾਈਪ ਕੀਤਾ ਜਾਣ ਵਾਲਾ ਸਾਰਾ ਟੈਕਸਟ ਇਕੱਠਾ ਕਰ ਸਕਦੀ ਹੈ। ਇਹ %s ਅਨੁਪ੍ਰਯੋਗ ਨਾਲ ਹੁੰਦਾ ਹੈ। ਇਸ ਇਨਪੁਟ ਵਿਧੀ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ ਸਮਰੱਥ ਕਰੋ ਤੇ ਟੈਪ ਕਰੋ।"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ਕੀਬੋਰਡ ਸੈੱਟਿੰਗਸ"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "ਸਮੱਰਥ"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "ਕੀਬੋਰਡ ਸੈੱਟਿੰਗਸ"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ਰੱਦ"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ਧਿਆਨ ਦਿਉ"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ਕੀਬੋਰਡ"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
 

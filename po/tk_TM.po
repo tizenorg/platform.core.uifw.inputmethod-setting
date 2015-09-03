@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Klawiaturanyň şeklini üýtgetmek"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Standart"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Fiziki klawiatura"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Klawiatura"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Klawiatura saýla"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Klawiaturanyň görnüşini sazlaň"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Klawiatura görnüşi saýlaň"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Dil we giriziş"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Saklaýjy"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Klawiaturalar we giriziş usullary"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fiziki klawiatura"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Meýilnamalary çalyşmak üçin dolandyryjy düwmä we  probel klawişa basyň."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Ekrandaky klawiaturany ulanmak"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Standart klawiatura"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Klawiatura görnüşi"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Wirtual klawiatura"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Üns beriň"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Goýbolsun et"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Ulan"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Klawiaturalar"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Bu giriziş usuly ähli ýazýan tekstiňizi, şol sanda parollar we kredit kart belgileri ýaly şahsy maglumatlary ýygnap biler. Ol %s goýmasyndan gelýär. Bu giriziş usulyny işletmek üçin, Işlet-e basyň."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Klawiatura sazlamalary"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Işlet"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Klawiatura sazlamalary"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Goýbolsun et"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Üns beriň"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Wirtual klawiatura"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klawiatura"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standart klawiatura"
 

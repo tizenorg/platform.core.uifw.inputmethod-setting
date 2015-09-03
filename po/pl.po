@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Zmień typ klawiatury"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Domyślnie"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Klawiatura sprzętowa"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Klawiatura"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Wybierz klawiaturę"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Ustaw typ klawiatury"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Wybierz typ klawiatury"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Język i wprow."
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Sprzęt"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Klawiatury i metody wprowadzania"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Klawiatura fizyczna"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Aby przełączać układy, dotknij jednocześnie przycisku control i spacji."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Użyj klawiatury ekranowej"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Klawiatura domyślna"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Typ klawiatury"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Wirtualna klawiatura"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Uwaga"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Anul."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Użyj"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Klawiatury"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Ta metoda wprowadzania może mieć możliwość gromadzenia całego wpisywanego tekstu, łącznie z takimi danymi osobistymi, jak hasła i numery kart kredytowych. Pochodzi ona z aplikacji %s. Dotknij przycisku Włącz, aby włączyć tę metodę wprowadzania."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Ustawienia klawiatury"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Włącz"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Ustawienia klawiatury"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Anul."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Uwaga"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Wirtualna klawiatura"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klawiatura"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Klawiatura domyślna"
 

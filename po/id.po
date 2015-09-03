@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Ubah tipe keyboard"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Default"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Keyboard perangkat keras"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Papan tombol"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Pilih keyboard"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Atur tipe keyboard"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Pilih tipe keyboard"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Bahasa & input"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Perangkat keras"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Papan tombol dan metode masukan"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Papan tombol fisik"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Untuk menukar tata letak, ketuk tombol kontrol dan spasi bersamaan."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Gunakan keyboard layar"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Keyboard default"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tipe papan tombol"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Keyboard virtual"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Perhatian"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Batal"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Gunakan"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Keyboard"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Metode input ini mungkin dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti kata sandi dan nomor kartu kredit. Metode ini datang dari aplikasi %s. Ketuk Aktifkan untuk mengaktifkan metode input ini."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Pengaturan keyboard"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktif"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Pengaturan keyboard"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Batal"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Perhatian"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Keyboard virtual"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Papan tombol"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Keyboard default"
 

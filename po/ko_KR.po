@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "키보드 형식 변경"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "기본"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "하드웨어 키보드"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "키보드"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "키보드 선택"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "키보드 형식 설정"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "키보드 형식 선택"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "언어 및 입력"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "하드웨어"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "키보드 및 입력 방식"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "키보드"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "레이아웃을 전환하려면 기능 버튼과 스페이스 키를 함께 누르세요."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "화면 키보드 사용"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "기본 키보드"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "키보드 형식"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "가상 키보드"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "주의"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "취소"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "확인"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "사용"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "키보드"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "%s 앱의 입력 방식은 비밀번호 또는 신용카드 번호와 같은 개인정보를 포함하여 입력한 내용을 모두 수집할 수 있습니다. 이 입력 방식을 실행하려면 [실행]을 누르세요."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "키보드 설정"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "실행"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "키보드 설정"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "취소"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "주의"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "가상 키보드"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "키보드"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "기본 키보드"
 

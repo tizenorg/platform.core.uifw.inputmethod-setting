@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "कीबोर्ड प्रकार परिवर्तन गर्नुहोस्"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "पूर्वनिर्धारित"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "हार्डवेयर कीबोर्ड"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "कीबोर्ड"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "कीबोर्ड चयन गर्नुहोस्"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "कीबोर्ड प्रकार तय गर्नुहोस्"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "कीबोर्ड प्रकार चयन गर्नुहोस्"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "भाषा र इन्पुट"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "हार्डवेयर"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "कीबोर्डहरु अनि इन्पुट पद्धतिहरू"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "भौतिक कीबोर्ड"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "बनावटहरूलाई स्विच गर्न, नियन्त्रण बटन र स्पेसबारलाईसँगै थिच्नुहोस्।"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "अन-स्क्रीन कीबोर्ड प्रयोग गर्नुहोस्"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "पूर्वनिर्धारित कीबोर्ड"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "कीबोर्ड प्रकार"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "भर्चुअल कीबोर्ड"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "ध्‍यान दिनुहोस्"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "रद्द"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ठीक छ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "प्रयोग"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "कीबोर्डहरू"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "यो इन्पुट पद्धति पासवर्ड र क्रेडिट कार्ड नम्बरहरू जस्ता व्यक्तिगत डाटा लगायत तपाईले टाइप गरेको सबै पाठ सङ्कलन गर्न सक्षम हुन सक्छ। यो %s अनुप्रयोगबाट आउँछ। यो इन्पुट पद्धति सक्षम गर्न सक्षम गर्नुहोस् ट्याप गर्नुहोस्।"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "कीबोड सेटिङहरू"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "सक्षम पार्नुहोस्"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "कीबोड सेटिङहरू"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ध्‍यान दिनुहोस्"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "भर्चुअल कीबोर्ड"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "कीबोर्ड"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "पूर्वनिर्धारित कीबोर्ड"
 

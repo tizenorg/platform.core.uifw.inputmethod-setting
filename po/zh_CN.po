@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "更改键盘类型"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "默认"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "硬件键盘"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "键盘"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "选择键盘"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "设置键盘类型"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "选择键盘类型"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "语言和输入"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "硬件"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "键盘和输入方法"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "内置键盘"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "若要切换布局，一起轻敲控制按钮和空格条。"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "使用屏幕键盘"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "默认键盘"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "键盘类型"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "虚拟键盘"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "注意"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "取消"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "确定"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "使用"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "键盘"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "该输入法可能能够收集您键入的所有文本，包括密码和信用卡号等个人数据。它来自于 %s 应用程序。点击启用以启用该输入法。"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "键盘设置"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "启动"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "键盘设置"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "虚拟键盘"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "键盘"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "默认键盘"
 

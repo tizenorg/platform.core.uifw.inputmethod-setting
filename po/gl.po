@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Cambia o tipo de teclado"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Predeterminada"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Teclado de hardware"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Teclado"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Seleccionar teclado"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Definir tipo de teclado"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Seleccionar tipo teclado"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Idioma e entrada"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardware"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Teclados e métodos de entrada"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Teclado físico"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Para cambiar os deseños, toca o botón de control e a barra espazadora á vez"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Usar o teclado en pantalla"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Teclado predeterminado"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tipo de teclado"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Teclado virtual"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Atención"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Canc."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "Acep."
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Usar"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Teclados"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "É posible que este método de introdución recompile todo o texto que escribas, incluídos os datos persoais como os contrasinais e os números das tarxetas de crédito. Procede da aplicación %s. Toca Activar para activar este método de introdución."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Axustes do teclado"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Activar"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Axustes do teclado"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Canc."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Atención"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teclado virtual"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Teclado"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Teclado predeterminado"
 

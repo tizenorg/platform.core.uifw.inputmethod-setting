@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "কিবোর্ডের ধরন পরিবর্তন করুন"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "ডিফল্ট"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "হার্ডওয়্যার কিবোর্ড"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "কিবোর্ড"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Select keyboard"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "কিবোর্ডের ধরন সেট করুন"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "কিবোর্ডের প্রকার নির্বাচন"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Language & input"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "হার্ডওয়্যার"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "কিবোর্ড ও ইনপুট পদ্ধতি"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ফিজিকাল কিবোর্ড"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "বিন্যাসগুলো স্যুইচ করতে নিয়ন্ত্রণ করুন বাটনটি ও স্পেসবার একত্রে ট্যাপ করুন।"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "অন-স্ক্রিন কিবোর্ড ব্যবহার করুন"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "ডিফল্ট কিবোর্ড"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "কিবোর্ডের বিন্যাস"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "ভার্চুয়াল কিবোর্ড"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "মনোযোগ দিন"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "বাতিল"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ওকে"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "ব্যবহার করুন"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "কীবোর্ডসমূহ"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "এই ইনপুট পদ্ধতি ব্যক্তিগত তথ্য যেমন পাসওয়ার্ড ও ক্রেডিট কার্ডের নম্বরসহ আপনার লেখা সব টেক্সট হয়তো সংগ্রহ করতে পারে৷ এটি %s অ্যাপ্লিকেশন থেকে এসেছে৷ এই ইনপুট পদ্ধতি সক্রিয় করতে ‘সক্রিয় করুন’ অপশনে ট্যাপ করুন৷"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "কিবোর্ড সেটিংস"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "সক্রিয়"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "কিবোর্ড সেটিংস"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "বাতিল"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "মনোযোগ দিন"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ভার্চুয়াল কিবোর্ড"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "কিবোর্ড"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ডিফল্ট কিবোর্ড"
 

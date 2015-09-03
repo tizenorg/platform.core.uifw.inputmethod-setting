@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "விசைப்பலகை வகையை மாற்றவும்"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "டீஃபால்ட்"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "வன்பொருள் விசைப்பலகை"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "விசைப்பலகை"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "விசைப்பலகையைத் தேர்ந்தெடு"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "விசைப்பலகை வகை அமைக்கவும்"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "விசைப்பலகை வகையை தேர்வு செய்யவும்"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "மொழி & உள்ளீடு"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "வன்பொருள்"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "விசைப்பலகைகள் மற்றும் உள்ளீடு முறைகள்"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "பிசிக்கல் விசைப்பலகை"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "தளவமைப்பை மாற்ற கட்டுபாட்டு பொத்தானையும் இடைவெளி பட்டையையும் ஒன்றாக டேப் செய்யவும்."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "திரை விசைப்பலகை பயன்படுத்தவும்"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "டீஃபால்ட் விசைப்பலகை"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "விசைப்பலகை வகை"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "மெய்நிகர் விசைப்பலகை"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "கவனம்"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ரத்து"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "சரி"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "பயன்."
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "விசைப்பலகைகள்"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "இந்த உள்ளீட்டு முறையால், கடவுச்சொற்கள் மற்றும் கடனட்டை எண்கள் போன்ற தனிப்பட்ட தரவு உட்பட நீங்கள் தட்டச்சு செய்த அனைத்து உரையும் சேகரிக்க இயலும். %s பயன்பாட்டிலிருந்து இது வருகிறது. இந்த உள்ளீட்டு முறையை செயல்படுத்த செயல்படுத்தவும் என்பதை டேப் செய்க."
 
-msgid "IDS_ST_BUTTON_ENABLE"
-msgstr "செயல்படுத்துக"
-
 msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
 msgstr "விசைப்பலகை அமைவுகள்"
+
+msgid "IDS_ST_BUTTON_ENABLE"
+msgstr "செ.படுத்துக"
+
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ரத்து"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "கவனம்"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "மெய்நிகர் விசைப்பலகை"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "விசைப்பலகை"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "டீஃபால்ட் விசைப்பலகை"
 

@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Athraigh an cineál eochairchláir"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Réamhshocrú"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Eochairchlár crua-earraí"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Eochairchlár"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Roghnaigh eochairchlár"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Socraigh cineál eochairchláir"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Rogh. cineál eochairchláir"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Teanga & ionchur"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Crua-earraí"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Eochairchláir agus modhanna ionchuir"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Eochairchlár fisiciúil"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Le leaganacha amach a aistriú, tapáil an cnaipe rialaithe agus an spásbharra le chéile"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Úsáid eochairchlár ar scáileán"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Eochairchlár réamhshocraithe"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Cineál eochairchláir"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Eochairchlár fíorúil"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Aire"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Cealú"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Úsáid"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Eochairchláir"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
-msgstr "Is féidir go mbeidh an modh ionchuir seo in ann an téacs uile a chlóscríobhfaidh tú a bhailiú, lena n-áirítear sonraí pearsanta amhail pasfhocail agus uimhreacha cárta creidmheasa. Tagann sé ón bhfeidhmchlár %s. Tapáil Cumasaigh leis an modh ionchuir seo a chumasú."
+msgstr "Is féidir go mbeidh an modh ionchuir seo in ann an téacs uile a chlóscríobhfaidh tú a bhailiú, lena n-áirítear sonraí pearsanta amhail pasfhocail agus uimhreacha cárta creidmheasa. Is as an bhfeidhmchlár %s é. Tapáil Cumasaigh leis an modh ionchuir seo a chumasú."
+
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Socruithe eochairchláir"
 
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Cumasaigh"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Socruithe eochairchláir"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Cealú"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Aire"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Eochairchlár fíorúil"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Eochairchlár"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Eochairchlár réamhshocraithe"
 

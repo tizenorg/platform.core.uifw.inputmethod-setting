@@ -1,27 +1,27 @@
 msgid "IDS_ST_HEADER_KEYBOARDS"
-msgstr "Keyboards"
+msgstr "Klaviaturalar"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
-msgstr "This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the %s application. Tap Enable to enable this input method."
+msgstr "Ushbu kiritish usuli Siz tergan barcha matnlarni to‘plashi mumkin, jumladan, parollar va kredit kartochka raqamlari kabi shaxsiy ma’lumotlarni ham. Bu %s ilovasidan kelib chiqadi. Ushbu kiritish usulini yoqish uchun Yoqish tugmasiga teging."
 
 msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Keyboard settings"
+msgstr "Klaviatura parametrlari"
 
 msgid "IDS_ST_BUTTON_ENABLE"
-msgstr "Enable"
+msgstr "Yoqish"
 
 msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Cancel"
+msgstr "Bek/q."
 
 msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Attention"
+msgstr "Diqqat"
 
 msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtual keyboard"
+msgstr "Virtual klaviatura"
 
 msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Keyboard"
+msgstr "Klaviatura"
 
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Default keyboard"
+msgstr "Birlamchi klaviatura"
 

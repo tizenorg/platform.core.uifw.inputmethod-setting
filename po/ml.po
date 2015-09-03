@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "കീബോര്‍ഡ് തരം മാറ്റുക"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "സ്ഥിരസ്ഥിതി"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "ഹാര്‍ഡ്‌വെയര്‍ കീബോര്‍ഡ്"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "കീബോര്‍ഡ്"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "കീബോര്‍ഡ് തിരഞ്ഞെടുക്കുക"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "കീബോര്‍ഡ് തരം ക്രമീകരിക്കുക"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "കീബോർഡ് തരം തിരഞ്ഞെടുക്കുക"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "ഭാഷ & ഇൻപുട്ട്"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ഹാര്‍‌ഡ്‌വെയര്‍‌"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "കീബോര്‍ഡുകളും ഇന്‍പുട്ട് രീതികളും"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ഫിസിക്കല്‍ കീബോര്‍ഡ്"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "ലേഔട്ടുകള്‍ സ്വിച്ചുചെയ്യുന്നതിന് കണ്‍‌ട്രോള്‍ ബട്ടണും സ്പെയ്സ്ബാറും ഒരുമിച്ച് ടാപ്പുചെയ്യുക."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "ഓണ്‍-സ്ക്രീന്‍ കീബോര്‍ഡ് ഉപയോഗിക്കുക"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "ഡിഫോൾട്ട് കീബോർഡ്"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "കീബോര്‍ഡ് തരം"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "വെര്‍ച്വല്‍ കീ‌ബോര്‍ഡ്"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "ശ്രദ്ധിക്കുക"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "റദ്ദാ."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ഓകെ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "ഉപയോഗിക്കുക"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "കീബോര്‍ഡുകള്‍"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "പാസ്‌വേഡുകളും ക്രെഡിറ്റ് കാർഡ് നമ്പറുകളും പോലുള്ള വ്യക്തിഗത ഡാറ്റ ഉൾപ്പെടെ, നിങ്ങൾ ടൈപ്പ് ചെയ്യുന്ന എല്ലാ ടെക്സ്റ്റും ശേഖരിക്കാൻ ഈ ഇൻപുട്ട് രീതിക്ക് സാധിച്ചേക്കും. ഇത് ലഭ്യമാക്കുന്നത് %s ആപ്ലിക്കേഷനാണ്. ഈ ഇൻപുട്ട് രീതി പ്രാപ്തമാക്കുന്നതിന് പ്രാപ്തമാക്കുക എന്നതിൽ സ്പർശിക്കുക."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "കീബോർഡ് ക്രമീകരണങ്ങൾ"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "പ്രാപ്‌തം"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "കീബോർഡ് ക്രമീകരണങ്ങൾ"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "റദ്ദാ."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ശ്രദ്ധിക്കുക"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "വെര്‍ച്വല്‍ കീ‌ബോര്‍ഡ്"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "കീബോര്‍ഡ്"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ഡിഫോൾട്ട് കീബോർഡ്"
 

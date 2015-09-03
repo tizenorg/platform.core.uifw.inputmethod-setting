@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "ကီးဘုတ် အမျိုးအစားပြောင်းပါ"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "မူလသတ်မှတ်ထားသော"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardware keyboard"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "ကီးဘုတ်"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "ကီးဘုတ် ရွေးပါ"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "ကီးဘုတ် အမျိုးအစားကို သတ်မှတ်ပါ"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Select keyboard type"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Language & input"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ဟတ်ဝဲ"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "ကီးဘုတ်များ နှင့် ဖြည့်သွင်းနည်းများ"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ရုပ်ဝတ္ထု ကီးဘုတ်"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "ပြင်ဆင်ပုံကို ပြောင်းရန်၊ ထိန်းချုပ်ခလုပ် နှင့် ကွက်လပ်ဘားကို အတူတကွ ပုတ်ပါ။"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "ဖန်သားပြင်ပေါ် ကီးဘုတ် သုံးပါ"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "မူရင်းပါပုံစံ ကီးဘုတ်"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "ကီးဘုတ် အမျိုးအစား"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtual keyboard"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "သတိ"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ပယ်ဖျက်"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "အိုကေ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "သုံးပါ"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "ကီးဘုတ်များ"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "ဤဖြည့်စရာ နည်းလမ်းသည် စကားဝှက်များနှင့် အကြွေးဝယ်ကဒ် နံပါတ်များကဲ့သို့ ကိုယ်ရေးသီးသန့် ဒေတာများအပါအဝင် သင်ရိုက်ထည့်သည့် စာသားအားလုံးကို ကောက်ယူသွားနိုင်သည်။ ၄င်းသည် %s အပလီကေးရှင်းမှ ပေါ်လာသည်။ ဤဖြည့်စရာ နည်းလမ်းကိုဖွင့်ရန် ဖွင့်ပါကို နှိပ်ပါ။"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Keyboard settings"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "စတင်လုပ်ဆောင်ပါ"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Keyboard settings"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ပယ်ဖျက်"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "သတိ"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtual keyboard"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ကီးဘုတ်"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "မူရင်းပါပုံစံ ကီးဘုတ်"
 

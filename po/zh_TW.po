@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "變更鍵盤樣式"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "預設"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "硬體鍵盤"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "鍵盤"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "選擇鍵盤"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "設定鍵盤類型"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "選擇鍵盤類型"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "語言及輸入"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "硬體"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "鍵盤與輸入法"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "實體鍵盤"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "若要切換配置，請一起輕觸控制按鈕與空格按鈕。"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "使用螢幕鍵盤"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "預設鍵盤"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "鍵盤類型"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "虛擬鍵盤"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "注意"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "取消"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "確定"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "使用"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "鍵盤"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "此輸入法可能會蒐集您輸入的所有文字，包括如密碼與信用卡號等個人資料。輸入法來自 %s 應用程式。請輕觸啟用來啟用此輸入法。"
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "鍵盤設定"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "啟用"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "鍵盤設定"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "注意"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "虛擬鍵盤"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "鍵盤"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "預設鍵盤"
 

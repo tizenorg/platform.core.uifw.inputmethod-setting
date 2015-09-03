@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Изменять тип клавиатуры"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "По умолчанию"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Физическая клавиатура"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Клавиатура"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Выберите клавиатуру"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Настройка типа клавиатуры"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Выбрать тип клавиатуры"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Язык и ввод"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Аппаратный"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Клавиатуры и методы ввода"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Физическая клавиатура"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Чтобы переключить макет, нажмите одновременно кнопку CTRL и пробел."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Использовать экранную клавиатуру"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Клавиатура по умолчанию"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Тип клавиатуры"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Виртуальная клавиатура"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Внимание"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Отмена"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ОК"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Использ."
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Клавиатуры"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "При использовании этого метода ввода для приложения %s может собираться весь вводимый текст, включая личную информацию, такую как пароли и номера кредитных карт. Коснитесь кнопки “Включить”, чтобы включить этот метод ввода."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Параметры клавиатуры"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Включить"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Параметры клавиатуры"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Отмена"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Внимание"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Виртуальная клавиатура"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Клавиатура"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Клавиатура по умолчанию"
 

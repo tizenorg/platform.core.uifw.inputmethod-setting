@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "تغيير نوع لوحة المفاتيح"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "إفتراضي"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "لوحة مفاتيح الجهاز"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "لوحة المفاتيح"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "تحديد لوحة المفاتيح"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "تعيين نوع لوحة المفاتيح"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "تحديد نوع لوحة المفاتيح"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "اللغة والإدخال"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "الجهاز"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "لوحات المفاتيح وطرق الإدخال"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "لوحة المفاتيح الفعلية"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "للتبديل بين التخطيطات، انقر فوق زر التحكم وشريط المسافة‬ معا."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "استخدام لوحة مفاتيح على الشاشة"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "لوحة المفاتيح الافتراضية"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "نوع لوحة المفاتيح"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "لوحة المفاتيح الظاهرية"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "انتباه"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "إلغاء"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "موافق"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "استخدام"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "لوحات المفاتيح"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "يمكن لطريقة الإدخال هذه جمع كل النصوص التي تطبعها، بما في ذلك البيانات الشخصية مثل كلمات المرور وأرقام بطاقات الائتمان. مصدرها تطبيق %s. انقر فوق تفعيل لتفعيل طريقة الإدخال هذه."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ضبط لوحة المفاتيح"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "تفعيل"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "ضبط لوحة المفاتيح"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "انتباه"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "لوحة المفاتيح الظاهرية"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "لوحة المفاتيح"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "لوحة المفاتيح الافتراضية"
 

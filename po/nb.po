@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Endre tastaturtype"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Standard"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Maskinvaretastatur"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Tastatur"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Velg tastatur"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Angi tastaturtype"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Velg tastaturtype"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Språk og inndata"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Maskinvare"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Tastaturer og inndatametoder"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fysisk tastatur"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "For å bytte oppsett trykker du på kontrollknappen og mellomromstasten samtidig."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Bruk tastatur på skjermen"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Standardtastatur"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Tastaturtype"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtuelt tastatur"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "OBS!"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Avbryt"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Bruk"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Tastaturer"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Det kan hende at denne inndatametoden kan klare å innhente all teksten du skriver inn, inkludert personlige data som passord og kredittkortnumre. Den kommer fra %s-appen. Trykk på Aktiver for å aktivere denne inndatametoden."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Tastaturinnstillinger"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Aktiver"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Tastaturinnstillinger"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "OBS!"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuelt tastatur"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Tastatur"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Standardtastatur"
 

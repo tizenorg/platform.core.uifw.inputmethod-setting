@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Aldatu teklatu mota"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Lehenetsia"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardware teklatua"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Teklatua"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Hautatu teklatua"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Ezarri teklatu mota"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Hautatu teklatu mota"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Hizkuntza eta sarrera"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardwarea"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Teklatuak eta sarrera metodoak"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Teklatu fisikoa"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Itxurak aldatzeko, ukitu kontrol botoia eta espazio barra aldi berean"
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Erabili teklatua pantailan"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Lehenetsitako teklatua"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Teklatu mota"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Teklatu birtuala"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Oharra"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Ezez."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "Ados"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Erabili"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Teklatuak"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Baliteke sarrera metodo honek idazten duzun testua biltzeko gai izatea, pasahitzak eta kreditu txartelen zenbakiak bezalako datu pertsonalak barne. %s aplikaziotik dator. Ukitu Gaitu sarrera metodo hau gaitzea."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Teklatuaren ezarpenak"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Gaitu"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Teklatuaren ezarpenak"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Ezez."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Oharra"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Teklatu birtuala"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Teklatua"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Lehenetsitako teklatua"
 

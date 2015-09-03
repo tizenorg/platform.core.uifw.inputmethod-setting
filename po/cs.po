@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "Změnit typ klávesnice"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "Výchozí"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "Hardwarová klávesnice"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "Klávesnice"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "Vybrat klávesnici"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "Nastavit typ klávesnice"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "Vybrat typ klávesnice"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "Jazyk a zadávání"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardware"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "Klávesnice a metody zadávání"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "Fyzická klávesnice"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "Chcete-li přepnout rozložení, klepněte současně na tlačítko Ctrl a mezerník."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "Použít obrazovkovou klávesnici"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "Výchozí klávesnice"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "Typ klávesnice"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "Virtuální klávesnice"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "Pozor"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "Zruš."
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "OK"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "Použít"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "Klávesnice"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "Tato metoda zadávání může ukládat veškerý zadávaný text včetně osobních dat, např. hesel a čísel kreditních karet. Pochází z aplikace %s. Tuto metodu zadávání zapnete klepnutím na tlačítko Zapnout."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "Nastavení klávesnice"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "Povolit"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "Nastavení klávesnice"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "Zruš."
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "Pozor"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "Virtuální klávesnice"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "Klávesnice"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "Výchozí klávesnice"
 

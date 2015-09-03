@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "ಕೀಬೋರ್ಡ್‌ ವಿಧವನ್ನು ಬದಲಿಸಿ"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "ಡಿಫಾಲ್ಟ್"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "ಹಾರ್ಡ್‌ವೇರ್ ಕೀಬೋರ್ಡ್"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "ಕೀಬೋರ್ಡ್"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "ಕೀಬೋರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "ಕೀಬೋರ್ಡ್‌ ವಿಧವನ್ನು ನಿಗದಿಪಡಿಸಿ"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "ಕೀಬೋರ್ಡ್ ಪ್ರಕಾರ ಆಯ್ಕೆಮಾಡಿ"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "ಭಾಷೆ & ಇನ್‌ಪುಟ್"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "ಹಾರ್ಡ್‌ವೇರ್"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "ಕೀಬೋರ್ಡ್‌ಗಳು ಮತ್ತು ಇನ್‌ಪುಟ್ ಪದ್ಧತಿಗಳು"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "ಭೌತಿಕ ಕೀಬೋರ್ಡ್"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "ಲೇಔಟ್‌ಗಳನ್ನು ಬದಲಿಸಲು, ನಿಯಂತ್ರಣ ಬಟ್ಟನ್ ಹಾಗೂ ಸ್ಪೇಸ್‌ಬಾರ್‌ ಅನ್ನು ಒಟ್ಟಾಗಿ ಒತ್ತಿ."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "ಸ್ಕ್ರೀನ್-ಮೇಲಣ ಕೀಬೋರ್ಡ್ ಬಳಕೆ ಮಾಡಿ"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "ಡೀಫಾಲ್ಟ್ ಕೀಬೋರ್ಡ್"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "ಕೀಬೋರ್ಡ್ ವಿಧ"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "ವರ್ಚುವಲ್ ಕೀಬೋರ್ಡ್"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "ಗಮನಿಸಿ"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ರದ್ದು"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "ಓಕೆ"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "ಬಳಸಿ"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "ಕೀಬೋರ್ಡ್‌‌ಗಳು"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಮತ್ತು ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಂಖ್ಯೆಗಳ ರೀತಿಯ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಸೇರಿದಂತೆ, ನೀವು ಟೈಪ್ ಮಾಡುವ ಎಲ್ಲಾ ಪಠ್ಯವನ್ನು ಸಂಗ್ರಹಿಸಿಕೊಳ್ಳಲು ಈ ಇನ್‌ಪುಟ್ ವಿಧಾನಕ್ಕೆ ಸಾಧ್ಯವಾಗಬಹುದು. ಇದು %s ಅನ್ವಯಿಸುವಿಕೆಯಿಂದ ಬರುತ್ತದೆ. ಈ ಇನ್‌ಪುಟ್ ವಿಧಾನವನ್ನು ಶಕ್ತಗೊಳಿಸಲು ಶಕ್ತಗೊಳಿಸಿ ಅನ್ನು ತಟ್ಟಿ."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "ಕೀಬೋರ್ಡ್ ಸಂಯೋಜನೆಗಳು"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "ಶಕ್ತಗೊಳಿಸು"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "ಕೀಬೋರ್ಡ್ ಸಂಯೋಜನೆಗಳು"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ರದ್ದು"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "ಗಮನಿಸಿ"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "ವರ್ಚುವಲ್ ಕೀಬೋರ್ಡ್"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "ಕೀಬೋರ್ಡ್"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "ಡೀಫಾಲ್ಟ್ ಕೀಬೋರ್ಡ್"
 

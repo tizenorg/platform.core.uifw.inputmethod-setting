@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "שנה סוג מקלדת"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "ברירת מחדל"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "מקלדת חומרה"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "מקלדת"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "בחר מקלדת"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "הגדר סוג מקלדת"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "בחירת סוג מקלדת"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "שפה וקלט"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "Hardware"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "מקלדות ושיטות קלט"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "מקלדת פיזית"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "כדי להחליף פריסה, הקש על לחצן הבקרה ועל מקש הרווח יחד."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "השתמש במקלדת על-גבי המסך"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "מקלדת ברירת מחדל"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "סוג מקלדת"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "מקלדת וירטואלית"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "שים לב"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "ביטול"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "אישור"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "השתמש"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "מקלדות"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "ייתכן ששיטת הזנה זו תוכל לאסוף את כל הטקסט שאתה מקליד, כולל נתונים אישיים כמו סיסמאות ומספרי כרטיסי אשראי. מגיע מהיישום %s. הקש על 'הפעל' כדי להפעיל שיטת הזנה זו."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "הגדרות מקלדת"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "הפעל"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "הגדרות מקלדת"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "ביטול"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "שים לב"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "מקלדת וירטואלית"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "מקלדת"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "מקלדת ברירת מחדל"
 

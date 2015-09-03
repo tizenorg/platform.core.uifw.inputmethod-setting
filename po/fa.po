@@ -1,72 +1,27 @@
-msgid "IDS_COM_BODY_CHANGE_KEYBOARD_TYPE"
-msgstr "تغییر دادن نوع صفحه کلید"
-
-msgid "IDS_COM_BODY_DEFAULT"
-msgstr "پيش فرض"
-
-msgid "IDS_IME_BODY_HARDWARE_KEYBOARD"
-msgstr "صفحه کلید سخت افزار"
-
-msgid "IDS_IME_BODY_KEYBOARD"
-msgstr "صفحه کلید"
-
-msgid "IDS_IME_BODY_SELECT_KEYBOARD"
-msgstr "انتخاب صفحه کلید"
-
-msgid "IDS_IME_BODY_SET_KEYBOARD_TYPE"
-msgstr "تنظیم نوع صفحه کلید"
-
-msgid "IDS_IME_HEADER_SELECT_KEYBOARD_TYPE_ABB"
-msgstr "انتخاب نوع صفحه کلید"
-
-msgid "IDS_KPD_MBODY_LANGUAGE_N_INPUT_ABB"
-msgstr "زبان و ورودی"
-
-msgid "IDS_ST_BODY_HARDWARE"
-msgstr "H/W"
-
-msgid "IDS_ST_BODY_KEYBOARDS_AND_INPUT_METHODS"
-msgstr "صفحه کلیدها و روش های ورودی"
-
-msgid "IDS_ST_BODY_PHYSICAL_KEYBOARD"
-msgstr "صفحه کلید فیزیکی"
-
-msgid "IDS_ST_BODY_TO_SWITCH_LAYOUTS_TAP_THE_CONTROL_BUTTON_AND_THE_SPACEBAR_TOGETHER"
-msgstr "برای تغییر صفحه آرایی، به دکمه کنترل و نوار فاصله با هم ضربه بزنید."
-
-msgid "IDS_ST_BODY_USE_ON_SCREEN_KEYBOARD"
-msgstr "استفاده از صفحه كليد روی صفحه"
-
-msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
-msgstr "صفحه‌کلید پیش‌فرض"
-
-msgid "IDS_ST_HEADER_KEYBOARD_TYPE"
-msgstr "نوع صفحه کلید"
-
-msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
-msgstr "صفحه کلید مجازی"
-
-msgid "IDS_ST_BODY_ATTENTION"
-msgstr "توجه"
-
-msgid "IDS_COM_SK_CANCEL_ABB"
-msgstr "لغو"
-
-msgid "IDS_HELP_SK2_OK_ABB"
-msgstr "تأیید"
-
-msgid "IDS_EL_BUTTON_USE"
-msgstr "استفاده"
-
 msgid "IDS_ST_HEADER_KEYBOARDS"
 msgstr "صفحه کلیدها"
 
 msgid "IDS_ST_POP_THIS_INPUT_METHOD_MAY_BE_ABLE_TO_COLLECT_ALL_THE_TEXT_YOU_TYPE_INCLUDING_PERSONAL_DATA_LIKE_PASSWORDS_AND_CREDIT_CARD_NUMBERS_MSG"
 msgstr "این روش ورودی می‌تواند کل متنی که تایپ می‌کنید، شامل داده‌های شخصی مانند رمزهای ورود و شماره‌های کارت اعتباری را جمع‌آوری نماید. این اطلاعات از برنامه ‎%s می‌آیند. برای فعال کردن این روش ورودی، روی فعال کردن ضربه بزنید."
 
+msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
+msgstr "تنظیمات صفحه کلید"
+
 msgid "IDS_ST_BUTTON_ENABLE"
 msgstr "فعال"
 
-msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
-msgstr "تنظیمات صفحه کلید"
+msgid "IDS_COM_SK_CANCEL_ABB"
+msgstr "لغو"
+
+msgid "IDS_ST_BODY_ATTENTION"
+msgstr "توجه"
+
+msgid "IDS_ST_HEADER_VIRTUAL_KEYBOARD"
+msgstr "صفحه کلید مجازی"
+
+msgid "IDS_IME_BODY_KEYBOARD"
+msgstr "صفحه کلید"
+
+msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
+msgstr "صفحه‌کلید پیش‌فرض"
 
