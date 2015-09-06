@@ -330,6 +330,12 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
     delete cb_data;
 }
 
+static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    eext_object_event_callback_del(obj, EEXT_CALLBACK_BACK, _popup_back_cb);
+    im_setting_list_check_popup_cancel_cb(data, NULL, NULL);
+}
+
 static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
 {
     int index = (int)reinterpret_cast<long>(data);
@@ -341,7 +347,6 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     Evas_Object *top_widget = elm_object_top_widget_get(obj);
     Evas_Object *popup = elm_popup_add(top_widget);
     elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, NULL);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
 
     char chFormatMsg[255] = {'\0'};
@@ -364,6 +369,7 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     elm_object_part_content_set(popup, "button2", btn_ok);
     evas_object_smart_callback_add(btn_ok, "clicked", ime_setting_list_ok_callback, cb_data);
 
+    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, _popup_back_cb, cb_data);
     evas_object_show(popup);
 }
 
