@@ -1,6 +1,6 @@
 Name:       org.tizen.inputmethod-setting
 Summary:    Input Method Setting Application
-Version:    0.4.16
+Version:    0.4.17
 Release:    1
 Group:      Graphics & UI Framework/Input
 License:    Apache-2.0
