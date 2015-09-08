@@ -8,7 +8,7 @@ msgid "IDS_IME_HEADER_KEYBOARD_SETTINGS_ABB"
 msgstr "Toetsenbordinstellingen"
 
 msgid "IDS_ST_BUTTON_ENABLE"
-msgstr "Inschakelen"
+msgstr "Aanzetten"
 
 msgid "IDS_COM_SK_CANCEL_ABB"
 msgstr "Annul."
@@ -21,6 +21,9 @@ msgstr "Virtueel toetsenbord"
 
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Toetsenbord"
+
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Toetsenbord selecteren"
 
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Standaard toetsenbord"

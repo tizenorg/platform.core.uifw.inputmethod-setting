@@ -22,6 +22,9 @@ msgstr "ვირტუალური კლავიატურა"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "კლავიატურა"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "აირჩიეთ კლავიატურა"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "ნაგულისხმევი კლავიატურა"
 

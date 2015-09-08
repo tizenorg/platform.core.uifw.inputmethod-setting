@@ -22,6 +22,9 @@ msgstr "மெய்நிகர் விசைப்பலகை"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "விசைப்பலகை"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "விசைப்பலகையைத் தேர்ந்தெடு"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "டீஃபால்ட் விசைப்பலகை"
 

@@ -22,6 +22,9 @@ msgstr "ਵਰਚੁਅਲ ਕੀਬੋਰਡ"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "ਕੀਬੋਰਡ"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ਕੀਬੋਰਡ ਚੁਣੋ"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "ਡਿਫਾੱਲਟ ਕੀਬੋਰਡ"
 

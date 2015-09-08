@@ -22,6 +22,9 @@ msgstr "Eochairchlár fíorúil"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Eochairchlár"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Roghnaigh eochairchlár"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Eochairchlár réamhshocraithe"
 

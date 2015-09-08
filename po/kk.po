@@ -22,6 +22,9 @@ msgstr "Виртуалды пернетақта"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Пернетақта"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Пернетақта таңдау"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Әдепкі пернетақта"
 

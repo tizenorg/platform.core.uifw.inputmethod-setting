@@ -22,6 +22,9 @@ msgstr "仮想キーボード"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "キーボード"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "キーボードを選択"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "標準キーボード"
 

@@ -22,6 +22,9 @@ msgstr "අතථ්‍ය යතුරු පුවරුව"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "යතුරු පුවරුව"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "යතුරුපුවරුව තෝරන්න"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "පෙරනිමි යතුරු පුවරුව"
 

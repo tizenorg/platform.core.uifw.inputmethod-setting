@@ -22,6 +22,9 @@ msgstr "Virtuālā tastatūra"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Tastatūra"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Izvēlieties tastatūru"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Noklusējuma tastatūra"
 

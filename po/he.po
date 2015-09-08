@@ -22,6 +22,9 @@ msgstr "מקלדת וירטואלית"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "מקלדת"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "בחר מקלדת"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "מקלדת ברירת מחדל"
 

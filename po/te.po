@@ -22,6 +22,9 @@ msgstr "వర్చువల్ కీబోర్డ్"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "కీబోర్డు"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "కీబోర్డ్ ని ఎంచుకోండి"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "డిఫాల్ట్ కీబోర్డు"
 

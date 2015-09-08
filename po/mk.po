@@ -22,6 +22,9 @@ msgstr "Виртуелна тастатура"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Тастатура"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Изберете тастатура"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Основна тастатура"
 

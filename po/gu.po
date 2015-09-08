@@ -22,6 +22,9 @@ msgstr "આભાસી કીબોર્ડ"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "કીબોર્ડ"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "કીબોર્ડ પસંદ કરો"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "મૂળભૂત કીબોર્ડ"
 

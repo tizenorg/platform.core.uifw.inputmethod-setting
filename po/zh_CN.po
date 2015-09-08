@@ -22,6 +22,9 @@ msgstr "虚拟键盘"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "键盘"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "选择键盘"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "默认键盘"
 

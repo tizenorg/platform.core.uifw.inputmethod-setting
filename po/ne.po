@@ -22,6 +22,9 @@ msgstr "भर्चुअल कीबोर्ड"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "कीबोर्ड"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "कीबोर्ड चयन गर्नुहोस्"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "पूर्वनिर्धारित कीबोर्ड"
 

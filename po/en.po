@@ -22,6 +22,9 @@ msgstr "Virtual keyboard"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Keyboard"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Select keyboard"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Default keyboard"
 

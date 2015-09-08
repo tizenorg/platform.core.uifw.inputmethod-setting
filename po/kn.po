@@ -22,6 +22,9 @@ msgstr "ವರ್ಚುವಲ್ ಕೀಬೋರ್ಡ್"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "ಕೀಬೋರ್ಡ್"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "ಕೀಬೋರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "ಡೀಫಾಲ್ಟ್ ಕೀಬೋರ್ಡ್"
 

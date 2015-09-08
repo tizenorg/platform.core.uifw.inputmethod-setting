@@ -22,6 +22,9 @@ msgstr "Papan kekunci maya"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Papan kekunci"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Pilih papan kekunci"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Papan kekunci lalai"
 

@@ -22,6 +22,9 @@ msgstr "Εικονικό πληκτρολόγιο"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Πληκτρολόγιο"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Επιλογή πληκτρολογίου"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Προεπιλεγμένο πληκτρολόγιο"
 

@@ -22,6 +22,9 @@ msgstr "Wirtual klawiatura"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Klawiatura"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Klawiatura saýla"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Standart klawiatura"
 

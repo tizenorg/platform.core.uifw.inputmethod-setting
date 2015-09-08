@@ -22,6 +22,9 @@ msgstr "Teklatu birtuala"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Teklatua"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Hautatu teklatua"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Lehenetsitako teklatua"
 

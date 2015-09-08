@@ -22,6 +22,9 @@ msgstr "Virtual na keyboard"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Keyboard"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Pumili ng keyboard"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Default na keyboard"
 

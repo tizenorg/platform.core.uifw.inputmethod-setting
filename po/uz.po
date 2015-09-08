@@ -22,6 +22,9 @@ msgstr "Virtual klaviatura"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Klaviatura"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Klaviatura tanlang"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Birlamchi klaviatura"
 

@@ -22,6 +22,9 @@ msgstr "ଭର୍ଚୁଆଲ୍ କୀବୋର୍ଡ୍"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "କୀବୋର୍ଡ୍"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "କୀବୋର୍ଡ୍ ଚୟନ କରନ୍ତୁ"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "ଡିଫଲ୍ଟ କୀବୋର୍ଡ"
 

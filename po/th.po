@@ -22,6 +22,9 @@ msgstr "แป้นพิมพ์เสมือน"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "แป้นพิมพ์"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "เลือกแป้นพิมพ์"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "แป้นพิมพ์เริ่มต้น"
 

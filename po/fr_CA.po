@@ -22,6 +22,9 @@ msgstr "Clavier tactile"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Clavier"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Sélectionner un clavier"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Clavier par défaut"
 

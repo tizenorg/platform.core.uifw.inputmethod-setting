@@ -22,6 +22,9 @@ msgstr "Virtuálna klávesnica"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Klávesnica"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Vyberte klávesnicu"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Predvolená klávesnica"
 

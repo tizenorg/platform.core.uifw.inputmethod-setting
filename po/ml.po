@@ -22,6 +22,9 @@ msgstr "വെര്‍ച്വല്‍ കീ‌ബോര്‍ഡ്"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "കീബോര്‍ഡ്"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "കീബോര്‍ഡ് തിരഞ്ഞെടുക്കുക"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "ഡിഫോൾട്ട് കീബോർഡ്"
 

@@ -22,6 +22,9 @@ msgstr "Клавиатураи виртуалӣ"
 msgid "IDS_IME_BODY_KEYBOARD"
 msgstr "Клавиатура"
 
+msgid "IDS_IME_BODY_SELECT_KEYBOARD"
+msgstr "Интихоби клавиатура"
+
 msgid "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB"
 msgstr "Клавиатураи стандартӣ"
 
