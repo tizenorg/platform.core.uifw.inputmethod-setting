@@ -242,6 +242,7 @@ im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        delete cb_data;
         return;
     }
     Eina_Bool state = EINA_FALSE;
@@ -258,6 +259,7 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        delete cb_data;
         return;
     }
 
@@ -272,7 +274,20 @@ im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_
 static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
 {
     eext_object_event_callback_del(obj, EEXT_CALLBACK_BACK, _popup_back_cb);
-    im_setting_list_check_popup_cancel_cb(data, NULL, NULL);
+    popup_cb_data *cb_data = (popup_cb_data *)data;
+    int index = (int)(cb_data->data);
+    if (index < 0 || index >= (int)g_ime_info_list.size()) {
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        delete cb_data;
+        return;
+    }
+    if(g_gen_item_data[index].chk_status){
+        im_setting_list_check_popup_cancel_cb(data, NULL, NULL);
+    }
+    else{
+        evas_object_del(cb_data->popup);
+        delete cb_data;
+    }
 }
 
 static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb ime_setting_list_ok_callback, popup_cancel_cb ime_setting_list_cancel_callback)
@@ -340,6 +355,7 @@ im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
+        delete cb_data;
         return;
     }
 
