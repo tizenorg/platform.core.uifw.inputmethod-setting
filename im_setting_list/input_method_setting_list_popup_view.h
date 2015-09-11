@@ -19,7 +19,7 @@
 #define __INPUTMETHOD_SETTING_LIST_POPUP_VIEW_H
 #include <Elementary.h>
 
-void im_setting_list_popup_view_create(Evas_Object *parentWin, void *data);
+void im_setting_list_popup_view_create(void *data);
 
 #endif /* __INPUTMETHOD_SETTING_LIST_POPUP_VIEW_H */
 

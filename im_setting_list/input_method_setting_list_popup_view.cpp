@@ -33,7 +33,6 @@ static int                          g_active_ime_id = -1;
 
 typedef struct {
     void        *data;
-    Evas_Object *popup;
     int         index;
 }sel_cb_data;
 
@@ -135,7 +134,7 @@ static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event
 {
     sel_cb_data * cb_data = (sel_cb_data *)data;
     int index = cb_data->index;
-    Evas_Object *popup = (Evas_Object *)cb_data->popup;
+    appdata *ad = (appdata *)cb_data->data;
 
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item){
@@ -143,9 +142,12 @@ static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event
         return;
     }
     im_setting_list_update_radio_state(item, obj, index);
-    im_setting_list_update_window(cb_data->data);
+    im_setting_list_update_window(ad);
 
-    evas_object_del(popup);
+    if (ad->popup) {
+        evas_object_del(ad->popup);
+    }
+    ad->popup = NULL;
     delete cb_data;
 }
 
@@ -215,18 +217,18 @@ static void im_setting_list_genlist_item_class_create(void)
     }
 }
 
-static Evas_Object *im_setting_list_list_create(Evas_Object *parent, void *data)
+static Evas_Object *im_setting_list_list_create(void *data)
 {
+    appdata *ad = (appdata *)data;
     im_setting_list_genlist_item_class_create();
     Evas_Object *genlist = NULL;
-    genlist = im_setting_list_genlist_create(parent);
+    genlist = im_setting_list_genlist_create(ad->popup);
     unsigned int i = 0;
 
     /* keyboard list */
     for (i = 0; i < g_active_ime_info_list.size(); i++) {
         sel_cb_data *cb_data = new sel_cb_data;
         cb_data->data = data;
-        cb_data->popup = parent;
         cb_data->index = i;
         elm_genlist_item_append(genlist,
             itc_im_list,
@@ -256,18 +258,27 @@ static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
 static void
 im_setting_list_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *obj, void *event_info EINA_UNUSED)
 {
-    evas_object_del(obj);
+    appdata *ad = (appdata *)data;
+    if (ad->popup) {
+        evas_object_del(ad->popup);
+    }
+    ad->popup = NULL;
 }
 
 static void im_setting_list_popup_view_back_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    Evas_Object *popup = (Evas_Object *)data;
+    appdata *ad = (appdata *)data;
     eext_object_event_callback_del(obj, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb);
-    evas_object_del(popup);
+    if (ad->popup) {
+        evas_object_del(ad->popup);
+    }
+    ad->popup = NULL;
 }
 
-static Evas_Object *im_setting_list_popup_create(Evas_Object *parentWin, void *data)
+static Evas_Object *im_setting_list_popup_create(void *data)
 {
+    appdata *ad = (appdata *)data;
+    Evas_Object *parentWin = ad->win;
     if (NULL == group_radio)
     {
         group_radio = elm_radio_add(parentWin);
@@ -276,22 +287,24 @@ static Evas_Object *im_setting_list_popup_create(Evas_Object *parentWin, void *d
 
     Evas_Object *popup = elm_popup_add(parentWin);
     elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-    evas_object_smart_callback_add(popup, "block,clicked", im_setting_list_popup_block_clicked_cb, NULL);
+    evas_object_smart_callback_add(popup, "block,clicked", im_setting_list_popup_block_clicked_cb, data);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_VIEW_TITLE);
     elm_object_style_set(popup, "theme_bg");
-    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb, popup);
+    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb, data);
+    ad->popup = popup;
 
-    Evas_Object *genlist = im_setting_list_list_create(popup, data);
+    Evas_Object *genlist = im_setting_list_list_create(data);
     elm_object_content_set(popup, genlist);
     evas_object_show(popup);
     return popup;
 }
 
 void
-im_setting_list_popup_view_create(Evas_Object *parentWin, void *data)
+im_setting_list_popup_view_create(void *data)
 {
-    if (!parentWin)
+    appdata *ad = (appdata *)data;
+    if (!ad->win)
         return;
     im_setting_list_load_active_ime_info();
-    im_setting_list_popup_create(parentWin, data);
+    im_setting_list_popup_create(data);
 }

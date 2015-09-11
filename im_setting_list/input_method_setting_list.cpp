@@ -87,6 +87,11 @@ app_pause(void *data)
 
     if (!ad)
         return;
+    if(ad->popup)
+    {
+        evas_object_del(ad->popup);
+        ad->popup = NULL;
+    }
     ad->app_state = APP_STATE_PAUSE;
 }
 

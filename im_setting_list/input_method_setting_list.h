@@ -43,6 +43,7 @@ typedef struct _appdata {
     Evas_Object *conform;
     Evas_Object *naviframe;
     Evas_Object *genlist;
+    Evas_Object *popup;
 
     int app_state;
     int app_type;

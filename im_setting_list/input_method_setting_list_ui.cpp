@@ -360,7 +360,7 @@ static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Ob
     appdata *ad = (appdata *)data;
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    im_setting_list_popup_view_create(ad->win, data);
+    im_setting_list_popup_view_create(data);
 }
 
 static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
