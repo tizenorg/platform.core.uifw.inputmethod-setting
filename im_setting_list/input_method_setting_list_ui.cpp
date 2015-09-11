@@ -15,6 +15,7 @@
  *
  */
 #include "input_method_setting_list.h"
+#include "input_method_setting_list_popup_view.h"
 #include <string>
 #include <app.h>
 #include <efl_extension.h>
@@ -411,9 +412,11 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
 
 static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
+    appdata *ad = (appdata *)data;
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-    im_setting_list_show_ime_selector(data);
+//    im_setting_list_show_ime_selector(data);
+    im_setting_list_popup_view_create(ad->win, data);
 }
 
 static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object *obj, void *event_info)

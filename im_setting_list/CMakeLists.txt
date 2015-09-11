@@ -3,6 +3,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 SET(SRC_LIST
     input_method_setting_list_ui.cpp
     input_method_setting_list.cpp
+    input_method_setting_list_popup_view.cpp
 )
 
 IF("${CMAKE_BUILD_TYPE}" STREQUAL "")
