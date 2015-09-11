@@ -39,7 +39,6 @@ app_control(app_control_h app_control, void *data)
     /* Handle the launch request. */
     appdata *ad = (appdata *)data;
     int res;
-    char* type = NULL;
 
     LOGD("");
 
@@ -47,27 +46,8 @@ app_control(app_control_h app_control, void *data)
         return;
 
     ad->app_type = APP_TYPE_NORMAL;
-
-    res = app_control_get_extra_data(app_control, "caller", &type);
-    if (APP_CONTROL_ERROR_NONE == res && NULL != type) {
-        if (strcmp(type,"settings") == 0)
-        {
-            ad->app_type = APP_TYPE_SETTING;
-            app_control_clone(&(ad->caller), app_control);
-        }
-        else if (strcmp(type, "settings_no_rotation") == 0)
-        {
-            ad->app_type = APP_TYPE_SETTING_NO_ROTATION;
-            app_control_clone(&(ad->caller), app_control);
-        }
-    }
-
     ad->app_state = APP_STATE_SERVICE;
     im_setting_selector_app_create(ad);
-    if (NULL != type)
-    {
-        free(type);
-    }
 }
 
 static void
@@ -106,8 +86,6 @@ app_terminate(void *data)
         return;
     ad->app_state = APP_STATE_TERMINATE;
     im_setting_selector_app_terminate(ad);
-    if (ad->caller)
-        app_control_destroy(ad->caller);
 }
 
 static void

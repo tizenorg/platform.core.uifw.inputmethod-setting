@@ -181,62 +181,6 @@ static int im_setting_list_get_active_ime_index(void)
 }
 
 static void
-im_setting_list_app_control_reply_cb(app_control_h request, app_control_h reply, app_control_result_e result, void *user_data)
-{
-    if (!request || !reply) {
-        LOGD("app_control handle is null");
-        return;
-    }
-    if (result == APP_CONTROL_RESULT_SUCCEEDED) {
-        im_setting_list_update_window(user_data);
-    }
-}
-
-static void im_setting_list_show_ime_selector(void *data)
-{
-    int ret;
-    appdata *ad = (appdata *)data;
-    app_control_h app_control;
-    const char *app_id = "org.tizen.inputmethod-setting-selector";
-
-    if (!ad)
-        return;
-
-    ret = app_control_create (&app_control);
-    if (ret != APP_CONTROL_ERROR_NONE) {
-        LOGD("app_control_create returned %d", ret);
-        return;
-    }
-
-    ret = app_control_set_operation (app_control, APP_CONTROL_OPERATION_DEFAULT);
-    if (ret != APP_CONTROL_ERROR_NONE) {
-        LOGD("app_control_set_operation returned %d", ret);
-        app_control_destroy(app_control);
-        return;
-    }
-
-    ret = app_control_set_app_id (app_control, app_id);
-    if (ret != APP_CONTROL_ERROR_NONE) {
-        LOGD("app_control_set_app_id returned %d", ret);
-        app_control_destroy(app_control);
-        return;
-    }
-
-    if (ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
-        app_control_add_extra_data(app_control, "caller", "settings_no_rotation");
-    else
-        app_control_add_extra_data(app_control, "caller", "settings");
-
-    ret = app_control_send_launch_request(app_control, im_setting_list_app_control_reply_cb, data);
-    if (ret != APP_CONTROL_ERROR_NONE) {
-        LOGD("app_control_send_launch_request returned %d, %s\n", ret, get_error_message(ret));
-        app_control_destroy(app_control);
-        return;
-    }
-    app_control_destroy(app_control);
-}
-
-static void
 im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
@@ -415,7 +359,6 @@ static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Ob
     appdata *ad = (appdata *)data;
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
-//    im_setting_list_show_ime_selector(data);
     im_setting_list_popup_view_create(ad->win, data);
 }
 

@@ -54,8 +54,9 @@ static void im_setting_selector_text_domain_set(void)
 }
 
 static Evas_Object *
-im_setting_selector_main_window_create(const char *name, int app_type)
+im_setting_selector_main_window_create(const char *name)
 {
+    int rots[4] = {0, 90, 180, 270};
     Evas_Object *eo = NULL;
     eo = elm_win_add(NULL, name, ELM_WIN_BASIC);
 
@@ -65,11 +66,7 @@ im_setting_selector_main_window_create(const char *name, int app_type)
         elm_win_alpha_set(eo, EINA_TRUE);
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
-
-        if (app_type != APP_TYPE_SETTING_NO_ROTATION) {
-            int rots[4] = {0, 90, 180, 270};
-            elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
-        }
+        elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
     }
     return eo;
 }
@@ -210,12 +207,6 @@ static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *e
         return;
     im_setting_selector_update_radio_state(item, obj, index);
 
-    if (ad->caller) {
-        app_control_h reply;
-        app_control_create(&reply);
-        app_control_reply_to_launch_request(reply, ad->caller, APP_CONTROL_RESULT_SUCCEEDED);
-        app_control_destroy(reply);
-    }
     delete cb_data;
     ui_app_exit();
 }
@@ -390,7 +381,7 @@ im_setting_selector_app_create(void *data)
     if (!ad)
         return;
     im_setting_selector_text_domain_set();
-    ad->win = im_setting_selector_main_window_create(PACKAGE, ad->app_type);
+    ad->win = im_setting_selector_main_window_create(PACKAGE);
     im_setting_selector_load_ime_info();
     im_setting_selector_popup_create(ad);
 
