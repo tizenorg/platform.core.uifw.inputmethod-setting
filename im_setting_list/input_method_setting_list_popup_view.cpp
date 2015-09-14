@@ -133,8 +133,12 @@ static void im_setting_list_update_radio_state(Elm_Object_Item *item, Evas_Objec
 static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     sel_cb_data * cb_data = (sel_cb_data *)data;
-    int index = cb_data->index;
+    if (!cb_data)
+        return;
     appdata *ad = (appdata *)cb_data->data;
+    if (!ad)
+        return;
+    int index = cb_data->index;
 
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item){
@@ -153,6 +157,8 @@ static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event
 
 static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 {
+    if (!parent)
+        return NULL;
     Evas_Object *genlist = elm_genlist_add(parent);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
     elm_genlist_homogeneous_set (genlist, EINA_TRUE);
@@ -220,6 +226,8 @@ static void im_setting_list_genlist_item_class_create(void)
 static Evas_Object *im_setting_list_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return NULL;
     im_setting_list_genlist_item_class_create();
     Evas_Object *genlist = NULL;
     genlist = im_setting_list_genlist_create(ad->popup);
@@ -259,6 +267,8 @@ static void
 im_setting_list_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *obj, void *event_info EINA_UNUSED)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
     if (ad->popup) {
         evas_object_del(ad->popup);
     }
@@ -268,6 +278,8 @@ im_setting_list_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *obj,
 static void im_setting_list_popup_view_back_cb(void *data, Evas_Object *obj, void *event_info)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
     eext_object_event_callback_del(obj, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb);
     if (ad->popup) {
         evas_object_del(ad->popup);
@@ -278,6 +290,8 @@ static void im_setting_list_popup_view_back_cb(void *data, Evas_Object *obj, voi
 static Evas_Object *im_setting_list_popup_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad || !ad->win)
+        return NULL;
     Evas_Object *parentWin = ad->win;
     if (NULL == group_radio)
     {
@@ -303,7 +317,7 @@ void
 im_setting_list_popup_view_create(void *data)
 {
     appdata *ad = (appdata *)data;
-    if (!ad->win)
+    if (!ad || !ad->win)
         return;
     im_setting_list_load_active_ime_info();
     im_setting_list_popup_create(data);

@@ -199,8 +199,9 @@ static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_O
 static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     sel_cb_data * cb_data = (sel_cb_data *)data;
+    if (!cb_data)
+        return;
     int index = cb_data->index;
-    appdata *ad = (appdata *)(cb_data->data);
 
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item)
@@ -279,6 +280,8 @@ static void im_setting_selector_genlist_item_class_create(void)
 static void im_setting_selector_add_ime(void *data) {
     appdata *ad = (appdata *)data;
     unsigned int i = 0;
+    if (!ad)
+        return;
     im_setting_selector_genlist_item_class_create();
 
     /* keyboard list */
@@ -300,6 +303,8 @@ static void im_setting_selector_add_ime(void *data) {
 Evas_Object *im_setting_selector_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return NULL;
     ad->genlist = im_setting_selector_genlist_create(ad->popup);
     im_setting_selector_add_ime(ad);
     return ad->genlist;
@@ -339,6 +344,8 @@ im_setting_selector_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *
 Evas_Object *im_setting_selector_popup_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return NULL;
     if (NULL == group_radio)
     {
         group_radio = elm_radio_add(ad->win);

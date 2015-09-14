@@ -38,7 +38,6 @@ app_control(app_control_h app_control, void *data)
 {
     /* Handle the launch request. */
     appdata *ad = (appdata *)data;
-    int res;
 
     LOGD("");
 

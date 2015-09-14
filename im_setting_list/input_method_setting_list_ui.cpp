@@ -184,6 +184,8 @@ static void
 im_setting_list_check_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    if (!cb_data)
+        return;
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
@@ -201,6 +203,8 @@ static void
 im_setting_list_check_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    if (!cb_data)
+        return;
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
@@ -220,6 +224,8 @@ static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
 {
     eext_object_event_callback_del(obj, EEXT_CALLBACK_BACK, _popup_back_cb);
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    if (!cb_data)
+        return;
     int index = (int)(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
@@ -298,6 +304,8 @@ static void
 im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    if (!cb_data)
+        return;
     int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
@@ -317,6 +325,8 @@ static void
 im_setting_list_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     popup_cb_data *cb_data = (popup_cb_data *)data;
+    if (!cb_data)
+        return;
     evas_object_del(cb_data->popup);
     delete cb_data;
 }
@@ -357,7 +367,6 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
 
 static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    appdata *ad = (appdata *)data;
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     elm_genlist_item_selected_set (item, EINA_FALSE);
     im_setting_list_popup_view_create(data);
@@ -404,6 +413,8 @@ static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *obj, const char *part)
 {
     char *text = (char *)data;
+    if (!text)
+        return NULL;
     if (!strcmp(part, "elm.text")) {
         return strdup(text);
     }
@@ -456,6 +467,8 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
 static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
     list_item_text *item_text = (list_item_text *)data;
+    if (!item_text)
+        return NULL;
     if (!strcmp(part, "elm.text.main.left.top") ||
         !strcmp(part, "elm.text.main.left") ||
         !strcmp(part, "elm.text.main") ||
@@ -476,6 +489,8 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
 static char *im_setting_list_genlist_item_one_line_label_get(void *data, Evas_Object *obj, const char *part)
 {
     list_item_text *item_text = (list_item_text *)data;
+    if (!item_text)
+        return NULL;
     if (!strcmp(part, "elm.text.main.left.top") ||
         !strcmp(part, "elm.text.main.left") ||
         !strcmp(part, "elm.text.main") ||
@@ -559,6 +574,8 @@ static void im_setting_list_genlist_item_class_create(int app_type)
 static void im_setting_list_add_ime(void *data) {
     appdata *ad = (appdata *)data;
     int i = 0;
+    if (!ad)
+        return;
     im_setting_list_genlist_item_class_create(ad->app_type);
 
     if (NULL != ad->genlist)
@@ -660,6 +677,8 @@ static void im_setting_list_navi_back_btn_call_cb(void *data, Evas_Object *obj, 
 Evas_Object *im_setting_list_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return NULL;
     ad->conform = im_setting_list_conform_create(ad->win);
     ad->naviframe = im_setting_list_naviframe_create(ad->conform);
     ad->genlist = im_setting_list_genlist_create(ad->naviframe);
@@ -708,6 +727,8 @@ void im_setting_list_app_terminate(void *data)
 void im_setting_list_update_window(void *data)
 {
     appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
     im_setting_list_load_ime_info();
     im_setting_list_add_ime(ad);
 }
