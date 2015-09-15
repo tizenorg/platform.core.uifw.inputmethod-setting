@@ -131,20 +131,20 @@ static void im_setting_selector_show_ime_list(void)
      int ret;
      app_control_h app_control;
      const char *app_id = "org.tizen.inputmethod-setting-list";
-     ret = app_control_create (&app_control);
+     ret = app_control_create(&app_control);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_create returned %d", ret);
          return;
      }
 
-     ret = app_control_set_operation (app_control, APP_CONTROL_OPERATION_DEFAULT);
+     ret = app_control_set_operation(app_control, APP_CONTROL_OPERATION_DEFAULT);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_set_operation returned %d", ret);
          app_control_destroy(app_control);
          return;
      }
 
-     ret = app_control_set_app_id (app_control, app_id);
+     ret = app_control_set_app_id(app_control, app_id);
      if (ret != APP_CONTROL_ERROR_NONE) {
          LOGD("app_control_set_app_id returned %d", ret);
          app_control_destroy(app_control);
@@ -171,7 +171,7 @@ static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, vo
     /*save the checked ime*/
     int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
         return;
     }
 }
@@ -179,18 +179,18 @@ static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, vo
 static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_Object *obj, int index)
 {
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
         return;
     }
 
     if (item && obj) {
-        elm_genlist_item_selected_set (item, EINA_FALSE);
+        elm_genlist_item_selected_set(item, EINA_FALSE);
         /* Update check button */
-        Evas_Object *radio = elm_object_item_part_content_get (item, "elm.swallow.end");
+        Evas_Object *radio = elm_object_item_part_content_get(item, "elm.swallow.end");
         if (radio == NULL) {
-            radio = elm_object_item_part_content_get (item, "elm.icon");
+            radio = elm_object_item_part_content_get(item, "elm.icon");
         }
-        evas_object_data_set (radio, "parent_genlist", obj);
+        evas_object_data_set(radio, "parent_genlist", obj);
         elm_radio_value_set(radio, index);
         isf_control_set_active_ime(g_ime_info_list[index].appid);
     }
@@ -215,7 +215,8 @@ static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *e
 static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
-    elm_genlist_homogeneous_set (genlist, EINA_TRUE);
+    elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+    elm_genlist_homogeneous_set(genlist, EINA_TRUE);
     evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
     elm_scroller_content_min_limit(genlist, EINA_FALSE, EINA_TRUE);
@@ -227,7 +228,7 @@ static char *im_setting_selector_genlist_item_label_get(void *data, Evas_Object 
 {
     int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_ime_info_list.size () : %d\n", index, g_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
         return NULL;
     }
 
@@ -247,7 +248,7 @@ static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_O
         !strcmp(part, "elm.icon.2")) {
         Evas_Object *bx = elm_box_add(obj);
         Evas_Object *radio = elm_radio_add(obj);
-        elm_object_style_set (radio, "list");
+        elm_object_style_set(radio, "list");
         elm_radio_state_value_set(radio, index);
         elm_radio_group_add(radio, group_radio);
         evas_object_show(radio);
@@ -352,15 +353,15 @@ Evas_Object *im_setting_selector_popup_create(void *data)
         elm_radio_state_value_set(group_radio, -1);
     }
     ad->popup = elm_popup_add(ad->win);
-    elm_popup_align_set (ad->popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
+    elm_popup_align_set(ad->popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     evas_object_smart_callback_add(ad->popup, "block,clicked", im_setting_selector_popup_block_clicked_cb, NULL);
     elm_object_part_text_set(ad->popup, "title,text", IM_SETTING_SELECTOR_TITLE);
 
     ad->naviframe = im_setting_selector_naviframe_create(ad->win);
     ad->genlist = im_setting_selector_list_create(data);
 
-    Evas_Object *back_btn = elm_button_add (ad->naviframe);
-    elm_object_style_set (back_btn, "naviframe/back_btn/default");
+    Evas_Object *back_btn = elm_button_add(ad->naviframe);
+    elm_object_style_set(back_btn, "naviframe/back_btn/default");
     Elm_Object_Item *nf_main_item = elm_naviframe_item_push(ad->naviframe,
                          NULL,
                          back_btn,
