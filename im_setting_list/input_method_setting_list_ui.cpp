@@ -252,7 +252,7 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
 
     Evas_Object *top_widget = elm_object_top_widget_get(obj);
     Evas_Object *popup = elm_popup_add(top_widget);
-    elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
+    elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_TITLE);
 
     char chFormatMsg[255] = {'\0'};
@@ -275,7 +275,7 @@ static void im_setting_list_show_popup(void *data, Evas_Object *obj, popup_ok_cb
     elm_object_part_content_set(popup, "button2", btn_ok);
     evas_object_smart_callback_add(btn_ok, "clicked", ime_setting_list_ok_callback, cb_data);
 
-    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, _popup_back_cb, cb_data);
+    eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, _popup_back_cb, cb_data);
     evas_object_show(popup);
 }
 
@@ -334,7 +334,7 @@ im_setting_list_popup_cancel_cb(void *data, Evas_Object *obj, void *event_info)
 static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
-    elm_genlist_item_selected_set (item, EINA_FALSE);
+    elm_genlist_item_selected_set(item, EINA_FALSE);
 
     int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
@@ -347,9 +347,9 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
         return;
     }
 
-    Evas_Object *ck = elm_object_item_part_content_get (item, "elm.swallow.end");
+    Evas_Object *ck = elm_object_item_part_content_get(item, "elm.swallow.end");
     if (ck == NULL) {
-        ck = elm_object_item_part_content_get (item, "elm.icon");
+        ck = elm_object_item_part_content_get(item, "elm.icon");
     }
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
@@ -368,7 +368,7 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
 static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
-    elm_genlist_item_selected_set (item, EINA_FALSE);
+    elm_genlist_item_selected_set(item, EINA_FALSE);
     im_setting_list_popup_view_create(data);
 }
 
@@ -406,6 +406,7 @@ static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
 static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
+    elm_genlist_homogeneous_set(genlist, EINA_TRUE);
     evas_object_show(genlist);
     return genlist;
 }
@@ -449,10 +450,10 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
 
     if (!strcmp(part, "elm.swallow.end")) {
         Evas_Object *ck = elm_check_add(obj);
-        elm_object_style_set (ck, "on&off");
+        elm_object_style_set(ck, "on&off");
         elm_object_disabled_set(ck, g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index));
         elm_check_state_set(ck, g_gen_item_data[index].chk_status);
-        evas_object_propagate_events_set (ck, EINA_FALSE);
+        evas_object_propagate_events_set(ck, EINA_FALSE);
         evas_object_size_hint_align_set(ck, EVAS_HINT_FILL, EVAS_HINT_FILL);
         evas_object_size_hint_weight_set(ck, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
         elm_check_state_pointer_set(ck, (Eina_Bool *)(&(g_gen_item_data[index].chk_status)));
@@ -590,7 +591,7 @@ static void im_setting_list_add_ime(void *data) {
     }
 
     memset(&item_text, 0, sizeof(item_text));
-    Elm_Object_Item * group_header_item = NULL;
+    Elm_Object_Item *group_header_item = NULL;
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
         /* Default keyboard selector */
@@ -685,8 +686,8 @@ Evas_Object *im_setting_list_list_create(void *data)
     im_setting_list_add_ime(ad);
 
     /* Add genlist to naviframe */
-    Evas_Object *back_btn = elm_button_add (ad->naviframe);
-    elm_object_style_set (back_btn, "naviframe/back_btn/default");
+    Evas_Object *back_btn = elm_button_add(ad->naviframe);
+    elm_object_style_set(back_btn, "naviframe/back_btn/default");
     evas_object_smart_callback_add(back_btn, "clicked", im_setting_list_navi_back_btn_call_cb, NULL);
     Elm_Object_Item *nf_main_item = elm_naviframe_item_push(ad->naviframe,
                 IM_SETTING_LIST_TITLE,
