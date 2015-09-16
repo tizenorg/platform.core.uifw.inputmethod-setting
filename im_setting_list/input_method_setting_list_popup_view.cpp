@@ -251,18 +251,6 @@ static Evas_Object *im_setting_list_list_create(void *data)
     return genlist;
 }
 
-static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
-{
-    Evas_Object *naviframe = elm_naviframe_add(parent);
-    elm_naviframe_prev_btn_auto_pushed_set(naviframe, EINA_TRUE);
-    eext_object_event_callback_add(naviframe, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
-    evas_object_size_hint_weight_set(naviframe, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    evas_object_size_hint_align_set(naviframe, EVAS_HINT_FILL, EVAS_HINT_FILL);
-    elm_object_part_content_set(parent, "elm.swallow.content", naviframe);
-    evas_object_show(naviframe);
-    return naviframe;
-}
-
 static void
 im_setting_list_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *obj, void *event_info EINA_UNUSED)
 {
