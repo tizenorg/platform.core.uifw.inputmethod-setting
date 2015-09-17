@@ -386,6 +386,12 @@ static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
     elm_win_indicator_opacity_set(parentWin, ELM_WIN_INDICATOR_OPAQUE);
     evas_object_size_hint_weight_set(conform, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(conform, EVAS_HINT_FILL, EVAS_HINT_FILL);
+
+    Evas_Object *bg = elm_bg_add(conform);
+    elm_object_style_set(bg, "indicator/headerbg");
+    elm_object_part_content_set(conform, "elm.swallow.indicator_bg", bg);
+    evas_object_show(bg);
+
     elm_win_resize_object_add(parentWin, conform);
     evas_object_show(conform);
     return conform;
