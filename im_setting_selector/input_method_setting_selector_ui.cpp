@@ -246,22 +246,14 @@ static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_O
     int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.swallow.end") ||
         !strcmp(part, "elm.icon.2")) {
-        Evas_Object *bx = elm_box_add(obj);
         Evas_Object *radio = elm_radio_add(obj);
         elm_object_style_set(radio, "list");
         elm_radio_state_value_set(radio, index);
         elm_radio_group_add(radio, group_radio);
         evas_object_show(radio);
         evas_object_smart_callback_add(radio, "changed", im_setting_selector_radio_change_cb, (void *) (index));
-        elm_box_pack_end(bx, radio);
 
-        //for adjust UI
-        Evas_Object *label = elm_label_add(obj);
-        elm_object_text_set(label, "   ");
-        elm_box_pack_end(bx, label);
-        elm_box_horizontal_set(bx, EINA_TRUE);
-        evas_object_show(label);
-        return bx;
+        return radio;
     }
     return NULL;
 }
