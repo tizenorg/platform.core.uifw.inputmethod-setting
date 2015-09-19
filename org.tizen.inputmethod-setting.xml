@@ -3,7 +3,7 @@
         <label>Keyboard setting</label>
         <author email="shoum.chen@samsung.com" href="www.samsung.com">Shuoming Chen</author>
         <description>Keyboard setting Application</description>
-        <ui-application appid="org.tizen.inputmethod-setting-list" launch_mode="caller" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-list" nodisplay="true" multiple="false" type="capp" taskmanage="false">
+        <ui-application appid="org.tizen.inputmethod-setting-list" launch_mode="caller" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-list" hw-acceleration="on" nodisplay="true" multiple="false" type="capp" taskmanage="false">
             <category name="http://tizen.org/category/ime-list"/>
             <icon>/usr/share/icons/default/small/org.tizen.inputmethod-setting-list.png</icon>
             <label>IME List</label>
