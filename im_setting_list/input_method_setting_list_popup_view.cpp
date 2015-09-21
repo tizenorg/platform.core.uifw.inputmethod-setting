@@ -206,7 +206,7 @@ static void im_setting_list_genlist_item_class_create(void)
 {
     itc_im_list = elm_genlist_item_class_new();
     if (itc_im_list) {
-        itc_im_list->item_style = "type1";
+        itc_im_list->item_style = "1line";
         itc_im_list->func.text_get = im_setting_list_genlist_item_label_get;
         itc_im_list->func.content_get = im_setting_list_genlist_item_icon_get;
         itc_im_list->func.state_get = NULL;
