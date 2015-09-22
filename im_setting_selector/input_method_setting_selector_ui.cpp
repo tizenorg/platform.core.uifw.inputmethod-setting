@@ -216,7 +216,6 @@ static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
-    elm_genlist_homogeneous_set(genlist, EINA_TRUE);
     evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
     elm_scroller_content_min_limit(genlist, EINA_FALSE, EINA_TRUE);
