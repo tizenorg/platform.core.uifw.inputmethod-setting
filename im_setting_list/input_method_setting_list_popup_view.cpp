@@ -103,7 +103,7 @@ static void im_setting_list_load_active_ime_info(void)
 static void im_setting_list_radio_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /*save the checked ime*/
-    int index = (int)data;
+    int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_active_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_active_ime_info_list.size () : %d\n", index, g_active_ime_info_list.size());
         return;
@@ -170,7 +170,7 @@ static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 
 static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_active_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_active_ime_info_list.size () : %d\n", index, g_active_ime_info_list.size());
         return NULL;
@@ -187,7 +187,7 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
 
 static Evas_Object *im_setting_list_genlist_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
-    int index = (int)(data);
+    int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.swallow.end") ||
         !strcmp(part, "elm.icon.2")) {
         Evas_Object *radio = elm_radio_add(obj);

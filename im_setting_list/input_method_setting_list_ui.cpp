@@ -226,7 +226,7 @@ static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
     popup_cb_data *cb_data = (popup_cb_data *)data;
     if (!cb_data)
         return;
-    int index = (int)(cb_data->data);
+    int index = (int)reinterpret_cast<long>(cb_data->data);
     if (index < 0 || index >= (int)g_ime_info_list.size()) {
         LOGW("Wrong value. index : %d, g_ime_info_list.size() : %d\n", index, g_ime_info_list.size());
         delete cb_data;
