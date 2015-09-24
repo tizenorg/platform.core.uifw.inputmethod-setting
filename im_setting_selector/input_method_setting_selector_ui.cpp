@@ -58,6 +58,7 @@ im_setting_selector_main_window_create(const char *name)
 {
     int rots[4] = {0, 90, 180, 270};
     Evas_Object *eo = NULL;
+    int w = -1, h = -1;
     eo = elm_win_add(NULL, name, ELM_WIN_BASIC);
 
     if (eo) {
@@ -67,6 +68,10 @@ im_setting_selector_main_window_create(const char *name)
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
         elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
+        elm_win_screen_size_get(eo, NULL, NULL, &w, &h);
+        if (w > 0 && h > 0) {
+            evas_object_resize(eo, w, h);
+        }
     }
     return eo;
 }
