@@ -42,19 +42,19 @@ typedef struct list_item_text_s
 {
     char main_text[255];
     char sub_text[255];
-}list_item_text;
+} list_item_text;
 
 typedef struct popup_cb_data_s
 {
     Evas_Object *popup;
     void *data;
-}popup_cb_data;
+} popup_cb_data;
 
 typedef struct gen_item_data_s
 {
     Elm_Object_Item *gen_item;
     int chk_status;
-}gen_item_data;
+} gen_item_data;
 
 class ime_info_compare
 {
@@ -232,10 +232,11 @@ static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
         delete cb_data;
         return;
     }
-    if(g_gen_item_data[index].chk_status){
+
+    if (g_gen_item_data[index].chk_status) {
         im_setting_list_check_popup_cancel_cb(data, NULL, NULL);
     }
-    else{
+    else {
         evas_object_del(cb_data->popup);
         delete cb_data;
     }
@@ -346,7 +347,7 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
         return;
     }
 
-    Evas_Object *ck = elm_object_item_part_content_get (item, "elm.icon.right");
+    Evas_Object *ck = elm_object_item_part_content_get(item, "elm.swallow.end");
     if (ck == NULL) {
         ck = elm_object_item_part_content_get(item, "elm.icon");
     }
@@ -419,11 +420,9 @@ static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *obj, const char *part)
 {
     char *text = (char *)data;
-#ifdef _MOBILE
-    if (!strcmp(part, "elm.text.main")) {
-#else
+    if (!text)
+        return NULL;
     if (!strcmp(part, "elm.text")) {
-#endif
         return strdup(text);
     }
     return NULL;
@@ -455,7 +454,7 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
         return NULL;
     }
 
-    if (!strcmp(part, "elm.icon.right") || !strcmp(part, "elm.icon")) {
+    if (!strcmp(part, "elm.swallow.end")) {
         Evas_Object *ck = elm_check_add(obj);
         elm_object_style_set(ck, "on&off");
         elm_object_disabled_set(ck, g_ime_info_list[index].is_preinstalled || (index == g_active_ime_index));
@@ -464,7 +463,7 @@ static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *da
         evas_object_size_hint_align_set(ck, EVAS_HINT_FILL, EVAS_HINT_FILL);
         evas_object_size_hint_weight_set(ck, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
         elm_check_state_pointer_set(ck, (Eina_Bool *)(&(g_gen_item_data[index].chk_status)));
-        evas_object_pass_events_set(ck, 1);
+        evas_object_pass_events_set(ck, EINA_TRUE);
         evas_object_smart_callback_add(ck, "changed", im_setting_list_check_button_change_cb, (void *)(index));
         evas_object_show(ck);
         return ck;
@@ -485,7 +484,8 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
         return strdup(item_text->main_text);
     }
 
-    if (!strcmp(part, "elm.text.sub.left.bottom") ||
+    if (!strcmp(part, "elm.text.sub") ||
+        !strcmp(part, "elm.text.sub.left.bottom") ||
         !strcmp(part, "elm.text.multiline") ||
         !strcmp(part, "elm.text.2")) {
         return strdup(item_text->sub_text);
@@ -515,7 +515,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         itc_im_list_group = elm_genlist_item_class_new();
         if (itc_im_list_group)
         {
-            itc_im_list_group->item_style = "groupindex";
+            itc_im_list_group->item_style = "group_index";
             itc_im_list_group->func.text_get = im_setting_list_genlist_group_label_get;
             itc_im_list_group->func.content_get = NULL;
             itc_im_list_group->func.state_get = NULL;
@@ -529,7 +529,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         if (itc_im_list_keyboard_list)
         {
 #ifdef _MOBILE
-            itc_im_list_keyboard_list->item_style = "1line";
+            itc_im_list_keyboard_list->item_style = "type1";
 #else
             itc_im_list_keyboard_list->item_style = "1text.1icon.1";
 #endif
@@ -548,7 +548,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             if (itc_im_list_item)
             {
 #ifdef _MOBILE
-                itc_im_list_item->item_style = "2line.top";
+                itc_im_list_item->item_style = "type1";
 #else
                 itc_im_list_item->item_style = "2text";
 #endif
@@ -565,7 +565,7 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             if (itc_im_list_item_one_line)
             {
 #ifdef _MOBILE
-                itc_im_list_item_one_line->item_style = "1line";
+                itc_im_list_item_one_line->item_style = "type1";
 #else
                 itc_im_list_item_one_line->item_style = "1text";
 #endif
@@ -600,6 +600,7 @@ static void im_setting_list_add_ime(void *data) {
     Elm_Object_Item *group_header_item = NULL;
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
+        /* Default keyboard selector */
         snprintf(item_text[0].main_text, sizeof(item_text[0].main_text), "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
         snprintf(item_text[0].sub_text, sizeof(item_text[0].sub_text), "%s", g_ime_info_list[g_active_ime_index].label);
         elm_genlist_item_append(ad->genlist,
@@ -610,6 +611,7 @@ static void im_setting_list_add_ime(void *data) {
             im_setting_list_set_default_keyboard_item_sel_cb,
             data);
 
+        /* Keyboard settings */
         snprintf(item_text[1].main_text, sizeof(item_text[1].main_text), "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
         Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
             itc_im_list_item_one_line,
@@ -622,6 +624,7 @@ static void im_setting_list_add_ime(void *data) {
         elm_object_item_disabled_set(item, !(g_ime_info_list[g_active_ime_index].has_option));
     }
 
+    /* Keyboards group */
     group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
             IM_SETTING_LIST_KEYBOARD_HEADER,
@@ -638,7 +641,8 @@ static void im_setting_list_add_ime(void *data) {
 
         if (g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)) {
             item_data.chk_status = EINA_TRUE;
-        }else{
+        }
+        else {
             item_data.chk_status = g_ime_info_list[i].is_enabled;
         }
         g_gen_item_data.push_back(item_data);
