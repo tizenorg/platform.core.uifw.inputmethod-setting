@@ -89,7 +89,6 @@ static Evas_Object *
 im_setting_list_main_window_create(const char *name, int app_type)
 {
     Evas_Object *eo = NULL;
-    int w = -1, h = -1;
     eo = elm_win_add(NULL, name, ELM_WIN_BASIC);
     if (eo) {
         elm_win_title_set(eo, name);
@@ -97,10 +96,6 @@ im_setting_list_main_window_create(const char *name, int app_type)
         elm_win_alpha_set(eo, EINA_FALSE);
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
-        elm_win_screen_size_get(eo, NULL, NULL, &w, &h);
-        if (w > 0 && h > 0) {
-            evas_object_resize(eo, w, h);
-        }
         if (app_type != APP_TYPE_SETTING_NO_ROTATION) {
             int rots[4] = {0, 90, 180, 270};
             elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
@@ -382,6 +377,19 @@ static void im_setting_list_keyboard_setting_item_sel_cb(void *data, Evas_Object
     isf_control_open_ime_option_window();
 }
 
+static void
+_elm_win_resize_cb(void *data, Evas *e, Evas_Object *obj, void *event_info)
+{
+    Evas_Coord w = -1, h = -1;
+    Evas_Object *conform = (Evas_Object*)data;
+    if (conform) {
+        evas_object_geometry_get(obj, NULL, NULL, &w, &h);
+        if (w > 0 && h > 0) {
+            evas_object_resize(conform, w, h);
+        }
+    }
+}
+
 static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
 {
     Evas_Object *conform = elm_conformant_add(parentWin);
@@ -395,7 +403,12 @@ static Evas_Object *im_setting_list_conform_create(Evas_Object *parentWin)
     elm_object_part_content_set(conform, "elm.swallow.indicator_bg", bg);
     evas_object_show(bg);
 
-    elm_win_resize_object_add(parentWin, conform);
+    Evas_Coord w = -1, h = -1;
+    elm_win_screen_size_get(parentWin, NULL, NULL, &w, &h);
+    if (w > 0 && h > 0) {
+        evas_object_resize(conform, w, h);
+    }
+    evas_object_event_callback_add(parentWin, EVAS_CALLBACK_RESIZE, _elm_win_resize_cb, conform);
     evas_object_show(conform);
     return conform;
 }
