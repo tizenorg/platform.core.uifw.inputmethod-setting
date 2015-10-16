@@ -34,9 +34,7 @@ enum {
 };
 
 enum {
-    APP_TYPE_SETTING = 1,
-    APP_TYPE_SETTING_NO_ROTATION,
-    APP_TYPE_NORMAL,
+    APP_TYPE_NORMAL = 1,
 };
 
 typedef struct _appdata {
