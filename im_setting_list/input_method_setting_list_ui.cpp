@@ -437,6 +437,8 @@ static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
 static char *im_setting_list_genlist_group_label_get(void *data, Evas_Object *obj, const char *part)
 {
     char *text = (char *)data;
+    if (!text)
+        return NULL;
     if (!strcmp(part, "elm.text")) {
         return strdup(text);
     }
