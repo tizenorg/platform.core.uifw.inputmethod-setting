@@ -67,7 +67,7 @@ im_setting_selector_main_window_create(const char *name)
         elm_win_alpha_set(eo, EINA_TRUE);
         elm_win_conformant_set(eo, EINA_TRUE);
         elm_win_autodel_set(eo, EINA_TRUE);
-        if (elm_win_wm_rotation_supported_get (eo)) {
+        if (elm_win_wm_rotation_supported_get(eo)) {
             int rots[4] = {0, 90, 180, 270};
             elm_win_wm_rotation_available_rotations_set(eo, rots, 4);
         }
@@ -202,7 +202,7 @@ static void im_setting_selector_update_radio_state(Elm_Object_Item *item, Evas_O
     if (item && obj) {
         elm_genlist_item_selected_set(item, EINA_FALSE);
         /* Update check button */
-        Evas_Object *radio = elm_object_item_part_content_get (item, "elm.icon.right");
+        Evas_Object *radio = elm_object_item_part_content_get(item, "elm.swallow.end");
         if (radio == NULL) {
             radio = elm_object_item_part_content_get(item, "elm.icon");
         }
@@ -277,7 +277,7 @@ static void im_setting_selector_genlist_item_class_create(void)
 {
     itc_im_selector = elm_genlist_item_class_new();
     if (itc_im_selector) {
-        itc_im_selector->item_style = "1line";
+        itc_im_selector->item_style = "type1";
         itc_im_selector->func.text_get = im_setting_selector_genlist_item_label_get;
         itc_im_selector->func.content_get = im_setting_selector_genlist_item_icon_get;
         itc_im_selector->func.state_get = NULL;

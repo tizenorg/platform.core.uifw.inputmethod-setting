@@ -105,7 +105,7 @@ static void im_setting_list_radio_change_cb(void *data, Evas_Object *obj, void *
     /*save the checked ime*/
     int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_active_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_active_ime_info_list.size () : %d\n", index, g_active_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_active_ime_info_list.size() : %d\n", index, g_active_ime_info_list.size());
         return;
     }
 }
@@ -113,18 +113,18 @@ static void im_setting_list_radio_change_cb(void *data, Evas_Object *obj, void *
 static void im_setting_list_update_radio_state(Elm_Object_Item *item, Evas_Object *obj, int index)
 {
     if (index < 0 || index >= (int)g_active_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_active_ime_info_list.size () : %d\n", index, g_active_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_active_ime_info_list.size() : %d\n", index, g_active_ime_info_list.size());
         return;
     }
 
     if (item && obj) {
-        elm_genlist_item_selected_set (item, EINA_FALSE);
+        elm_genlist_item_selected_set(item, EINA_FALSE);
         /* Update check button */
-        Evas_Object *radio = elm_object_item_part_content_get (item, "elm.icon.right");
+        Evas_Object *radio = elm_object_item_part_content_get(item, "elm.icon.right");
         if (radio == NULL) {
-            radio = elm_object_item_part_content_get (item, "elm.icon");
+            radio = elm_object_item_part_content_get(item, "elm.icon");
         }
-        evas_object_data_set (radio, "parent_genlist", obj);
+        evas_object_data_set(radio, "parent_genlist", obj);
         elm_radio_value_set(radio, index);
         isf_control_set_active_ime(g_active_ime_info_list[index].appid);
     }
@@ -172,7 +172,7 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
 {
     int index = (int)reinterpret_cast<long>(data);
     if (index < 0 || index >= (int)g_active_ime_info_list.size()) {
-        LOGW("Wrong value. index : %d, g_active_ime_info_list.size () : %d\n", index, g_active_ime_info_list.size());
+        LOGW("Wrong value. index : %d, g_active_ime_info_list.size() : %d\n", index, g_active_ime_info_list.size());
         return NULL;
     }
 
@@ -191,7 +191,7 @@ static Evas_Object *im_setting_list_genlist_item_icon_get(void *data, Evas_Objec
     if (!strcmp(part, "elm.swallow.end") ||
         !strcmp(part, "elm.icon.2")) {
         Evas_Object *radio = elm_radio_add(obj);
-        elm_object_style_set (radio, "list");
+        elm_object_style_set(radio, "list");
         elm_radio_state_value_set(radio, index);
         elm_radio_group_add(radio, group_radio);
         evas_object_show(radio);
@@ -206,7 +206,7 @@ static void im_setting_list_genlist_item_class_create(void)
 {
     itc_im_list = elm_genlist_item_class_new();
     if (itc_im_list) {
-        itc_im_list->item_style = "1line";
+        itc_im_list->item_style = "type1";
         itc_im_list->func.text_get = im_setting_list_genlist_item_label_get;
         itc_im_list->func.content_get = im_setting_list_genlist_item_icon_get;
         itc_im_list->func.state_get = NULL;
@@ -279,11 +279,11 @@ static Evas_Object *im_setting_list_popup_create(void *data)
     }
 
     Evas_Object *popup = elm_popup_add(parentWin);
-    elm_popup_align_set (popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
+    elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
     evas_object_smart_callback_add(popup, "block,clicked", im_setting_list_popup_block_clicked_cb, data);
     elm_object_part_text_set(popup, "title,text", IM_SETTING_LIST_POPUP_VIEW_TITLE);
     elm_object_style_set(popup, "theme_bg");
-    eext_object_event_callback_add (popup, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb, data);
+    eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, im_setting_list_popup_view_back_cb, data);
     ad->popup = popup;
 
     Evas_Object *genlist = im_setting_list_list_create(data);
