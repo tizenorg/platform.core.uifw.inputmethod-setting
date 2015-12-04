@@ -9,11 +9,7 @@
             <label>IME List</label>
             <label xml:lang="en-us">IME List</label>
         </ui-application>
-        <privileges>
-            <privilege>http://tizen.org/privilege/imemanager</privilege>
-        </privileges>
-
-       <ui-application appid="org.tizen.inputmethod-setting-selector" launch_mode="single" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-selector" hw-acceleration="use-GL" nodisplay="true" multiple="false" type="capp" taskmanage="false">
+        <ui-application appid="org.tizen.inputmethod-setting-selector" launch_mode="single" exec="/usr/apps/org.tizen.inputmethod-setting/bin/inputmethod-setting-selector" hw-acceleration="use-GL" nodisplay="true" multiple="false" type="capp" taskmanage="false">
             <category name="http://tizen.org/category/ime-selector"/>
             <icon>/usr/share/icons/default/small/org.tizen.inputmethod-setting-selector.png</icon>
             <label>IME Selector</label>
