@@ -22,6 +22,7 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(pkgmgr-info)
 BuildRequires:  cmake
 BuildRequires:  efl-extension-devel
+BuildRequires:  pkgconfig(libtzplatform-config)
 
 %description
 Setting Application for ISF.
@@ -49,14 +50,16 @@ CXXFLAGS+=" -D_WEARABLE";
 
 rm -rf CMakeFiles
 rm -rf CMakeCache.txt
-cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
+cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} \
+        -DTZ_SYS_RO_PACKAGES=%TZ_SYS_RO_PACKAGES \
+        -DTZ_SYS_RO_ICONS=%TZ_SYS_RO_ICONS
 make %{?jobs:-j%jobs}
 
 %post
 /sbin/ldconfig
 
-mkdir -p /usr/apps/org.tizen.inputmethod-setting/bin
-mkdir -p /usr/apps/org.tizen.inputmethod-setting/res
+mkdir -p %{TZ_SYS_RO_APP}/%{name}/bin
+mkdir -p %{TZ_SYS_RO_APP}/%{name}/res
 
 %postun -p /sbin/ldconfig
 
@@ -67,10 +70,10 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/license
 
 %files
-%manifest org.tizen.inputmethod-setting.manifest
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
-/usr/apps/org.tizen.inputmethod-setting/bin/*
-/usr/apps/org.tizen.inputmethod-setting/res/locale/*/LC_MESSAGES/inputmethod-setting.mo
+%{TZ_SYS_RO_APP}/%{name}/bin/*
+%{TZ_SYS_RO_APP}/%{name}/res/locale/*/LC_MESSAGES/inputmethod-setting.mo
 /usr/share/license/*
-/usr/share/packages/org.tizen.inputmethod-setting.xml
-/usr/share/icons/default/small/*
+%{TZ_SYS_RO_ICONS}/default/small/*
+%{TZ_SYS_RO_PACKAGES}/%{name}.xml
