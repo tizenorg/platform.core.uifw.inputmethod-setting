@@ -22,9 +22,10 @@
 #include <isf_control.h>
 #include <app_control.h>
 #include <algorithm>
+#include <tzplatform_config.h>
 
 #define IM_SETTING_SELECTOR_PACKAGE        PACKAGE
-#define IM_SETTING_SELECTOR_LOCALE_DIR     ("/usr/apps/"PACKAGE_NAME"/res/locale")
+#define IM_SETTING_SELECTOR_LOCALE_DIR     tzplatform_mkpath(TZ_SYS_RO_APP, PACKAGE_NAME"/res/locale")
 #define IM_SETTING_SELECTOR_TITLE          dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_SELECT_KEYBOARD         dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
 

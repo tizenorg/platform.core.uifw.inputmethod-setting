@@ -21,10 +21,11 @@
 #include <efl_extension.h>
 #include <vector>
 #include <algorithm>
+#include <tzplatform_config.h>
 #include "isf_control.h"
 
-#define IM_SETTING_LIST_PACKAGE                      PACKAGE
-#define IM_SETTING_LIST_LOCALE_DIR                   ("/usr/apps/"PACKAGE_NAME"/res/locale")
+#define IM_SETTING_LIST_PACKAGE                 PACKAGE
+#define IM_SETTING_LIST_LOCALE_DIR              tzplatform_mkpath(TZ_SYS_RO_APP, PACKAGE_NAME"/res/locale")
 #define IM_SETTING_LIST_TITLE                   dgettext(PACKAGE, "IDS_IME_BODY_KEYBOARD")
 #define IM_SETTING_LIST_KEYBOARD_HEADER         dgettext(PACKAGE, "IDS_ST_HEADER_KEYBOARDS")
 #define IM_SETTING_LIST_POPUP_TITLE             dgettext(PACKAGE, "IDS_ST_BODY_ATTENTION")
