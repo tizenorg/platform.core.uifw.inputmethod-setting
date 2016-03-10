@@ -23,6 +23,7 @@ BuildRequires:  pkgconfig(pkgmgr-info)
 BuildRequires:  cmake
 BuildRequires:  efl-extension-devel
 BuildRequires:  pkgconfig(libtzplatform-config)
+BuildRequires:  model-build-features
 
 %description
 Setting Application for ISF.
@@ -46,6 +47,10 @@ CXXFLAGS+=" -D_MOBILE";
 %if "%{?profile}" == "wearable"
 CFLAGS+=" -D_WEARABLE";
 CXXFLAGS+=" -D_WEARABLE";
+%if "%{model_build_feature_formfactor}" == "circle"
+CFLAGS+=" -D_CIRCLE";
+CXXFLAGS+=" -D_CIRCLE";
+%endif
 %endif
 
 rm -rf CMakeFiles

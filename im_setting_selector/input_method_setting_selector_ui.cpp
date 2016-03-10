@@ -380,6 +380,9 @@ Evas_Object *im_setting_selector_popup_create(void *data)
 
     if (APP_TYPE_NORMAL == ad->app_type) {
         Evas_Object *btn = elm_button_add(ad->popup);
+#ifdef _CIRCLE
+        elm_object_style_set(btn, "bottom");
+#endif
         elm_object_text_set(btn, IM_SETTING_SELECT_KEYBOARD);
         elm_object_part_content_set(ad->popup, "button1", btn);
         evas_object_smart_callback_add(btn, "clicked", im_setting_selector_select_keyboard_cb, ad);
