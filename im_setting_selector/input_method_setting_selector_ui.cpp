@@ -115,7 +115,7 @@ static void im_setting_selector_load_ime_info(void)
     {
         for(int i=0; i<cnt; ++i)
         {
-            SECURE_LOGD("%s %s %d %d %d", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
+            SECURE_LOGD("%s %s %d %d %d\n", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
             if (info[i].is_enabled && info[i].is_preinstalled)
             {
                 ime_info_list_preinstall.push_back(info[i]);
@@ -150,20 +150,20 @@ static void im_setting_selector_show_ime_list(void)
      const char *app_id = "org.tizen.inputmethod-setting-list";
      ret = app_control_create(&app_control);
      if (ret != APP_CONTROL_ERROR_NONE) {
-         LOGD("app_control_create returned %d", ret);
+         LOGD("app_control_create returned %d\n", ret);
          return;
      }
 
      ret = app_control_set_operation(app_control, APP_CONTROL_OPERATION_DEFAULT);
      if (ret != APP_CONTROL_ERROR_NONE) {
-         LOGD("app_control_set_operation returned %d", ret);
+         LOGD("app_control_set_operation returned %d\n", ret);
          app_control_destroy(app_control);
          return;
      }
 
      ret = app_control_set_app_id(app_control, app_id);
      if (ret != APP_CONTROL_ERROR_NONE) {
-         LOGD("app_control_set_app_id returned %d", ret);
+         LOGD("app_control_set_app_id returned %d\n", ret);
          app_control_destroy(app_control);
          return;
      }
