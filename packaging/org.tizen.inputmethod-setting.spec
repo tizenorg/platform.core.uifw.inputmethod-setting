@@ -12,14 +12,9 @@ ExcludeArch: %{arm} %ix86 x86_64
 
 BuildRequires:  gettext-tools
 BuildRequires:  pkgconfig(capi-appfw-application)
-BuildRequires:  pkgconfig(appcore-efl)
 BuildRequires:  pkgconfig(isf)
 BuildRequires:  pkgconfig(elementary)
 BuildRequires:  pkgconfig(dlog)
-BuildRequires:  pkgconfig(vconf)
-BuildRequires:  pkgconfig(vconf-internal-keys)
-BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  pkgconfig(pkgmgr-info)
 BuildRequires:  cmake
 BuildRequires:  efl-extension-devel
 BuildRequires:  pkgconfig(libtzplatform-config)

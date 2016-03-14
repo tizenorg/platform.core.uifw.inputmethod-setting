@@ -23,8 +23,8 @@ ENDIF("${CMAKE_BUILD_TYPE}" STREQUAL "")
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 INCLUDE(FindPkgConfig)
 pkg_check_modules(pkgs REQUIRED
-capi-appfw-application appcore-efl isf elementary vconf
-vconf-internal-keys efl-extension pkgmgr-info dlog
+capi-appfw-application isf elementary
+efl-extension dlog
 )
 
 FOREACH(flag ${pkgs_CFLAGS})

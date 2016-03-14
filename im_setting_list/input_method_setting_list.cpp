@@ -16,8 +16,6 @@
  */
 #include <app.h>
 #include <unistd.h>
-#include <vconf-keys.h>
-#include <vconf.h>
 #include "input_method_setting_list.h"
 #include "input_method_setting_list_ui.h"
 
