@@ -22,6 +22,7 @@
 #include <vector>
 #include <isf_control.h>
 #include <algorithm>
+#include <inputmethod_manager.h>
 
 #define IM_SETTING_LIST_POPUP_VIEW_TITLE          dgettext(PACKAGE, "IDS_ST_HEADER_DEFAULT_KEYBOARD_ABB")
 #define IM_SETTING_SELECT_KEYBOARD                dgettext(PACKAGE, "IDS_IME_BODY_SELECT_KEYBOARD")
@@ -65,7 +66,13 @@ static void im_setting_list_load_active_ime_info(void)
     std::vector<ime_info_s>      active_ime_info_list_user;
     g_active_ime_info_list.clear();
     char *active_ime_appid = NULL;
-    isf_control_get_active_ime(&active_ime_appid);
+
+    int ret = ime_manager_get_active_ime(&active_ime_appid);
+    if (ret == IME_MANAGER_ERROR_NONE)
+        LOGD("get active ime : %s\n", active_ime_appid);
+    else
+        LOGW("Failed to get active ime. error : %d\n", ret);
+
     ime_info_s *info = NULL;
     int cnt = isf_control_get_all_ime_info(&info);
     if (info)

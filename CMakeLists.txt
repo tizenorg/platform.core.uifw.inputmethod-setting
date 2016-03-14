@@ -24,7 +24,7 @@ INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 INCLUDE(FindPkgConfig)
 pkg_check_modules(pkgs REQUIRED
 capi-appfw-application isf elementary
-efl-extension dlog
+efl-extension dlog capi-ui-inputmethod-manager
 )
 
 FOREACH(flag ${pkgs_CFLAGS})

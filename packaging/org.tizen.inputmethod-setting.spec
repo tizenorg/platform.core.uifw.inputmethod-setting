@@ -19,6 +19,7 @@ BuildRequires:  cmake
 BuildRequires:  efl-extension-devel
 BuildRequires:  pkgconfig(libtzplatform-config)
 BuildRequires:  model-build-features
+BuildRequires:  pkgconfig(capi-ui-inputmethod-manager)
 
 %description
 Setting Application for ISF.

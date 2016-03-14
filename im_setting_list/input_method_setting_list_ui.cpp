@@ -22,6 +22,7 @@
 #include <vector>
 #include <algorithm>
 #include <tzplatform_config.h>
+#include <inputmethod_manager.h>
 #include "isf_control.h"
 
 #define IM_SETTING_LIST_PACKAGE                 PACKAGE
@@ -163,7 +164,13 @@ static void im_setting_list_load_ime_info(void)
 static int im_setting_list_get_active_ime_index(void)
 {
     char *active_ime_appid = NULL;
-    isf_control_get_active_ime(&active_ime_appid);
+
+    int ret = ime_manager_get_active_ime(&active_ime_appid);
+    if (ret == IME_MANAGER_ERROR_NONE)
+        LOGD("get active ime : %s\n", active_ime_appid);
+    else
+        LOGW("Failed to get active ime. error : %d\n", ret);
+
     std::vector<ime_info_s>::iterator iter = g_ime_info_list.begin();
     std::vector<ime_info_s>::iterator end = g_ime_info_list.end();
     for (; iter != end; ++iter)
