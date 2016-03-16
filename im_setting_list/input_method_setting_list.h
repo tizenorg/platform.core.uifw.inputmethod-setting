@@ -47,6 +47,6 @@ typedef struct _appdata {
 
     int app_state;
     int app_type;
-}appdata;
+} appdata;
 
 #endif /* __INPUTMETHOD_SETTING_LIST_H__ */

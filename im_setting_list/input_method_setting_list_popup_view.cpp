@@ -50,11 +50,11 @@ static void im_setting_list_sort_ime_info(std::vector<ime_info_s> &preinstall, s
 {
     std::sort(preinstall.begin(), preinstall.end(), ime_info_compare());
     std::sort(user.begin(), user.end(), ime_info_compare());
-    for(unsigned int i=0; i<preinstall.size(); ++i)
+    for (unsigned int i = 0; i < preinstall.size(); ++i)
     {
         g_active_ime_info_list.push_back(preinstall[i]);
     }
-    for(unsigned int i=0; i<user.size(); ++i)
+    for (unsigned int i = 0; i < user.size(); ++i)
     {
         g_active_ime_info_list.push_back(user[i]);
     }
@@ -77,7 +77,7 @@ static void im_setting_list_load_active_ime_info(void)
     int cnt = isf_control_get_all_ime_info(&info);
     if (info)
     {
-        for(int i=0; i<cnt; ++i)
+        for (int i = 0; i < cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d\n", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
             if (info[i].is_enabled && info[i].is_preinstalled)
@@ -93,7 +93,7 @@ static void im_setting_list_load_active_ime_info(void)
     }
 
     im_setting_list_sort_ime_info(active_ime_info_list_preinstall, active_ime_info_list_user);
-    for(unsigned int i=0; i<g_active_ime_info_list.size(); ++i)
+    for (unsigned int i = 0; i < g_active_ime_info_list.size(); ++i)
     {
         if (active_ime_appid && (!strcmp(active_ime_appid, g_active_ime_info_list[i].appid)))
         {
@@ -148,7 +148,7 @@ static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event
     int index = cb_data->index;
 
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
-    if (!item){
+    if (!item) {
         delete cb_data;
         return;
     }

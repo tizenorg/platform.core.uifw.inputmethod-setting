@@ -121,11 +121,11 @@ static void im_setting_list_sort_ime_info(std::vector<ime_info_s> &preinstall, s
 {
     std::sort(preinstall.begin(), preinstall.end(), ime_info_compare());
     std::sort(user.begin(), user.end(), ime_info_compare());
-    for(unsigned int i=0; i<preinstall.size(); ++i)
+    for (unsigned int i = 0; i < preinstall.size(); ++i)
     {
         g_ime_info_list.push_back(preinstall[i]);
     }
-    for(unsigned int i=0; i<user.size(); ++i)
+    for (unsigned int i = 0; i < user.size(); ++i)
     {
         g_ime_info_list.push_back(user[i]);
     }
@@ -140,7 +140,7 @@ static void im_setting_list_load_ime_info(void)
     int cnt = isf_control_get_all_ime_info(&info);
     if (info)
     {
-        for(int i=0; i<cnt; ++i)
+        for (int i = 0; i < cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d\n", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
             if (info[i].is_preinstalled)

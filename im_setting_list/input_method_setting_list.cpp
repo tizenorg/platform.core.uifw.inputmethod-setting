@@ -85,7 +85,7 @@ app_pause(void *data)
 
     if (!ad)
         return;
-    if(ad->popup)
+    if (ad->popup)
     {
         evas_object_del(ad->popup);
         ad->popup = NULL;
@@ -166,10 +166,10 @@ ui_app_low_memory(app_event_info_h event_info, void *user_data)
 int
 main(int argc, char *argv[])
 {
-    appdata ad = {0,};
+    appdata ad = {0, };
     int ret = 0;
 
-    ui_app_lifecycle_callback_s event_callback = {0,};
+    ui_app_lifecycle_callback_s event_callback = {0, };
     app_event_handler_h handlers[5] = {NULL, };
 
     event_callback.create = app_create;
