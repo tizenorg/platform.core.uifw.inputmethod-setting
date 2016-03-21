@@ -184,11 +184,13 @@ static void im_setting_selector_show_ime_list(void)
      app_control_destroy(app_control);
 }
 
+#ifndef WEARABLE
 static void im_setting_selector_select_keyboard_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /* call input method list application*/
     im_setting_selector_show_ime_list();
 }
+#endif
 
 static void im_setting_selector_radio_change_cb(void *data, Evas_Object *obj, void *event_info)
 {
@@ -385,15 +387,14 @@ Evas_Object *im_setting_selector_popup_create(void *data)
                          NULL);
     elm_naviframe_item_pop_cb_set(nf_main_item, im_setting_list_navi_item_pop_cb, ad);
 
+#ifndef _WEARABLE
     if (APP_TYPE_NORMAL == ad->app_type) {
         Evas_Object *btn = elm_button_add(ad->popup);
-#ifdef _CIRCLE
-        elm_object_style_set(btn, "bottom");
-#endif
         elm_object_text_set(btn, IM_SETTING_SELECT_KEYBOARD);
         elm_object_part_content_set(ad->popup, "button1", btn);
         evas_object_smart_callback_add(btn, "clicked", im_setting_selector_select_keyboard_cb, ad);
     }
+#endif
 
     elm_object_content_set(ad->popup, ad->genlist);
     evas_object_show(ad->popup);
