@@ -52,6 +52,7 @@ CXXFLAGS+=" -D_CIRCLE";
 rm -rf CMakeFiles
 rm -rf CMakeCache.txt
 cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} \
+        -DTZ_SYS_RO_APP=%TZ_SYS_RO_APP \
         -DTZ_SYS_RO_PACKAGES=%TZ_SYS_RO_PACKAGES \
         -DTZ_SYS_RO_ICONS=%TZ_SYS_RO_ICONS
 make %{?jobs:-j%jobs}
@@ -68,13 +69,12 @@ mkdir -p %{TZ_SYS_RO_APP}/%{name}/res
 rm -rf %{buildroot}
 
 %make_install
-mkdir -p %{buildroot}/usr/share/license
 
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{TZ_SYS_RO_APP}/%{name}/bin/*
 %{TZ_SYS_RO_APP}/%{name}/res/locale/*/LC_MESSAGES/inputmethod-setting.mo
-/usr/share/license/*
 %{TZ_SYS_RO_ICONS}/default/small/*
 %{TZ_SYS_RO_PACKAGES}/%{name}.xml
+%license LICENSE
