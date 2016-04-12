@@ -6,10 +6,6 @@ Group:      Graphics & UI Framework/Input
 License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
 
-%if "%{?profile}" == "tv"
-ExcludeArch: %{arm} %ix86 x86_64
-%endif
-
 BuildRequires:  gettext-tools
 BuildRequires:  pkgconfig(capi-appfw-application)
 BuildRequires:  pkgconfig(isf)

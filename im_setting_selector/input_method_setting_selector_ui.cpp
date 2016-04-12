@@ -150,6 +150,7 @@ static void im_setting_selector_load_ime_info(void)
     }
 }
 
+#ifdef _MOBILE
 static void im_setting_selector_show_ime_list(void)
 {
      int ret;
@@ -184,7 +185,6 @@ static void im_setting_selector_show_ime_list(void)
      app_control_destroy(app_control);
 }
 
-#ifdef _MOBILE
 static void im_setting_selector_select_keyboard_cb(void *data, Evas_Object *obj, void *event_info)
 {
     /* call input method list application*/
