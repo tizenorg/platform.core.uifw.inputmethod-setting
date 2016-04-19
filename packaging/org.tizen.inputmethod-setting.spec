@@ -65,12 +65,12 @@ mkdir -p %{TZ_SYS_RO_APP}/%{name}/res
 rm -rf %{buildroot}
 
 %make_install
+%find_lang inputmethod-setting
 
-%files
+%files -f inputmethod-setting.lang
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{TZ_SYS_RO_APP}/%{name}/bin/*
-%{TZ_SYS_RO_APP}/%{name}/res/locale/*/LC_MESSAGES/inputmethod-setting.mo
 %{TZ_SYS_RO_ICONS}/default/small/*
 %{TZ_SYS_RO_PACKAGES}/%{name}.xml
 %license LICENSE
