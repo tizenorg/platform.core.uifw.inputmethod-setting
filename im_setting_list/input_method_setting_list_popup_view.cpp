@@ -137,6 +137,15 @@ static void im_setting_list_update_radio_state(Elm_Object_Item *item, Evas_Objec
     }
 }
 
+void im_setting_list_update_window_selector(void *data)
+{
+    appdata *ad = (appdata *)data;
+    if (!ad)
+        return;
+    im_setting_list_load_active_ime_info();
+    im_setting_list_update_window(ad);
+}
+
 static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     sel_cb_data * cb_data = (sel_cb_data *)data;
@@ -153,21 +162,29 @@ static void im_setting_list_ime_sel_cb(void *data, Evas_Object *obj, void *event
         return;
     }
     im_setting_list_update_radio_state(item, obj, index);
-    im_setting_list_update_window(ad);
+    im_setting_list_update_window_selector(ad);
 
     if (ad->popup) {
         evas_object_del(ad->popup);
     }
     ad->popup = NULL;
     delete cb_data;
+    elm_naviframe_item_pop(ad->naviframe);
+
 }
 
-static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
+static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent, Evas_Object* conform)
 {
     if (!parent)
         return NULL;
     Evas_Object *genlist = elm_genlist_add(parent);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+#ifdef _CIRCLE
+    /* Circle Surface Creation */
+    Eext_Circle_Surface *circle_surface = eext_circle_surface_conformant_add(conform);
+    Evas_Object *circle_genlist = eext_circle_object_genlist_add(genlist, circle_surface);
+    eext_rotary_object_event_activated_set(circle_genlist, EINA_TRUE);
+#endif
     evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
     elm_scroller_content_min_limit(genlist, EINA_FALSE, EINA_TRUE);
@@ -221,6 +238,15 @@ static void im_setting_list_genlist_item_class_create(void)
     }
 }
 
+
+static char *
+im_setting_list_default_keyboard_title_text_get(void *data, Evas_Object *obj, const char *part)
+{
+	char buf[1024];
+	snprintf(buf, 1023, "%s", IM_SETTING_LIST_POPUP_VIEW_TITLE);
+	return strdup(buf);
+}
+
 static Evas_Object *im_setting_list_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
@@ -228,7 +254,7 @@ static Evas_Object *im_setting_list_list_create(void *data)
         return NULL;
     im_setting_list_genlist_item_class_create();
     Evas_Object *genlist = NULL;
-    genlist = im_setting_list_genlist_create(ad->popup);
+    genlist = im_setting_list_genlist_create(ad->popup, ad->conform);
     unsigned int i = 0;
 
     /* keyboard list */
@@ -299,12 +325,61 @@ static Evas_Object *im_setting_list_popup_create(void *data)
     return popup;
 }
 
+static Evas_Object *im_setting_list_screen_create(void *data)
+{
+	appdata *ad = NULL;
+	Evas_Object *genlist = NULL;
+	Elm_Genlist_Item_Class *ttc = elm_genlist_item_class_new();
+
+	ad = (appdata *) data;
+	if (ad == NULL) return NULL;
+
+	ttc->item_style = "title";
+	ttc->func.text_get = im_setting_list_default_keyboard_title_text_get;
+
+    im_setting_list_genlist_item_class_create();
+    genlist = im_setting_list_genlist_create(ad->win, ad->conform);
+
+    elm_genlist_mode_set(genlist, ELM_LIST_SCROLL);
+    elm_genlist_item_append(genlist, ttc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+
+    if (NULL == group_radio)
+    {
+        group_radio = elm_radio_add(genlist);
+        elm_radio_state_value_set(group_radio, g_active_ime_id);
+    }
+
+    /* keyboard list */
+    for (int i = 0; i < g_active_ime_info_list.size(); i++) {
+        sel_cb_data *cb_data = new sel_cb_data;
+        cb_data->data = data;
+        cb_data->index = i;
+        elm_genlist_item_append(genlist,
+            itc_im_list,
+            (void *)(i),
+            NULL,
+            ELM_GENLIST_ITEM_NONE,
+            im_setting_list_ime_sel_cb,
+            (void *)(cb_data));
+    }
+
+    elm_radio_state_value_set(group_radio, g_active_ime_id);
+    elm_radio_value_set(group_radio, g_active_ime_id);
+    elm_genlist_item_class_free(ttc);
+    elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
+}
+
 void
 im_setting_list_popup_view_create(void *data)
 {
     appdata *ad = (appdata *)data;
     if (!ad || !ad->win)
         return;
+
     im_setting_list_load_active_ime_info();
+#ifdef _WEARABLE
+    im_setting_list_screen_create(data);
+#else
     im_setting_list_popup_create(data);
+#endif
 }
