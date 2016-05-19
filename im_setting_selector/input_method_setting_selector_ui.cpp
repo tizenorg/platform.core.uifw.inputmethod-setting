@@ -228,6 +228,9 @@ static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *e
     if (!cb_data)
         return;
     int index = cb_data->index;
+    appdata *ad = (appdata *)cb_data->data;
+    if (!ad)
+        return;
 
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
     if (!item)
@@ -235,13 +238,20 @@ static void im_setting_selector_ime_sel_cb(void *data, Evas_Object *obj, void *e
     im_setting_selector_update_radio_state(item, obj, index);
 
     delete cb_data;
+    elm_naviframe_item_pop(ad->naviframe);
     ui_app_exit();
 }
 
-static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent)
+static Evas_Object *im_setting_selector_genlist_create(Evas_Object* parent, Evas_Object* conform)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+#ifdef _CIRCLE
+    /* Circle Surface Creation */
+    Eext_Circle_Surface *circle_surface = eext_circle_surface_conformant_add(conform);
+    Evas_Object *circle_genlist = eext_circle_object_genlist_add(genlist, circle_surface);
+    eext_rotary_object_event_activated_set(circle_genlist, EINA_TRUE);
+#endif
     evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
     elm_scroller_content_min_limit(genlist, EINA_FALSE, EINA_TRUE);
@@ -323,7 +333,7 @@ Evas_Object *im_setting_selector_list_create(void *data)
     appdata *ad = (appdata *)data;
     if (!ad)
         return NULL;
-    ad->genlist = im_setting_selector_genlist_create(ad->popup);
+    ad->genlist = im_setting_selector_genlist_create(ad->popup, ad->conform);
     im_setting_selector_add_ime(ad);
     return ad->genlist;
 }
@@ -358,6 +368,15 @@ im_setting_selector_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *
     evas_object_del(obj);
     ui_app_exit();
 }
+
+static char *
+im_setting_selector_title_text_get(void *data, Evas_Object *obj, const char *part)
+{
+    char buf[1024];
+    snprintf(buf, 1023, "%s", IM_SETTING_SELECTOR_TITLE);
+    return strdup(buf);
+}
+
 
 Evas_Object *im_setting_selector_popup_create(void *data)
 {
@@ -401,6 +420,76 @@ Evas_Object *im_setting_selector_popup_create(void *data)
     return ad->popup;
 }
 
+static Evas_Object *im_setting_selector_conform_create(Evas_Object *parentWin)
+{
+    Evas_Object *conform = elm_conformant_add(parentWin);
+    elm_win_indicator_mode_set(parentWin, ELM_WIN_INDICATOR_SHOW);
+    elm_win_indicator_opacity_set(parentWin, ELM_WIN_INDICATOR_OPAQUE);
+    evas_object_size_hint_weight_set(conform, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+    evas_object_size_hint_align_set(conform, EVAS_HINT_FILL, EVAS_HINT_FILL);
+
+    Evas_Object *bg = elm_bg_add(conform);
+    elm_object_style_set(bg, "indicator/headerbg");
+    elm_object_part_content_set(conform, "elm.swallow.indicator_bg", bg);
+    evas_object_show(bg);
+
+    Evas_Coord w = -1, h = -1;
+    elm_win_screen_size_get(parentWin, NULL, NULL, &w, &h);
+    if (w > 0 && h > 0) {
+        evas_object_resize(conform, w, h);
+    }
+    evas_object_event_callback_add(parentWin, EVAS_CALLBACK_RESIZE, NULL, conform);
+    evas_object_show(conform);
+    return conform;
+}
+
+static Evas_Object *im_setting_selector_screen_create(void *data)
+{
+    appdata *ad = NULL;
+    Evas_Object *genlist = NULL;
+    Elm_Genlist_Item_Class *ttc = elm_genlist_item_class_new();
+
+    ad = (appdata *) data;
+    if (ad == NULL) return NULL;
+
+    ttc->item_style = "title";
+    ttc->func.text_get = im_setting_selector_title_text_get;
+
+    ad->conform = im_setting_selector_conform_create(ad->win);
+    ad->naviframe = im_setting_selector_naviframe_create(ad->conform);
+    genlist = im_setting_selector_genlist_create(ad->win, ad->conform);
+    evas_object_show(ad->win);
+
+    im_setting_selector_genlist_item_class_create();
+
+    elm_genlist_mode_set(genlist, ELM_LIST_SCROLL);
+    elm_genlist_item_append(genlist, ttc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+
+    if (NULL == group_radio) {
+        group_radio = elm_radio_add(genlist);
+        elm_radio_state_value_set(group_radio, g_active_ime_id);
+    }
+
+    /* keyboard list */
+    for (int i = 0; i < g_ime_info_list.size(); i++) {
+        sel_cb_data *cb_data = new sel_cb_data;
+        cb_data->data = data;
+        cb_data->index = i;
+        elm_genlist_item_append(genlist,
+            itc_im_selector,
+            (void *)(i),
+            NULL,
+            ELM_GENLIST_ITEM_NONE,
+            im_setting_selector_ime_sel_cb,
+            (void *)(cb_data));
+    }
+
+    elm_radio_state_value_set(group_radio, g_active_ime_id);
+    elm_radio_value_set(group_radio, g_active_ime_id);
+    elm_genlist_item_class_free(ttc);
+    elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
+}
+
 void
 im_setting_selector_app_create(void *data)
 {
@@ -410,9 +499,12 @@ im_setting_selector_app_create(void *data)
     im_setting_selector_text_domain_set();
     ad->win = im_setting_selector_main_window_create(PACKAGE);
     im_setting_selector_load_ime_info();
+#ifdef _WEARABLE
+    im_setting_selector_screen_create(ad);
+#else
     im_setting_selector_popup_create(ad);
-
     evas_object_show(ad->win);
+#endif
 }
 
 void

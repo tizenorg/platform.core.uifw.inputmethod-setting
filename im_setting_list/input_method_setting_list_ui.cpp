@@ -434,10 +434,16 @@ static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
     return naviframe;
 }
 
-static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent)
+static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent, Evas_Object* conform)
 {
     Evas_Object *genlist = elm_genlist_add(parent);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+#ifdef _CIRCLE
+    /* Circle Surface Creation */
+    Eext_Circle_Surface *circle_surface = eext_circle_surface_conformant_add(conform);
+    Evas_Object *circle_genlist = eext_circle_object_genlist_add(genlist, circle_surface);
+    eext_rotary_object_event_activated_set(circle_genlist, EINA_TRUE);
+#endif
     evas_object_show(genlist);
     return genlist;
 }
@@ -649,6 +655,7 @@ static void im_setting_list_add_ime(void *data) {
         elm_object_item_disabled_set(item, !(g_ime_info_list[g_active_ime_index].has_option));
     }
 
+#ifdef _MOBILE
     /* Keyboards group */
     group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
@@ -686,6 +693,7 @@ static void im_setting_list_add_ime(void *data) {
 
         g_gen_item_data[i].gen_item = item;
     }
+#endif
 }
 
 static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *it)
@@ -713,7 +721,7 @@ Evas_Object *im_setting_list_list_create(void *data)
         return NULL;
     ad->conform = im_setting_list_conform_create(ad->win);
     ad->naviframe = im_setting_list_naviframe_create(ad->conform);
-    ad->genlist = im_setting_list_genlist_create(ad->naviframe);
+    ad->genlist = im_setting_list_genlist_create(ad->naviframe, ad->conform);
     im_setting_list_add_ime(ad);
 
     /* Add genlist to naviframe */

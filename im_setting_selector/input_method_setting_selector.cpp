@@ -44,6 +44,7 @@ app_control(app_control_h app_control, void *data)
 
     ad->app_type = APP_TYPE_NORMAL;
     ad->app_state = APP_STATE_SERVICE;
+
     im_setting_selector_app_create(ad);
 }
 
