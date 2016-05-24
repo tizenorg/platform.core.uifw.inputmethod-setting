@@ -237,7 +237,7 @@ static void im_setting_list_genlist_item_class_create(void)
     }
 }
 
-
+#ifdef _WEARABLE
 static char *
 im_setting_list_default_keyboard_title_text_get(void *data, Evas_Object *obj, const char *part)
 {
@@ -245,7 +245,9 @@ im_setting_list_default_keyboard_title_text_get(void *data, Evas_Object *obj, co
     snprintf(buf, 1023, "%s", IM_SETTING_LIST_POPUP_VIEW_TITLE);
     return strdup(buf);
 }
+#endif
 
+#ifndef _WEARABLE
 static Evas_Object *im_setting_list_list_create(void *data)
 {
     appdata *ad = (appdata *)data;
@@ -323,15 +325,17 @@ static Evas_Object *im_setting_list_popup_create(void *data)
     evas_object_show(popup);
     return popup;
 }
+#endif
 
-static Evas_Object *im_setting_list_screen_create(void *data)
+#ifdef _WEARABLE
+static void im_setting_list_screen_create(void *data)
 {
     appdata *ad = NULL;
     Evas_Object *genlist = NULL;
     Elm_Genlist_Item_Class *ttc = elm_genlist_item_class_new();
 
     ad = (appdata *) data;
-    if (ad == NULL) return NULL;
+    if (ad == NULL) return;
 
     ttc->item_style = "title";
     ttc->func.text_get = im_setting_list_default_keyboard_title_text_get;
@@ -348,7 +352,7 @@ static Evas_Object *im_setting_list_screen_create(void *data)
     }
 
     /* keyboard list */
-    for (int i = 0; i < g_active_ime_info_list.size(); i++) {
+    for (unsigned int i = 0; i < g_active_ime_info_list.size(); i++) {
         sel_cb_data *cb_data = new sel_cb_data;
         cb_data->data = data;
         cb_data->index = i;
@@ -366,6 +370,7 @@ static Evas_Object *im_setting_list_screen_create(void *data)
     elm_genlist_item_class_free(ttc);
     elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
 }
+#endif
 
 void
 im_setting_list_popup_view_create(void *data)
