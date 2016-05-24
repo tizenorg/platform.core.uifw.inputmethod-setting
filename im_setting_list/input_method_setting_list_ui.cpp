@@ -307,6 +307,7 @@ static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj,
     }
 }
 
+#ifdef _MOBILE
 static void
 im_setting_list_popup_ok_cb(void *data, Evas_Object *obj, void *event_info)
 {
@@ -371,6 +372,7 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
         im_setting_list_show_popup(data, obj, im_setting_list_popup_ok_cb, im_setting_list_popup_cancel_cb);
     }
 }
+#endif
 
 static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
@@ -611,7 +613,6 @@ static void im_setting_list_genlist_item_class_create(int app_type)
 
 static void im_setting_list_add_ime(void *data) {
     appdata *ad = (appdata *)data;
-    int i = 0;
     if (!ad)
         return;
     im_setting_list_genlist_item_class_create(ad->app_type);
@@ -628,7 +629,6 @@ static void im_setting_list_add_ime(void *data) {
     }
 
     memset(&item_text, 0, sizeof(item_text));
-    Elm_Object_Item *group_header_item = NULL;
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
         /* Default keyboard selector */
@@ -657,6 +657,7 @@ static void im_setting_list_add_ime(void *data) {
 
 #ifdef _MOBILE
     /* Keyboards group */
+    Elm_Object_Item *group_header_item = NULL;
     group_header_item = elm_genlist_item_append(ad->genlist,
             itc_im_list_group,
             IM_SETTING_LIST_KEYBOARD_HEADER,
@@ -668,7 +669,7 @@ static void im_setting_list_add_ime(void *data) {
 
     /* keyboard list */
     int info_list_size = g_ime_info_list.size();
-    for (i = 0; i < info_list_size; i++) {
+    for (int i = 0; i < info_list_size; i++) {
         gen_item_data item_data;
 
         if (g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)) {

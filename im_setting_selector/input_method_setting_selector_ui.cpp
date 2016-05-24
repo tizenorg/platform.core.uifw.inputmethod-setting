@@ -350,6 +350,7 @@ static Evas_Object *im_setting_selector_naviframe_create(Evas_Object* parent)
     return naviframe;
 }
 
+#ifndef _WEARABLE
 static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *it)
 {
      static bool in_exit = false;
@@ -368,15 +369,6 @@ im_setting_selector_popup_block_clicked_cb(void *data EINA_UNUSED, Evas_Object *
     evas_object_del(obj);
     ui_app_exit();
 }
-
-static char *
-im_setting_selector_title_text_get(void *data, Evas_Object *obj, const char *part)
-{
-    char buf[1024];
-    snprintf(buf, 1023, "%s", IM_SETTING_SELECTOR_TITLE);
-    return strdup(buf);
-}
-
 
 Evas_Object *im_setting_selector_popup_create(void *data)
 {
@@ -419,6 +411,14 @@ Evas_Object *im_setting_selector_popup_create(void *data)
     evas_object_show(ad->popup);
     return ad->popup;
 }
+#endif
+
+#ifdef _WEARABLE
+static char *
+im_setting_selector_title_text_get(void *data, Evas_Object *obj, const char *part)
+{
+    return strdup(IM_SETTING_SELECTOR_TITLE);
+}
 
 static Evas_Object *im_setting_selector_conform_create(Evas_Object *parentWin)
 {
@@ -443,14 +443,14 @@ static Evas_Object *im_setting_selector_conform_create(Evas_Object *parentWin)
     return conform;
 }
 
-static Evas_Object *im_setting_selector_screen_create(void *data)
+static void im_setting_selector_screen_create(void *data)
 {
     appdata *ad = NULL;
     Evas_Object *genlist = NULL;
     Elm_Genlist_Item_Class *ttc = elm_genlist_item_class_new();
 
     ad = (appdata *) data;
-    if (ad == NULL) return NULL;
+    if (ad == NULL) return;
 
     ttc->item_style = "title";
     ttc->func.text_get = im_setting_selector_title_text_get;
@@ -471,7 +471,7 @@ static Evas_Object *im_setting_selector_screen_create(void *data)
     }
 
     /* keyboard list */
-    for (int i = 0; i < g_ime_info_list.size(); i++) {
+    for (unsigned int i = 0; i < g_ime_info_list.size(); i++) {
         sel_cb_data *cb_data = new sel_cb_data;
         cb_data->data = data;
         cb_data->index = i;
@@ -489,6 +489,7 @@ static Evas_Object *im_setting_selector_screen_create(void *data)
     elm_genlist_item_class_free(ttc);
     elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
 }
+#endif
 
 void
 im_setting_selector_app_create(void *data)
