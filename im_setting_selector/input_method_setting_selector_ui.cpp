@@ -150,7 +150,7 @@ static void im_setting_selector_load_ime_info(void)
     }
 }
 
-#ifdef _MOBILE
+#ifndef _WEARABLE
 static void im_setting_selector_show_ime_list(void)
 {
      int ret;
@@ -398,7 +398,7 @@ Evas_Object *im_setting_selector_popup_create(void *data)
                          NULL);
     elm_naviframe_item_pop_cb_set(nf_main_item, im_setting_list_navi_item_pop_cb, ad);
 
-#ifdef _MOBILE
+#ifndef _WEARABLE
     if (APP_TYPE_NORMAL == ad->app_type) {
         Evas_Object *btn = elm_button_add(ad->popup);
         elm_object_text_set(btn, IM_SETTING_SELECT_KEYBOARD);
