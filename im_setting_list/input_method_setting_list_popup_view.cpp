@@ -343,7 +343,7 @@ static void im_setting_list_screen_create(void *data)
     elm_genlist_item_append(genlist, ttc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
 
     if (NULL == group_radio) {
-        group_radio = elm_radio_add(genlist);
+        group_radio = elm_radio_add(ad->win);
         elm_radio_state_value_set(group_radio, g_active_ime_id);
     }
 
