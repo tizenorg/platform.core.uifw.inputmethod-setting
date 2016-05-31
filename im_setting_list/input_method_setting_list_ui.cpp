@@ -75,6 +75,7 @@ static Elm_Genlist_Item_Class       *itc_im_list_keyboard_list = NULL;
 static Elm_Genlist_Item_Class       *itc_im_list_group = NULL;
 static Elm_Genlist_Item_Class       *itc_im_list_item = NULL;
 static Elm_Genlist_Item_Class       *itc_im_list_item_one_line = NULL;
+static Elm_Genlist_Item_Class       *itc_im_list_title = NULL;
 static int                          g_active_ime_index = -1;
 static list_item_text               item_text[2];
 static std::vector<gen_item_data>   g_gen_item_data;
@@ -479,6 +480,16 @@ static char *im_setting_list_genlist_keyboard_list_item_label_get(void *data, Ev
     return NULL;
 }
 
+#ifdef _WEARABLE
+static char *im_setting_list_genlist_title_label_get(void *data, Evas_Object *obj, const char *part)
+{
+    if (!strcmp(part, "elm.text")) {
+        return strdup(IM_SETTING_LIST_TITLE);
+    }
+    return NULL;
+}
+#endif
+
 static Evas_Object *im_setting_list_genlist_keyboard_list_item_icon_get(void *data, Evas_Object *obj, const char *part)
 {
     int index = (int)reinterpret_cast<long>(data);
@@ -561,10 +572,10 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         itc_im_list_keyboard_list = elm_genlist_item_class_new();
         if (itc_im_list_keyboard_list)
         {
-#ifdef _MOBILE
-            itc_im_list_keyboard_list->item_style = "type1";
-#else
+#ifdef _WEARABLE
             itc_im_list_keyboard_list->item_style = "1text.1icon.1";
+#else
+            itc_im_list_keyboard_list->item_style = "type1";
 #endif
             itc_im_list_keyboard_list->func.text_get = im_setting_list_genlist_keyboard_list_item_label_get;
             itc_im_list_keyboard_list->func.content_get = im_setting_list_genlist_keyboard_list_item_icon_get;
@@ -573,6 +584,18 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         }
     }
 
+#ifdef _WEARABLE
+    if (NULL == itc_im_list_title)
+    {
+        itc_im_list_title = elm_genlist_item_class_new();
+        if (itc_im_list_title)
+        {
+            itc_im_list_title->item_style = "title";
+            itc_im_list_title->func.text_get = im_setting_list_genlist_title_label_get;
+        }
+    }
+#endif
+
     if (app_type == APP_TYPE_SETTING || app_type == APP_TYPE_SETTING_NO_ROTATION)
     {
         if (NULL == itc_im_list_item)
@@ -580,10 +603,10 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             itc_im_list_item = elm_genlist_item_class_new();
             if (itc_im_list_item)
             {
-#ifdef _MOBILE
-                itc_im_list_item->item_style = "type1";
-#else
+#ifdef _WEARABLE
                 itc_im_list_item->item_style = "2text";
+#else
+                itc_im_list_item->item_style = "type1";
 #endif
                 itc_im_list_item->func.text_get = im_setting_list_genlist_item_label_get;
                 itc_im_list_item->func.content_get = NULL;
@@ -597,10 +620,10 @@ static void im_setting_list_genlist_item_class_create(int app_type)
             itc_im_list_item_one_line = elm_genlist_item_class_new();
             if (itc_im_list_item_one_line)
             {
-#ifdef _MOBILE
-                itc_im_list_item_one_line->item_style = "type1";
-#else
+#ifdef _WEARABLE
                 itc_im_list_item_one_line->item_style = "1text";
+#else
+                itc_im_list_item_one_line->item_style = "type1";
 #endif
                 itc_im_list_item_one_line->func.text_get = im_setting_list_genlist_item_one_line_label_get;
                 itc_im_list_item_one_line->func.content_get = NULL;
@@ -627,6 +650,11 @@ static void im_setting_list_add_ime(void *data) {
         LOGW("Wrong value. g_active_ime_index : %d, g_ime_info_list.size() : %d\n", g_active_ime_index, g_ime_info_list.size());
         return;
     }
+
+#ifdef _WEARABLE
+    /* Add scrollable title area in wearable profile */
+    elm_genlist_item_append(ad->genlist, itc_im_list_title, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+#endif
 
     memset(&item_text, 0, sizeof(item_text));
     if (ad->app_type == APP_TYPE_SETTING || ad->app_type == APP_TYPE_SETTING_NO_ROTATION)
@@ -726,15 +754,26 @@ Evas_Object *im_setting_list_list_create(void *data)
     im_setting_list_add_ime(ad);
 
     /* Add genlist to naviframe */
-    Evas_Object *back_btn = elm_button_add(ad->naviframe);
+    Evas_Object *back_btn = NULL;
+    const char *title = NULL;
+    const char *item_style = NULL;
+#ifdef _WEARABLE
+    item_style = "empty";
+#else
+    title = IM_SETTING_LIST_TITLE;
+
+    back_btn = elm_button_add(ad->naviframe);
     elm_object_style_set(back_btn, "naviframe/back_btn/default");
     evas_object_smart_callback_add(back_btn, "clicked", im_setting_list_navi_back_btn_call_cb, NULL);
+#endif
+
     Elm_Object_Item *nf_main_item = elm_naviframe_item_push(ad->naviframe,
-                IM_SETTING_LIST_TITLE,
+                title,
                 back_btn,
                 NULL,
                 ad->genlist,
-                NULL);
+                item_style);
+
     elm_naviframe_item_title_enabled_set(nf_main_item, EINA_TRUE, EINA_TRUE);
     elm_naviframe_item_pop_cb_set(nf_main_item, im_setting_list_navi_item_pop_cb, ad);
     elm_object_content_set(ad->conform, ad->naviframe);
@@ -762,6 +801,12 @@ void im_setting_list_app_terminate(void *data)
     {
         elm_genlist_item_class_free(itc_im_list_item);
         itc_im_list_item = NULL;
+    }
+
+    if (NULL != itc_im_list_title)
+    {
+        elm_genlist_item_class_free(itc_im_list_title);
+        itc_im_list_title = NULL;
     }
 }
 
