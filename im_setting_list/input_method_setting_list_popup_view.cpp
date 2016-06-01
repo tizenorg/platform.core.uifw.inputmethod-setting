@@ -364,6 +364,15 @@ static void im_setting_list_screen_create(void *data)
     elm_radio_state_value_set(group_radio, g_active_ime_id);
     elm_radio_value_set(group_radio, g_active_ime_id);
     elm_genlist_item_class_free(ttc);
+
+#ifdef _CIRCLE
+    /* Add padding area in wearable circle profile */
+    Elm_Genlist_Item_Class *ptc = elm_genlist_item_class_new();
+    ptc->item_style = "padding";
+    elm_genlist_item_append(genlist, ptc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+    elm_genlist_item_class_free(ptc);
+#endif
+
     elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
 }
 #endif

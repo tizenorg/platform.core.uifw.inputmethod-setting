@@ -723,6 +723,14 @@ static void im_setting_list_add_ime(void *data) {
         g_gen_item_data[i].gen_item = item;
     }
 #endif
+
+#ifdef _CIRCLE
+    /* Add padding area in wearable circle profile */
+    Elm_Genlist_Item_Class *ptc = elm_genlist_item_class_new();
+    ptc->item_style = "padding";
+    elm_genlist_item_append(ad->genlist, ptc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+    elm_genlist_item_class_free(ptc);
+#endif
 }
 
 static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *it)
