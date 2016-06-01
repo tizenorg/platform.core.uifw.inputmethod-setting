@@ -25,4 +25,6 @@ void im_setting_list_app_create(void *data);
 void im_setting_list_app_terminate(void *data);
 void im_setting_list_update_window(void *data);
 
+void im_setting_list_add_padding(Evas_Object *genlist);
+
 #endif /* __INPUTMETHOD_SETTING_LIST_UI_H */

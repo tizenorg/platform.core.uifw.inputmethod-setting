@@ -15,6 +15,7 @@
  *
  */
 #include "input_method_setting_list.h"
+#include "input_method_setting_list_ui.h"
 #include "input_method_setting_list_popup_view.h"
 #include <string>
 #include <app.h>
@@ -723,6 +724,10 @@ static void im_setting_list_add_ime(void *data) {
         g_gen_item_data[i].gen_item = item;
     }
 #endif
+
+#ifdef _CIRCLE
+    im_setting_list_add_padding(ad->genlist);
+#endif
 }
 
 static Eina_Bool im_setting_list_navi_item_pop_cb(void *data, Elm_Object_Item *it)
@@ -741,6 +746,15 @@ static void im_setting_list_navi_back_btn_call_cb(void *data, Evas_Object *obj, 
 {
     evas_object_smart_callback_del(obj, "clicked", im_setting_list_navi_back_btn_call_cb);
     ui_app_exit();
+}
+
+void im_setting_list_add_padding(Evas_Object *genlist)
+{
+    /* Add padding area in wearable circle profile */
+    Elm_Genlist_Item_Class *ptc = elm_genlist_item_class_new();
+    ptc->item_style = "padding";
+    elm_genlist_item_append(genlist, ptc, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+    elm_genlist_item_class_free(ptc);
 }
 
 Evas_Object *im_setting_list_list_create(void *data)

@@ -364,6 +364,11 @@ static void im_setting_list_screen_create(void *data)
     elm_radio_state_value_set(group_radio, g_active_ime_id);
     elm_radio_value_set(group_radio, g_active_ime_id);
     elm_genlist_item_class_free(ttc);
+
+#ifdef _CIRCLE
+    im_setting_list_add_padding(genlist);
+#endif
+
     elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
 }
 #endif
