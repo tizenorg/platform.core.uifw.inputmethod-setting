@@ -35,7 +35,7 @@ static int                          g_active_ime_id = -1;
 typedef struct {
     void        *data;
     int         index;
-}sel_cb_data;
+} sel_cb_data;
 
 class ime_info_compare
 {
@@ -324,6 +324,17 @@ im_setting_list_default_keyboard_title_text_get(void *data, Evas_Object *obj, co
     return strdup(IM_SETTING_LIST_POPUP_VIEW_TITLE);
 }
 
+static Eina_Bool _pop_cb(void *data, Elm_Object_Item *it)
+{
+#ifdef _CIRCLE
+    appdata *ad = (appdata *)data;
+    if (ad && ad->main_circle_genlist)
+        eext_rotary_object_event_activated_set(ad->main_circle_genlist, EINA_TRUE);
+#endif
+
+    return EINA_TRUE;
+}
+
 static void im_setting_list_screen_create(void *data)
 {
     appdata *ad = NULL;
@@ -369,7 +380,8 @@ static void im_setting_list_screen_create(void *data)
     im_setting_list_add_padding(genlist);
 #endif
 
-    elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->naviframe, NULL, NULL, NULL, genlist, "empty");
+    elm_naviframe_item_pop_cb_set(navi_it, _pop_cb, ad);
 }
 #endif
 

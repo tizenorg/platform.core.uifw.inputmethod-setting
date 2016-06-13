@@ -438,15 +438,15 @@ static Evas_Object *im_setting_list_naviframe_create(Evas_Object* parent)
     return naviframe;
 }
 
-static Evas_Object *im_setting_list_genlist_create(Evas_Object* parent, Evas_Object* conform)
+static Evas_Object *im_setting_list_genlist_create(appdata *ad)
 {
-    Evas_Object *genlist = elm_genlist_add(parent);
+    Evas_Object *genlist = elm_genlist_add(ad->naviframe);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 #ifdef _CIRCLE
     /* Circle Surface Creation */
-    Eext_Circle_Surface *circle_surface = eext_circle_surface_conformant_add(conform);
-    Evas_Object *circle_genlist = eext_circle_object_genlist_add(genlist, circle_surface);
-    eext_rotary_object_event_activated_set(circle_genlist, EINA_TRUE);
+    Eext_Circle_Surface *circle_surface = eext_circle_surface_conformant_add(ad->conform);
+    ad->main_circle_genlist = eext_circle_object_genlist_add(genlist, circle_surface);
+    eext_rotary_object_event_activated_set(ad->main_circle_genlist, EINA_TRUE);
 #endif
     evas_object_show(genlist);
     return genlist;
@@ -764,7 +764,7 @@ Evas_Object *im_setting_list_list_create(void *data)
         return NULL;
     ad->conform = im_setting_list_conform_create(ad->win);
     ad->naviframe = im_setting_list_naviframe_create(ad->conform);
-    ad->genlist = im_setting_list_genlist_create(ad->naviframe, ad->conform);
+    ad->genlist = im_setting_list_genlist_create(ad);
     im_setting_list_add_ime(ad);
 
     /* Add genlist to naviframe */
