@@ -58,12 +58,9 @@ app_control(app_control_h app_control, void *data)
 
     res = app_control_get_extra_data(app_control, "caller", &type);
     if (APP_CONTROL_ERROR_NONE == res && NULL != type) {
-        if (strcmp(type, "settings") == 0)
-        {
+        if (strcmp(type, "settings") == 0) {
             ad->app_type = APP_TYPE_SETTING;
-        }
-        else if (strcmp(type, "settings_no_rotation") == 0)
-        {
+        } else if (strcmp(type, "settings_no_rotation") == 0) {
             ad->app_type = APP_TYPE_SETTING_NO_ROTATION;
         }
     }

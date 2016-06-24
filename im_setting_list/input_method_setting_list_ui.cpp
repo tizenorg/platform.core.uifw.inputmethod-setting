@@ -140,24 +140,18 @@ static void im_setting_list_load_ime_info(void)
     ime_info_s *info = NULL;
     g_ime_info_list.clear();
     int cnt = isf_control_get_all_ime_info(&info);
-    if (info)
-    {
+    if (info) {
         for (int i = 0; i < cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d\n", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
-            if (info[i].is_preinstalled)
-            {
+            if (info[i].is_preinstalled) {
                 ime_info_list_preinstall.push_back(info[i]);
-            }
-            else
-            {
+            } else {
                 ime_info_list_user.push_back(info[i]);
             }
         }
         free(info);
-    }
-    else
-    {
+    } else {
         LOGD("isf_control_get_all_ime_info failed\n");
     }
     im_setting_list_sort_ime_info(ime_info_list_preinstall, ime_info_list_user);
@@ -244,8 +238,7 @@ static void _popup_back_cb(void *data, Evas_Object *obj, void *event_info)
 
     if (g_gen_item_data[index].chk_status) {
         im_setting_list_check_popup_cancel_cb(data, NULL, NULL);
-    }
-    else {
+    } else {
         evas_object_del(cb_data->popup);
         delete cb_data;
     }
@@ -299,12 +292,9 @@ static void im_setting_list_check_button_change_cb(void *data, Evas_Object *obj,
 
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
-    if (!state)
-    {
+    if (!state) {
         isf_control_set_enable_ime(g_ime_info_list[index].appid, state);
-    }
-    else
-    {
+    } else {
         im_setting_list_show_popup(data, obj, im_setting_list_check_popup_ok_cb, im_setting_list_check_popup_cancel_cb);
     }
 }
@@ -363,14 +353,11 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
     }
     Eina_Bool state = g_gen_item_data[index].chk_status;
 
-    if (state)
-    {
+    if (state) {
         g_gen_item_data[index].chk_status = !state;
         isf_control_set_enable_ime(g_ime_info_list[index].appid, !state);
         elm_genlist_item_update(item);
-    }
-    else
-    {
+    } else {
         im_setting_list_show_popup(data, obj, im_setting_list_popup_ok_cb, im_setting_list_popup_cancel_cb);
     }
 }
@@ -703,8 +690,7 @@ static void im_setting_list_add_ime(void *data) {
 
         if (g_ime_info_list[i].is_preinstalled || (i == g_active_ime_index)) {
             item_data.chk_status = EINA_TRUE;
-        }
-        else {
+        } else {
             item_data.chk_status = g_ime_info_list[i].is_enabled;
         }
         g_gen_item_data.push_back(item_data);

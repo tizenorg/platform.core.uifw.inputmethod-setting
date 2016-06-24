@@ -80,12 +80,9 @@ static void im_setting_list_load_active_ime_info(void)
         for (int i = 0; i < cnt; ++i)
         {
             SECURE_LOGD("%s %s %d %d %d\n", info[i].appid, info[i].label, info[i].is_enabled, info[i].is_preinstalled, info[i].has_option);
-            if (info[i].is_enabled && info[i].is_preinstalled)
-            {
+            if (info[i].is_enabled && info[i].is_preinstalled) {
                 active_ime_info_list_preinstall.push_back(info[i]);
-            }
-            else if (info[i].is_enabled)
-            {
+            } else if (info[i].is_enabled) {
                 active_ime_info_list_user.push_back(info[i]);
             }
         }
