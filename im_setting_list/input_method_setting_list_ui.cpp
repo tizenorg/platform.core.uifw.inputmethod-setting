@@ -508,17 +508,17 @@ static char *im_setting_list_genlist_item_label_get(void *data, Evas_Object *obj
     list_item_text *item_text = (list_item_text *)data;
     if (!item_text)
         return NULL;
+
     if (!strcmp(part, "elm.text.main.left.top") ||
         !strcmp(part, "elm.text.main.left") ||
         !strcmp(part, "elm.text.main") ||
-        !strcmp(part, "elm.text") ||
-        !strcmp(part, "elm.text.1")) {
+        !strcmp(part, "elm.text")) {
         return strdup(item_text->main_text);
     }
-
     if (!strcmp(part, "elm.text.sub") ||
         !strcmp(part, "elm.text.sub.left.bottom") ||
         !strcmp(part, "elm.text.multiline") ||
+        !strcmp(part, "elm.text.1") ||
         !strcmp(part, "elm.text.2")) {
         return strdup(item_text->sub_text);
     }
@@ -547,7 +547,11 @@ static void im_setting_list_genlist_item_class_create(int app_type)
         itc_im_list_group = elm_genlist_item_class_new();
         if (itc_im_list_group)
         {
+#ifdef _WEARABLE
+            itc_im_list_group->item_style = "groupindex";
+#else
             itc_im_list_group->item_style = "group_index";
+#endif
             itc_im_list_group->func.text_get = im_setting_list_genlist_group_label_get;
             itc_im_list_group->func.content_get = NULL;
             itc_im_list_group->func.state_get = NULL;
