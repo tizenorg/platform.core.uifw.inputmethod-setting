@@ -104,7 +104,6 @@ app_resume(void *data)
         if (ad->win)
         {
             elm_win_activate(ad->win);
-            im_setting_list_update_window(ad);
         }
         ad->app_state = APP_STATE_RESUME;
         return;
