@@ -277,7 +277,7 @@ static Evas_Object *im_setting_selector_genlist_item_icon_get(void *data, Evas_O
 {
     int index = (int)reinterpret_cast<long>(data);
     if (!strcmp(part, "elm.swallow.end") ||
-        !strcmp(part, "elm.icon.2")) {
+        !strcmp(part, "elm.icon")) {
         Evas_Object *radio = elm_radio_add(obj);
         elm_object_style_set(radio, "list");
         elm_radio_state_value_set(radio, index);
@@ -294,7 +294,11 @@ static void im_setting_selector_genlist_item_class_create(void)
 {
     itc_im_selector = elm_genlist_item_class_new();
     if (itc_im_selector) {
+#ifdef _WEARABLE
+        itc_im_selector->item_style = "1text.1icon.1";
+#else
         itc_im_selector->item_style = "type1";
+#endif
         itc_im_selector->func.text_get = im_setting_selector_genlist_item_label_get;
         itc_im_selector->func.content_get = im_setting_selector_genlist_item_icon_get;
         itc_im_selector->func.state_get = NULL;
