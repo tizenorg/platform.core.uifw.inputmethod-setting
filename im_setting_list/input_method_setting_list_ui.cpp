@@ -366,6 +366,14 @@ static void im_setting_list_item_sel_cb(void *data, Evas_Object *obj, void *even
 static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Object *obj, void *event_info)
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
+
+#ifdef _WEARABLE
+    if (g_ime_info_list.size() <= 1) {
+        LOGD ("The number of IME : %d\n", g_ime_info_list.size());
+        return;
+    }
+#endif
+
     elm_genlist_item_selected_set(item, EINA_FALSE);
     im_setting_list_popup_view_create(data);
 }
