@@ -367,13 +367,6 @@ static void im_setting_list_set_default_keyboard_item_sel_cb(void *data, Evas_Ob
 {
     Elm_Object_Item *item = (Elm_Object_Item *)event_info;
 
-#ifdef _WEARABLE
-    if (g_ime_info_list.size() <= 1) {
-        LOGD ("The number of IME : %d\n", g_ime_info_list.size());
-        return;
-    }
-#endif
-
     elm_genlist_item_selected_set(item, EINA_FALSE);
     im_setting_list_popup_view_create(data);
 }
@@ -662,7 +655,7 @@ static void im_setting_list_add_ime(void *data) {
         /* Default keyboard selector */
         snprintf(item_text[0].main_text, sizeof(item_text[0].main_text), "%s", IM_SETTING_LIST_DEFAULT_KEYBOARD);
         snprintf(item_text[0].sub_text, sizeof(item_text[0].sub_text), "%s", g_ime_info_list[g_active_ime_index].label);
-        elm_genlist_item_append(ad->genlist,
+        Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
             itc_im_list_item,
             (void *)&item_text[0],
             NULL,
@@ -670,9 +663,16 @@ static void im_setting_list_add_ime(void *data) {
             im_setting_list_set_default_keyboard_item_sel_cb,
             data);
 
+#ifdef _WEARABLE
+        if (g_ime_info_list.size() <= 1) {
+            LOGD ("The number of IME : %d\n", g_ime_info_list.size());
+            elm_object_item_disabled_set(item, EINA_TRUE);
+        }
+#endif
+
         /* Keyboard settings */
         snprintf(item_text[1].main_text, sizeof(item_text[1].main_text), "%s", IM_SETTING_LIST_KEYBOARD_SETTING);
-        Elm_Object_Item *item = elm_genlist_item_append(ad->genlist,
+        item = elm_genlist_item_append(ad->genlist,
             itc_im_list_item_one_line,
             (void *)&item_text[1],
             NULL,
