@@ -665,7 +665,7 @@ static void im_setting_list_add_ime(void *data) {
 
 #ifdef _WEARABLE
         if (g_ime_info_list.size() <= 1) {
-            LOGD ("The number of IME : %d\n", g_ime_info_list.size());
+            LOGD("The number of IME : %d\n", g_ime_info_list.size());
             elm_object_item_disabled_set(item, EINA_TRUE);
         }
 #endif
